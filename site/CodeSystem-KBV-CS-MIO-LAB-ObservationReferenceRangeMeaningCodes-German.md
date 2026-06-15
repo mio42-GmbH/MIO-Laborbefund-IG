@@ -37,7 +37,7 @@ Dieses Codesystem enthält die Codes für deutsche Bezeichner für Observation R
   "title" : "Observation Reference Range Meaning Codes German",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-15T16:45:57+02:00",
+  "date" : "2026-06-15T17:08:58+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

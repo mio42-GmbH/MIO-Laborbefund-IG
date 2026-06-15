@@ -13,7 +13,7 @@ Diese Seite enthält eine Übersicht aller FHIR-Artefakte, die im Rahmen dieses 
 
 Die FHIR®-Spezifikation ist ebenfalla in unserem Simplifier-Projekt zu finden: [https://simplifier.net/lab1x0x0](https://simplifier.net/lab1x0x0)
 
-Als Umsetzungshilfe stellen wir auch ein [Validierungspaket](https://github.com/mio42-GmbH/Validierungspaket-MIO-Laborbefund/releases/tag/v1.0.0-update) zur Verfügung. Dieses enthält technische Minimal- und Maximalbeispiele, alle notwendigen Dependecies (Abhängigkeiten) und die gesamte FHIR®-Spezifikation des MIO Laborbefundes.
+Als Umsetzungshilfe stellen wir auch ein [Validierungspaket](https://github.com/mio42-GmbH/Validierungspaket-MIO-Laborbefund/releases/tag/v1.0.0-update-r1) zur Verfügung. Dieses enthält technische Minimal- und Maximalbeispiele, alle notwendigen Dependecies (Abhängigkeiten) und die gesamte FHIR®-Spezifikation des MIO Laborbefundes.
 
 ### Terminologien: Value Sets
 

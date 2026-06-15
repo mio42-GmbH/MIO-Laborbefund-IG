@@ -56,7 +56,7 @@ Dieses Valueset enthält die Codes zur Beschreibung von Status Gesamtbefund.
   "title" : "Status Gesamtbefund",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-15T16:45:57+02:00",
+  "date" : "2026-06-15T17:08:58+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
