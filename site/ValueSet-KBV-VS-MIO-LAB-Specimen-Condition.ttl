@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/ValueSet/KBV-VS-MIO-LAB-Specimen-Condition> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KBV-VS-MIO-LAB-Specimen-Condition"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Specimen-Condition</b></p><a name=\"KBV-VS-MIO-LAB-Specimen-Condition\"> </a><a name=\"hcKBV-VS-MIO-LAB-Specimen-Condition\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version ?http://snomed.info/sct/11000274103/version/20251115</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/710070002\">710070002</a></td><td>Specimen unsatisfactory for evaluation due to broken container</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/448140007\">448140007</a></td><td>Specimen unsatisfactory for evaluation due to obscuring lubricant jelly</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/712743008\">712743008</a></td><td>Specimen unsatisfactory for evaluation due to improper storage of specimen</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/448141006\">448141006</a></td><td>Specimen unsatisfactory for evaluation due to marked cellular degeneration</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/373881006\">373881006</a></td><td>Unsatisfactory for evaluation due to lack of patient identification on specimen and/or requisition form</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0493</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version ?3.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-AUT\">AUT</a></td><td>Autolyzed</td><td>Autolyzed</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-CLOT\">CLOT</a></td><td>Clotted</td><td>Clotted</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-CON\">CON</a></td><td>Contaminated</td><td>Contaminated</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-COOL\">COOL</a></td><td>Cool</td><td>Cool</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-FROZ\">FROZ</a></td><td>Frozen</td><td>Frozen</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-HEM\">HEM</a></td><td>Hemolyzed</td><td>Hemolyzed</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-LIVE\">LIVE</a></td><td>Live</td><td>Live</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-ROOM\">ROOM</a></td><td>Room Temperature</td><td>Room temperature</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-SNR\">SNR</a></td><td>Sample not received</td><td>Sample not received</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v2-0493.html#v2-0493-CFU\">CFU</a></td><td>Centrifuged</td><td>Centrifuged</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Condition"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-update"] ; # 
+  fhir:name [ fhir:v "KBV_VS_MIO_LAB_Specimen_Condition"] ; # 
+  fhir:title [ fhir:v "Zustand Probe"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-06-15T16:45:57+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "mio42 GmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://mio.kbv.de" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hello@mio42.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Dieses Valueset enthält die Codes zur Beschreibung von Zustand Probe."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE" ] ;
+       fhir:display [ fhir:v "Germany" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "710070002" ] ;
+         fhir:display [ fhir:v "Specimen unsatisfactory for evaluation due to broken container" ]
+       ] [
+         fhir:code [ fhir:v "448140007" ] ;
+         fhir:display [ fhir:v "Specimen unsatisfactory for evaluation due to obscuring lubricant jelly" ]
+       ] [
+         fhir:code [ fhir:v "712743008" ] ;
+         fhir:display [ fhir:v "Specimen unsatisfactory for evaluation due to improper storage of specimen" ]
+       ] [
+         fhir:code [ fhir:v "448141006" ] ;
+         fhir:display [ fhir:v "Specimen unsatisfactory for evaluation due to marked cellular degeneration" ]
+       ] [
+         fhir:code [ fhir:v "373881006" ] ;
+         fhir:display [ fhir:v "Unsatisfactory for evaluation due to lack of patient identification on specimen and/or requisition form" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0493"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "3.0.0" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "AUT" ] ;
+         fhir:display [ fhir:v "Autolyzed" ]
+       ] [
+         fhir:code [ fhir:v "CLOT" ] ;
+         fhir:display [ fhir:v "Clotted" ]
+       ] [
+         fhir:code [ fhir:v "CON" ] ;
+         fhir:display [ fhir:v "Contaminated" ]
+       ] [
+         fhir:code [ fhir:v "COOL" ] ;
+         fhir:display [ fhir:v "Cool" ]
+       ] [
+         fhir:code [ fhir:v "FROZ" ] ;
+         fhir:display [ fhir:v "Frozen" ]
+       ] [
+         fhir:code [ fhir:v "HEM" ] ;
+         fhir:display [ fhir:v "Hemolyzed" ]
+       ] [
+         fhir:code [ fhir:v "LIVE" ] ;
+         fhir:display [ fhir:v "Live" ]
+       ] [
+         fhir:code [ fhir:v "ROOM" ] ;
+         fhir:display [ fhir:v "Room Temperature" ]
+       ] [
+         fhir:code [ fhir:v "SNR" ] ;
+         fhir:display [ fhir:v "Sample not received" ]
+       ] [
+         fhir:code [ fhir:v "CFU" ] ;
+         fhir:display [ fhir:v "Centrifuged" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

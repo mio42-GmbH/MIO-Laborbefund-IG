@@ -1,0 +1,195 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT</b></p><a name=\"KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT\"> </a><a name=\"hcKBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version &#x1F4CD;http://snomed.info/sct/11000274103/version/20251115</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/19923001\">19923001</a></td><td>Catheter</td><td>Katheter</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/706499002\">706499002</a></td><td>Wearable urine collection bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/41323003\">41323003</a></td><td>Urinary collection bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/303947005\">303947005</a></td><td>Rod fixation system</td><td>System zur Stabfixierung</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/27606000\">27606000</a></td><td>Dental prosthesis</td><td>Zahnprothese</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/63112008\">63112008</a></td><td>Bone wire</td><td>Knochendraht</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/77777004\">77777004</a></td><td>Bone staple</td><td>Knochenklammer</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/77444004\">77444004</a></td><td>Bone pin</td><td>Knochennagel</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/68183006\">68183006</a></td><td>Bone screw</td><td>Knochenschraube</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/303503009\">303503009</a></td><td>Musculoskeletal implant</td><td>Muskuloskelettales Implantat</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/257296003\">257296003</a></td><td>Fixator</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/6012004\">6012004</a></td><td>Hearing aid</td><td>Hörgerät</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/407744008\">407744008</a></td><td>Stoma appliance</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/417136005\">417136005</a></td><td>Ileostomy bag</td><td>Ileostomiebeutel</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/704902005\">704902005</a></td><td>Colostomy irrigation bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/8407004\">8407004</a></td><td>Bile collection bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/398013009\">398013009</a></td><td>Implantable venous access port</td><td>Implantierbarer Venenzugangsport</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/303515008\">303515008</a></td><td>Orbital implant</td><td>Orbitales Implantat</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/303500007\">303500007</a></td><td>Auditory implant</td><td>Hörimplantat</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/701750003\">701750003</a></td><td>Subcutaneous glucose sensor</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/464557001\">464557001</a></td><td>Parenteral/enteral solution bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/30968007\">30968007</a></td><td>Drainage bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/721001006\">721001006</a></td><td>Gastric drainage/decompression bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/408861001\">408861001</a></td><td>Wound drainage bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/736867000\">736867000</a></td><td>Wound drainage bag, sterile</td><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT",
+  "title" : "Außerkörperliche Quellen SNOMED CT®",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-06-15T16:45:57+02:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Außerkörperliche Quellen SNOMED CT®.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "immutable" : false,
+  "copyright" : "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20251115",
+      "concept" : [{
+        "code" : "19923001",
+        "display" : "Catheter",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Katheter"
+        }]
+      },
+      {
+        "code" : "706499002",
+        "display" : "Wearable urine collection bag"
+      },
+      {
+        "code" : "41323003",
+        "display" : "Urinary collection bag"
+      },
+      {
+        "code" : "303947005",
+        "display" : "Rod fixation system",
+        "designation" : [{
+          "language" : "de",
+          "value" : "System zur Stabfixierung"
+        }]
+      },
+      {
+        "code" : "27606000",
+        "display" : "Dental prosthesis",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Zahnprothese"
+        }]
+      },
+      {
+        "code" : "63112008",
+        "display" : "Bone wire",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Knochendraht"
+        }]
+      },
+      {
+        "code" : "77777004",
+        "display" : "Bone staple",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Knochenklammer"
+        }]
+      },
+      {
+        "code" : "77444004",
+        "display" : "Bone pin",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Knochennagel"
+        }]
+      },
+      {
+        "code" : "68183006",
+        "display" : "Bone screw",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Knochenschraube"
+        }]
+      },
+      {
+        "code" : "303503009",
+        "display" : "Musculoskeletal implant",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Muskuloskelettales Implantat"
+        }]
+      },
+      {
+        "code" : "257296003",
+        "display" : "Fixator"
+      },
+      {
+        "code" : "6012004",
+        "display" : "Hearing aid",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Hörgerät"
+        }]
+      },
+      {
+        "code" : "407744008",
+        "display" : "Stoma appliance"
+      },
+      {
+        "code" : "417136005",
+        "display" : "Ileostomy bag",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Ileostomiebeutel"
+        }]
+      },
+      {
+        "code" : "704902005",
+        "display" : "Colostomy irrigation bag"
+      },
+      {
+        "code" : "8407004",
+        "display" : "Bile collection bag"
+      },
+      {
+        "code" : "398013009",
+        "display" : "Implantable venous access port",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Implantierbarer Venenzugangsport"
+        }]
+      },
+      {
+        "code" : "303515008",
+        "display" : "Orbital implant",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Orbitales Implantat"
+        }]
+      },
+      {
+        "code" : "303500007",
+        "display" : "Auditory implant",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Hörimplantat"
+        }]
+      },
+      {
+        "code" : "701750003",
+        "display" : "Subcutaneous glucose sensor"
+      },
+      {
+        "code" : "464557001",
+        "display" : "Parenteral/enteral solution bag"
+      },
+      {
+        "code" : "30968007",
+        "display" : "Drainage bag"
+      },
+      {
+        "code" : "721001006",
+        "display" : "Gastric drainage/decompression bag"
+      },
+      {
+        "code" : "408861001",
+        "display" : "Wound drainage bag"
+      },
+      {
+        "code" : "736867000",
+        "display" : "Wound drainage bag, sterile"
+      }]
+    }]
+  }
+}

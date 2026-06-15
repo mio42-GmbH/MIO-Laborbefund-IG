@@ -1,0 +1,262 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KBV-CS-MIO-LAB-CommonLanguages-German",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-CommonLanguages-German</b></p><a name=\"KBV-CS-MIO-LAB-CommonLanguages-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-CommonLanguages-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Arabisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Arabisch\"> </a></td><td>Arabisch</td></tr><tr><td style=\"white-space:nowrap\">Bengalisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Bengalisch\"> </a></td><td>Bengalisch</td></tr><tr><td style=\"white-space:nowrap\">Tschechisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Tschechisch\"> </a></td><td>Tschechisch</td></tr><tr><td style=\"white-space:nowrap\">Daenisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Daenisch\"> </a></td><td>Dänisch</td></tr><tr><td style=\"white-space:nowrap\">DeutschOesterreich<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschOesterreich\"> </a></td><td>Deutsch (Österreich)</td></tr><tr><td style=\"white-space:nowrap\">DeutschSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschSchweiz\"> </a></td><td>Deutsch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">DeutschDeutschland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschDeutschland\"> </a></td><td>Deutsch (Deutschland)</td></tr><tr><td style=\"white-space:nowrap\">Deutsch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Deutsch\"> </a></td><td>Deutsch</td></tr><tr><td style=\"white-space:nowrap\">Griechisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Griechisch\"> </a></td><td>Griechisch</td></tr><tr><td style=\"white-space:nowrap\">EnglischAustralien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischAustralien\"> </a></td><td>Englisch (Australien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischKanada<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischKanada\"> </a></td><td>Englisch (Kanada)</td></tr><tr><td style=\"white-space:nowrap\">EnglischGrossbritannien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischGrossbritannien\"> </a></td><td>Englisch (Großbritannien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischIndien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischIndien\"> </a></td><td>Englisch (Indien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischNeuseeland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischNeuseeland\"> </a></td><td>Englisch (Neuseeland)</td></tr><tr><td style=\"white-space:nowrap\">EnglischSingapur<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischSingapur\"> </a></td><td>Englisch (Singapur)</td></tr><tr><td style=\"white-space:nowrap\">EnglischUSA<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischUSA\"> </a></td><td>Englisch (USA)</td></tr><tr><td style=\"white-space:nowrap\">Englisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Englisch\"> </a></td><td>Englisch</td></tr><tr><td style=\"white-space:nowrap\">SpanischArgentinien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischArgentinien\"> </a></td><td>Spanisch (Argentinien)</td></tr><tr><td style=\"white-space:nowrap\">SpanischSpanien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischSpanien\"> </a></td><td>Spanisch (Spanien)</td></tr><tr><td style=\"white-space:nowrap\">SpanischUruguay<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischUruguay\"> </a></td><td>Spanisch (Uruguay)</td></tr><tr><td style=\"white-space:nowrap\">Spanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Spanisch\"> </a></td><td>Spanisch</td></tr><tr><td style=\"white-space:nowrap\">Finnisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Finnisch\"> </a></td><td>Finnisch</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischBelgien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischBelgien\"> </a></td><td>Französisch (Belgien)</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischSchweiz\"> </a></td><td>Französisch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischFrankreich<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischFrankreich\"> </a></td><td>Französisch (Frankreich)</td></tr><tr><td style=\"white-space:nowrap\">Franzoesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Franzoesisch\"> </a></td><td>Französisch</td></tr><tr><td style=\"white-space:nowrap\">FriesischNiederlande<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FriesischNiederlande\"> </a></td><td>Friesisch (Niederlande)</td></tr><tr><td style=\"white-space:nowrap\">Friesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Friesisch\"> </a></td><td>Friesisch</td></tr><tr><td style=\"white-space:nowrap\">Kroatisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Kroatisch\"> </a></td><td>Kroatisch</td></tr><tr><td style=\"white-space:nowrap\">ItalienischSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ItalienischSchweiz\"> </a></td><td>Italienisch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">ItalienischItalien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ItalienischItalien\"> </a></td><td>Italienisch (Italien)</td></tr><tr><td style=\"white-space:nowrap\">Italienisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Italienisch\"> </a></td><td>Italienisch</td></tr><tr><td style=\"white-space:nowrap\">Japanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Japanisch\"> </a></td><td>Japanisch</td></tr><tr><td style=\"white-space:nowrap\">Koreanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Koreanisch\"> </a></td><td>Koreanisch</td></tr><tr><td style=\"white-space:nowrap\">NiederlaendischBelgien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NiederlaendischBelgien\"> </a></td><td>Niederländisch (Belgien)</td></tr><tr><td style=\"white-space:nowrap\">NiederlaendischNiederlande<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NiederlaendischNiederlande\"> </a></td><td>Niederländisch (Niederlande)</td></tr><tr><td style=\"white-space:nowrap\">Niederlaendisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Niederlaendisch\"> </a></td><td>Niederländisch</td></tr><tr><td style=\"white-space:nowrap\">NorwegischNorwegen<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NorwegischNorwegen\"> </a></td><td>Norwegisch (Norwegen)</td></tr><tr><td style=\"white-space:nowrap\">Norwegisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Norwegisch\"> </a></td><td>Norwegisch</td></tr><tr><td style=\"white-space:nowrap\">Polnisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Polnisch\"> </a></td><td>Polnisch</td></tr><tr><td style=\"white-space:nowrap\">PortugiesischBrasilien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-PortugiesischBrasilien\"> </a></td><td>Portugiesisch (Brasilien)</td></tr><tr><td style=\"white-space:nowrap\">Portugiesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Portugiesisch\"> </a></td><td>Portugiesisch</td></tr><tr><td style=\"white-space:nowrap\">RussischRussland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-RussischRussland\"> </a></td><td>Russisch (Russland)</td></tr><tr><td style=\"white-space:nowrap\">Russisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Russisch\"> </a></td><td>Russisch</td></tr><tr><td style=\"white-space:nowrap\">SerbischSerbien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SerbischSerbien\"> </a></td><td>Serbisch (Serbien)</td></tr><tr><td style=\"white-space:nowrap\">Serbisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Serbisch\"> </a></td><td>Serbisch</td></tr><tr><td style=\"white-space:nowrap\">SchwedischSchweden<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SchwedischSchweden\"> </a></td><td>Schwedisch (Schweden)</td></tr><tr><td style=\"white-space:nowrap\">Schwedisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Schwedisch\"> </a></td><td>Schwedisch</td></tr><tr><td style=\"white-space:nowrap\">Telugu<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Telugu\"> </a></td><td>Telugu</td></tr><tr><td style=\"white-space:nowrap\">ChinesischChina<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischChina\"> </a></td><td>Chinesisch (China)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischHongKong<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischHongKong\"> </a></td><td>Chinesisch (Hong Kong)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischSingapur<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischSingapur\"> </a></td><td>Chinesisch (Singapur)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischTaiwan<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischTaiwan\"> </a></td><td>Chinesisch (Taiwan)</td></tr><tr><td style=\"white-space:nowrap\">Chinesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Chinesisch\"> </a></td><td>Chinesisch</td></tr><tr><td style=\"white-space:nowrap\">Tuerkisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Tuerkisch\"> </a></td><td>Türkisch</td></tr><tr><td style=\"white-space:nowrap\">Ukrainisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Ukrainisch\"> </a></td><td>Ukrainisch</td></tr></table></div>"
+  },
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_CommonLanguages_German",
+  "title" : "Bevorzugte Sprache German",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-06-15T16:45:57+02:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Bevorzugte Sprache German.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "Arabisch",
+    "display" : "Arabisch"
+  },
+  {
+    "code" : "Bengalisch",
+    "display" : "Bengalisch"
+  },
+  {
+    "code" : "Tschechisch",
+    "display" : "Tschechisch"
+  },
+  {
+    "code" : "Daenisch",
+    "display" : "Dänisch"
+  },
+  {
+    "code" : "DeutschOesterreich",
+    "display" : "Deutsch (Österreich)"
+  },
+  {
+    "code" : "DeutschSchweiz",
+    "display" : "Deutsch (Schweiz)"
+  },
+  {
+    "code" : "DeutschDeutschland",
+    "display" : "Deutsch (Deutschland)"
+  },
+  {
+    "code" : "Deutsch",
+    "display" : "Deutsch"
+  },
+  {
+    "code" : "Griechisch",
+    "display" : "Griechisch"
+  },
+  {
+    "code" : "EnglischAustralien",
+    "display" : "Englisch (Australien)"
+  },
+  {
+    "code" : "EnglischKanada",
+    "display" : "Englisch (Kanada)"
+  },
+  {
+    "code" : "EnglischGrossbritannien",
+    "display" : "Englisch (Großbritannien)"
+  },
+  {
+    "code" : "EnglischIndien",
+    "display" : "Englisch (Indien)"
+  },
+  {
+    "code" : "EnglischNeuseeland",
+    "display" : "Englisch (Neuseeland)"
+  },
+  {
+    "code" : "EnglischSingapur",
+    "display" : "Englisch (Singapur)"
+  },
+  {
+    "code" : "EnglischUSA",
+    "display" : "Englisch (USA)"
+  },
+  {
+    "code" : "Englisch",
+    "display" : "Englisch"
+  },
+  {
+    "code" : "SpanischArgentinien",
+    "display" : "Spanisch (Argentinien)"
+  },
+  {
+    "code" : "SpanischSpanien",
+    "display" : "Spanisch (Spanien)"
+  },
+  {
+    "code" : "SpanischUruguay",
+    "display" : "Spanisch (Uruguay)"
+  },
+  {
+    "code" : "Spanisch",
+    "display" : "Spanisch"
+  },
+  {
+    "code" : "Finnisch",
+    "display" : "Finnisch"
+  },
+  {
+    "code" : "FranzoesischBelgien",
+    "display" : "Französisch (Belgien)"
+  },
+  {
+    "code" : "FranzoesischSchweiz",
+    "display" : "Französisch (Schweiz)"
+  },
+  {
+    "code" : "FranzoesischFrankreich",
+    "display" : "Französisch (Frankreich)"
+  },
+  {
+    "code" : "Franzoesisch",
+    "display" : "Französisch"
+  },
+  {
+    "code" : "FriesischNiederlande",
+    "display" : "Friesisch (Niederlande)"
+  },
+  {
+    "code" : "Friesisch",
+    "display" : "Friesisch"
+  },
+  {
+    "code" : "Kroatisch",
+    "display" : "Kroatisch"
+  },
+  {
+    "code" : "ItalienischSchweiz",
+    "display" : "Italienisch (Schweiz)"
+  },
+  {
+    "code" : "ItalienischItalien",
+    "display" : "Italienisch (Italien)"
+  },
+  {
+    "code" : "Italienisch",
+    "display" : "Italienisch"
+  },
+  {
+    "code" : "Japanisch",
+    "display" : "Japanisch"
+  },
+  {
+    "code" : "Koreanisch",
+    "display" : "Koreanisch"
+  },
+  {
+    "code" : "NiederlaendischBelgien",
+    "display" : "Niederländisch (Belgien)"
+  },
+  {
+    "code" : "NiederlaendischNiederlande",
+    "display" : "Niederländisch (Niederlande)"
+  },
+  {
+    "code" : "Niederlaendisch",
+    "display" : "Niederländisch"
+  },
+  {
+    "code" : "NorwegischNorwegen",
+    "display" : "Norwegisch (Norwegen)"
+  },
+  {
+    "code" : "Norwegisch",
+    "display" : "Norwegisch"
+  },
+  {
+    "code" : "Polnisch",
+    "display" : "Polnisch"
+  },
+  {
+    "code" : "PortugiesischBrasilien",
+    "display" : "Portugiesisch (Brasilien)"
+  },
+  {
+    "code" : "Portugiesisch",
+    "display" : "Portugiesisch"
+  },
+  {
+    "code" : "RussischRussland",
+    "display" : "Russisch (Russland)"
+  },
+  {
+    "code" : "Russisch",
+    "display" : "Russisch"
+  },
+  {
+    "code" : "SerbischSerbien",
+    "display" : "Serbisch (Serbien)"
+  },
+  {
+    "code" : "Serbisch",
+    "display" : "Serbisch"
+  },
+  {
+    "code" : "SchwedischSchweden",
+    "display" : "Schwedisch (Schweden)"
+  },
+  {
+    "code" : "Schwedisch",
+    "display" : "Schwedisch"
+  },
+  {
+    "code" : "Telugu",
+    "display" : "Telugu"
+  },
+  {
+    "code" : "ChinesischChina",
+    "display" : "Chinesisch (China)"
+  },
+  {
+    "code" : "ChinesischHongKong",
+    "display" : "Chinesisch (Hong Kong)"
+  },
+  {
+    "code" : "ChinesischSingapur",
+    "display" : "Chinesisch (Singapur)"
+  },
+  {
+    "code" : "ChinesischTaiwan",
+    "display" : "Chinesisch (Taiwan)"
+  },
+  {
+    "code" : "Chinesisch",
+    "display" : "Chinesisch"
+  },
+  {
+    "code" : "Tuerkisch",
+    "display" : "Türkisch"
+  },
+  {
+    "code" : "Ukrainisch",
+    "display" : "Ukrainisch"
+  }]
+}

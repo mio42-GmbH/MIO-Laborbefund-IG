@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/DeviceDefinition/8157f177-3f3e-46b4-be27-efcbf7a216be> a fhir:DeviceDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "8157f177-3f3e-46b4-be27-efcbf7a216be"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer|1.0.0-update"^^xsd:anyURI ;
+       fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer|1.0.0-update>
+     ] )
+  ] ; # 
+  fhir:manufacturer [
+     a fhir:Reference ;
+     fhir:link <https://fhir.kbv.de/Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a> ;
+     fhir:reference [ fhir:v "Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a" ]
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:30234008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:code [ fhir:v "30234008" ] ;
+       fhir:display [ fhir:v "Medical laboratory analyzer, device (physical object)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

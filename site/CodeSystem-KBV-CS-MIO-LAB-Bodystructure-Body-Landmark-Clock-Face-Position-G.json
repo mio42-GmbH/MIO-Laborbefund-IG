@@ -1,0 +1,86 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G</b></p><a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G\"> </a><a name=\"hcKBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-1UhrPosition\"> </a></td><td>1-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">10UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-10UhrPosition\"> </a></td><td>10-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">11UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-11UhrPosition\"> </a></td><td>11-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">12UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-12UhrPosition\"> </a></td><td>12-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">2UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-2UhrPosition\"> </a></td><td>2-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">3UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-3UhrPosition\"> </a></td><td>3-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">4UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-4UhrPosition\"> </a></td><td>4-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">5UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-5UhrPosition\"> </a></td><td>5-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">6UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-6UhrPosition\"> </a></td><td>6-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">7UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-7UhrPosition\"> </a></td><td>7-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">8UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-8UhrPosition\"> </a></td><td>8-Uhr-Position</td></tr><tr><td style=\"white-space:nowrap\">9UhrPosition<a name=\"KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G-9UhrPosition\"> </a></td><td>9-Uhr-Position</td></tr></table></div>"
+  },
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German",
+  "title" : "Bodystructure Clock Face Position SNOMED CT® German",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-06-15T16:45:57+02:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Bodystructure Clock Face Position SNOMED CT® German.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "1UhrPosition",
+    "display" : "1-Uhr-Position"
+  },
+  {
+    "code" : "10UhrPosition",
+    "display" : "10-Uhr-Position"
+  },
+  {
+    "code" : "11UhrPosition",
+    "display" : "11-Uhr-Position"
+  },
+  {
+    "code" : "12UhrPosition",
+    "display" : "12-Uhr-Position"
+  },
+  {
+    "code" : "2UhrPosition",
+    "display" : "2-Uhr-Position"
+  },
+  {
+    "code" : "3UhrPosition",
+    "display" : "3-Uhr-Position"
+  },
+  {
+    "code" : "4UhrPosition",
+    "display" : "4-Uhr-Position"
+  },
+  {
+    "code" : "5UhrPosition",
+    "display" : "5-Uhr-Position"
+  },
+  {
+    "code" : "6UhrPosition",
+    "display" : "6-Uhr-Position"
+  },
+  {
+    "code" : "7UhrPosition",
+    "display" : "7-Uhr-Position"
+  },
+  {
+    "code" : "8UhrPosition",
+    "display" : "8-Uhr-Position"
+  },
+  {
+    "code" : "9UhrPosition",
+    "display" : "9-Uhr-Position"
+  }]
+}

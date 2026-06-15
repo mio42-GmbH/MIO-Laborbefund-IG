@@ -1,0 +1,4270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Umsetzungsanforderungen - MIO Laborbefund v1.0.0-update</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+<link href="assets/css/requirement-view.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/mio-labbefund-headline.png') no-repeat;
+        background-size: 98%;
+        background-position: -65px -5px;
+    }
+</style>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"16"}
+    h3,h4,h5,h6{--heading-prefix:"16"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="70" alt="Home" src="assets/images/mio42-logo.svg"/>
+
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Grundlagen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Fachliche_Einordnung_und_Nutzen.html">Fachliche Einordnung und Nutzen</a>
+      </li>
+      <li>
+        <a href="Rechtlicher_Rahmen.html">Rechtlicher Rahmen</a>
+      </li>
+      <li>
+        <a href="Stakeholder.html">Stakeholder</a>
+      </li>
+      <li>
+        <a href="Vorarbeiten.html">Vorarbeiten</a>
+      </li>
+      <li>
+        <a href="Prozessanalyse.html">Prozessanalyse</a>
+      </li>
+      <li>
+        <a href="Bedarfsanalyse.html">Bedarfsanalyse</a>
+      </li>
+      <li>
+        <a href="Grundlagen_zur_Terminologienutzung.html">Grundlagen zur Terminologienutzung</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Anwendungsfaelle.html">Anwendungsfälle</a>
+  </li>
+  <li>
+    <a href="infomodell.html">Informationsmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+  <li>
+    <a href="requirements.html">Umsetzungsanforderungen</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">UX-Visualisierungen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="UX-_UI-Ueberblick.html">UX-/UI-Überblick</a>
+      </li>
+      <li>
+        <a href="Einzelbefunddarstellung_in_der_Primaersystemansicht.html">Einzelbefunddarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Kumulativdarstellung_in_der_Primaersystemansicht.html">Kumulativdarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Moegliche_Primaersysteminteraktionen_mit_der_ePA.html">Mögliche Primärsysteminteraktionen mit der ePA</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Feedback.html">Feedback</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Über
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="expansion_parameters.html">Expansion Parameter</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+MIO Laborbefund
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-update - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Umsetzungsanforderungen</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
+  <h2>Umsetzungsanforderungen</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+  <p>Seiteninhalt:</p>
+
+<ul id="markdown-toc">
+  <li><a href="#übergreifende-umsetzungsanforderungen" id="markdown-toc-übergreifende-umsetzungsanforderungen">Übergreifende Umsetzungsanforderungen</a></li>
+  <li><a href="#profil-elementbezogene-umsetzungsanforderungen" id="markdown-toc-profil-elementbezogene-umsetzungsanforderungen">Profil-/Elementbezogene Umsetzungsanforderungen</a></li>
+</ul>
+
+</div>
+<p>Hier sind Anforderungen an die mit der Umsetzung des MIO Laborbefund befassten Administrator:innen oder Systemhersteller:innen gelistet, die sich nicht im Rahmen der FHIR®-Spezifikation technisch definieren lassen und deshalb an dieser Stelle in Textform erläutert werden.</p>
+
+<p><strong>Verbindlichkeiten</strong></p>
+
+<ul>
+  <li><strong>MUSS</strong>: Umsetzung ist obligat</li>
+  <li><strong>SOLL</strong>: Umsetzung ist notwendig, wird aber (noch) nicht zwingend verlangt</li>
+  <li><strong>KANN</strong>: Umsetzung ist empfohlen</li>
+</ul>
+
+<h3 id="übergreifende-umsetzungsanforderungen">Übergreifende Umsetzungsanforderungen</h3>
+
+<p>Die hier aufgeführten “<strong>Übergreifenden Umsetzungsanforderungen</strong>” nehmen Bezug auf das gesamte MIO Laborbefund oder Themen, die sich auf mehrere Datenstrukturen beziehen.</p>
+
+<table class="requirements">
+  <tr>
+    <td>Typ</td>
+    <td>Anforderung</td>
+  </tr>
+  <tr>
+    <td>MUSS</td>
+    <td>
+      <div>
+        <p>
+          <strong>Versionierung Laborbefund</strong>
+        </p>
+        <p>
+          Erstellende Systeme bilden die Version des Laborgesamtbefundes über
+          die versionNumber Extension in der Composition ab. Die Kombination aus
+          dieser Version und des gleichbleibenden "Identifikator
+          Laborgesamtbefund" (UUID) ist unabhängig vom FHIR®-Server.
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>MUSS</td>
+    <td>
+      <div>
+        <p>
+          <strong>Anzeige der Laborbefund-Versionen</strong>
+        </p>
+        <p>
+          Das anzeigende System muss die Laborbefund-Versionen vorhalten oder
+          per Abruf (z.B. aus der ePA) verfügbar machen können. Im Kontext
+          klinischer Entscheidungen muss die Befund-Versions-Historie
+          einschließlich der Inhalte lesbar und darstellbar sein.
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>MUSS</td>
+    <td>
+      <div>
+        <p>
+          <strong>Statusangaben im Laborbefund</strong>
+        </p>
+        <p>
+          Der Bearbeitungsprozess des Laborgesamtbefundes wird mit einem
+          Hauptstatus und einem Sekundärstatus dargestellt.
+        </p>
+        <p>
+          "Status Gesamtbefund" ist der <strong>Hauptstatus</strong>, der
+          verpflichtend vergeben werden muss. Die Status-Werte orientieren sich
+          an  HL7 FHIR®, möglich sind:
+        </p>
+        <ul>
+          <li>
+            <p>Registered - Registriert</p>
+          </li>
+          <li>
+            <p>Partial - Nicht vollständig</p>
+          </li>
+          <li>
+            <p>Preliminary - Vorläufig</p>
+          </li>
+          <li>
+            <p>Final - Abgeschlossen</p>
+          </li>
+          <li>
+            <p>Entered in Error - Irrtümliche Eingabe</p>
+          </li>
+          <li>
+            <p>Cancelled - Storniert</p>
+          </li>
+          <li>
+            <p>Amended - Geändert</p>
+          </li>
+          <li>
+            <p>Corrected - Korrigiert</p>
+          </li>
+          <li>
+            <p>Appended - Angefügt</p>
+          </li>
+        </ul>
+        <p>
+          Änderungen am finalen Befund werden über die hier aufgeführten
+          (Haupt)Status "Geändert", "Korrgiert", "Angefügt" abgebildet.
+        </p>
+        <p>
+          Änderungen an vorläufigen oder nicht vollständigen Befunden werden
+          über den <strong>Sekundärstatus</strong> mit den entsprechenden Werten
+          abgebildet, möglich sind:
+        </p>
+        <ul>
+          <li>
+            <p>Geändert</p>
+          </li>
+          <li>
+            <p>Korrigiert</p>
+          </li>
+          <li>
+            <p>Angefügt</p>
+          </li>
+        </ul>
+        <p>
+          Aus "Status Gesamtbefund" und/oder kombiniert mit "Sekundärstatus" ist
+          erkennbar, warum es eine neue Version des Befundes gegeben hat. Beim
+          Versenden einer neuen Befundversion muss der Hauptstatus zweifelsfrei
+          erkennbar sein sowie ggf. ergänzend der Sekundärstatus als
+          Ursache/Veranlassung der neuen Version, um ggf. im empfangenden System
+          zu entscheiden, welche Bereiche aktualisiert werden müssen und ob z.B.
+          auch Notifikationen wie Flags / Kennzeichen ausgelöst werden müssen.
+        </p>
+        <p>
+          <strong>Erläuterungen zur Verwendung von Statuswerten an Beispielen</strong>
+        </p>
+        <ul>
+          <li>
+            <p>
+              (Haupt)Status "Appended": <br />Zusatzinformationen, die keine
+              Änderung des Messergebnisses darstellen<br />
+            </p>
+          </li>
+          <li>
+            <p>
+              (Haupt)Status "Nicht vollständig" + Sekundärstatus "Angefügt":<br />Statt
+              zuvor 5 von 7 Ergebnissen liegen nun 6 von 7 Ergebnissen vor<br />
+            </p>
+          </li>
+          <li>
+            <p>
+              (Haupt)Status "Vorläufig" + Sekundärstatus "Geändert":<br />Präzision
+              (ausgetauschte Formulierung) eines vorherigen Ergebnisses, welches
+              immer noch als vorläufig gilt
+            </p>
+          </li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>KANN</td>
+    <td>
+      <div>
+        <p>
+          <strong>Mapping auf passende LDT-Inhalte</strong>
+        </p>
+        <p>
+          Wenn vorhanden und passend, sind zu einem Element unter Eigenschaften
+          mögliche LDT-Inhalte aufgeführt, die in das Feld hineinpassen und auch
+          übernommen werden könnten. Dies soll als Hilfestellung dienen, falls
+          ggf. in einer Umstellungsphase auf das MIO Laborbefund
+          LDT-Dateninhalte konkreten MIO-Strukturen zugeordnet werden sollen.
+          Aufgrund der strukturellen Unterschiede zwischen LDT und MIO kann in
+          das Informationsmodell kein vollständiges LDT-Mapping eingearbeitet
+          werden.
+        </p>
+        <p>
+          Mapping-Vorschläge für <strong>administrative Strukturen</strong>, die
+          im Informationsmodell mehrfach vorkommen, sind nicht zu den Elementen
+          unter Eigenschaften aufgeführt, sondern werden hier im Hinweis
+          aufgelistet. Dabei ist zu beachten, dass ein reines
+          Feld-zu-Feld-Mapping aufgrund der strukturellen Unterschiede zwischen
+          MIO-Basisstrukturen und LDT nicht immer funktioniert. Sofern logisch
+          möglich, wurden Zuordnungsvorschläge formuliert. 
+        </p>
+        <p>
+          In der folgenden Liste sind Elementen oder Codewerten aus dem
+          Informationsmodell passende Feldkennungen (FK) aus dem LDT3
+          zugeordnet:
+        </p>
+        <p>NAME</p>
+        <ul>
+          <li>
+            <p>Vorsatzwort - FK 3120, Vorsatzwort </p>
+          </li>
+          <li>
+            <p>Namenszusatz - FK 3100, Namenszusatz</p>
+          </li>
+          <li>
+            <p>Titel - FK 3104, Titel</p>
+          </li>
+          <li>
+            <p>Nachname - FK 3101, Nachname</p>
+          </li>
+          <li>
+            <p>Vorname - FK 3102, Vorname</p>
+          </li>
+        </ul>
+        <p>STRASSENANSCHRIFT</p>
+        <ul>
+          <li>
+            <p>Straße - FK 3107, Straße </p>
+          </li>
+          <li>
+            <p>Hausnummer - FK 3109, Hausnummer</p>
+          </li>
+          <li>
+            <p>Anschriftenzusatz - FK 3115, Anschriftenzusatz</p>
+          </li>
+          <li>
+            <p>Postleitzahl - FK 3112, PLZ    </p>
+          </li>
+          <li>
+            <p>Ort - FK 3113, Ort    </p>
+          </li>
+          <li>
+            <p>Land/Wohnsitzländercode - FK 3114, Wohnsitzländercode</p>
+          </li>
+        </ul>
+        <p>POSTFACH</p>
+        <ul>
+          <li>
+            <p>Postfach - FK 3123, Postfach</p>
+          </li>
+          <li>
+            <p>Postleitzahl - FK 3121, PostfachPLZ</p>
+          </li>
+          <li>
+            <p>Ort - FK 3122, PostfachOrt</p>
+          </li>
+          <li>
+            <p>
+              Land/Wohnsitzländercode - FK 3124, PostfachWohnsitzlaendercode
+            </p>
+          </li>
+        </ul>
+        <p>KONTAKTDATEN</p>
+        <ul>
+          <li>
+            <p>Kontaktkanal, Codewert: URL - FK 7334, Webadresse</p>
+          </li>
+          <li>
+            <p>Kontaktkanal, Codewert: E-Mail - FK 7335, E-Mailadresse</p>
+          </li>
+          <li>
+            <p>Kontaktkanal, Codewert: Fax - FK 7333, Faxnummer</p>
+          </li>
+          <li>
+            <p>Kontaktkanal, Codewert: Telefon - FK 7330, Telefonnummer</p>
+          </li>
+          <li>
+            <p>
+              Kontaktkanal, Codewert: Sonstiges - FK 7332, Alternative
+              elektronische Postadresse
+            </p>
+          </li>
+          <li>
+            <p>
+              Kontaktkanal, Codewert: Sonstiges - FK 7340, Spezifizierung der
+              alternativen elektronischen Postadresse
+            </p>
+          </li>
+        </ul>
+        <p>EINRICHTUNG/ORGANISATIONSEINHEIT</p>
+        <ul>
+          <li>
+            <p>Bezeichnung - FK, 7268, Fachrichtung oder Stationskennung</p>
+          </li>
+        </ul>
+        <p>BEHANDELNDE PERSON/EINRICHTUNG</p>
+        <ul>
+          <li>
+            <p>Bezeichnung - FK, 7268, Fachrichtung oder Stationskennung</p>
+          </li>
+        </ul>
+        <p>ROLLE IN BEZUG AUF DIE EINRICHTUNG</p>
+        <ul>
+          <li>
+            <p>
+              Bezeichnung - FK 1252, Funktionsbezeichnung der Person innerhalb
+              der Organisation
+            </p>
+          </li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>KANN</td>
+    <td>
+      <div>
+        <p>
+          <strong>Berücksichtigung von Angaben aus dem Laborauftrag</strong>
+        </p>
+        <p>
+          Es obliegt dem/der befundenden Labormediziner:in, fachliche Angaben
+          aus dem Auftrag zu berücksichtigen und solche, die für die Befundung
+          wichtig sind, zu benennen. Laboraufträge liegen in historisch
+          gewachsenen, teilweise sehr unterschiedlichen Strukturen vor. Für
+          Angaben zur Fragestellung oder Begründung sind beispielsweise folgende
+          Quellen denkbar:
+        </p>
+        <ul>
+          <li>
+            <p>aus Muster 10 die Angaben zur Auftragsdiagnose</p>
+          </li>
+          <li>
+            <p>aus LDT2 die Angaben zur Auftragsdiagnose</p>
+          </li>
+          <li>
+            <p>
+              aus LDT3 die Angaben zur Auftragsdiagnose, zum Anlass der
+              Untersuchung oder zum Veranlassungsgrund
+            </p>
+          </li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>MUSS</td>
+    <td>
+      <div>
+        <p>
+          <strong>Signatur</strong>
+        </p>
+        <p>
+          Bei elektronischen Übertragungswegen, bei denen die Schutzfunktion der
+          TI bzw. der KIM wegfällt, ist ist die qualifizierte elektronische
+          Signatur QES(HBA) erforderlich.
+        </p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<h3 id="profil-elementbezogene-umsetzungsanforderungen">Profil-/Elementbezogene Umsetzungsanforderungen</h3>
+
+<p>“<strong>Profil-/Elementbezogene Umsetzungsanforderungen</strong>” beziehen sich auf einzelne Elemente oder Strukturen und sind an der jeweiligen Stelle im Informationsmodell mit aufgeführt.<br />
+Zur besseren Übersicht werden all diese hier, aufklappbar gruppiert nach Profil, jeweils in Tabellenform gelistet. Bedeutung der Tabellenspalten:</p>
+
+<ul>
+  <li>Pfad Informationsmodell: Referenziert das Element im Informationsmodell</li>
+  <li>FHIR®-Mapping: Referenziert das Element in FHIR®</li>
+  <li>Typ: Benennt die Verbindlichkeit</li>
+  <li>Anforderung: Textformulierung der Anforderung</li>
+</ul>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>MIO Laborbefund (KBV_PR_MIO_LAB_Composition)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>/ MIO Laborbefund / Identifikator</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Composition.html" title="StructureDefinition-KBV-PR-MIO-LAB-Composition">KBV_PR_MIO_LAB_Composition.identifier</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Der Identifikator für den Laborgesamtbefund
+            (DiagnosticReport.identifier:overallLabReport) wird mit identischem
+            Wert als Identifikator für das MIO Laborbefund
+            (Composition.identifier) übernommen.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ MIO Laborbefund / Ergänzende Angaben</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Composition.html" title="StructureDefinition-KBV-PR-MIO-LAB-Composition">KBV_PR_MIO_LAB_Composition.section:annotations.text</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Inhalte von "Ergänzende Angaben"
+            (Composition.section:annotations.text) werden im
+            "Anhang-Laborgesamtbefund" (DiagnosticReport.presentedForm), welcher
+            alle medizinischen Daten inkludiert, mit aufgeführt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ MIO Laborbefund / Referenz auf vorherige Version (informativ)</td>
+      <td></td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Das anzeigende System muss die Laborbefund-Versionen vorhalten oder
+            per Abruf (z.B. aus der ePA) verfügbar machen können. Im Kontext
+            klinischer Entscheidungen muss die Befund-Versions-Historie
+            einschließlich der Inhalte lesbar und darstellbar sein.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ MIO Laborbefund / Referenz auf vorherige Version (informativ)</td>
+      <td></td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Erstellende Systeme bilden die Version des Laborgesamtbefundes über
+            die versionNumber Extension in der Composition ab. Die Kombination
+            aus dieser Version und des gleichbleibenden "Identifikator
+            Laborgesamtbefund" (UUID) ist unabhängig vom FHIR®-Server.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ MIO Laborbefund / Freigabe / Freigabezeitpunkt</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Composition.html" title="StructureDefinition-KBV-PR-MIO-LAB-Composition">KBV_PR_MIO_LAB_Composition.attester.time</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Freigabezeitpunkt soll nach Möglichkeit minutengenau angegeben
+            werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Additiv (KBV_PR_MIO_LAB_Substance)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Additiv / Code/Bezeichnung / Code-Auswahl /
+        Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Substance.html" title="StructureDefinition-KBV-PR-MIO-LAB-Substance">KBV_PR_MIO_LAB_Substance.code.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Behandelnde Person/Einrichtung
+    (KBV_PR_MIO_LAB_PractitionerRole)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Administrative Profile / Behandelnde
+        Person/Einrichtung / Fachrichtung - Code/Bezeichnung / Code-Auswahl /
+        Code aus einem anderen Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-PractitionerRole.html" title="StructureDefinition-KBV-PR-MIO-LAB-PractitionerRole">KBV_PR_MIO_LAB_PractitionerRole.specialty.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Administrative Profile / Behandelnde
+        Person/Einrichtung / Rolle in Bezug auf die Einrichtung -
+        Code/Bezeichnung / Code-Auswahl / Code aus einem anderen Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-PractitionerRole.html" title="StructureDefinition-KBV-PR-MIO-LAB-PractitionerRole">KBV_PR_MIO_LAB_PractitionerRole.code.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Einrichtung/Organisationseinheit
+    (KBV_PR_MIO_LAB_Organization)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Administrative Profile /
+        Einrichtung/Organisationseinheit / Typ - Code/Bezeichnung / Code-Auswahl
+        / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Organization.html" title="StructureDefinition-KBV-PR-MIO-LAB-Organization">KBV_PR_MIO_LAB_Organization.type.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Kontaktperson (KBV_PR_MIO_LAB_RelatedPerson)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Administrative Profile / Kontaktperson /
+        Beziehung - Code/Bezeichnung / Code-Auswahl / Code aus einem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-RelatedPerson.html" title="StructureDefinition-KBV-PR-MIO-LAB-RelatedPerson">KBV_PR_MIO_LAB_RelatedPerson.relationship.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) übermittelt werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Patient:in (KBV_PR_MIO_LAB_Patient)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Administrative Profile / Patient:in /
+        Identifikator / PID
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Patient.html" title="StructureDefinition-KBV-PR-MIO-LAB-Patient">KBV_PR_MIO_LAB_Patient.identifier:pid</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn kein organisationsspezifisches System angegeben wird sollte die
+            PID einer UUID (Universally Unique Identifier) entsprechen, sodass
+            dieser global eindeutig ist. Es sollte in vorgehenden Instanzen
+            überprüft werden, ob bereits eine UUID vergeben worden ist.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Administrative Profile / Patient:in /
+        Klinisches Geschlecht / Zeitraum / von
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Patient.html" title="StructureDefinition-KBV-PR-MIO-LAB-Patient">KBV_PR_MIO_LAB_Patient.extension:sex-for-clinical-use.extension:period.value[x].start</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Beginn des Zeitraums soll nach Möglichkeit minutengenau
+            angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Administrative Profile / Patient:in /
+        Klinisches Geschlecht / Zeitraum / bis
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Patient.html" title="StructureDefinition-KBV-PR-MIO-LAB-Patient">KBV_PR_MIO_LAB_Patient.extension:sex-for-clinical-use.extension:period.value[x].end</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Das Ende des Zeitraums soll nach Möglichkeit minutengenau angegeben
+            werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Außerkörperliche Quelle
+    (KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject,
+    KBV_PR_MIO_LAB_Device_Specimen_Subject)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Außerkörperliche Quelle / Spezifischer Typ -
+        Code/Bezeichnung / Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Subject.html" title="StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Subject">KBV_PR_MIO_LAB_Device_Specimen_Subject.type.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Diagnose (KBV_PR_MIO_LAB_Condition_Diagnosis)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Diagnose / Code/Bezeichnung / Code-Auswahl /
+        Code aus einem anderen Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.html" title="StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis">KBV_PR_MIO_LAB_Condition_Diagnosis.code.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Körperstruktur (KBV_PR_MIO_LAB_BodyStructure)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Körperstruktur / Lateralität Code/Bezeichnung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-BodyStructure.html" title="StructureDefinition-KBV-PR-MIO-LAB-BodyStructure">KBV_PR_MIO_LAB_BodyStructure.extension:includedStructure.extension:laterality</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Da die Codes "links", "rechts" und "bilateral" sowohl am
+            Datenelement "Lateralität" als auch bei "Lokalisation" angegeben
+            werden können, soll ein verwendendes System die Datenfelder
+            "Lateralität" und "Lokalisation" eindeutig unterscheiden und
+            benennen, damit die Seitenangaben im jeweils korrekten Kontext
+            dargestellt werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Körperstruktur / Lokalisation Code/Bezeichnung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-BodyStructure.html" title="StructureDefinition-KBV-PR-MIO-LAB-BodyStructure">KBV_PR_MIO_LAB_BodyStructure.extension:includedStructure.extension:qualifier</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Da die Codes "links", "rechts" und "bilateral" sowohl am
+            Datenelement "Lateralität" als auch bei "Lokalisation" angegeben
+            werden können, soll ein verwendendes System die Datenfelder
+            "Lateralität" und "Lokalisation" eindeutig unterscheiden und
+            benennen, damit die Seitenangaben im jeweils korrekten Kontext
+            dargestellt werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Laboranalysegerät
+    (KBV_PR_MIO_LAB_Device_Laboratory_Analyzer)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboranalysegerät / Spezifischer Typ -
+        Code/Bezeichnung / Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Device-Laboratory-Analyzer.html" title="StructureDefinition-KBV-PR-MIO-LAB-Device-Laboratory-Analyzer">KBV_PR_MIO_LAB_Device_Laboratory_Analyzer.type.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Laborauftrag-Informationen
+    (KBV_PR_MIO_LAB_ServiceRequest)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborauftrag-Informationen / Auftragszeitpunkt
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-ServiceRequest.html" title="StructureDefinition-KBV-PR-MIO-LAB-ServiceRequest">KBV_PR_MIO_LAB_ServiceRequest.authoredOn</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Laborauftragszeitpunkt soll nach Möglichkeit minutengenau
+            angegeben werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborauftrag-Informationen / Dringlichkeit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-ServiceRequest.html" title="StructureDefinition-KBV-PR-MIO-LAB-ServiceRequest">KBV_PR_MIO_LAB_ServiceRequest.priority</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der LDT sieht für eine gegebene Dringlichkeit nur zwei Status vor
+            (01 Eilig; 02 Notfall/intraoperativ), ein nicht angegebener
+            Dringlichkeitswert ist gleichbedeutend mit Routine.
+          </p>
+          <p>
+            Im MIO-FHIR®-Format gibt es für die Dringlichkeitsangabe vier
+            mögliche Werte. Um die Dringlichkeitsangabe von LDT auf FHIR® zu
+            übertragen, gibt es folgendes Mapping:
+          </p>
+          <ul>
+            <li>
+              <p>"keine Dringlichkeit" entspricht "routine"</p>
+            </li>
+            <li>
+              <p>"01 Eilig" entspricht "urgent"</p>
+            </li>
+            <li>
+              <p>"02 Notfall/intraoperativ" entspricht "stat"</p>
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Laborgesamtbefund
+    (KBV_PR_MIO_LAB_DiagnosticReport)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Kennzeichen
+        Pseudonymisierter Befund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report.html" title="StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report">KBV_EX_MIO_LAB_Pseudonymized_Report</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:pseudonymizedReport</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Der Fixwert = true (Boolean) zeigt an, dass des sich um einen
+            pseudonymisierten Befund handelt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Kennzeichen
+        Pseudonymisierter Befund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report.html" title="StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report">KBV_EX_MIO_LAB_Pseudonymized_Report</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:pseudonymizedReport</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn eine einsendende Praxis den Laborbefund in pseudonymisierter
+            Form übermittelt, ist die Minimalangabe ein Identifikator anstelle
+            des korrekten amtlichen Namens.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Kennzeichen
+        Pseudonymisierter Befund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report.html" title="StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report">KBV_EX_MIO_LAB_Pseudonymized_Report</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:pseudonymizedReport</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Um die korrekte Zuordnung von Richtgrenzen und die Beurteilung zu
+            ermöglichen, sollten bei pseudonymisierten Laborbefunden Angaben zum
+            Alter und zum klinisch relevanten Geschlecht gemacht werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Kennzeichen
+        Pseudonymisierter Befund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report.html" title="StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report">KBV_EX_MIO_LAB_Pseudonymized_Report</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:pseudonymizedReport</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Das Pseudonymisierungskennzeichen kann bei der Steuerung der
+            Übermittlungswege und für die technische Validierung genutzt werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Identifikator
+        Laborgesamtbefund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.identifier:overallLabReport</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Der Identifikator für den Laborgesamtbefund
+            (DiagnosticReport.identifier:overallLabReport) wird mit identischem
+            Wert als Identifikator für das MIO Laborbefund
+            (Composition.identifier) übernommen.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Identifikator
+        Laborgesamtbefund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.identifier:overallLabReport</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Der einmal erzeugte "Indentifikator Laborgesamtbefund"
+            (DiagnosticReport.identifier:overallLabReport =
+            Composition.identifier) bleibt über den gesamten Workflow der
+            Abarbeitung des Laborauftrags unverändert, also auch bei Änderungen
+            der Befundversion (Composition.meta.versionId) und bei Übermittlung
+            durch Systeme hindurch..
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Identifikator
+        Laborgesamtbefund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.identifier:overallLabReport</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Das Befund-empfangende System kann anhand des "Identifikator
+            Laborgesamtbefund" (DiagnosticReport.identifier:overallLabReport)
+            und des Zeitstempels der Befund-Erstellung (DiagnosticReport.issued)
+            dem/der NutzerIn den aktuellen Befund präsentieren.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Identifikator
+        Laborgesamtbefund / UUID
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.identifier:overallLabReport.value</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Erzeugung der (pseudo-)zufälligen Version 4 der UUID gemäß Standard
+            nach ISO/IEC 9834-8:2014 Information technology — Procedures for the
+            operation of object identifier registration authorities — Part 8:
+            Generation of universally unique identifiers (UUIDs) and their use
+            in object identifiers:
+            <a href="https://www.iso.org/standard/62795.html" rel="noopener noreferrer">
+              https://www.iso.org/standard/62795.html
+            </a>
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laborgesamtbefund / Status Gesamtbefund</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.status</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Im Fall einer identifizierten Patientverwechselung muss der
+            Hauptstatus="Irrtümliche Eingabe" gesetzt werden, dies darf nie als
+            Änderung versendet werden!
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Sekundärstatus
+        Gesamtbefund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:secondaryStatus.value[x]</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Im Rahmen einer Stufendiagnostik oder laborseitig veranlassten
+            weiteren Messung, mit Bezug auf einen bereits bestehenden
+            Laborauftrag, soll der Änderungsstatus "Angefügt" verwendet werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Sekundärstatus
+        Gesamtbefund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:secondaryStatus.value[x]</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn ein Ergebniswert gegenüber der Vorversion geändert wurde, also
+            ein korrigiertes Messergebnis vorliegt, soll dies in der Anzeige
+            deutlich hervorgehoben werden, z.B. im Primärsystem als
+            Notifikation.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laborgesamtbefund / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn auf Gesamtbefundebene das gesamte Probenmaterial referenziert
+            wird, so ist dies redundant zu den Probenreferenzen der
+            Einzeluntersuchungen.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laborgesamtbefund / Probe / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es sich bei dieser Probe um eine Sekundärprobe handelt, dann
+            ist das Ausgangsmaterial verpflichtend anzugeben, damit der Bezug
+            hergestellt werden kann.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laborgesamtbefund / Probe / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es sich bei dieser Probe um eine Primärprobe handelt, ist das
+            Element Ausgangsmaterial als Unterknoten (Reference parent) nicht
+            erlaubt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Ergebnisse / Sortiernummer
+        Gruppe
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number.html" title="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number">KBV_EX_MIO_LAB_Sorting_Number</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.result.extension:sortingNumberGroup</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die mit dem FHIR®-Datenstrom mitgegebenen Sortiernummern für die
+            Untersuchungsgruppen sind als Standardsortierung konzipiert.
+            Empfangende Primärsysteme müssen diese Sortierung lesen und
+            darstellen können.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Ergebnisse / Sortiernummer
+        Gruppe
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number.html" title="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number">KBV_EX_MIO_LAB_Sorting_Number</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.result.extension:sortingNumberGroup</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Befund-erstellende Einrichtung legt die (Standard-)Sortierung
+            der Untersuchungsgruppen innerhalb des Gesamtbefundes fest.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Ergebnisse / Sortiernummer
+        Gruppe
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number.html" title="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number">KBV_EX_MIO_LAB_Sorting_Number</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.result.extension:sortingNumberGroup</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Zusätzlich zur Standardsortierung können Primärsysteme Funktionen
+            anbieten, die den Anwendern interaktive Veränderungen der Sortierung
+            erlauben.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Kennzeichen Kritischer
+        Befund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:criticalResult</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Ein Befund mit gesetztem Kennzeichen "Kritischer Befund" soll beim
+            Empfang in einem Primärsystem hervorgehoben erkennbar sein und mit
+            Priorität zur Kenntnisnahme gebracht werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Kennzeichen Kritischer
+        Befund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:criticalResult</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Die Kenntnisnahme eines Befundes mit gesetztem Kennzeichen
+            "Kritischer Befund" soll mit einer aktiven Rückmeldung an das Labor
+            versehen werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Kennzeichen Kritischer
+        Befund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:criticalResult</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Der Fixwert = true (Boolean) zeigt an, dass es sich um einen
+            kritischen Befund handelt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Kennzeichen Kritischer
+        Befund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.extension:criticalResult</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Das Kennzeichen Kritischer Befund wird durch die Befund-erstellende
+            Person manuell gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Ergänzende Dokumente
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.media</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Inhalte von "Ergänzende Dokumente" (DiagnosticReport.media) werden
+            im "Anhang-Laborgesamtbefund" (DiagnosticReport.presentedForm),
+            welcher alle medizinischen Daten inkludiert, mit aufgeführt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Anhang-Laborgesamtbefund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.presentedForm</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            "Anhang-Laborgesamtbefund" (PresentedForm) ist ein exportierbares,
+            auch druckbares Format (z.B. PDF) vom Laborgesamtbefund, inklusive
+            aller medizinischen Daten. Dazu gehören auch die Inhalte von
+            "Ergänzende Angaben" und angehängte "Ergänzende Dokumente" (z.B.
+            noch nicht strukturiert darstellbarer Ergebnisse)
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Anhang-Laborgesamtbefund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.presentedForm</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn der gesamte Laborbefund zusätzlich als Anhang übermittelt wird,
+            ist für dessen Authentizität, inhaltliche Übereinstimmung und
+            Widerspruchsfreiheit zu inhaltlichen Daten im MIO das Labor
+            verantwortlich, also der Erzeuger des MIO.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laborgesamtbefund / Anhang-Laborgesamtbefund
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" title="StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport">KBV_PR_MIO_LAB_DiagnosticReport.presentedForm</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der "Anhang-Laborgesamtbefund" (DiagnosticReport.presentedForm)
+            gewährt das Mitführen eines gewohnten Abbildes des Gesamtbefundes
+            mit Dokumentencharakter.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Laboruntersuchungsgruppe
+    (KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchungsgruppe / Fachliches
+        Gruppierungsmerkmal Auswahl
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group">KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group.category</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Inhalte aus Untersuchungsgruppe\Fachliches Gruppierungsmerkmal
+            Auswahl werden, inhaltlich identisch, zusätzlich als jeweilige
+            Kategorie der Einzeluntersuchung (Laboruntersuchung\Fachliches
+            Gruppierungsmerkmal Auswahl) übernommen. Die Inhalte aus der
+            Untersuchungsgruppe sind diesbezüglich führend.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchungsgruppe / Fachliches
+        Gruppierungsmerkmal Auswahl / Labormedizinischer Bereich
+        Code/Bezeichnung / Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group">KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group.category:studyType.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchungsgruppe / Fachliches
+        Gruppierungsmerkmal Auswahl / Test-Profil Code/Bezeichnung /
+        Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group">KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group.category:testProfile.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchungsgruppe / Referenz auf
+        Laboruntersuchung / Sortiernummer Laboruntersuchung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number.html" title="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number">KBV_EX_MIO_LAB_Sorting_Number</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group">KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group.hasMember.extension:sortingNumberResult</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die mit dem FHIR®-Datenstrom mitgegebenen Sortiernummern für die
+            Laborergebnisse innerhalb einer Untersuchungsgruppe sind als
+            Standardsortierung konzipiert.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchungsgruppe / Referenz auf
+        Laboruntersuchung / Sortiernummer Laboruntersuchung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number.html" title="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number">KBV_EX_MIO_LAB_Sorting_Number</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group">KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group.hasMember.extension:sortingNumberResult</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Befund-erstellende Einrichtung legt die (Standard-)Sortierung
+            der Laborergebnisse innerhalb der Untersuchungsgruppe fest.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchungsgruppe / Referenz auf
+        Laboruntersuchung / Sortiernummer Laboruntersuchung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number.html" title="StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number">KBV_EX_MIO_LAB_Sorting_Number</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group">KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group.hasMember.extension:sortingNumberResult</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Zusätzlich zur Standardsortierung können Primärsysteme Funktionen
+            anbieten, die den Anwendern interaktive Veränderungen der Sortierung
+            erlauben.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchungsgruppe / Interpretation
+        Untersuchungsgruppe Code/Bezeichnung / Code-Auswahl / Code aus anderem
+        Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group">KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group.interpretation.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchungsgruppe /
+        Untersuchungsbild-Anhang (informativ) / Untersuchungsbild-Anhang
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment">KBV_PR_MIO_LAB_Observation_Image_Attachment</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Abbildung darf nur im Kontext mit den gruppierten
+            Messergebnissen ausgewertet und interpretiert werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Laboruntersuchung
+    (KBV_PR_MIO_LAB_Observation_Laboratory_Study)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / GTIN-Code</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.identifier:GTIN</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Labore haben die Option, einzelne Laboruntersuchungen präziser und
+            eindeutiger zu spezifizieren, indem zusätzlich zur Spezifikation
+            (mittels LOINC®-Code in Observation_Laboratory_Study.code.coding,
+            ggf. Observation_Laboratory_Study.method,
+            Observation_Laboratory_Study.specimen) eine GTIN migegeben wird.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / GTIN-Code</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.identifier:GTIN</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Bezüglich GTIN-Vergabe wird das Vorgehen nach folgenden Regeln
+            empfohlen:
+          </p>
+          <ul>
+            <li>
+              <p>
+                Spezifische GTINs von Laboranalysegerät oder Probenbehälter-Typ
+                sind in der jeweiligen Ressource einzutragen
+              </p>
+            </li>
+            <li>
+              <p>
+                Laboranalysegerät/UDI oder Probenbehälter-Typ/UDI sind zu
+                prüfen, ob die passende GTIN enthalten ist; falls existent, dann
+                in Laboruntersuchung/GTIN zu übernehmen.
+              </p>
+            </li>
+            <li>
+              <p>
+                GTINs, die nicht einer dieser Ressourcen zuzuordnen sind, sind
+                direkt im Datenelement Laboruntersuchung/GTIN unterzubringen.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / GTIN-Code</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.identifier:GTIN</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>Zu einer Laboruntersuchung soll es nur eine GTIN geben.</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / GTIN-Code</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.identifier:GTIN</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Die GTIN ist Teil der UDI-DI. Sie wird als 14-stelliger Code
+            abgefragt, einschließlich Prüfziffer, die von EUDAMED zur
+            Validierung des UDI-DI-Codes gebraucht wird. Wenn der GTIN-Code
+            weniger als 14 Ziffern hat (einschließlich Prüfziffer), müssen beim
+            Ausfüllen des EUDAMED-Feldes die führenden Nullen hinzugefügt
+            werden. In Deutschland und weltweit ist die GTIN in der Regel
+            13-stellig, in den USA 12-stellig (auch bekannt als UPC). Für kleine
+            Artikel, auf denen die lange Nummer nicht untergebracht werden kann,
+            stellt GS1 unter bestimmten Voraussetzungen eine 8-stellige Nummer
+            zur Verfügung. Es gibt sogar 14-stellige Versionen, welche aber
+            ebenfalls auf Basis der 13-stelligen GTIN Nummer gebildet werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Fachliches
+        Gruppierungsmerkmal Auswahl
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.category</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Inhalte aus Untersuchungsgruppe\Fachliches Gruppierungsmerkmal
+            Auswahl (Observation_Laboratory_Study_Group.category) werden,
+            inhaltlich identisch, zusätzlich als jeweilige Kategorie der
+            Einzeluntersuchung Laboruntersuchung\Fachliches Gruppierungsmerkmal
+            Auswahl (KBV_PR_MIO_LAB_Observation_Laboratory_Study.category)
+            übernommen. Die Inhalte aus der Untersuchungsgruppe sind
+            diesbezüglich führend.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Fachliches
+        Gruppierungsmerkmal Auswahl / Labormedizinischer Bereich
+        Code/Bezeichnung / Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.category:studyType.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Fachliches
+        Gruppierungsmerkmal Auswahl / Test-Profil Code/Bezeichnung /
+        Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.category:testProfile.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Zugrunde liegende
+        Messungen
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.derivedFrom</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Auf die Messungen, aus denen die Berechnung abgeleitet wurde, kann
+            verwiesen werden
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Spezifikation
+        Laboruntersuchung / Laboruntersuchung Code/Bezeichnung / LOINC®-Code
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.code.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der LOINC®-Katalog wurde noch nicht vollständig ins Deutsche
+            übersetzt. Wir empfehlen als Anzeigenamen, sofern vorhanden, den
+            deutschen Anzeigenamen aus der LOINC® Linguistic Variants DE
+            (enthalten in den Accesory-Files der LOINC®-Version) zu verwenden.
+            Ansonsten ist die Befüllung durch den Long Common Name aus der
+            allgemeinen LOINC®-Datenbank zu verwenden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Spezifikation
+        Laboruntersuchung / Laboruntersuchung Code/Bezeichnung / LOINC®-Code
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.code.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Das BfArM hat einen Anwendungsleitfaden für die Kodierung der
+            Labordaten in der ePA veröffentlicht (Quelle:
+            <a href="https://www.bfarm.de/DE/Kodiersysteme/News/LOINC_Publikation_Anwendungsleitfaden_1_0_0.html" rel="noopener noreferrer">
+              https://www.bfarm.de/DE/Kodiersysteme/News/LOINC_Publikation_Anwendungsleitfaden_1_0_0.html
+            </a>
+            ). Zu beachten sind die enthaltenen Regeln und Hinweise zur Auswahl
+            von LOINC®-Termen, um eine einheitliche Verwendung von LOINC® zu
+            unterstützen.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Spezifikation
+        Laboruntersuchung / Laboruntersuchung Code/Bezeichnung / LOINC®-Code
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.code.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Als Anzeigename soll der Long Common Name (LCN) des LOINC®-Codes
+            mitgegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Spezifikation
+        Laboruntersuchung / Laboruntersuchung Code/Bezeichnung / Grund für das
+        Nichtvorhandensein eines LOINC®-Codes
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.code.extension:data-absent-reason</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es zur übermittelten Laboruntersuchung
+            (Observation.code.coding) keinen LOINC®-Code gibt, dann muss ein
+            DataAbsentReason angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Spezifikation
+        Laboruntersuchung / Untersuchungsmethode, ergänzende Spezifizierung
+        Code/Bezeichnung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.method</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Das BfArM hat einen Anwendungsleitfaden für die Kodierung der
+            Labordaten in der ePA veröffentlicht (Quelle:
+            <a href="https://www.bfarm.de/DE/Kodiersysteme/News/LOINC_Publikation_Anwendungsleitfaden_1_0_0.html" rel="noopener noreferrer">
+              https://www.bfarm.de/DE/Kodiersysteme/News/LOINC_Publikation_Anwendungsleitfaden_1_0_0.html
+            </a>
+            ). Zu beachten sind die enthaltenen Regeln und Hinweise zur
+            Verwendung von ergänzenden Angaben zur Untersuchungsmethode.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Spezifikation
+        Laboruntersuchung / Untersuchungsmethode, ergänzende Spezifizierung
+        Code/Bezeichnung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.method</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Die übergeordnete Beschreibung der Untersuchungsmethode ist als Teil
+            eines LOINC®-Terms darstellbar (LOINC®-Achse METHOD). Die ergänzende
+            Angabe der Untersuchungsmethode mittels SNOMED CT®-Code wird
+            angestrebt, wenn die LOINC®-Achse METHOD gar keine Information
+            enthält oder aber die LOINC®-Angabe nicht genau genug ist.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Spezifikation
+        Laboruntersuchung / Untersuchungsmethode, ergänzende Spezifizierung
+        Code/Bezeichnung / Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.method.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Fremdleistung /
+        Kennzeichen Fremdleistung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-External-Service.html" title="StructureDefinition-KBV-EX-MIO-LAB-External-Service">KBV_EX_MIO_LAB_External_Service</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:externalService</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn die Fremdleistung gekennzeichnet werden muss, dann wird der
+            Fixwert "true" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Kennzeichen Akkreditierte
+        Laboruntersuchung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-Accredited-Service.html" title="StructureDefinition-KBV-EX-MIO-LAB-Accredited-Service">KBV_EX_MIO_LAB_Accredited_Service</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:accreditedService</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Dieses Kennzeichen wird von akkreditierten Laboren verwendet.
+            Kennzeichen = "true" steht für akkreditierte Laboruntersuchung.
+            Kennzeichen = "false" steht für nicht akkreditierte
+            Laboruntersuchung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Durchführendes Labor
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.performer</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn eine Laboruntersuchung als Fremdleistung oder als
+            Verbundleistung (Kennzeichen = true) durchgeführt wird, muss das die
+            Untersuchung durchführende sekundäre Labor als durchführendes Labor
+            (Observation.performer) dokumentiert werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Verpflichtung zur Angabe der Probe ist vom Anwendungsfall
+            abhängig: Bei einer messenden Laboruntersuchung muss eine Probe
+            zugeordnet sein. Falls eine Berechnung vorliegt, so wird hier keine
+            Probe angegeben. Stattdessen können die Berechnungsgrundlagen unter
+            "Zugrunde liegende Messung" referenziert werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / Probe / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es sich bei dieser Probe um eine Sekundärprobe handelt, dann
+            ist das Ausgangsmaterial verpflichtend anzugeben, damit der Bezug
+            hergestellt werden kann.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / Probe / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es sich bei dieser Probe um eine Primärprobe handelt, ist das
+            Element Ausgangsmaterial als Unterknoten (Reference parent) nicht
+            erlaubt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Klinischer Bezugszeitpunkt
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.effective[x]</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Eine Laboruntersuchung bezieht sich eindeutig auf ein
+            Probenmaterial, zu dem (1.) der Entnahmezeitpunkt bekannt sein
+            sollte/kann und (2.) der Laboreingangszeitpunkt bekannt sein muss.
+          </p>
+          <p>
+            Verbindliche Regel zur Ableitung des klinischen Bezugszeitpunkts:
+          </p>
+          <ul>
+            <li>
+              <p>
+                WENN der Entnahmezeitpunkt des Probenmaterials angeben ist, so
+                gilt der Entnahmezeitpunkt;
+              </p>
+            </li>
+            <li>
+              <p>
+                WENN der Sammelzeitraum, bis angegeben ist, so gilt der
+                bis-Zeitpunkt;
+              </p>
+            </li>
+            <li>
+              <p>
+                SONST gilt der Zeitpunkt des Eingangs der Probe im Labor
+                (Probeneingangszeitpunkt).
+              </p>
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Klinischer Bezugszeitpunkt
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.effective[x]</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>Verwendung des klinischen Bezugszeitpunkts:</p>
+          <ul>
+            <li>
+              <p>
+                Mögliche Ableitung als Zeitpunkt, zu dem die gemessene
+                Eigenschaft im Probenmaterial (z.B. Konzentration des Analyts)
+                mutmaßlich der Eigenschaft im Patienten entsprach
+              </p>
+            </li>
+            <li>
+              <p>Vergleichszeitpunkt im Rahmen der Forschung</p>
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / Messergebnis</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x]</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Angabe eines Messergebnisses ist gefordert. Wenn kein
+            Messergebnis zur Verfügung steht, muss in der FHIR® Struktur ein "
+            dataAbsentReason " angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Kennzeichen "Nicht-linearer Referenzbereich"
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-No-Linear-Reference-Range.html" title="StructureDefinition-KBV-EX-MIO-LAB-No-Linear-Reference-Range">KBV_EX_MIO_LAB_No_Linear_Reference_Range</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.extension:noLinearReferenceRange</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn das Kennzeichen verwendet wird, soll es vom messenden Labor
+            gesetzt werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Kennzeichen "Nicht-linearer Referenzbereich"
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-No-Linear-Reference-Range.html" title="StructureDefinition-KBV-EX-MIO-LAB-No-Linear-Reference-Range">KBV_EX_MIO_LAB_No_Linear_Reference_Range</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.extension:noLinearReferenceRange</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Bei der Befund-Darstellung sollen zu einem quantitativen
+            Messergebnis keine linear erscheinenden Referenzbereiche dargestellt
+            werden, wenn das Kennzeichen gesetzt ist, also beispielsweise keine
+            Balkendiagramme. Anhand des Kennzeichens können Anwendungssysteme
+            den Sachverhalt erkennen und passend anzeigen.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Kennzeichen "Nicht-linearer Referenzbereich"
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-No-Linear-Reference-Range.html" title="StructureDefinition-KBV-EX-MIO-LAB-No-Linear-Reference-Range">KBV_EX_MIO_LAB_No_Linear_Reference_Range</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.extension:noLinearReferenceRange</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn das Kennzeichen "Nicht-linearer Referenzbereich" gesetzt wird,
+            ist der Fixwert "true".
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Quantität / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueQuantity.comparator</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn ein Ergebnis ungleich einem Wert ist, wird der Komparator mit
+            dem Ergebnis angezeigt. Ist das Ergebnis gleich dem Wert, bleibt der
+            Komparator leer.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Quantität / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueQuantity.comparator</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Es kann in der Anzeige/Oberfläche ein '=' verwendet werden, wenn der
+            Wert (Element 'value') exakt ist und der Komparator leer bleibt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Quantität / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueQuantity.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueQuantity.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueQuantity.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Quantität / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueQuantity.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueQuantity.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueQuantity.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Ratio / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x]:valueRatio.numerator.comparator</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn ein Ergebnis ungleich einem Wert ist, wird der Komparator mit
+            dem Ergebnis angezeigt. Ist das Ergebnis gleich dem Wert, bleibt der
+            Komparator leer.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Ratio / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x]:valueRatio.numerator.comparator</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Es kann in der Anzeige/Oberfläche ein '=' verwendet werden, wenn der
+            Wert (Element 'value') exakt ist und der Komparator leer bleibt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Ratio / Zähler Ergebniswert
+        Quantität / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.numerator.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.numerator.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.numerator.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Ratio / Zähler Ergebniswert
+        Quantität / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.numerator.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.numerator.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.numerator.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Ratio / Nenner Ergebniswert
+        Quantität / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.denominator.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.denominator.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.denominator.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebniswert Ratio / Nenner Ergebniswert
+        Quantität / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.denominator.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.denominator.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRatio.denominator.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebnisbereich
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x]:valueRange</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>Die Einheit von Obergrenze und Untergrenze muss identisch sein.</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebnisbereich / Obergrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.high.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.high.unit</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.high.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebnisbereich / Obergrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.high.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.high.unit</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.high.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebnisbereich / Untergrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.low.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.low.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.low.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis quantitativ / Ergebnisbereich / Untergrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.low.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.low.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x].valueRange.low.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Messergebnis qualitativ Code/Bezeichnung / Ergebnis Code-Auswahl / Code
+        aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x]:valueCodeableConcept.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis /
+        Textergebnis
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.value[x]:valueString</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Freitext-Resultate, für die keine codierten Werte vorgesehen sind,
+            werden in das FHIR®-Element *Observation.value[x]:valueString
+            geschrieben.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis / Begründung
+        Nicht-Verfügbarkeit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.dataAbsentReason</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn kein Messergebnis zur Verfügung steht, muss in der
+            FHIR®-Struktur ein "dataAbsentReason" angegeben sein.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis / Begründung
+        Nicht-Verfügbarkeit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.dataAbsentReason</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Inhalt des "dataAbsentReason" soll der System-anwendenden Person
+            angezeigt werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen /
+        Richtgrenzen-Typ Code/Bezeichnung / Code-Auswahl / Code aus anderem
+        Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.type.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen /
+        Kollektiv-Bezug Code/Bezeichnung / Code-Auswahl / Code aus einem
+        Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.appliesTo.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen / Obere
+        Richtgrenze
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.high</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es eine Obergrenze und eine Untergrenze gibt, muss die Einheit
+            von beiden identisch sein.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen / Obere
+        Richtgrenze
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.high</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Es muss mindestens eine obere oder eine untere Referenzgrenze
+            angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen / Obere
+        Richtgrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.high.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.high.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.high.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen / Obere
+        Richtgrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.high.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.high.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.high.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen / Untere
+        Richtgrenze
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.low</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es eine Obergrenze und eine Untergrenze gibt, muss die Einheit
+            von beiden identisch sein.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen / Untere
+        Richtgrenze
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.low</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Es muss mindestens eine obere oder eine untere Referenzgrenze
+            angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen / Untere
+        Richtgrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.low.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.low.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.low.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Richtgrenzen / Untere
+        Richtgrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.low.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.low.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.referenceRange.low.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / zlog-Wert</td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-zlog.html" title="StructureDefinition-KBV-EX-MIO-LAB-zlog">KBV_EX_MIO_LAB_zlog</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:zlogValue</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Mit Kenntnis der Untergrenze (UG) und Obergrenze (OG) des
+            Referenzintervalls, wird der zlog-Wert zum Laborergebnis (x) mit
+            folgender Gleichung berechnet:
+          </p>
+          <p>zlog = (log(x) –(log(UG)+log(OG))/2)*3,92/(log(OG)–log(UG))</p>
+          <p>
+            Das Referenzintervall des zlog-Wertes liegt methoden
+            <u> un </u>
+            abhängig stets zwischen – 1,96 und + 1,96.
+            <br />
+            Stark erniedrigte oder erhöhte Laborergebnisse führen zu zlog-Werten
+            um – 5 bzw. + 5.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Laboruntersuchung / zlog-Wert</td>
+      <td>
+        <a href="StructureDefinition-KBV-EX-MIO-LAB-zlog.html" title="StructureDefinition-KBV-EX-MIO-LAB-zlog">KBV_EX_MIO_LAB_zlog</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:zlogValue</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Ein hoher Nutzen bei der fachlichen Anwendung des zlog-Wertes liegt
+            in der optischen vergleichenden Farb-Darstellung von mehreren
+            Laborergebnissen aus ggf. unterschiedlichen Quellen. Zur optischen
+            Darstellung des zlog-Wertes wird mit Rücksicht auf Personen mit
+            Rot-Grün-Schwäche eine Farbskala empfohlen, die zum Beispiel von
+            Blau für stark erniedrigt (zlog=–10) über Weiß (zlog=0) bis Orange
+            (zlog=+10) reicht. Weitere Empfehlungen dazu enthält der Fachartikel
+            "Der zlog-Wert als Basis für die Standardisierung von Laborwerten"
+            2017 (Georg Hoffmann, Frank Klawonn, Ralf Lichtinghagen, Matthias
+            Orth),
+            <em> LaboratoriumsMedizin </em>
+            , vol. 41, no. 1, 2017, pp. 23-32.
+            <a href="https://doi.org/10.1515/labmed-2016-0087" rel="noopener noreferrer">
+              https://doi.org/10.1515/labmed-2016-0087
+            </a>
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Quantität mit Alternativeinheit / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueQuantity.comparator</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn ein Ergebnis ungleich einem Wert ist, wird der Komparator mit
+            dem Ergebnis angezeigt. Ist das Ergebnis gleich dem Wert, bleibt der
+            Komparator leer.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Quantität mit Alternativeinheit / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueQuantity.comparator</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Es kann in der Anzeige/Oberfläche ein '=' verwendet werden, wenn der
+            Wert (Element 'value') exakt ist und der Komparator leer bleibt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Quantität mit Alternativeinheit / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueQuantity.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueQuantity.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueQuantity.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Quantität mit Alternativeinheit / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueQuantity.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueQuantity.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueQuantity.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Ratio mit Alternativeinheit / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.numerator.comparator</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn ein Ergebnis ungleich einem Wert ist, wird der Komparator mit
+            dem Ergebnis angezeigt. Ist das Ergebnis gleich dem Wert, bleibt der
+            Komparator leer.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Ratio mit Alternativeinheit / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.numerator.comparator</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Es kann in der Anzeige/Oberfläche ein '=' verwendet werden, wenn der
+            Wert (Element 'value') exakt ist und der Komparator leer bleibt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Ratio mit Alternativeinheit / Zähler Ergebniswert Quantität
+        / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.numerator.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.numerator.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.numerator.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Ratio mit Alternativeinheit / Zähler Ergebniswert Quantität
+        / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.numerator.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.numerator.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.numerator.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Ratio mit Alternativeinheit / Nenner Ergebniswert Quantität
+        / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.denominator.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.denominator.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.denominator.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebniswert Ratio mit Alternativeinheit / Nenner Ergebniswert Quantität
+        / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.denominator.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.denominator.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRatio.denominator.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebnisbereich mit Alternativeinheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>Die Einheit von Obergrenze und Untergrenze muss identisch sein.</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebnisbereich mit Alternativeinheit / Obergrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.high.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.high.ssystem</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.high.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebnisbereich mit Alternativeinheit / Obergrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.high.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.high.ssystem</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.high.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebnisbereich mit Alternativeinheit / Untergrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.low.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.low.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.low.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Messergebnis quantitativ mit Alternativeinheit /
+        Ergebnisbereich mit Alternativeinheit / Untergrenze / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.low.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.low.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:value.value[x]:valueRange.low.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Richtgrenzen für Alternativeinheit / Obere
+        Richtgrenze für Alternativeinheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].high</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es eine Obergrenze und eine Untergrenze gibt, muss die Einheit
+            von beiden identisch sein.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Richtgrenzen für Alternativeinheit / Obere
+        Richtgrenze für Alternativeinheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].high</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Es muss mindestens eine obere oder eine untere Referenzgrenze
+            angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Richtgrenzen für Alternativeinheit / Obere
+        Richtgrenze für Alternativeinheit / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].high.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].high.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].high.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Richtgrenzen für Alternativeinheit / Obere
+        Richtgrenze für Alternativeinheit / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].high.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].high.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].high.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Richtgrenzen für Alternativeinheit / Untere
+        Richtgrenze für Alternativeinheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].low</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es eine Obergrenze und eine Untergrenze gibt, muss die Einheit
+            von beiden identisch sein.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Richtgrenzen für Alternativeinheit / Untere
+        Richtgrenze für Alternativeinheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].low</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Es muss mindestens eine obere oder eine untere Referenzgrenze
+            angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Richtgrenzen für Alternativeinheit / Untere
+        Richtgrenze für Alternativeinheit / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].low.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].low.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].low.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird auf
+            die UCUM-Defaultmaßeinheit "1" gesetzt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / Richtgrenzen für Alternativeinheit / Untere
+        Richtgrenze für Alternativeinheit / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].low.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].low.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:referenceRange.value[x].low.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / zlog-Wert basierend auf Ergebnis mit
+        Alternativeinheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:zlog</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Mit Kenntnis der Untergrenze (UG) und Obergrenze (OG) des
+            Referenzintervalls, wird der zlog-Wert zum Laborergebnis (x) mit
+            folgender Gleichung berechnet:
+          </p>
+          <p>zlog = (log(x) –(log(UG)+log(OG))/2)*3,92/(log(OG)–log(UG))</p>
+          <p>
+            Das Referenzintervall des zlog-Wertes liegt methoden
+            <u> un </u>
+            abhängig stets zwischen – 1,96 und + 1,96.
+            <br />
+            Stark erniedrigte oder erhöhte Laborergebnisse führen zu zlog-Werten
+            um – 5 bzw. + 5.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / zlog-Wert basierend auf Ergebnis mit
+        Alternativeinheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:zlog</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Ein hoher Nutzen bei der fachlichen Anwendung des zlog-Wertes liegt
+            in der optischen vergleichenden Farb-Darstellung von mehreren
+            Laborergebnissen aus ggf. unterschiedlichen Quellen. Zur optischen
+            Darstellung des zlog-Wertes wird mit Rücksicht auf Personen mit
+            Rot-Grün-Schwäche eine Farbskala empfohlen, die zum Beispiel von
+            Blau für stark erniedrigt (zlog=–10) über Weiß (zlog=0) bis Orange
+            (zlog=+10) reicht. Weitere Empfehlungen dazu enthält der Fachartikel
+            "Der zlog-Wert als Basis für die Standardisierung von Laborwerten"
+            2017 (Georg Hoffmann, Frank Klawonn, Ralf Lichtinghagen, Matthias
+            Orth),
+            <em> LaboratoriumsMedizin </em>
+            , vol. 41, no. 1, 2017, pp. 23-32.
+            <a href="https://doi.org/10.1515/labmed-2016-0087" rel="noopener noreferrer">
+              https://doi.org/10.1515/labmed-2016-0087
+            </a>
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Messergebnis mit
+        Alternativeinheit / zlog-Wert basierend auf Ergebnis mit
+        Alternativeinheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.extension:alternativeResult.<br />extension:zlog</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            WENN ein quantitatives Messergebnis mit Alternativeinheit existiert
+            UND für das primäre quantitative Messergebnis ein zlog-Wert
+            berechnet wurde, soll die entsprechende zlog-Berechnung auch für das
+            Ergebnis Alternativeinheit erfolgen.
+          </p>
+          <p>
+            Ein Nutzen liegt in der Qualitätskontrolle: beide zlog-Werte sollten
+            (nahezu) gleich sein (ungeachtet eventueller Rundungen im höhren
+            Nachkommabereich).
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Interpretation
+        Laboruntersuchung Code/Bezeichnung / Code-Auswahl / Code aus anderem
+        Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study">KBV_PR_MIO_LAB_Observation_Laboratory_Study.interpretation.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Laboruntersuchung / Untersuchungsbild-Anhang
+        (informativ) / Untersuchungsbild-Anhang
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment">KBV_PR_MIO_LAB_Observation_Image_Attachment</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Abbildung darf nur im Kontext mit den gruppierten
+            Messergebnissen ausgewertet und interpretiert werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Medizinische Freigabe
+    (KBV_PR_MIO_LAB_Provenance)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Medizinische Freigabe / Medizinischer
+        Freigabezeitpunkt
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Provenance.html" title="StructureDefinition-KBV-PR-MIO-LAB-Provenance">KBV_PR_MIO_LAB_Provenance.occurred[x]</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Freigabezeitpunkt soll nach Möglichkeit minutengenau angegeben
+            werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary><span class="arrow">▶</span>Probe (KBV_PR_MIO_LAB_Specimen)</summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es sich bei dieser Probe um eine Sekundärprobe handelt, dann
+            ist das Ausgangsmaterial verpflichtend anzugeben, damit der Bezug
+            hergestellt werden kann.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es sich bei dieser Probe um eine Primärprobe handelt, ist das
+            Element Ausgangsmaterial als Unterknoten (Reference parent) nicht
+            erlaubt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe / Ausgangsmaterial</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.parent</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Identifikationsregel für ein empfangendes System: "Wenn
+            Ausgangsmaterial vorhanden ist, dann handelt es sich um eine
+            Sekundärprobe".
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe / Ausgangsmaterial / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es sich bei dieser Probe um eine Sekundärprobe handelt, dann
+            ist das Ausgangsmaterial verpflichtend anzugeben, damit der Bezug
+            hergestellt werden kann.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe / Ausgangsmaterial / Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Wenn es sich bei dieser Probe um eine Primärprobe handelt, ist das
+            Element Ausgangsmaterial als Unterknoten (Reference parent) nicht
+            erlaubt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe / Identifikator Probe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.identifier</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Die Labordatenkommunikation über LDT3 kennt nur den einen
+            Identifikator für die Probe FK 7364 Probengefäß-Ident (alnum),
+            weshalb beim Mapping von LDT3 auf MIO-Elemente empfohlen wird, den
+            Inhalt dieses Feldes in das MIO-Element "Identifikator Probe" mit
+            Typ "Order Placer" (KBV_PR_MIO_LAB_Specimen.identifier, Type "order
+            placer") zu übertragen.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probenart, ergänzende Spezifizierung
+        Code/Bezeichnung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.type</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Das BfArM hat einen Anwendungsleitfaden für die Kodierung der
+            Labordaten in der ePA veröffentlicht (Quelle:
+            <a href="https://www.bfarm.de/DE/Kodiersysteme/News/LOINC_Publikation_Anwendungsleitfaden_1_0_0.html" rel="noopener noreferrer">
+              https://www.bfarm.de/DE/Kodiersysteme/News/LOINC_Publikation_Anwendungsleitfaden_1_0_0.html
+            </a>
+            ). Zu beachten sind die enthaltenen Regeln und Hinweise zur
+            Verwendung von ergänzenden Angaben zum verwendeten Probenmaterial.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probenart, ergänzende Spezifizierung
+        Code/Bezeichnung
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.type</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Die übergeordnete Beschreibung des Probenmaterials ist als Teil
+            eines LOINC®-Terms darstellbar (LOINC®-Achse SYSTEM). Die ergänzende
+            Angabe der Probenart mittels SNOMED CT®-Code ist dann erforderlich,
+            wenn in der LOINC®-Achse SYSTEM ein Platzhalter verwendet wird, oder
+            die LOINC®-Angabe nicht genau genug ist.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probenart, ergänzende Spezifizierung
+        Code/Bezeichnung / Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.type.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe / Probeneingangszeitpunkt</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.receivedTime</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Probeneingangszeitpunkt soll nach Möglichkeit minutengenau
+            angegeben werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe / Probengewinnung / Zeitangabe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.collected[x]</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Zeitangabe für die Probengewinnung ist entweder ein konkreter
+            Zeitpunkt oder ein konkreter Zeitraum.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe / Probengewinnung / Zeitangabe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.collected[x]</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Alternativ oder zusätzlich (zum Zeitpunkt/Zeitraum) kann eine
+            Zeitdauer (Quantität mit zeitbezogener UCUM-Einheit) angegeben
+            werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probengewinnung / Zeitangabe /
+        Zeitpunkt
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.collected[x]:collectedDateTime</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Zeitpunkt der Probengewinnung soll nach Möglichkeit minutengenau
+            angegeben werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probengewinnung / Zeitangabe /
+        Zeitraum / von
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.collected[x]:collectedPeriod.start</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Beginn des Zeitraums soll nach Möglichkeit minutengenau
+            angegeben werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probengewinnung / Zeitangabe /
+        Zeitraum / bis
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.collected[x]:collectedPeriod.end</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Das Ende des Zeitraums soll nach Möglichkeit minutengenau angegeben
+            werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probengewinnung / Zeitangabe / Dauer /
+        Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.duration.comparator</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn eine Dauer ungleich einem Wert ist, wird der Komparator mit dem
+            Wert angezeigt.
+            <br />
+            Ist die Dauer gleich dem Wert, bleibt der Komparator leer.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probengewinnung / Zeitangabe / Dauer /
+        Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.duration.comparator</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Es kann in der Anzeige/Oberfläche ein '=' verwendet werden, wenn der
+            Wert (Element 'value') exakt ist und der Komparator leer bleibt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probengewinnung / Methode
+        Probengewinnung Code/Bezeichnung / Code-Auswahl / Code aus anderem
+        Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.method.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probengewinnung / Nüchternstatus /
+        Dauer / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.fastingStatus[x]:fastingStatusDuration.comparator</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn eine Dauer ungleich einem Wert ist, wird der Komparator mit dem
+            Wert angezeigt.
+            <br />
+            Ist die Dauer gleich dem Wert, bleibt der Komparator leer.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probengewinnung / Nüchternstatus /
+        Dauer / Komparator
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.collection.fastingStatus[x]:fastingStatusDuration.comparator</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Es kann in der Anzeige/Oberfläche ein '=' verwendet werden, wenn der
+            Wert (Element 'value') exakt ist und der Komparator leer bleibt.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probenverarbeitung / Methode
+        Code/Bezeichnung / Code Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.processing.procedure.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Probe / Probenverarbeitung / Zeitangabe</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.processing.time[x]</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die (optionale) Zeitangabe für die Probenverarbeitung ist entweder
+            ein konkreter Zeitpunkt oder ein konkreter Zeitraum.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probenverarbeitung / Zeitangabe /
+        Zeitpunkt
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.processing.time[x]:timeDateTime</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Zeitpunkt der Probenverarbeitung soll nach Möglichkeit
+            minutengenau angegeben werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probenverarbeitung / Zeitangabe /
+        Zeitraum / von
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.processing.time[x]:timePeriod.start</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Der Beginn des Zeitraums soll nach Möglichkeit minutengenau
+            angegeben werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Probenverarbeitung / Zeitangabe /
+        Zeitraum / bis
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.processing.time[x]:timePeriod.end</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Das Ende des Zeitraums soll nach Möglichkeit minutengenau angegeben
+            werden, die Mindestangabe ist tagesgenau.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Angaben zum Probenbehälter / Menge der
+        Probe im Behälter / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.container.specimenQuantity.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.container.specimenQuantity.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.container.specimenQuantity.unit</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Für die Konstellation, dass gar keine Einheit gesetzt ist, wird hier
+            der Wert 1 vergeben.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probe / Angaben zum Probenbehälter / Menge der
+        Probe im Behälter / Einheit
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.container.specimenQuantity.code</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.container.specimenQuantity.system</a><br /><a href="StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" title="StructureDefinition-KBV-PR-MIO-LAB-Specimen">KBV_PR_MIO_LAB_Specimen.container.specimenQuantity.unit</a>
+      </td>
+      <td>KANN</td>
+      <td>
+        <div>
+          <p>
+            Gängige Symbole und/oder Bezeichnungen, die (noch) nicht durch UCUM
+            definiert sind, können UCUM-konform mit der Default-Einheit 1
+            codiert werden. Dazu wird valueQuantity.code = 1 gesetzt und
+            valueQuantity.unit enthält die Benennung.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Probenbehälter
+    (KBV_PR_MIO_LAB_Device_Specimen_Container,
+    KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probenbehälter / Identifikator Probenbehälter
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Container.html" title="StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Container">KBV_PR_MIO_LAB_Device_Specimen_Container.identifier</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Auch Teilmengen des Untersuchungsmaterials müssen eindeutig einem/r
+            Patient:in zuzuordnen sein.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Probenbehälter / Spezifischer Typ -
+        Code/Bezeichnung / Code-Auswahl / Code aus anderem Codesystem
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Container.html" title="StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Container">KBV_PR_MIO_LAB_Device_Specimen_Container.type.coding</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Hier sollte zusätzlich zum Code auch das Codesystem, die Version des
+            Codesystems und der Anzeigename (Display Name) angegeben werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+<hr />
+
+<details>
+  <summary>
+    <span class="arrow">▶</span>Untersuchungsbild-Anhang
+    (KBV_PR_MIO_LAB_Observation_Image_Attachment)
+  </summary>
+  <table class="requirements">
+    <tr>
+      <td>Pfad Informationsmodell</td>
+      <td>FHIR-Mapping</td>
+      <td>Typ</td>
+      <td>Anforderung</td>
+    </tr>
+    <tr>
+      <td>/ Referenzierte Profile / Untersuchungsbild-Anhang</td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment">KBV_PR_MIO_LAB_Observation_Image_Attachment</a>
+      </td>
+      <td>MUSS</td>
+      <td>
+        <div>
+          <p>
+            Die Abbildung darf nur im Kontext mit den gruppierten
+            Messergebnissen ausgewertet und interpretiert werden.
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        / Referenzierte Profile / Untersuchungsbild-Anhang / Status
+        Untersuchungsbild-Anhang
+      </td>
+      <td>
+        <a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" title="StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment">KBV_PR_MIO_LAB_Observation_Image_Attachment.status</a>
+      </td>
+      <td>SOLL</td>
+      <td>
+        <div>
+          <p>
+            Wenn es für die Erstellung / Erzeugung des Bildes keinen zu
+            dokumentierenden Prozess gibt, dann wird der Status "final"
+            verwendet.
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</details>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jun 15, 2026 16:45+0200">2026-06-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

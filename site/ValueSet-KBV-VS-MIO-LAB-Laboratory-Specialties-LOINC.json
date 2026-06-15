@@ -1,0 +1,195 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC</b></p><a name=\"KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC\"> </a><a name=\"hcKBV-VS-MIO-LAB-Laboratory-Specialties-LOINC\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is explicitly stated to be 2.82\"> version &#x1F4CD;2.82</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"https://loinc.org/18717-9/\">18717-9</a></td><td>Blood bank studies (set)</td><td>Blutbank-Untersuchungen</td></tr><tr><td><a href=\"https://loinc.org/18718-7/\">18718-7</a></td><td>Cell marker studies (set)</td><td>Zellmarkerdiagnostik</td></tr><tr><td><a href=\"https://loinc.org/18719-5/\">18719-5</a></td><td>Chemistry studies (set)</td><td>Klinische Chemie</td></tr><tr><td><a href=\"https://loinc.org/18720-3/\">18720-3</a></td><td>Coagulation studies (set)</td><td>Gerinnungsdiagnostik</td></tr><tr><td><a href=\"https://loinc.org/18721-1/\">18721-1</a></td><td>Therapeutic drug monitoring studies (set)</td><td>Therapeutische Arzneimittelüberwachung</td></tr><tr><td><a href=\"https://loinc.org/18722-9/\">18722-9</a></td><td>Fertility studies (set)</td><td>Fertilitätsdiagnostik</td></tr><tr><td><a href=\"https://loinc.org/18723-7/\">18723-7</a></td><td>Hematology studies (set)</td><td>Hämatologie</td></tr><tr><td><a href=\"https://loinc.org/18724-5/\">18724-5</a></td><td>HLA studies (set)</td><td>HLA-Diagnostik</td></tr><tr><td><a href=\"https://loinc.org/18725-2/\">18725-2</a></td><td>Microbiology studies (set)</td><td>Mikrobiologie</td></tr><tr><td><a href=\"https://loinc.org/18727-8/\">18727-8</a></td><td>Serology studies (set)</td><td>Serologie</td></tr><tr><td><a href=\"https://loinc.org/18728-6/\">18728-6</a></td><td>Toxicology studies (set)</td><td>Toxikologie</td></tr><tr><td><a href=\"https://loinc.org/18729-4/\">18729-4</a></td><td>Urinalysis studies (set)</td><td>Urindiagnostik</td></tr><tr><td><a href=\"https://loinc.org/18767-4/\">18767-4</a></td><td>Blood gas studies (set)</td><td>Blutgasanalytik</td></tr><tr><td><a href=\"https://loinc.org/18768-2/\">18768-2</a></td><td>Cell counts+Differential studies (set)</td><td>Zellzählungen und Zelldifferenzierung</td></tr><tr><td><a href=\"https://loinc.org/18769-0/\">18769-0</a></td><td>Microbial susceptibility tests Set</td><td>Mikrobielle Empfindlichkeitstests</td></tr><tr><td><a href=\"https://loinc.org/26435-8/\">26435-8</a></td><td>Molecular pathology studies (set)</td><td>Molekularpathologie</td></tr><tr><td><a href=\"https://loinc.org/26436-6/\">26436-6</a></td><td>Laboratory studies (set)</td><td>Laboruntersuchungen</td></tr><tr><td><a href=\"https://loinc.org/26437-4/\">26437-4</a></td><td>Chemistry challenge studies (set)</td><td>Funktionstests</td></tr><tr><td><a href=\"https://loinc.org/26438-2/\">26438-2</a></td><td>Cytology studies (set)</td><td>Zytologie</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC",
+  "title" : "Laborbereich LOINC®",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-06-15T16:45:57+02:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Laborbereich LOINC®.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "immutable" : false,
+  "copyright" : "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.82",
+      "concept" : [{
+        "code" : "18717-9",
+        "display" : "Blood bank studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Blutbank-Untersuchungen"
+        }]
+      },
+      {
+        "code" : "18718-7",
+        "display" : "Cell marker studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Zellmarkerdiagnostik"
+        }]
+      },
+      {
+        "code" : "18719-5",
+        "display" : "Chemistry studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Klinische Chemie"
+        }]
+      },
+      {
+        "code" : "18720-3",
+        "display" : "Coagulation studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Gerinnungsdiagnostik"
+        }]
+      },
+      {
+        "code" : "18721-1",
+        "display" : "Therapeutic drug monitoring studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Therapeutische Arzneimittelüberwachung"
+        }]
+      },
+      {
+        "code" : "18722-9",
+        "display" : "Fertility studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Fertilitätsdiagnostik"
+        }]
+      },
+      {
+        "code" : "18723-7",
+        "display" : "Hematology studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Hämatologie"
+        }]
+      },
+      {
+        "code" : "18724-5",
+        "display" : "HLA studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "HLA-Diagnostik"
+        }]
+      },
+      {
+        "code" : "18725-2",
+        "display" : "Microbiology studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Mikrobiologie"
+        }]
+      },
+      {
+        "code" : "18727-8",
+        "display" : "Serology studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Serologie"
+        }]
+      },
+      {
+        "code" : "18728-6",
+        "display" : "Toxicology studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Toxikologie"
+        }]
+      },
+      {
+        "code" : "18729-4",
+        "display" : "Urinalysis studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Urindiagnostik"
+        }]
+      },
+      {
+        "code" : "18767-4",
+        "display" : "Blood gas studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Blutgasanalytik"
+        }]
+      },
+      {
+        "code" : "18768-2",
+        "display" : "Cell counts+Differential studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Zellzählungen und Zelldifferenzierung"
+        }]
+      },
+      {
+        "code" : "18769-0",
+        "display" : "Microbial susceptibility tests Set",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Mikrobielle Empfindlichkeitstests"
+        }]
+      },
+      {
+        "code" : "26435-8",
+        "display" : "Molecular pathology studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Molekularpathologie"
+        }]
+      },
+      {
+        "code" : "26436-6",
+        "display" : "Laboratory studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Laboruntersuchungen"
+        }]
+      },
+      {
+        "code" : "26437-4",
+        "display" : "Chemistry challenge studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Funktionstests"
+        }]
+      },
+      {
+        "code" : "26438-2",
+        "display" : "Cytology studies (set)",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Zytologie"
+        }]
+      }]
+    }]
+  }
+}

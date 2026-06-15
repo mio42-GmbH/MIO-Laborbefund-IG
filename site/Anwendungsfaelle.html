@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Anwendungsfälle - MIO Laborbefund v1.0.0-update</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+<link href="assets/css/requirement-view.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/mio-labbefund-headline.png') no-repeat;
+        background-size: 98%;
+        background-position: -65px -5px;
+    }
+</style>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="70" alt="Home" src="assets/images/mio42-logo.svg"/>
+
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Grundlagen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Fachliche_Einordnung_und_Nutzen.html">Fachliche Einordnung und Nutzen</a>
+      </li>
+      <li>
+        <a href="Rechtlicher_Rahmen.html">Rechtlicher Rahmen</a>
+      </li>
+      <li>
+        <a href="Stakeholder.html">Stakeholder</a>
+      </li>
+      <li>
+        <a href="Vorarbeiten.html">Vorarbeiten</a>
+      </li>
+      <li>
+        <a href="Prozessanalyse.html">Prozessanalyse</a>
+      </li>
+      <li>
+        <a href="Bedarfsanalyse.html">Bedarfsanalyse</a>
+      </li>
+      <li>
+        <a href="Grundlagen_zur_Terminologienutzung.html">Grundlagen zur Terminologienutzung</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Anwendungsfaelle.html">Anwendungsfälle</a>
+  </li>
+  <li>
+    <a href="infomodell.html">Informationsmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+  <li>
+    <a href="requirements.html">Umsetzungsanforderungen</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">UX-Visualisierungen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="UX-_UI-Ueberblick.html">UX-/UI-Überblick</a>
+      </li>
+      <li>
+        <a href="Einzelbefunddarstellung_in_der_Primaersystemansicht.html">Einzelbefunddarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Kumulativdarstellung_in_der_Primaersystemansicht.html">Kumulativdarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Moegliche_Primaersysteminteraktionen_mit_der_ePA.html">Mögliche Primärsysteminteraktionen mit der ePA</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Feedback.html">Feedback</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Über
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="expansion_parameters.html">Expansion Parameter</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+MIO Laborbefund
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-update - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Anwendungsfälle</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
+  <h2>Anwendungsfälle</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+  <p>Seiteninhalt:</p>
+
+<ul id="markdown-toc">
+  <li><a href="#strukturierten-laborbefund-erstellen" id="markdown-toc-strukturierten-laborbefund-erstellen">Strukturierten Laborbefund erstellen</a></li>
+  <li><a href="#bermittlung-des-strukturierten-laborbefundes-an-den-einsender" id="markdown-toc-bermittlung-des-strukturierten-laborbefundes-an-den-einsender">Übermittlung des strukturierten Laborbefundes an den Einsender</a></li>
+  <li><a href="#empfangen-und-verarbeiten-eines-bermittelten-strukturierten-laborbefundes-beim-einsender" id="markdown-toc-empfangen-und-verarbeiten-eines-bermittelten-strukturierten-laborbefundes-beim-einsender">Empfangen und Verarbeiten eines übermittelten strukturierten Laborbefundes beim Einsender</a></li>
+  <li><a href="#einstellen-eines-strukturierten-laborbefundes-in-die-epa" id="markdown-toc-einstellen-eines-strukturierten-laborbefundes-in-die-epa">Einstellen eines strukturierten Laborbefundes in die ePA</a></li>
+  <li><a href="#aktualisieren-eines-laborbefundes-in-der-epa" id="markdown-toc-aktualisieren-eines-laborbefundes-in-der-epa">Aktualisieren eines Laborbefundes in der ePA</a></li>
+  <li><a href="#suche-und-herunterladen-von-laborbefunden-in-der-epa" id="markdown-toc-suche-und-herunterladen-von-laborbefunden-in-der-epa">Suche und Herunterladen von Laborbefunden in der ePA</a></li>
+  <li><a href="#anzeige-eines-strukturierten-laborbefundes" id="markdown-toc-anzeige-eines-strukturierten-laborbefundes">Anzeige eines strukturierten Laborbefundes</a></li>
+  <li><a href="#anzeige-von-laborbefunden-in-kumulativdarstellungen" id="markdown-toc-anzeige-von-laborbefunden-in-kumulativdarstellungen">Anzeige von Laborbefunden in Kumulativdarstellungen</a></li>
+  <li><a href="#anzeige-eines-laborbefunds-als-pdf" id="markdown-toc-anzeige-eines-laborbefunds-als-pdf">Anzeige eines Laborbefunds als PDF</a></li>
+  <li><a href="#ausleitung-pseudonymisierter-labordaten-an-das-forschungsdatenzentrum" id="markdown-toc-ausleitung-pseudonymisierter-labordaten-an-das-forschungsdatenzentrum">Ausleitung pseudonymisierter Labordaten an das Forschungsdatenzentrum</a></li>
+</ul>
+
+</div>
+
+<div class="confluence-content">
+
+  <p>Im Folgenden werden die Anwendungsfälle des MIO Laborbefund beschrieben, die nach jetzigem Stand mit dem Roll out der Stufe 1 des dgLP umgesetzt werden sollen.</p>
+
+  <h3 id="strukturierten-laborbefund-erstellen">Strukturierten Laborbefund erstellen</h3>
+
+  <p>Die organisatorischen Prozesse zum Erstellen eines Laborbefunds in einem Labor/einer Versorgungseinrichtung sollen sich durch die Einführung des MIO Laborbefund nicht wesentlich ändern. Um die mit dem MIO angestrebte semantische Harmonisierung von Laborbefunden zu erreichen, müssen die Labore bzw. die Einrichtungen, die Laborbefunde erzeugen, bereits im Vorfeld beginnen, ihre Leistungskataloge auf LOINC® zu mappen (zur Unterstützung dieses Prozesses siehe Umsetzungshilfen → Codierunterstützung). Im laufenden Betrieb müssen dann die Untersuchungs- und Befundergebnisse entsprechend der standardisierten Kodierungen (LOINC®, UCUM®, SNOMED-CT®) hinterlegt werden. Das jeweils genutzte Primärsystem (meist LIS) muss befähigt sein, aus den gesammelten Informationen zur Laboruntersuchung einen digitalen Laborbefund im FHIR®-Format gemäß der MIO-Spezifikation erzeugen. Um die Versorgungskontinuität insbesondere zu Beginn der MIO-Einführung sicherzustellen, muss das MIO neben den strukurierten Informationen auch einen Gesamtlaborbefund in Form eines eingebetteten PDF/A-Dokuments enthalten.</p>
+
+  <p>Beteiligte Primärsysteme: Laborinformationssysteme, Krankenhausinformationssysteme, Praxisverwaltungssysteme (soweit sie Funktionen zur Dokumentation von Laboruntersuchungen enthalten)</p>
+
+  <h3 id="bermittlung-des-strukturierten-laborbefundes-an-den-einsender">Übermittlung des strukturierten Laborbefundes an den Einsender</h3>
+
+  <p>Laborbefunde sind ab dem Roll out des MIO Laborbefund vom Labor mindestens auch im spezifikationskonformen FHIR®-Format an die beauftragende Einrichtung (Einsender) zu übermitteln. Der technische Übermittlungsweg obliegt dabei wie bisher der individuellen Vereinbarung zwischen Einsender und Labor und wird nicht vorgegeben. Damit kann das MIO beispielsweise als Payload per Order Entry oder als Anhang einer KIM-Nachricht bereitgestellt werden. Aktuell ist keine stichtagsbezogene Umstellung des Übermittlungsformats von den bisher verwendeten Formaten zum FHIR®-Format vorgegeben. Bis zur flächendeckend gegebenen Interoperabilität der Systeme auf Sende- und Empfangsseite bleiben die bestehenden Austauschformate (insb. LDT, HL7 v2) gültig und dürfen weiter genutzt werden.</p>
+
+  <p>Beteiligte Primärsysteme: Laborinformationssysteme, Krankenhausinformationssysteme, Praxisverwaltungssysteme</p>
+
+  <h3 id="empfangen-und-verarbeiten-eines-bermittelten-strukturierten-laborbefundes-beim-einsender">Empfangen und Verarbeiten eines übermittelten strukturierten Laborbefundes beim Einsender</h3>
+
+  <p>Praxisverwaltungssysteme und Krankenhausinformationssysteme müssen befähigt werden, FHIR®-strukturierte Laborbefunde zu empfangen und zu verarbeiten. Dabei müssen sie die Weiterleitung an andere Leistungserbringer und das Einstellen in die ePA unterstützen. Weiterhin müssen sie die Inhalte des Befundes in der Einrichtung zur Anzeige bringen können. Die Anwender:innen sollen mindestens die selben Funktionalitäten nutzen können, die das System für die Verarbeitung und Anzeige aktueller Laborbefunde vorhält.</p>
+
+  <p>Beteiligte Primärsysteme: Krankenhausinformationssysteme, Praxisverwaltungssysteme</p>
+
+  <h3 id="einstellen-eines-strukturierten-laborbefundes-in-die-epa">Einstellen eines strukturierten Laborbefundes in die ePA</h3>
+
+  <p>Von den Laboren im spezifikationskonformen FHIR®-Format übermittelte Laborbefunde sollen durch die Einsendenden in die ePA eingestellt werden. Die Funktion zum Einstellen soll den typischen Arbeitsfluss der Behandelnden möglichst nicht behindern und zugleich die Möglichkeit bieten, per Voreinstellung wählen zu können, ob Laborbefunde bei bestimmten Arbeitsschritten automatisiert durch das System in die ePA hochgeladen werden sollen. Dabei ist jedoch sowohl die Widerspruchsmöglichkeit der Versicherten als auch die ggf. medizinische Notwendigkeit einer vorherigen ärztlichen Besprechung des Befundes mit dem/der Versicherten zu berücksichtigen. Im stationären Kontext sollen während des Entlassmanagements und technisch unterstützt durch das Krankenhausinformationssystem die für die Dokumentation und Nachbehandlung relevante Befunde ausgewählt und in einem Arbeitsschritt durch das System hochgeladen werden können. Auch hier ist das Widerspruchsrecht des Versicherten zum Einstellen in die ePA zu wahren. Ergebnisse genetischer Untersuchungen oder Analysen im Sinne des Gendiagnostikgesetzes sollen durch das Primärsystem nur nach ausdrücklicher Einwilligung des/der Versicherten in die ePA hochgeladen werden.</p>
+
+  <p>Das unmittelbare Einstellen von Laborbefunden durch Laboreinrichtungen ist aufgrund fehlender regulatorischer und technischer Rahmenbedingungen zum Roll out der ersten Version des MIO Laborbefund noch nicht möglich, perspektivisch aber weiter vorgesehen.</p>
+
+  <p>Beteiligte Primärsysteme: Krankenhausinformationssysteme, Praxisverwaltungssysteme</p>
+
+  <h3 id="aktualisieren-eines-laborbefundes-in-der-epa">Aktualisieren eines Laborbefundes in der ePA</h3>
+
+  <p>Initiitert durch eine Ergänzung oder Korrektur ist ein überarbeiteter Laborbefund erneut in die ePA einzustellen. Die Anwender sollen durch ihr Primärsystem dahingehend unterstützt werden, dass erkannt wird, wenn ein soeben aktualisierter Laborbefund zuvor bereits in die ePA hochgeladen wurde, um auch die aktuelle Fassung zügig bereitzustellen. Das ePA-Aktensystem erkennt anhand der eindeutigen Identifikationsnummer, dass dieser Laborbefund bereits in die ePA hochgeladen wurde und stellt den Befund als neue Version ein. Das ePA-Aktensystem hält die Vorversionen aktualisierter Laborbefunde weiterhin abrufbar vor.</p>
+
+  <p>Beteiligte Primärsysteme: Krankenhausinformationssysteme, Praxisverwaltungssysteme</p>
+
+  <h3 id="suche-und-herunterladen-von-laborbefunden-in-der-epa">Suche und Herunterladen von Laborbefunden in der ePA</h3>
+
+  <p>Mithilfe von Services und Schnittstellen der ePA wird es Primärsystemen ermöglicht, eine Volltextsuche anzubieten. Damit können die Inhalte einer ePA mittels Stichwörtern durchsucht werden; unabhängig davon, ob es sich dabei um ein PDF/A-Dokument oder um FHIR®-strukturierte Daten handelt. Darüber hinaus wird für FHIR®-strukturierte Laborbefunde eine qualifizierte Suche nach Inhalten in dedizierten Datenfeldern ermöglicht. Damit können beispielsweise alle Laboruntersuchungen gefunden werden, die innerhalb des definierten Zeitraums durchgeführt wurden und Untersuchungsergebnisse eines bestimmten Laborparameters (z. B. Leukozythen) enthalten oder als kritisch gekennzeichnet wurden. Die Suche soll iterativ verfeinert werden können. Nach erfolgreicher Selektion können die Anwender:innen die zur Trefferliste gehörenden Laborbefunde in ihr Primärsystem zur weiteren Nutzung herunterladen.</p>
+
+  <p>Der lesende Zugriff von Laborinformationssystemen auf die ePA ist perspektivisch vorgesehen, um hieraus bspw. den Vorteil zugänglicher Voruntersuchungen zur qualitätsgesicherten Interpretation der aktuell zu befundenen Untersuchung zu ziehen. Hierzu bedarf es jedoch noch der Anpassung regulatorischer und technischer Rahmenbedingungen.</p>
+
+  <p>Beteiligte Primärsysteme: Krankenhausinformationssysteme, Praxisverwaltungssysteme</p>
+
+  <h3 id="anzeige-eines-strukturierten-laborbefundes">Anzeige eines strukturierten Laborbefundes</h3>
+
+  <p>FHIR®-strukturierte Laborbefunde ermöglichen ärztlichen Primärsystemen eine auf die Anwender abgestimmte und durch diese konfigurierbare Detailansicht eines Laborbefunds. Dafür können bspw. hierarchische Ansichten mit “Ausklappfunktion” genutzt werden. Die Fülle möglicher Informationen stellt zugleich eine Herausforderung dar. Den Anwender:innen muss es möglich sein, die relevanten Informationen schnell zu erfassen und zugleich unmittelbaren Zugriff auf weitere wichtige Detailinformationen zu erlangen. Eine beispielhafte Umsetzung einer Einzelbefunddarstellung haben wir <a href="./Einzelbefunddarstellung_in_der_Primaersystemansicht.html">hier</a> bereitgestellt. Praxisverwaltungssysteme und Krankenhausinformationssysteme bieten in aller Regel bereits Darstellungen strukturierter Laborbefunde an, die an den Bedarfen der Versorgenden ausgerichtet ist. Insoweit werden deshalb auch keine neuen Anforderungen an die dedizierte Darstellung von Laborbefunden gestellt sondern die nahtlose Integration der FHIR-strukturierten Laborbefunde in diese Ansichten. Damit sollten die gewohnten Ansichten erhalten bleiben und ggf. um zusätzliche Informationen ergänzt werden.</p>
+
+  <p>Enthält das MO Anhänge mit Zusatzinformationen, wie bspw. Diagramme oder zusätzliche Befundanteile aus Spezialbereichen (z. B. Genetik, Pathologie), die noch nicht in strukturierter Form vorliegen, muss dies für die Anwender ersichtlich und zur Anzeige auswählbar sein. Gleiches gilt für den als PDF/A-Dokument regelhaft mitzuliefernden Gesamtlaborbefund (in der FHIR®-Struktur eingebettete Darstellung als presented form).</p>
+
+  <p>Soweit es sich bei dem angezeigten Laborbefund um die Vorversion eines geänderten Laborbefunds handelt, muss in der Darstellung durch das Primärsystem ein deutlicher Warnhinweis gezeigt werden, dass eine aktualisierte Version existiert.</p>
+
+  <p>Beteiligte Primärsysteme: Krankenhausinformationssysteme, Praxisverwaltungssysteme</p>
+
+  <h3 id="anzeige-von-laborbefunden-in-kumulativdarstellungen">Anzeige von Laborbefunden in Kumulativdarstellungen</h3>
+
+  <p>Zur Beurteilung von Krankheitsverläufen und Therapieerfolgen ist die Darstellung der Ergebnisse gleicher Laboruntersuchungen (Analyten), die zu unterschiedlichen Zeitpunkten bestimmt wurden, von essenzieller Bedeutung. Derzeit sind Verlaufs- bzw. Kumulativdarstellungen meist nur aus Daten mehrerer Laborbefunde möglich, wennn diese aus der gleichen Laboreinrichtung stammen. Durch die angestrebte semantische Harmonisierung strukturierter Laborbefunde können zukünftig auch Labor-Fremdbefunde in Kumulativdarstellungen einbezogen werden, was insbesondere bei der Behandlung chronisch erkrankter Patienten, die im zeitlichen Verlauf oder parallel in unterschiedlichen Einrichtungen in Behandlung sind, eine verbesserte Informationslage ermöglicht. Grundlage dafür ist, dass Labor ihre Laboruntersuchungen mit dem LOINC®-Code versehen, der dieser Untersuchung in ihrem Leistungskatalog zugeordnet wurde. Dieses LOINC®-Mapping der Leistungskataloge sollte bereits im Vorfeld der MIO-Einführung starten (s. a. <a href="./Grundlagen_zur_Terminologienutzung.html#untersttzungsleistungen-zur-loinc-einfhrung">Unterstützungsleistungen zur LOINC®-Einführung</a>). Dies ist als Voraussetzung anzusehen, damit zum Roll out zumindest die relevantesten Untersuchungen über den LOINC®-Code flächendeckend als vergleichbar identifiziert werden können und einrichtungsübergreifende Kumulativdarstellungen überhaupt erstellt werden können.</p>
+
+  <p>Während die ePA für diesen Anwendungsfall die Datenpunkte bereitstellt, erfolgt die integrative Darstellung durch die Primärsysteme. Untersuchungsergebnisse aus Laborbefunden der ePA, die nicht LOINC®-kodiert wurden oder ausschließlich im PDF/A-Format vorliegen, können nicht in Kumulativdarstellungen verarbeitet werden. Diese können nur als Einzelbefund gesichtet werden.</p>
+
+  <p>Beteiligte Primärsysteme: Krankenhausinformationssysteme, Praxisverwaltungssysteme</p>
+
+  <h3 id="anzeige-eines-laborbefunds-als-pdf">Anzeige eines Laborbefunds als PDF</h3>
+
+  <p>Auch nach Einführung des MIO Laborbefund kann es erforderlich sein, einen an sich im FHIR®-strukturierten Format vorliegenden Laborbefund als PDF/A-Dokument anzeigen zu lassen. Zum einen wird es Nutzergruppen (z. B. Pflegedienste) geben, deren Primärsysteme zum Zeitpunkt des Roll outs noch nicht verpflichtet sind, das MIO-Format verarbeiten zu können. Diese sind somit auf den verpflichtend als eingebettetes PDF/A-Dokument mitzuliefernden Gesamtlaborbefund angewiesen. Zum anderen wird das MIO Laborbefund in seiner ersten Version nicht alle Laborbereiche strukturiert abbilden. Befundanteile aus Spezialbereichen (z. B. Mikrobiologische Kulturdiagnostik, Pathologische Gewebeuntersuchungen, genetische Befunde) können aufgrund dafür noch fehlender semantischer und struktureller Standards nur teilstrukturiert übermittelt werden. Diese Befundanteile werden als PDF/A in den Laborbefund eingebettet.</p>
+
+  <h3 id="ausleitung-pseudonymisierter-labordaten-an-das-forschungsdatenzentrum">Ausleitung pseudonymisierter Labordaten an das Forschungsdatenzentrum</h3>
+
+  <p>Auf Antrag beim Forschungsdatenzentrum (FDZ) können Forschende auf einen Datenbestand pseudonymisierter Laborbefunde zurückgreifen, um diese für ihre Forschungsvorhaben nutzen zu können. Dazu werden strukturierte Laborbefunde von Versicherten, die der Datenspende zu Forschungszwecken nicht widersprochen haben, pseudonymisiert und an das Forschungsdatenzentrum ausgeleitet.</p>
+
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jun 15, 2026 16:45+0200">2026-06-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

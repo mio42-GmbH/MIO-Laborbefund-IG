@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="76fdc299-7b3f-404a-b32e-31e416bb0c32"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group|1.0.0-update"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator">
+      <valueString value="laboratory"/>
+    </extension>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_mio42"/>
+      <version value="1.0.0-update"/>
+      <code value="laboruntersuchungsgruppe"/>
+      <display value="Laboruntersuchungsgruppe"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="not-permitted"/>
+    </extension>
+  </effectiveDateTime>
+  <hasMember>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number">
+      <valuePositiveInt value="2121"/>
+    </extension>
+    <reference value="Observation/96f33ca8-872d-4c8b-972e-b681db27d9df"/>
+  </hasMember>
+</Observation>

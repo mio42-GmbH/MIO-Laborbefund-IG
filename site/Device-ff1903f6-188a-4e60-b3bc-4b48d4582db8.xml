@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="ff1903f6-188a-4e60-b3bc-4b48d4582db8"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Subject|1.0.0-update"/>
+  </meta>
+  <definition>
+    <reference value="DeviceDefinition/430a63d5-b9ed-469b-a3a1-7aae27f27b11"/>
+  </definition>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="8407004"/>
+      <display value="Bile collection bag, device (physical object)"/>
+    </coding>
+  </type>
+  <patient>
+    <reference value="Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </patient>
+</Device>

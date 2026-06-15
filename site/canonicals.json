@@ -1,0 +1,658 @@
+[{
+  "id" : "KBV-CS-MIO-LAB-AdministrativeGender-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_AdministrativeGender_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_AdministrativeGender_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-CommonLanguages-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_CommonLanguages_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-CommonUCUMCodesForDuration-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-ContactEntityType-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactEntityType_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_ContactEntityType_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-ContactPointSystem-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactPointSystem_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_ContactPointSystem_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-DataAbsentReason-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_DataAbsentReason_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_DataAbsentReason_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Data-Absent-Reason-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Data_Absent_Reason_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Data_Absent_Reason_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-DeviceNameType-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_DeviceNameType_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_DeviceNameType_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Diagnostic-ReportStatus-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Hl7VSRelevantClincialInformation-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Identifier-Type-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Identifier_Type_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Identifier_Type_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Laboratory-Identificator",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Laboratory_Identificator"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Marital-Status-Codes-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Marital_Status_Codes_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-ObservationInterpretationCodes-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_ObservationInterpretationCodes_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-ObservationReferenceRangeMeaningCodes-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Observation-Status-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Observation_Status_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Observation_Status_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-PatientRelationshipType-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_PatientRelationshipType_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Provenance-Activity-Type-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Provenance_Activity_Type_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Provenance_Activity_Type_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-QuantityComparator-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_QuantityComparator_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_QuantityComparator_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-RequestPriority-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_RequestPriority_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_RequestPriority_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Secondary-Status",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Secondary_Status",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Secondary_Status"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-SexParameterForClinicalUse-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_SexParameterForClinicalUse_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-SpecimenProcessingProcedure-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-SpecimenStatus-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SpecimenStatus_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_SpecimenStatus_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Specimen-Condition-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Specimen_Condition_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Specimen_Condition_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-Type-Diagram-German",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Type_Diagram_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Type_Diagram_German"
+},
+{
+  "id" : "KBV-CS-MIO-LAB-mio42",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_mio42",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_mio42"
+},
+{
+  "id" : "KBV-CM-MIO-LAB-Overview",
+  "type" : "ConceptMap",
+  "url" : "https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_LAB_Overview",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CM_MIO_LAB_Overview"
+},
+{
+  "id" : "kbv.mio.laborbefund",
+  "type" : "ImplementationGuide",
+  "url" : "https://fhir.kbv.de/ImplementationGuide/kbv.mio.laborbefund",
+  "version" : "1.0.0-update",
+  "name" : "KBVMIOLaborbefund"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Accredited-Service",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Accredited_Service",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Accredited_Service"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Alternative-Result",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Alternative_Result",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Alternative_Result"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Association-Service",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Association_Service",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Association_Service"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Critical-Result",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Critical_Result",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Critical_Result"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Diskriminator",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Diskriminator"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-External-Service",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_External_Service",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_External_Service"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-No-Linear-Reference-Range",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_No_Linear_Reference_Range",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_No_Linear_Reference_Range"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Order-Entry-Time",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Order_Entry_Time",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Order_Entry_Time"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Pseudonymized-Report",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Pseudonymized_Report",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Pseudonymized_Report"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Reason-Type",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Reason_Type"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Secondary-Status",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Secondary_Status",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Secondary_Status"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Sorting-Number",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Sorting_Number"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-Source-Reference-Range",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_Source_Reference_Range"
+},
+{
+  "id" : "KBV-EX-MIO-LAB-zlog",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zlog",
+  "version" : "1.0.0-update",
+  "name" : "KBV_EX_MIO_LAB_zlog"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-BodyStructure",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_BodyStructure"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Bundle",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Bundle",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Bundle"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Composition",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Composition"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Condition-Diagnosis",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Condition_Diagnosis",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Condition_Diagnosis"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-DeviceDefinition-Laboratory-Analyzer",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-DeviceDefinition-Specimen-Container",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-DeviceDefinition-Specimen-Subject",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Device-Laboratory-Analyzer",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Device-Specimen-Container",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Device_Specimen_Container"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Device-Specimen-Subject",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Subject",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Device_Specimen_Subject"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-DiagnosticReport",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_DiagnosticReport"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-DocumentReference",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_DocumentReference"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Observation-Image-Attachment",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Observation_Image_Attachment"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Observation-Laboratory-Study",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Organization",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Organization"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Patient",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Patient",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Patient"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Practitioner",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Practitioner"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-PractitionerRole",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_PractitionerRole"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Provenance",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Provenance"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-RelatedPerson",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_RelatedPerson"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-ServiceRequest",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_ServiceRequest"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Specimen",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Specimen"
+},
+{
+  "id" : "KBV-PR-MIO-LAB-Substance",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance",
+  "version" : "1.0.0-update",
+  "name" : "KBV_PR_MIO_LAB_Substance"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Body-Structures-SNOMED-CT",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Data-Absent-Reason",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Data_Absent_Reason",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Data_Absent_Reason"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Diagnostic-ReportStatus",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Diagnostic_ReportStatus",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Diagnostic_ReportStatus"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Identifier-Type",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Identifier_Type",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Identifier_Type"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Laboratory-Analyzer-SNOMED-CT",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Laboruntersuchungsgruppe",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Laboruntersuchungsgruppe"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Laterality-Body-Structure-SNOMED-CT",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-MIME-Types",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_MIME_Types",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_MIME_Types"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Observation-Methods",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Methods",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Observation_Methods"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Observation-Status",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Status",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Observation_Status"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Secondary-Status",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Secondary_Status",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Secondary_Status"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Specimen-Condition",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Condition",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Specimen_Condition"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT"
+},
+{
+  "id" : "KBV-VS-MIO-LAB-Type-Diagram",
+  "type" : "ValueSet",
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Type_Diagram",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Type_Diagram"
+}]

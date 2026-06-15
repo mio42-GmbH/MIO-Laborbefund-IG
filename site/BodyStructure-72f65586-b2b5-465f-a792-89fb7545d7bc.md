@@ -1,0 +1,55 @@
+# 72f65586-b2b5-465f-a792-89fb7545d7bc - MIO Laborbefund v1.0.0-update
+
+MIO Laborbefund
+
+Version 1.0.0-update - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**FHIR-Artefakte**](artifacts.md)
+* **72f65586-b2b5-465f-a792-89fb7545d7bc**
+
+## Example BodyStructure: 72f65586-b2b5-465f-a792-89fb7545d7bc
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "BodyStructure",
+  "id" : "72f65586-b2b5-465f-a792-89fb7545d7bc",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update"]
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "structure",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/11000274103/version/20251115",
+          "code" : "90432007",
+          "display" : "Structure of mucous membrane of nasopharynx (body structure)"
+        }],
+        "text" : "test"
+      }
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
+  }],
+  "patient" : {
+    "reference" : "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff",
+    "identifier" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+          "code" : "KVZ10",
+          "display" : "Krankenversichertennummer"
+        }]
+      },
+      "system" : "http://fhir.de/sid/gkv/kvid-10",
+      "value" : "K123456789"
+    }
+  }
+}
+
+```

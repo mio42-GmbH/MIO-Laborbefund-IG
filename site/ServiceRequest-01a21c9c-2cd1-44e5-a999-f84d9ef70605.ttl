@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/ServiceRequest/01a21c9c-2cd1-44e5-a999-f84d9ef70605> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "01a21c9c-2cd1-44e5-a999-f84d9ef70605"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest|1.0.0-update"^^xsd:anyURI ;
+       fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest|1.0.0-update>
+     ] )
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "1.0.0-update" ] ;
+         fhir:code [ fhir:v "AE" ] ;
+         fhir:display [ fhir:v "Auftragsnummer des Einsenders" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://testsystem.de"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "20211115-127" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "1.0.0-update" ] ;
+         fhir:code [ fhir:v "NI" ] ;
+         fhir:display [ fhir:v "Nachforderungsidentifikation" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://testsystem.de"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "20211115-127" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:priority [ fhir:v "routine"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:721965002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:code [ fhir:v "721965002" ] ;
+       fhir:display [ fhir:v "Laboratory order (record artifact)" ]
+     ] )
+  ] ; # 
+  fhir:orderDetail ( [
+     fhir:text [ fhir:v "Beispieltext" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
+     fhir:identifier [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "KVZ10" ] ;
+           fhir:display [ fhir:v "Krankenversichertennummer" ]
+         ] )
+       ] ;
+       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "K123456789" ]
+     ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2023-05-03T11:08:15+01:00"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:link <https://fhir.kbv.de/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6> ;
+     fhir:reference [ fhir:v "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Anlass"
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "Grund" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Veranlassungsgrund"
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "Grund2" ]
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <https://fhir.kbv.de/Condition/1d344181-abf0-428d-9f3f-1bbd84b7684e> ;
+     fhir:reference [ fhir:v "Condition/1d344181-abf0-428d-9f3f-1bbd84b7684e" ]
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:display [ fhir:v "testressource" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "test" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

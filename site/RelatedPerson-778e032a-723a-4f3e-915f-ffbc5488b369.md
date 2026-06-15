@@ -1,0 +1,122 @@
+# 778e032a-723a-4f3e-915f-ffbc5488b369 - MIO Laborbefund v1.0.0-update
+
+MIO Laborbefund
+
+Version 1.0.0-update - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**FHIR-Artefakte**](artifacts.md)
+* **778e032a-723a-4f3e-915f-ffbc5488b369**
+
+## Example RelatedPerson: 778e032a-723a-4f3e-915f-ffbc5488b369
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "778e032a-723a-4f3e-915f-ffbc5488b369",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2023-05-03T11:15:00+01:00",
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson|1.0.0-update"]
+  },
+  "identifier" : [{
+    "system" : "http://testsystem.de",
+    "value" : "testValue"
+  }],
+  "patient" : {
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d",
+    "identifier" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+          "code" : "KVZ10",
+          "display" : "Krankenversichertennummer"
+        }]
+      },
+      "system" : "http://fhir.de/sid/gkv/kvid-10",
+      "value" : "K123456789"
+    }
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "3.0.0",
+      "code" : "C",
+      "display" : "Ansprechpartner in Notfällen"
+    }],
+    "text" : "Notfallkontakt"
+  }],
+  "name" : [{
+    "use" : "official",
+    "text" : "Gräfin Dr. Silvia von Glücklich",
+    "family" : "Hans",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+        "valueString" : "Glücklich"
+      },
+      {
+        "url" : "http://fhir.de/StructureDefinition/humanname-namenszusatz",
+        "valueString" : "Gräfin"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+        "valueString" : "von"
+      }]
+    },
+    "given" : ["Silvia"],
+    "prefix" : ["Dr"],
+    "_prefix" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+        "valueCode" : "AC"
+      }]
+    }]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "1474743458"
+  }],
+  "gender" : "other",
+  "_gender" : {
+    "extension" : [{
+      "url" : "http://fhir.de/StructureDefinition/gender-amtlich-de",
+      "valueCoding" : {
+        "system" : "http://fhir.de/CodeSystem/gender-amtlich-de",
+        "code" : "X",
+        "display" : "unbestimmt"
+      }
+    }]
+  },
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct",
+      "valueString" : "Schöneberg"
+    }],
+    "type" : "both",
+    "line" : ["Schöneberg"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "Mittestr"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "43"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+        "valueString" : "Nebenhaus"
+      }]
+    }],
+    "city" : "Berlin",
+    "postalCode" : "12015",
+    "country" : "D"
+  }]
+}
+
+```

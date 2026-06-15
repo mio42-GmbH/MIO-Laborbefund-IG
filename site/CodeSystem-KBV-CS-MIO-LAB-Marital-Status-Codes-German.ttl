@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-Marital-Status-Codes-German> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KBV-CS-MIO-LAB-Marital-Status-Codes-German"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-Marital-Status-Codes-German</b></p><a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-Marital-Status-Codes-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Annuliert<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Annuliert\"> </a></td><td>Annuliert</td></tr><tr><td style=\"white-space:nowrap\">Geschieden<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Geschieden\"> </a></td><td>Geschieden</td></tr><tr><td style=\"white-space:nowrap\">Einstweilig<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Einstweilig\"> </a></td><td>Einstweilig</td></tr><tr><td style=\"white-space:nowrap\">Getrenntlebend<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Getrenntlebend\"> </a></td><td>Getrennt lebend</td></tr><tr><td style=\"white-space:nowrap\">Verheiratet<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Verheiratet\"> </a></td><td>Verheiratet</td></tr><tr><td style=\"white-space:nowrap\">Polygam<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Polygam\"> </a></td><td>Polygam</td></tr><tr><td style=\"white-space:nowrap\">Ledig<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Ledig\"> </a></td><td>Ledig</td></tr><tr><td style=\"white-space:nowrap\">Lebenspartner<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Lebenspartner\"> </a></td><td>Lebenspartner</td></tr><tr><td style=\"white-space:nowrap\">Unbekannt<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Unbekannt\"> </a></td><td>Unbekannt</td></tr><tr><td style=\"white-space:nowrap\">Unverheiratet<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Unverheiratet\"> </a></td><td>Unverheiratet</td></tr><tr><td style=\"white-space:nowrap\">Verwitwet<a name=\"KBV-CS-MIO-LAB-Marital-Status-Codes-German-Verwitwet\"> </a></td><td>Verwitwet</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-update"] ; # 
+  fhir:name [ fhir:v "KBV_CS_MIO_LAB_Marital_Status_Codes_German"] ; # 
+  fhir:title [ fhir:v "MaritalStatus German"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-06-15T16:45:57+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "mio42 GmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://mio.kbv.de" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hello@mio42.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für MaritalStatus German."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE" ] ;
+       fhir:display [ fhir:v "Germany" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Annuliert" ] ;
+     fhir:display [ fhir:v "Annuliert" ]
+  ] [
+     fhir:code [ fhir:v "Geschieden" ] ;
+     fhir:display [ fhir:v "Geschieden" ]
+  ] [
+     fhir:code [ fhir:v "Einstweilig" ] ;
+     fhir:display [ fhir:v "Einstweilig" ]
+  ] [
+     fhir:code [ fhir:v "Getrenntlebend" ] ;
+     fhir:display [ fhir:v "Getrennt lebend" ]
+  ] [
+     fhir:code [ fhir:v "Verheiratet" ] ;
+     fhir:display [ fhir:v "Verheiratet" ]
+  ] [
+     fhir:code [ fhir:v "Polygam" ] ;
+     fhir:display [ fhir:v "Polygam" ]
+  ] [
+     fhir:code [ fhir:v "Ledig" ] ;
+     fhir:display [ fhir:v "Ledig" ]
+  ] [
+     fhir:code [ fhir:v "Lebenspartner" ] ;
+     fhir:display [ fhir:v "Lebenspartner" ]
+  ] [
+     fhir:code [ fhir:v "Unbekannt" ] ;
+     fhir:display [ fhir:v "Unbekannt" ]
+  ] [
+     fhir:code [ fhir:v "Unverheiratet" ] ;
+     fhir:display [ fhir:v "Unverheiratet" ]
+  ] [
+     fhir:code [ fhir:v "Verwitwet" ] ;
+     fhir:display [ fhir:v "Verwitwet" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

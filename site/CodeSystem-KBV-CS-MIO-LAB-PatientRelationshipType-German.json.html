@@ -1,0 +1,872 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>PatientRelationshipType German - JSON Representation - MIO Laborbefund v1.0.0-update</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+<link href="assets/css/requirement-view.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/mio-labbefund-headline.png') no-repeat;
+        background-size: 98%;
+        background-position: -65px -5px;
+    }
+</style>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"15.81"}
+    h3,h4,h5,h6{--heading-prefix:"15.81"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="70" alt="Home" src="assets/images/mio42-logo.svg"/>
+
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Grundlagen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Fachliche_Einordnung_und_Nutzen.html">Fachliche Einordnung und Nutzen</a>
+      </li>
+      <li>
+        <a href="Rechtlicher_Rahmen.html">Rechtlicher Rahmen</a>
+      </li>
+      <li>
+        <a href="Stakeholder.html">Stakeholder</a>
+      </li>
+      <li>
+        <a href="Vorarbeiten.html">Vorarbeiten</a>
+      </li>
+      <li>
+        <a href="Prozessanalyse.html">Prozessanalyse</a>
+      </li>
+      <li>
+        <a href="Bedarfsanalyse.html">Bedarfsanalyse</a>
+      </li>
+      <li>
+        <a href="Grundlagen_zur_Terminologienutzung.html">Grundlagen zur Terminologienutzung</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Anwendungsfaelle.html">Anwendungsfälle</a>
+  </li>
+  <li>
+    <a href="infomodell.html">Informationsmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+  <li>
+    <a href="requirements.html">Umsetzungsanforderungen</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">UX-Visualisierungen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="UX-_UI-Ueberblick.html">UX-/UI-Überblick</a>
+      </li>
+      <li>
+        <a href="Einzelbefunddarstellung_in_der_Primaersystemansicht.html">Einzelbefunddarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Kumulativdarstellung_in_der_Primaersystemansicht.html">Kumulativdarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Moegliche_Primaersysteminteraktionen_mit_der_ePA.html">Mögliche Primärsysteminteraktionen mit der ePA</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Feedback.html">Feedback</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Über
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="expansion_parameters.html">Expansion Parameter</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+MIO Laborbefund
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-update - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>FHIR-Artefakte</b></a></li><li><b>PatientRelationshipType German</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<div style="counter-reset: section 8" class="col-12">
+  
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-KBV-CS-MIO-LAB-PatientRelationshipType-German.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-KBV-CS-MIO-LAB-PatientRelationshipType-German.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: PatientRelationshipType German - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2026-06-15
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-KBV-CS-MIO-LAB-PatientRelationshipType-German.json" no-download="true">Raw json</a> | <a href="CodeSystem-KBV-CS-MIO-LAB-PatientRelationshipType-German.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "KBV-CS-MIO-LAB-PatientRelationshipType-German",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem KBV-CS-MIO-LAB-PatientRelationshipType-German&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcKBV-CS-MIO-LAB-PatientRelationshipType-German\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Adoptivvater&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivvater\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adoptivvater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Adoptivmutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivmutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adoptivmutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Adoptivelternteil&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivelternteil\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adoptivelternteil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Tante&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Tante\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tante&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwager&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwager\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwager&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Bruder&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Bruder\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bruder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Kind&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Kind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kind&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Adoptivkind&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivkind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adoptivkind&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Pflegekind&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegekind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pflegekind&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwiegerkind&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegerkind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwiegerkind&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Cousine&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousine\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cousin(e)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AnsprechpartnerIninNotfaellen&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-AnsprechpartnerIninNotfaellen\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AnsprechpartnerIn in Notfällen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Adoptivtochter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivtochter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adoptivtochter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Tochter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Tochter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tochter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Pflegetochter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegetochter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pflegetochter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwiegertochter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegertochter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwiegertochter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicheTochter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheTochter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leibliche Tochter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Lebenspartnerin&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Lebenspartnerin\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lebenspartner/-in&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ErweitertesFamilienmitglied&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-ErweitertesFamilienmitglied\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erweitertes Familienmitglied&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ArbeitgeberIn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-ArbeitgeberIn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ArbeitgeberIn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Familienmitglied&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Familienmitglied\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Familienmitglied&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EhemaligerEhepartnerIn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-EhemaligerEhepartnerIn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ehemalige(r) EhepartnerIn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NichtverwandterFreundIn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-NichtverwandterFreundIn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nicht verwandte(r) FreundIn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Ziehvater&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Ziehvater\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ziehvater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwiegervater&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegervater\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwiegervater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Vater&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Vater\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;zweieiigerZwillingsbruder&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-zweieiigerZwillingsbruder\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;zweieiiger Zwillingsbruder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZweieiigeZwillingsschwester&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-ZweieiigeZwillingsschwester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zweieiige Zwillingsschwester&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZweieiigerZwilling&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-ZweieiigerZwilling\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zweieiiger Zwilling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Bundesbehoerde&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Bundesbehoerde\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bundesbehörde&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;werdendeMutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-werdendeMutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;werdende Mutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrossvater&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvater\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßvater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrossmutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßmutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrosseltern&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosseltern\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßeltern&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grossvater&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvater\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großvater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grossmutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großmutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Enkelkind&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkelkind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enkelkind&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Enkeltochter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkeltochter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enkeltochter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Enkelsohn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkelsohn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enkelsohn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grosseltern&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosseltern\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großeltern&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Halbbruder&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbbruder\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Halbbruder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Halbgeschwister&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbgeschwister\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Halbgeschwister&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Halbschwester&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbschwester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Halbschwester&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Ehemann&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Ehemann\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ehemann&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwiegerperson&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegerperson\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwiegerperson&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EineiigerZwillingsbruder&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigerZwillingsbruder\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eineiiger Zwillingsbruder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EineiigeZwillingsschwester&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigeZwillingsschwester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eineiige Zwillingsschwester&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EineiigerZwilling&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigerZwilling\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eineiiger Zwilling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Versicherung&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Versicherung\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Versicherung&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Tantemuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Tantemuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tante mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Cousinmuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousinmuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cousin mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrossvatermuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvatermuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßvater mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrossmuttermuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmuttermuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßmutter mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrosselternmuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosselternmuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßeltern mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grossvatermuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvatermuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großvater mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grossmuttermuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmuttermuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großmutter mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grosselternmuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosselternmuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großeltern mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Pflegemutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegemutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pflegemutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwiegermutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegermutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwiegermutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Mutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Mutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Onkelmuetterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkelmuetterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Onkel mütterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NachbarIn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-NachbarIn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NachbarIn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicherBruder&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherBruder\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leiblicher Bruder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblichesKind&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblichesKind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leibliches Kind&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Neffe&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Neffe\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neffe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicherVaterdesFoetus&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherVaterdesFoetus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leiblicher Vater des Fötus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicherVater&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherVater\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leiblicher Vater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Nichte&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Nichte\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nichte&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NichteNeffe&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-NichteNeffe\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nichte/Neffe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicheMutterdesFoetus&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheMutterdesFoetus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leibliche Mutter des Fötus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicheMutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheMutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leibliche Mutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicherElternteil&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherElternteil\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leiblicher Elternteil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblichesGeschwisterkind&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblichesGeschwisterkind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leibliches Geschwisterkind&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicheSchwester&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheSchwester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leibliche Schwester&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Kontaktperson&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Kontaktperson\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kontaktperson&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Selbst&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Selbst\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Selbst&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Andere&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Andere\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Andere&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Tantevaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Tantevaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tante väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Cousinvaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousinvaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cousin väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrossvatervaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvatervaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßvater väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrossmuttervaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmuttervaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßmutter väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Urgrosselternvaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosselternvaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urgroßeltern väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grossvatervaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvatervaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großvater väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grossmuttervaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmuttervaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großmutter väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Grosselternvaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosselternvaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Großeltern väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Pflegeeltern&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegeeltern\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pflegeeltern&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwiegereltern&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegereltern\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwiegereltern&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Elternteil&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Elternteil\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elternteil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Onkelvaeterlicherseits&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkelvaeterlicherseits\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Onkel väterlicherseits&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MitbewohnerIn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-MitbewohnerIn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MitbewohnerIn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwiegergeschwister&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegergeschwister\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwiegergeschwister&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Geschwisterteil&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Geschwisterteil\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geschwisterteil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Lebensgefaehrtein&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Lebensgefaehrtein\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lebensgefährte/-in&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwaegerin&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwaegerin\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwägerin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwester&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwester&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Adoptivsohn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivsohn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adoptivsohn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Sohn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Sohn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sohn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Pflegesohn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegesohn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pflegesohn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Schwiegersohn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegersohn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Schwiegersohn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LeiblicherSohn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherSohn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leiblicher Sohn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EhepartnerIn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-EhepartnerIn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EhepartnerIn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stiefbruder&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefbruder\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stiefbruder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stiefkind&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefkind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stiefkind&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stieftochter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stieftochter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stieftochter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stiefvater&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefvater\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stiefvater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stiefmutter&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefmutter\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stiefmutter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stiefelternteil&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefelternteil\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stiefelternteil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stiefgeschwister&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefgeschwister\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stiefgeschwister&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stiefschwester&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefschwester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stiefschwester&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Stiefsohn&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefsohn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stiefsohn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Landesbehoerde&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Landesbehoerde\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Landesbehörde&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Zwillingsbruder&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwillingsbruder\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zwillingsbruder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Zwillingsschwester&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwillingsschwester\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zwillingsschwester&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Zwilling&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwilling\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zwilling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Onkel&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkel\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Onkel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Unbekannt&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Unbekannt\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unbekannt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Ehefrau&lt;a name=\&quot;KBV-CS-MIO-LAB-PatientRelationshipType-German-Ehefrau\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ehefrau&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.0.0-update",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "KBV_CS_MIO_LAB_PatientRelationshipType_German",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "PatientRelationshipType German",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-06-15T16:45:57+02:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "mio42 GmbH",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "mio42 GmbH",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://mio.kbv.de"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "hello@mio42.de"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für PatientRelationshipType German.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "DE",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Germany"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">copyright</a>" : "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \&quot;AS IS.\&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Adoptivvater",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Adoptivvater"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Adoptivmutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Adoptivmutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Adoptivelternteil",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Adoptivelternteil"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Tante",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tante"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwager",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwager"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Bruder",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bruder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Kind",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kind"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Adoptivkind",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Adoptivkind"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Pflegekind",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pflegekind"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwiegerkind",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwiegerkind"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Cousine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cousin(e)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AnsprechpartnerIninNotfaellen",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AnsprechpartnerIn in Notfällen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Adoptivtochter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Adoptivtochter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Tochter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tochter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Pflegetochter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pflegetochter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwiegertochter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwiegertochter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicheTochter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leibliche Tochter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Lebenspartnerin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lebenspartner/-in"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ErweitertesFamilienmitglied",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Erweitertes Familienmitglied"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ArbeitgeberIn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ArbeitgeberIn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Familienmitglied",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Familienmitglied"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EhemaligerEhepartnerIn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ehemalige(r) EhepartnerIn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NichtverwandterFreundIn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nicht verwandte(r) FreundIn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Ziehvater",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ziehvater"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwiegervater",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwiegervater"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Vater",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vater"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "zweieiigerZwillingsbruder",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "zweieiiger Zwillingsbruder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZweieiigeZwillingsschwester",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zweieiige Zwillingsschwester"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZweieiigerZwilling",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zweieiiger Zwilling"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Bundesbehoerde",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bundesbehörde"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "werdendeMutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "werdende Mutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrossvater",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßvater"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrossmutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßmutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrosseltern",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßeltern"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grossvater",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großvater"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grossmutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großmutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Enkelkind",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Enkelkind"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Enkeltochter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Enkeltochter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Enkelsohn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Enkelsohn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grosseltern",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großeltern"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Halbbruder",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Halbbruder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Halbgeschwister",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Halbgeschwister"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Halbschwester",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Halbschwester"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Ehemann",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ehemann"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwiegerperson",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwiegerperson"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EineiigerZwillingsbruder",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Eineiiger Zwillingsbruder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EineiigeZwillingsschwester",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Eineiige Zwillingsschwester"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EineiigerZwilling",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Eineiiger Zwilling"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Versicherung",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Versicherung"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Tantemuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tante mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Cousinmuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cousin mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrossvatermuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßvater mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrossmuttermuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßmutter mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrosselternmuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßeltern mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grossvatermuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großvater mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grossmuttermuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großmutter mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grosselternmuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großeltern mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Pflegemutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pflegemutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwiegermutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwiegermutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Mutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Onkelmuetterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Onkel mütterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NachbarIn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NachbarIn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicherBruder",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leiblicher Bruder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblichesKind",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leibliches Kind"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Neffe",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Neffe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicherVaterdesFoetus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leiblicher Vater des Fötus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicherVater",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leiblicher Vater"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Nichte",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nichte"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NichteNeffe",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nichte/Neffe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicheMutterdesFoetus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leibliche Mutter des Fötus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicheMutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leibliche Mutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicherElternteil",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leiblicher Elternteil"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblichesGeschwisterkind",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leibliches Geschwisterkind"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicheSchwester",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leibliche Schwester"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Kontaktperson",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kontaktperson"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Selbst",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Selbst"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Andere",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Andere"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Tantevaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tante väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Cousinvaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cousin väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrossvatervaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßvater väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrossmuttervaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßmutter väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Urgrosselternvaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urgroßeltern väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grossvatervaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großvater väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grossmuttervaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großmutter väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Grosselternvaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Großeltern väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Pflegeeltern",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pflegeeltern"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwiegereltern",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwiegereltern"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Elternteil",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Elternteil"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Onkelvaeterlicherseits",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Onkel väterlicherseits"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MitbewohnerIn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MitbewohnerIn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwiegergeschwister",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwiegergeschwister"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Geschwisterteil",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Geschwisterteil"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Lebensgefaehrtein",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lebensgefährte/-in"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwaegerin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwägerin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwester",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwester"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Adoptivsohn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Adoptivsohn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Sohn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sohn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Pflegesohn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pflegesohn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Schwiegersohn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Schwiegersohn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LeiblicherSohn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Leiblicher Sohn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EhepartnerIn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EhepartnerIn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stiefbruder",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stiefbruder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stiefkind",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stiefkind"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stieftochter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stieftochter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stiefvater",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stiefvater"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stiefmutter",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stiefmutter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stiefelternteil",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stiefelternteil"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stiefgeschwister",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stiefgeschwister"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stiefschwester",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stiefschwester"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Stiefsohn",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Stiefsohn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Landesbehoerde",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Landesbehörde"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Zwillingsbruder",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zwillingsbruder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Zwillingsschwester",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zwillingsschwester"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Zwilling",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zwilling"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Onkel",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Onkel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Unbekannt",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Unbekannt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Ehefrau",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ehefrau"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jun 15, 2026 16:45+0200">2026-06-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

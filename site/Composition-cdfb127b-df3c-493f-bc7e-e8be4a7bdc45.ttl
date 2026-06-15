@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Composition/cdfb127b-df3c-493f-bc7e-e8be4a7bdc45> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cdfb127b-df3c-493f-bc7e-e8be4a7bdc45"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition|1.0.0-update"^^xsd:anyURI ;
+       fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition|1.0.0-update>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "1"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://fhir.kbv.de/ServiceRequest/01a21c9c-2cd1-44e5-a999-f84d9ef70605> ;
+       fhir:reference [ fhir:v "ServiceRequest/01a21c9c-2cd1-44e5-a999-f84d9ef70605" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://fhir.kbv.de/DiagnosticReport/3604d5a6-798e-4615-8a22-1d280638e2c0> ;
+       fhir:reference [ fhir:v "DiagnosticReport/3604d5a6-798e-4615-8a22-1d280638e2c0" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.eu/fhir/StructureDefinition/information-recipient"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://fhir.kbv.de/PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a> ;
+       fhir:reference [ fhir:v "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a" ]
+     ]
+  ] ) ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:123456" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:4241000179101 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:code [ fhir:v "4241000179101" ] ;
+       fhir:display [ fhir:v "Laboratory report (record artifact)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
+     fhir:identifier [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "KVZ10" ] ;
+           fhir:display [ fhir:v "Krankenversichertennummer" ]
+         ] )
+       ] ;
+       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "K123456789" ]
+     ]
+  ] ; # 
+  fhir:date [ fhir:v "2022-03-23"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <https://fhir.kbv.de/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6> ;
+     fhir:reference [ fhir:v "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Laboratory Report"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:time [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:party [
+       fhir:link <https://fhir.kbv.de/PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a> ;
+       fhir:reference [ fhir:v "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a" ]
+     ]
+  ] ) ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48767-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "2.82" ] ;
+         fhir:code [ fhir:v "48767-8" ] ;
+         fhir:display [ fhir:v "Annotation comment [Interpretation] Narrative" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "additional" ] ;
+       fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">John Doe</div>"^^rdf:XMLLiteral ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

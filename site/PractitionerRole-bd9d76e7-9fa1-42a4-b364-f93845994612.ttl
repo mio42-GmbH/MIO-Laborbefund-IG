@@ -1,0 +1,28 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bd9d76e7-9fa1-42a4-b364-f93845994612"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole|1.0.0-update"^^xsd:anyURI ;
+       fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole|1.0.0-update>
+     ] )
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <https://fhir.kbv.de/Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce> ;
+     fhir:reference [ fhir:v "Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <https://fhir.kbv.de/Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a> ;
+     fhir:reference [ fhir:v "Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

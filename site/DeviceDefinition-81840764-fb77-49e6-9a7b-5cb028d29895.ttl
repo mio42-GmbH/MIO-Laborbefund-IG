@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/DeviceDefinition/81840764-fb77-49e6-9a7b-5cb028d29895> a fhir:DeviceDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "81840764-fb77-49e6-9a7b-5cb028d29895"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject|1.0.0-update"^^xsd:anyURI ;
+       fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject|1.0.0-update>
+     ] )
+  ] ; # 
+  fhir:manufacturer [
+     a fhir:Reference ;
+     fhir:link <https://fhir.kbv.de/Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7> ;
+     fhir:reference [ fhir:v "Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7" ]
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:371882005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:code [ fhir:v "371882005" ] ;
+       fhir:display [ fhir:v "Device used (attribute)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

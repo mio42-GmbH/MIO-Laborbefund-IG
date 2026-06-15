@@ -1,0 +1,50 @@
+# a424d6c6-de52-443e-a9b2-5240d3b9401a - MIO Laborbefund v1.0.0-update
+
+MIO Laborbefund
+
+Version 1.0.0-update - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**FHIR-Artefakte**](artifacts.md)
+* **a424d6c6-de52-443e-a9b2-5240d3b9401a**
+
+## Example PractitionerRole: a424d6c6-de52-443e-a9b2-5240d3b9401a
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "a424d6c6-de52-443e-a9b2-5240d3b9401a",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2023-05-03T11:15:00+01:00",
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole|1.0.0-update"]
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"
+  },
+  "organization" : {
+    "reference" : "Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care",
+      "version" : "1.8.0",
+      "code" : "API",
+      "display" : "Ärztliche:r Praxisinhaber:in"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+      "version" : "1.03",
+      "code" : "01",
+      "display" : "Allgemeinmedizin"
+    }]
+  }]
+}
+
+```

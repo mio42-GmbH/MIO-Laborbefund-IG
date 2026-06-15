@@ -1,0 +1,642 @@
+{
+  "package": "kbv.mio.laborbefund",
+  "version": "1.0.0-update",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
+  "extensions": [
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Accredited_Service",
+      "title": "KBV_EX_MIO_LAB_Accredited_Service",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Alternative_Result",
+      "title": "KBV_EX_MIO_LAB_Alternative_Result",
+      "types": [
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "Range",
+        "string",
+        "Extension",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "Ratio",
+        "string",
+        "Extension",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "Range",
+        "string",
+        "Extension",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Association_Service",
+      "title": "KBV_EX_MIO_LAB_Association_Service",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Critical_Result",
+      "title": "KBV_EX_MIO_LAB_Critical_Result",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator",
+      "title": "KBV_EX_MIO_LAB_Diskriminator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_External_Service",
+      "title": "KBV_EX_MIO_LAB_External_Service",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_No_Linear_Reference_Range",
+      "title": "KBV_EX_MIO_LAB_No_Linear_Reference_Range",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Order_Entry_Time",
+      "title": "KBV_EX_MIO_LAB_Order_Entry_Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Pseudonymized_Report",
+      "title": "KBV_EX_MIO_LAB_Pseudonymized_Report",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type",
+      "title": "KBV_EX_MIO_LAB_Reason_Type",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Secondary_Status",
+      "title": "KBV_EX_MIO_LAB_Secondary_Status",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number",
+      "title": "KBV_EX_MIO_LAB_Sorting_Number",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range",
+      "title": "KBV_EX_MIO_LAB_Source_Reference_Range",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zlog",
+      "title": "KBV_EX_MIO_LAB_zlog",
+      "types": [
+        "decimal"
+      ]
+    }
+  ],
+  "profiles": {
+    "BodyStructure": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure",
+        "title": "KBV_PR_MIO_LAB_BodyStructure"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Bundle",
+        "title": "KBV_PR_MIO_LAB_Bundle"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition",
+        "title": "KBV_PR_MIO_LAB_Composition"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Condition_Diagnosis",
+        "title": "KBV_PR_MIO_LAB_Condition_Diagnosis"
+      }
+    ],
+    "DeviceDefinition": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer",
+        "title": "KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container",
+        "title": "KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject",
+        "title": "KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"
+      }
+    ],
+    "Device": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer",
+        "title": "KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container",
+        "title": "KBV_PR_MIO_LAB_Device_Specimen_Container"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Subject",
+        "title": "KBV_PR_MIO_LAB_Device_Specimen_Subject"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport",
+        "title": "KBV_PR_MIO_LAB_DiagnosticReport"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference",
+        "title": "KBV_PR_MIO_LAB_DocumentReference"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment",
+        "title": "KBV_PR_MIO_LAB_Observation_Image_Attachment"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study",
+        "title": "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
+        "title": "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization",
+        "title": "KBV_PR_MIO_LAB_Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Patient",
+        "title": "KBV_PR_MIO_LAB_Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner",
+        "title": "KBV_PR_MIO_LAB_Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole",
+        "title": "KBV_PR_MIO_LAB_PractitionerRole"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance",
+        "title": "KBV_PR_MIO_LAB_Provenance"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson",
+        "title": "KBV_PR_MIO_LAB_RelatedPerson"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest",
+        "title": "KBV_PR_MIO_LAB_ServiceRequest"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen",
+        "title": "KBV_PR_MIO_LAB_Specimen"
+      }
+    ],
+    "Substance": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance",
+        "title": "KBV_PR_MIO_LAB_Substance"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.de/StructureDefinition/gender-amtlich-de": [
+      "Patient.gender",
+      "Practitioner.gender",
+      "RelatedPerson.gender"
+    ],
+    "http://fhir.de/StructureDefinition/humanname-namenszusatz": [
+      "Patient.name.family",
+      "Practitioner.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Condition.code.coding"
+    ],
+    "http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition": [
+      "Composition"
+    ],
+    "http://hl7.eu/fhir/StructureDefinition/information-recipient": [
+      "Composition"
+    ],
+    "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference": [
+      "Composition"
+    ],
+    "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus": [
+      "Specimen"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure": [
+      "BodyStructure"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device": [
+      "Specimen.container"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/alternate-reference": [
+      "DiagnosticReport.media.link"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/alternate-reference|5.3.0": [
+      "DiagnosticReport.media.link"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Specimen.collection"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/bodySite|5.3.0": [
+      "Specimen.collection"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Observation.code",
+      "Observation.effectiveDateTime",
+      "Patient.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.3.0": [
+      "Observation.code",
+      "Observation.effective[x]",
+      "Patient.birthDate",
+      "Patient.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
+      "Patient.name.family",
+      "Practitioner.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name|5.3.0": [
+      "Patient.name.family",
+      "Practitioner.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Patient.name.family",
+      "Practitioner.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix|5.3.0": [
+      "Patient.name.family",
+      "Practitioner.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator|5.3.0": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber|5.3.0": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox|5.3.0": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
+      "Organization.address",
+      "Patient.address",
+      "Practitioner.address",
+      "RelatedPerson.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct|5.3.0": [
+      "Organization.address",
+      "Patient.address",
+      "Practitioner.address",
+      "RelatedPerson.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName|5.3.0": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
+      "Patient.name.prefix",
+      "Practitioner.name.prefix",
+      "RelatedPerson.name.prefix"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier|5.3.0": [
+      "Patient.name.prefix",
+      "Practitioner.name.prefix",
+      "RelatedPerson.name.prefix"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse|5.3.0": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment": [
+      "Organization",
+      "Practitioner",
+      "RelatedPerson"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Accredited_Service": [
+      "Observation"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Alternative_Result": [
+      "Observation"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Association_Service": [
+      "Observation"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Critical_Result": [
+      "DiagnosticReport"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator": [
+      "Observation.category"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_External_Service": [
+      "Observation"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_No_Linear_Reference_Range": [
+      "Observation.referenceRange"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Order_Entry_Time": [
+      "DiagnosticReport"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Pseudonymized_Report": [
+      "DiagnosticReport"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type": [
+      "ServiceRequest.reasonCode"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Secondary_Status": [
+      "DiagnosticReport"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number": [
+      "DiagnosticReport.result",
+      "Observation.hasMember"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range": [
+      "Observation.referenceRange"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zlog": [
+      "Observation"
+    ]
+  }
+}

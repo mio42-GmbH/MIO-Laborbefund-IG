@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="a6f3d3de-0857-45ed-916e-087d84391bc3"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport|1.0.0-update"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
+    <valueReference>
+      <reference value="Composition/13c807c0-53e7-488e-84bb-023376563cf3"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="RI"/>
+        <display value="Resource Identifier"/>
+      </coding>
+    </type>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:123456"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/eb46f1a2-c4ad-4276-aaaa-aef507db618d"/>
+  </basedOn>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <code value="11502-2"/>
+      <display value="Laboratory report"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <issued value="2022-08-09T12:00:00Z"/>
+  <performer>
+    <reference value="PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"/>
+  </performer>
+  <result>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number">
+      <valuePositiveInt value="2154"/>
+    </extension>
+    <reference value="Observation/76fdc299-7b3f-404a-b32e-31e416bb0c32"/>
+  </result>
+</DiagnosticReport>

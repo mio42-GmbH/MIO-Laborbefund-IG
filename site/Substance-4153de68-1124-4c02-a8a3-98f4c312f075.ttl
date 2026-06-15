@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Substance/4153de68-1124-4c02-a8a3-98f4c312f075> a fhir:Substance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "4153de68-1124-4c02-a8a3-98f4c312f075"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance|1.0.0-update"^^xsd:anyURI ;
+       fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance|1.0.0-update>
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:69519002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:code [ fhir:v "69519002" ] ;
+       fhir:display [ fhir:v "EDTA" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

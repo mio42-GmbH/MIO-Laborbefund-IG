@@ -1,0 +1,80 @@
+# a6f3d3de-0857-45ed-916e-087d84391bc3 - MIO Laborbefund v1.0.0-update
+
+MIO Laborbefund
+
+Version 1.0.0-update - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**FHIR-Artefakte**](artifacts.md)
+* **a6f3d3de-0857-45ed-916e-087d84391bc3**
+
+## Example DiagnosticReport: a6f3d3de-0857-45ed-916e-087d84391bc3
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "a6f3d3de-0857-45ed-916e-087d84391bc3",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport|1.0.0-update"]
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+    "valueReference" : {
+      "reference" : "Composition/13c807c0-53e7-488e-84bb-023376563cf3"
+    }
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "RI",
+        "display" : "Resource Identifier"
+      }]
+    },
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:123456"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/eb46f1a2-c4ad-4276-aaaa-aef507db618d"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.82",
+      "code" : "11502-2",
+      "display" : "Laboratory report"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff",
+    "identifier" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+          "code" : "KVZ10",
+          "display" : "Krankenversichertennummer"
+        }]
+      },
+      "system" : "http://fhir.de/sid/gkv/kvid-10",
+      "value" : "K123456789"
+    }
+  },
+  "issued" : "2022-08-09T12:00:00Z",
+  "performer" : [{
+    "reference" : "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"
+  }],
+  "result" : [{
+    "extension" : [{
+      "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number",
+      "valuePositiveInt" : 2154
+    }],
+    "reference" : "Observation/76fdc299-7b3f-404a-b32e-31e416bb0c32"
+  }]
+}
+
+```

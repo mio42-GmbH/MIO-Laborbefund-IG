@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="cdfb127b-df3c-493f-bc7e-e8be4a7bdc45"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition|1.0.0-update"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version">
+    <valueString value="1"/>
+  </extension>
+  <extension url="http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition">
+    <valueReference>
+      <reference value="ServiceRequest/01a21c9c-2cd1-44e5-a999-f84d9ef70605"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference">
+    <valueReference>
+      <reference value="DiagnosticReport/3604d5a6-798e-4615-8a22-1d280638e2c0"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.eu/fhir/StructureDefinition/information-recipient">
+    <valueReference>
+      <reference value="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:123456"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="4241000179101"/>
+      <display value="Laboratory report (record artifact)"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <date value="2022-03-23"/>
+  <author>
+    <reference value="Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+  </author>
+  <title value="Laboratory Report"/>
+  <attester>
+    <mode value="legal"/>
+    <time value="2023-05-03T11:15:00+01:00"/>
+    <party>
+      <reference value="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+    </party>
+  </attester>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <version value="2.82"/>
+        <code value="48767-8"/>
+        <display value="Annotation comment [Interpretation] Narrative"/>
+      </coding>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">John Doe</div>
+    </text>
+  </section>
+</Composition>

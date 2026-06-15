@@ -1,0 +1,214 @@
+div.confluence-content details {
+  /* padding: 5px;
+  background-color: #e4eaef;
+  border-radius: 5px;*/
+  margin: 5px;
+}
+
+div.confluence-content summary {
+  display: revert;
+  margin: 5px;
+}
+
+div.confluence-content .column {
+  float: left;
+  width: 50%;
+  padding: 1%;
+}
+
+/* Clear floats after the columns */
+div.confluence-content .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.confluence-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#infomodelWrapper {
+  display: flex;
+  height: 600px;
+}
+
+#leftPane {
+  width: 40%;
+  background: #fafafa;
+  border-right: 1px solid #ddd;
+  overflow-y: scroll;
+  padding: 8px;
+}
+
+#rightPane {
+  flex-grow: 1;
+  padding: 8px;
+  background-color: #fff;
+  overflow-y: scroll;
+  width: 60%;
+}
+
+ul.tree,
+.tree ul {
+  list-style: none;
+  padding-left: 1em;
+  margin: 0;
+  position: relative;
+}
+
+.tree ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  border-left: 1px solid #ccc;
+  height: 100%;
+}
+
+.tree li {
+  position: relative;
+  padding: 4px 0 4px 24px;
+  cursor: pointer;
+}
+
+.tree li::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  border-top: 1px solid #ccc;
+  width: 14px;
+}
+/*
+.tree li:hover .label {
+  background-color: #e6f7ff;
+}
+*/
+.label {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+.toggle {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.tree li > ul {
+  display: none;
+}
+
+.tree li.expanded > ul {
+  display: block;
+}
+
+.tree li.expanded > .toggle::before {
+  content: "▼";
+}
+
+.toggle::before {
+  content: "▶";
+}
+
+#rightPane h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.detail {
+  background-color: #f9f9f9;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+#rightPane strong {
+  display: inline-block;
+  /*width: 100px;*/
+}
+
+#rightPane table {
+  table-layout: fixed;
+}
+
+#rightPane p {
+  margin: 0;
+  padding-bottom: 2px;
+}
+
+#rightPane p.detailTitle {
+  margin: 0;
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-block-end: 0em;
+}
+
+#rightPane .detailHeader {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+/* Infobox */
+div.confluence-content div.infobox {
+  padding: 20px;
+  border-radius: 4px;
+  background: #D6ECFF;
+}
+
+/* Accordeon */
+div.confluence-content div.accordeon {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+div.confluence-content div.accordeon > button.accordeon-button {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  border: unset;
+  background-color: unset;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+div.confluence-content div.accordeon > button.accordeon-button.collapsed::after {
+  content: "▶";
+}
+
+div.confluence-content div.accordeon > button.accordeon-button:not(.collapsed)::after {
+  content: "▼";
+}
+
+div.confluence-content div.accordeon > div.accordeon-content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-inline: 20px;
+}

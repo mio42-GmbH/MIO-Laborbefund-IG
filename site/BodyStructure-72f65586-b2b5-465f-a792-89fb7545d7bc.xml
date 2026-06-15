@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="72f65586-b2b5-465f-a792-89fb7545d7bc"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure">
+    <extension url="structure">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+          <code value="90432007"/>
+          <display value="Structure of mucous membrane of nasopharynx (body structure)"/>
+        </coding>
+        <text value="test"/>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <patient>
+    <reference value="Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </patient>
+</BodyStructure>

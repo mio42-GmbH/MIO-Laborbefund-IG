@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="b1135775-9c67-4d2f-8618-9ef3d1f5f3d7"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization|1.0.0-update"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+    <valueString value="test"/>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="XX"/>
+        <display value="Organisations-ID"/>
+      </coding>
+    </type>
+    <system value="http://fhir.de/sid/arge-ik/iknr"/>
+    <value value="123456789"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="BSNR"/>
+        <display value="Primary physician office number"/>
+      </coding>
+    </type>
+    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"/>
+    <value value="123456789"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="NIIP"/>
+        <display value="Vertragskassennummer (VKNR)"/>
+      </coding>
+    </type>
+    <system value="http://fhir.de/sid/kbv/vknr"/>
+    <value value="123456789"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+        <version value="1.5.4"/>
+        <code value="KZVA"/>
+        <display value="KZVAbrechnungsnummer"/>
+      </coding>
+    </type>
+    <system value="http://fhir.de/sid/kzbv/kzvabrechnungsnummer"/>
+    <value value="123456789"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="PRN"/>
+        <display value="Provider number"/>
+      </coding>
+    </type>
+    <system value="https://gematik.de/fhir/sid/telematik-id"/>
+    <value value="123456789"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung"/>
+      <version value="2018-07-13T16:21:42"/>
+      <code value="APO"/>
+      <display value="Apotheke"/>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"/>
+      <version value="1.5.4"/>
+      <code value="0100"/>
+      <display value="Innere Medizin"/>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert"/>
+      <version value="1.5.4"/>
+      <code value="0200"/>
+      <display value="Geriatrie"/>
+    </coding>
+    <text value="test"/>
+  </type>
+  <name value="Praxis X"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="0173555"/>
+  </telecom>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+      <valueString value="Neukölln"/>
+    </extension>
+    <type value="both"/>
+    <line value="Neukölln">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Musterweg"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="42"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+        <valueString value="Hinterhaus"/>
+      </extension>
+    </line>
+    <city value="Berlin"/>
+    <postalCode value="9132"/>
+    <country value="D"/>
+  </address>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+      <valueString value="Neukölln"/>
+    </extension>
+    <type value="postal"/>
+    <line value="Neukölln">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="Musterweg 42"/>
+      </extension>
+    </line>
+    <city value="Berlin"/>
+    <postalCode value="9132"/>
+    <country value="D"/>
+  </address>
+  <partOf>
+    <reference value="Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a"/>
+  </partOf>
+  <contact>
+    <purpose>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+        <code value="PATINF"/>
+        <display value="Patient"/>
+      </coding>
+    </purpose>
+    <name>
+      <use value="official"/>
+      <text value="Frau Marianne Ehrlich"/>
+      <family value="Ehrlich"/>
+      <given value="Marianne"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="0173777"/>
+    </telecom>
+    <address>
+      <type value="both"/>
+      <line value="Muster-Allee 42"/>
+      <line value="Neukölln"/>
+      <city value="Berlin"/>
+      <postalCode value="9132"/>
+      <country value="D"/>
+    </address>
+  </contact>
+</Organization>

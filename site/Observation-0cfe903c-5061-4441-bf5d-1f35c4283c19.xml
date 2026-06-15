@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="0cfe903c-5061-4441-bf5d-1f35c4283c19"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:20:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value">
+    <valueAttachment>
+      <contentType value="image/jpeg"/>
+      <data value="dGVzdA=="/>
+      <title value="Protein-Elektrophoresekurve"/>
+    </valueAttachment>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="703450007"/>
+      <display value="Electrophoresis technique (qualifier value)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <performer>
+    <reference value="PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"/>
+  </performer>
+  <derivedFrom>
+    <reference value="Observation/96f33ca8-872d-4c8b-972e-b681db27d9df"/>
+  </derivedFrom>
+</Observation>

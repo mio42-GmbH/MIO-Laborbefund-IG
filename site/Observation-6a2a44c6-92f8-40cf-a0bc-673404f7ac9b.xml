@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="6a2a44c6-92f8-40cf-a0bc-673404f7ac9b"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study|1.0.0-update"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_External_Service">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Association_Service">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Accredited_Service">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zlog">
+    <valueDecimal value="2"/>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Alternative_Result">
+    <extension url="value">
+      <valueRange>
+        <low>
+          <value value="6.5"/>
+          <unit value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="mg/dL"/>
+        </low>
+        <high>
+          <value value="8.5"/>
+          <unit value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="mg/dL"/>
+        </high>
+      </valueRange>
+    </extension>
+    <extension url="referenceRange">
+      <valueRange>
+        <low>
+          <value value="3"/>
+          <unit value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="mg/dL"/>
+        </low>
+        <high>
+          <value value="10"/>
+          <unit value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="mg/dL"/>
+        </high>
+      </valueRange>
+    </extension>
+    <extension url="zlog">
+      <valueDecimal value="2"/>
+    </extension>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="OBI"/>
+        <display value="Observation Instance Identifier"/>
+      </coding>
+    </type>
+    <system value="http://www.acmedasdd.com/identifiers/patient"/>
+    <value value="123456"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="UDI"/>
+        <display value="Universal Device Identifier"/>
+      </coding>
+    </type>
+    <system value="http://www.acmedasdd.com/identifiers/patient"/>
+    <value value="123456"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator">
+      <valueString value="laboratory"/>
+    </extension>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="test"/>
+  </category>
+  <category>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator">
+      <valueString value="studyType"/>
+    </extension>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <code value="18717-9"/>
+      <display value="Blood bank studies (set)"/>
+    </coding>
+    <text value="test"/>
+  </category>
+  <category>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator">
+      <valueString value="testProfile"/>
+    </extension>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"/>
+      <version value="1.0.0-update"/>
+      <code value="haemato"/>
+      <display value="Hämatologie"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <code value="98981-4"/>
+      <display value="Urate [Mass/volume] in Blood"/>
+    </coding>
+    <text value="additional text"/>
+  </code>
+  <subject>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2021-11-15T11:30:00+01:00"/>
+  <issued value="2021-11-15T11:30:00+01:00"/>
+  <performer>
+    <reference value="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+  </performer>
+  <valueRange>
+    <low>
+      <value value="1"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg/dL"/>
+    </low>
+    <high>
+      <value value="50"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg/dL"/>
+    </high>
+  </valueRange>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="CAR"/>
+      <display value="Carrier"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="371152001"/>
+      <display value="Assisted (qualifier value)"/>
+    </coding>
+    <text value="test"/>
+  </interpretation>
+  <note>
+    <text value="**Name**"/>
+  </note>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="4241000179101"/>
+      <display value="Laboratory report (record artifact)"/>
+    </coding>
+    <text value="Blutgruppe"/>
+  </method>
+  <specimen>
+    <reference value="Specimen/4f47fe9c-d92e-46f4-ad6d-85740aaa467b"/>
+  </specimen>
+  <device>
+    <reference value="Device/18a30aa6-3b2d-4738-9ca9-125a452d14e0"/>
+  </device>
+  <referenceRange>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+          <code value="260394003"/>
+          <display value="Normal limits (qualifier value)"/>
+        </coding>
+        <text value="note"/>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_No_Linear_Reference_Range">
+      <valueBoolean value="true"/>
+    </extension>
+    <low>
+      <value value="1"/>
+      <unit value="1"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1"/>
+    </low>
+    <high>
+      <value value="50"/>
+      <unit value="1"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1"/>
+    </high>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+        <version value="1.0.1"/>
+        <code value="type"/>
+        <display value="Type"/>
+      </coding>
+      <text value="test"/>
+    </type>
+    <appliesTo>
+      <text value="Test"/>
+    </appliesTo>
+    <text value="test"/>
+  </referenceRange>
+  <derivedFrom>
+    <reference value="Observation/035761c3-8934-499f-bf34-3963979afb56"/>
+  </derivedFrom>
+</Observation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="d057eafe-1927-4b09-936b-5cb61b4c7dc6"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer|1.0.0-update"/>
+  </meta>
+  <definition>
+    <reference value="DeviceDefinition/8157f177-3f3e-46b4-be27-efcbf7a216be"/>
+  </definition>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="30234008"/>
+      <display value="Medical laboratory analyzer, device (physical object)"/>
+    </coding>
+  </type>
+</Device>

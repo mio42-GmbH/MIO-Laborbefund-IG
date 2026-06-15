@@ -1,0 +1,53 @@
+summary {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 8px 4px;
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.arrow {
+  font-size: 12px;
+  color: #666;
+  transition: transform 0.2s;
+  display: inline-block;
+  padding: 10px
+}
+
+details[open] .arrow {
+  transform: rotate(90deg);
+}
+
+table.requirements {
+  border-collapse: collapse;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+table.requirements td {
+  padding: 15px;
+}
+
+table.requirements thead td {
+  background-color: #54585d;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid #54585d;
+}
+
+table.requirements tbody td {
+  color: #636363;
+  border: 1px solid #dddfe1;
+}
+
+table.requirements tbody tr {
+  background-color: #f9fafb;
+}
+
+table.requirements tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}

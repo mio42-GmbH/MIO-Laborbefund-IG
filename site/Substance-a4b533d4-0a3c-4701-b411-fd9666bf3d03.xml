@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Substance xmlns="http://hl7.org/fhir">
+  <id value="a4b533d4-0a3c-4701-b411-fd9666bf3d03"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance|1.0.0-update"/>
+  </meta>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="69519002"/>
+      <display value="EDTA"/>
+    </coding>
+    <text value="test"/>
+  </code>
+</Substance>

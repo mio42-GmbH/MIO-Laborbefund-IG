@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="4f47fe9c-d92e-46f4-ad6d-85740aaa467b"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen|1.0.0-update"/>
+  </meta>
+  <extension url="http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus">
+    <valueReference>
+      <reference value="Device/c46e7bfb-1ee3-4c6b-9ce2-204939133cc5"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="SID"/>
+        <display value="Specimen ID"/>
+      </coding>
+    </type>
+    <system value="http://testsystem.de"/>
+    <value value="Test Specimen identifier"/>
+  </identifier>
+  <status value="available"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="119376003"/>
+      <display value="Tissue specimen (specimen)"/>
+    </coding>
+    <text value="test"/>
+  </type>
+  <subject>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <receivedTime value="2021-11-15T16:55:00+01:00"/>
+  <parent>
+    <reference value="Specimen/eb7fbea2-95bd-4618-b38d-ce69cde79726"/>
+  </parent>
+  <collection>
+    <extension url="http://hl7.org/fhir/StructureDefinition/bodySite">
+      <valueReference>
+        <reference value="BodyStructure/6894b106-8a91-4cfb-9826-443aed21c98b"/>
+      </valueReference>
+    </extension>
+    <collector>
+      <reference value="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+    </collector>
+    <collectedDateTime value="2023-05-03"/>
+    <duration>
+      <value value="20"/>
+      <comparator value="&gt;"/>
+      <unit value="ms"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="ms"/>
+    </duration>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+        <code value="4241000179101"/>
+        <display value="Laboratory report (record artifact)"/>
+      </coding>
+      <text value="test"/>
+    </method>
+    <fastingStatusDuration>
+      <value value="20"/>
+      <comparator value="&gt;"/>
+      <unit value="ms"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="ms"/>
+    </fastingStatusDuration>
+  </collection>
+  <processing>
+    <description value="test"/>
+    <procedure>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0373"/>
+        <version value="3.0.0"/>
+        <code value="ACID"/>
+        <display value="Acidification"/>
+      </coding>
+      <text value="test"/>
+    </procedure>
+    <additive>
+      <reference value="Substance/a4b533d4-0a3c-4701-b411-fd9666bf3d03"/>
+    </additive>
+    <timeDateTime value="2023-05-03"/>
+  </processing>
+  <container>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device">
+      <valueReference>
+        <reference value="Device/05146497-2ca3-488e-96cb-c27c77ab6a3c"/>
+      </valueReference>
+    </extension>
+    <specimenQuantity>
+      <value value="20"/>
+      <unit value="ms"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="ms"/>
+    </specimenQuantity>
+  </container>
+  <condition>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0493"/>
+      <version value="3.0.0"/>
+      <code value="AUT"/>
+      <display value="Autolyzed"/>
+    </coding>
+    <text value="test"/>
+  </condition>
+  <note>
+    <text value="test"/>
+  </note>
+</Specimen>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="3604d5a6-798e-4615-8a22-1d280638e2c0"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport|1.0.0-update"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Order_Entry_Time">
+    <valueDateTime value="2023-05-02T14:15:00+01:00"/>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Pseudonymized_Report">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Critical_Result">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition">
+    <valueReference>
+      <reference value="Composition/cdfb127b-df3c-493f-bc7e-e8be4a7bdc45"/>
+    </valueReference>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Secondary_Status">
+    <valueCoding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Secondary_Status"/>
+      <version value="1.0.0-update"/>
+      <code value="Geaendert"/>
+      <display value="Geändert"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator"/>
+        <version value="1.0.0-update"/>
+        <code value="AL"/>
+        <display value="Auftragsnummer des Labors"/>
+      </coding>
+    </type>
+    <system value="http://www.acmedasdd.com/identifiers/patient"/>
+    <value value="123456"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="RI"/>
+        <display value="Resource Identifier"/>
+      </coding>
+    </type>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:123456"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/01a21c9c-2cd1-44e5-a999-f84d9ef70605"/>
+  </basedOn>
+  <status value="partial"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <code value="11502-2"/>
+      <display value="Laboratory report"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <issued value="2022-08-09T12:00:00Z"/>
+  <performer>
+    <reference value="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+  </performer>
+  <specimen>
+    <reference value="Specimen/4f47fe9c-d92e-46f4-ad6d-85740aaa467b"/>
+  </specimen>
+  <result>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number">
+      <valuePositiveInt value="1"/>
+    </extension>
+    <reference value="Observation/51b6129a-b68c-485d-a37b-9593fee4354f"/>
+  </result>
+  <media>
+    <comment value="Patienteninformation"/>
+    <link>
+      <extension url="http://hl7.org/fhir/StructureDefinition/alternate-reference">
+        <valueReference>
+          <reference value="DocumentReference/d9e75f3f-3900-4183-a475-d4d3dc1d14cc"/>
+        </valueReference>
+      </extension>
+      <display value="Media wird durch eine DocumentReference dargestellt, auf die in einer Extension verwiesen wird."/>
+    </link>
+  </media>
+  <conclusion value="test"/>
+  <presentedForm>
+    <contentType value="application/pdf"/>
+    <data value="dGVzdA=="/>
+    <title value="Anhang"/>
+    <creation value="2023-05-03"/>
+  </presentedForm>
+</DiagnosticReport>

@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Observation",
+  "id" : "7813a2dc-36aa-41ce-b5f5-f338e944b5e9",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2023-05-03T11:20:00+01:00",
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update"]
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value",
+    "valueAttachment" : {
+      "contentType" : "image/jpeg",
+      "data" : "dGVzdA==",
+      "title" : "Protein-Elektrophoresekurve"
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20251115",
+      "code" : "703450007",
+      "display" : "Electrophoresis technique (qualifier value)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d",
+    "identifier" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+          "code" : "KVZ10",
+          "display" : "Krankenversichertennummer"
+        }]
+      },
+      "system" : "http://fhir.de/sid/gkv/kvid-10",
+      "value" : "K123456789"
+    }
+  },
+  "performer" : [{
+    "reference" : "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"
+  }],
+  "note" : [{
+    "text" : "Erneute Testung in 3 Monaten"
+  }],
+  "derivedFrom" : [{
+    "reference" : "Observation/51b6129a-b68c-485d-a37b-9593fee4354f"
+  }]
+}

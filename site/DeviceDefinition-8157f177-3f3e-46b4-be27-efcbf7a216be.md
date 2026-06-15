@@ -1,0 +1,37 @@
+# 8157f177-3f3e-46b4-be27-efcbf7a216be - MIO Laborbefund v1.0.0-update
+
+MIO Laborbefund
+
+Version 1.0.0-update - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**FHIR-Artefakte**](artifacts.md)
+* **8157f177-3f3e-46b4-be27-efcbf7a216be**
+
+## Example DeviceDefinition: 8157f177-3f3e-46b4-be27-efcbf7a216be
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "DeviceDefinition",
+  "id" : "8157f177-3f3e-46b4-be27-efcbf7a216be",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer|1.0.0-update"]
+  },
+  "manufacturerReference" : {
+    "reference" : "Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a"
+  },
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20251115",
+      "code" : "30234008",
+      "display" : "Medical laboratory analyzer, device (physical object)"
+    }]
+  }
+}
+
+```

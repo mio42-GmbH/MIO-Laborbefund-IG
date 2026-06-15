@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="d9e75f3f-3900-4183-a475-d4d3dc1d14cc"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference|1.0.0-update"/>
+  </meta>
+  <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://ihe-d.de/CodeSystems/IHEXDStypeCode"/>
+      <version value="2020-02-07T07:55:58"/>
+      <code value="PATI"/>
+      <display value="Patienteninformationen"/>
+    </coding>
+    <text value="test"/>
+  </type>
+  <category>
+    <coding>
+      <system value="http://ihe-d.de/CodeSystems/IHEXDSclassCode"/>
+      <version value="2021-06-25T13:44:47"/>
+      <code value="ADM"/>
+      <display value="Administratives Dokument"/>
+    </coding>
+    <text value="test"/>
+  </category>
+  <subject>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <content>
+    <attachment>
+      <contentType value="application/pdf"/>
+      <data value="dGVzdA=="/>
+      <title value="Anhang"/>
+      <creation value="2022-05-06"/>
+    </attachment>
+  </content>
+</DocumentReference>

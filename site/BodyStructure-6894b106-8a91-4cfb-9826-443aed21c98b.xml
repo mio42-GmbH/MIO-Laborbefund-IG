@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="6894b106-8a91-4cfb-9826-443aed21c98b"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure">
+    <extension url="structure">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+          <code value="90432007"/>
+          <display value="Structure of mucous membrane of nasopharynx (body structure)"/>
+        </coding>
+        <text value="test"/>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="laterality">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+          <code value="7771000"/>
+          <display value="Left (qualifier value)"/>
+        </coding>
+        <text value="test"/>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="bodyLandmarkOrientation">
+      <extension url="clockFacePosition">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+            <code value="260330005"/>
+            <display value="3 o'clock position (qualifier value)"/>
+          </coding>
+          <text value="test"/>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <extension url="qualifier">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+          <code value="46053002"/>
+          <display value="Distal (qualifier value)"/>
+        </coding>
+        <text value="test"/>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <morphology>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="75910000"/>
+      <display value="Congenital hypersegmentation (morphologic abnormality)"/>
+    </coding>
+    <text value="test"/>
+  </morphology>
+  <description value="test"/>
+  <patient>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </patient>
+</BodyStructure>

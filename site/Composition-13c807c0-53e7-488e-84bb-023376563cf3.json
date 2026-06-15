@@ -1,0 +1,58 @@
+{
+  "resourceType" : "Composition",
+  "id" : "13c807c0-53e7-488e-84bb-023376563cf3",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition|1.0.0-update"]
+  },
+  "extension" : [{
+    "url" : "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference",
+    "valueReference" : {
+      "reference" : "DiagnosticReport/a6f3d3de-0857-45ed-916e-087d84391bc3"
+    }
+  },
+  {
+    "url" : "http://hl7.eu/fhir/StructureDefinition/information-recipient",
+    "valueReference" : {
+      "reference" : "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"
+    }
+  }],
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:123456"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20251115",
+      "code" : "4241000179101",
+      "display" : "Laboratory report (record artifact)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff",
+    "identifier" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+          "code" : "KVZ10",
+          "display" : "Krankenversichertennummer"
+        }]
+      },
+      "system" : "http://fhir.de/sid/gkv/kvid-10",
+      "value" : "K123456789"
+    }
+  },
+  "date" : "2022-03-23",
+  "author" : [{
+    "reference" : "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"
+  }],
+  "title" : "Laboratory Report",
+  "attester" : [{
+    "mode" : "legal",
+    "time" : "2023-03-23",
+    "party" : {
+      "reference" : "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"
+    }
+  }]
+}

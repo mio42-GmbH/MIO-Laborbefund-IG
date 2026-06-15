@@ -1,0 +1,72 @@
+# 96f33ca8-872d-4c8b-972e-b681db27d9df - MIO Laborbefund v1.0.0-update
+
+MIO Laborbefund
+
+Version 1.0.0-update - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**FHIR-Artefakte**](artifacts.md)
+* **96f33ca8-872d-4c8b-972e-b681db27d9df**
+
+## Example Observation: 96f33ca8-872d-4c8b-972e-b681db27d9df
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "96f33ca8-872d-4c8b-972e-b681db27d9df",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study|1.0.0-update"]
+  },
+  "status" : "final",
+  "category" : [{
+    "extension" : [{
+      "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator",
+      "valueString" : "laboratory"
+    }],
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.82",
+      "code" : "98981-4",
+      "display" : "Urate [Mass/volume] in Blood"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff",
+    "identifier" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+          "code" : "KVZ10",
+          "display" : "Krankenversichertennummer"
+        }]
+      },
+      "system" : "http://fhir.de/sid/gkv/kvid-10",
+      "value" : "K123456789"
+    }
+  },
+  "effectiveDateTime" : "2021-11-15T11:30:00+01:00",
+  "issued" : "2021-11-15T11:30:00+01:00",
+  "performer" : [{
+    "reference" : "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"
+  }],
+  "valueQuantity" : {
+    "value" : 6.5,
+    "unit" : "mg/dL",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mg/dL"
+  }
+}
+
+```

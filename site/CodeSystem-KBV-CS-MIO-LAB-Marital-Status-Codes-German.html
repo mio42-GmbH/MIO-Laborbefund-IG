@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MaritalStatus German - MIO Laborbefund v1.0.0-update</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+<link href="assets/css/requirement-view.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/mio-labbefund-headline.png') no-repeat;
+        background-size: 98%;
+        background-position: -65px -5px;
+    }
+</style>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"15.77"}
+    h3,h4,h5,h6{--heading-prefix:"15.77"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="70" alt="Home" src="assets/images/mio42-logo.svg"/>
+
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Grundlagen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Fachliche_Einordnung_und_Nutzen.html">Fachliche Einordnung und Nutzen</a>
+      </li>
+      <li>
+        <a href="Rechtlicher_Rahmen.html">Rechtlicher Rahmen</a>
+      </li>
+      <li>
+        <a href="Stakeholder.html">Stakeholder</a>
+      </li>
+      <li>
+        <a href="Vorarbeiten.html">Vorarbeiten</a>
+      </li>
+      <li>
+        <a href="Prozessanalyse.html">Prozessanalyse</a>
+      </li>
+      <li>
+        <a href="Bedarfsanalyse.html">Bedarfsanalyse</a>
+      </li>
+      <li>
+        <a href="Grundlagen_zur_Terminologienutzung.html">Grundlagen zur Terminologienutzung</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Anwendungsfaelle.html">Anwendungsfälle</a>
+  </li>
+  <li>
+    <a href="infomodell.html">Informationsmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+  <li>
+    <a href="requirements.html">Umsetzungsanforderungen</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">UX-Visualisierungen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="UX-_UI-Ueberblick.html">UX-/UI-Überblick</a>
+      </li>
+      <li>
+        <a href="Einzelbefunddarstellung_in_der_Primaersystemansicht.html">Einzelbefunddarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Kumulativdarstellung_in_der_Primaersystemansicht.html">Kumulativdarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Moegliche_Primaersysteminteraktionen_mit_der_ePA.html">Mögliche Primärsysteminteraktionen mit der ePA</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Feedback.html">Feedback</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Über
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="expansion_parameters.html">Expansion Parameter</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+MIO Laborbefund
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-update - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>FHIR-Artefakte</b></a></li><li><b>MaritalStatus German</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<div class="col-12">
+  
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-KBV-CS-MIO-LAB-Marital-Status-Codes-German.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-KBV-CS-MIO-LAB-Marital-Status-Codes-German.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: MaritalStatus German
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-update<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German|1.0.0-update"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2026-06-15
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">KBV_CS_MIO_LAB_Marital_Status_Codes_German</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED “AS IS.” ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Dieses Codesystem enthält die Codes für deutsche Bezeichner für MaritalStatus German.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul><li>This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</li></ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German"> </a><a name="hcKBV-CS-MIO-LAB-Marital-Status-Codes-German"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">Annuliert<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Annuliert"> </a></td>
+<td>Annuliert</td></tr>
+<tr><td style="white-space:nowrap">Geschieden<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Geschieden"> </a></td>
+<td>Geschieden</td></tr>
+<tr><td style="white-space:nowrap">Einstweilig<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Einstweilig"> </a></td>
+<td>Einstweilig</td></tr>
+<tr><td style="white-space:nowrap">Getrenntlebend<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Getrenntlebend"> </a></td>
+<td>Getrennt lebend</td></tr>
+<tr><td style="white-space:nowrap">Verheiratet<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Verheiratet"> </a></td>
+<td>Verheiratet</td></tr>
+<tr><td style="white-space:nowrap">Polygam<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Polygam"> </a></td>
+<td>Polygam</td></tr>
+<tr><td style="white-space:nowrap">Ledig<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Ledig"> </a></td>
+<td>Ledig</td></tr>
+<tr><td style="white-space:nowrap">Lebenspartner<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Lebenspartner"> </a></td>
+<td>Lebenspartner</td></tr>
+<tr><td style="white-space:nowrap">Unbekannt<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Unbekannt"> </a></td>
+<td>Unbekannt</td></tr>
+<tr><td style="white-space:nowrap">Unverheiratet<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Unverheiratet"> </a></td>
+<td>Unverheiratet</td></tr>
+<tr><td style="white-space:nowrap">Verwitwet<a name="KBV-CS-MIO-LAB-Marital-Status-Codes-German-Verwitwet"> </a></td>
+<td>Verwitwet</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jun 15, 2026 16:45+0200">2026-06-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="51b6129a-b68c-485d-a37b-9593fee4354f"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group|1.0.0-update"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator">
+      <valueString value="laboratory"/>
+    </extension>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="test"/>
+  </category>
+  <category>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator">
+      <valueString value="studyType"/>
+    </extension>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <code value="18717-9"/>
+      <display value="Blood bank studies (set)"/>
+    </coding>
+    <text value="test"/>
+  </category>
+  <category>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator">
+      <valueString value="testProfile"/>
+    </extension>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"/>
+      <version value="1.0.0-update"/>
+      <code value="haemato"/>
+      <display value="Hämatologie"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_mio42"/>
+      <version value="1.0.0-update"/>
+      <code value="laboruntersuchungsgruppe"/>
+      <display value="Laboruntersuchungsgruppe"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="not-permitted"/>
+    </extension>
+  </effectiveDateTime>
+  <performer>
+    <reference value="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+  </performer>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <version value="4.0.0"/>
+      <code value="D"/>
+      <display value="Significant change down"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="281300000"/>
+      <display value="Below reference range (qualifier value)"/>
+    </coding>
+    <text value="test"/>
+  </interpretation>
+  <note>
+    <text value="test"/>
+  </note>
+  <hasMember>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number">
+      <valuePositiveInt value="1"/>
+    </extension>
+    <reference value="Observation/035761c3-8934-499f-bf34-3963979afb56"/>
+  </hasMember>
+</Observation>

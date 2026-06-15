@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container|1.0.0-update"/>
+  </meta>
+  <definition>
+    <reference value="DeviceDefinition/01021964-005b-4dd5-975d-2e9a9fa917d9"/>
+  </definition>
+</Device>

@@ -1,0 +1,471 @@
+{
+  "codeSystems" : [{
+    "url" : "http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "FachabteilungsschluesselVS",
+    "title" : "Fachabteilungsschlüssel ValueSet",
+    "description" : "Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung",
+    "systems" : ["http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Organization.html" : "KBV_PR_MIO_LAB_Organization"
+  },
+  {
+    "url" : "http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "ValueSetFachabteilungsschluesselErweitert",
+    "title" : "FachabteilungsschluesselErweitert ValueSet",
+    "description" : "Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung inkl. Spezialisierungen",
+    "systems" : ["http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Organization.html" : "KBV_PR_MIO_LAB_Organization"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-specimenAdditive-eu-lab",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "LabSpecimenAdditiveEu",
+    "title" : "Specimen Additive",
+    "description" : "List of the specimen additives. Additives are commonly added to the vacutainer tubes to preserve the specimen for laboratory analysis",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Substance.html" : "KBV_PR_MIO_LAB_Substance"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/duration-units",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "CommonUCUMCodesForDuration",
+    "title" : "Common UCUM Codes for Duration",
+    "description" : "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+    "systems" : ["http://unitsofmeasure.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.61"],
+    "sources" : ["2.16.840.1.113883.4.642.3.61"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" : "KBV_PR_MIO_LAB_Specimen"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationInterpretationCodes",
+    "title" : "Observation Interpretation Codes",
+    "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"],
+    "oids" : ["2.16.840.1.113883.4.642.3.399"],
+    "sources" : ["2.16.840.1.113883.4.642.3.399"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "PatientRelationshipType",
+    "title" : "Patient relationship type",
+    "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "http://terminology.hl7.org/CodeSystem/v2-0131"],
+    "oids" : ["2.16.840.1.113883.4.642.3.449"],
+    "sources" : ["2.16.840.1.113883.4.642.3.449"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-RelatedPerson.html" : "KBV_PR_MIO_LAB_RelatedPerson"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenContainerType",
+    "title" : "Specimen Container Type",
+    "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.470"],
+    "sources" : ["2.16.840.1.113883.4.642.3.470"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Container.html" : "KBV_PR_MIO_LAB_Device_Specimen_Container"
+  },
+  {
+    "url" : "http://ihe-d.de/ValueSets/IHEXDSclassCode",
+    "version" : "2021-06-25T13:44:47",
+    "status" : "active",
+    "name" : "IHEXDSclassCode",
+    "title" : "IHE XDS classCode",
+    "description" : "**classCode (XDSDocumentEntry)**\r\n A high-level classification of XDS Documents that indicates the kind of document, e.g., report, summary, note, consent.",
+    "systems" : ["http://loinc.org",
+    "http://ihe-d.de/CodeSystems/IHEXDSclassCode"],
+    "oids" : ["1.2.276.0.76.11.32"],
+    "sources" : ["1.2.276.0.76.11.32"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-DocumentReference.html" : "KBV_PR_MIO_LAB_DocumentReference"
+  },
+  {
+    "url" : "http://ihe-d.de/ValueSets/IHEXDShealthcareFacilityTypeCode",
+    "version" : "2021-07-06T21:23:52",
+    "status" : "active",
+    "name" : "IHEXDShealthcareFacilityTypeCode",
+    "title" : "IHE XDS healthcareFacilityTypeCode",
+    "description" : "**healthcareFacilityTypeCode (XDSDocumentEntry)**\r\nThis code for an XDS Document represents the type of organizational setting of the clinical encounter during which the documented act occurred.",
+    "systems" : ["http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung",
+    "http://ihe-d.de/CodeSystems/NichtPatientBezogeneGesundheitsversorgung"],
+    "oids" : ["1.2.276.0.76.11.36"],
+    "sources" : ["1.2.276.0.76.11.36"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Organization.html" : "KBV_PR_MIO_LAB_Organization"
+  },
+  {
+    "url" : "http://ihe-d.de/ValueSets/IHEXDStypeCode",
+    "version" : "2020-02-07T07:55:58",
+    "status" : "active",
+    "name" : "IHEXDStypeCode",
+    "title" : "IHE XDS typeCode",
+    "description" : "**typeCode (XDSDocumentEntry)**\r\nA low-level classification of XDS Documents within a classCode that describes class, event, specialty, and setting.",
+    "systems" : ["http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+    "http://loinc.org"],
+    "oids" : ["1.2.276.0.76.11.38"],
+    "sources" : ["1.2.276.0.76.11.38"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-DocumentReference.html" : "KBV_PR_MIO_LAB_DocumentReference"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_CommonLanguages",
+    "version" : "1.8.0",
+    "status" : "active",
+    "name" : "KBV_VS_Base_CommonLanguages",
+    "title" : "Bevorzugte Sprache (Includes)",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Bevorzugte Sprache (Includes).",
+    "systems" : ["urn:ietf:bcp:47"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Patient.html" : "KBV_PR_MIO_LAB_Patient"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Deuev_Anlage_8",
+    "version" : "1.8.0",
+    "status" : "active",
+    "name" : "KBV_VS_Base_Deuev_Anlage_8",
+    "title" : "Land/Wohnsitzländercode",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Land/Wohnsitzländercode.",
+    "systems" : ["http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Organization.html" : "KBV_PR_MIO_LAB_Organization",
+    "StructureDefinition-KBV-PR-MIO-LAB-Patient.html" : "KBV_PR_MIO_LAB_Patient"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Diagnosis_SNOMED_CT",
+    "version" : "1.8.0",
+    "status" : "active",
+    "name" : "KBV_VS_Base_Diagnosis_SNOMED_CT",
+    "title" : "Diagnose SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Diagnose SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.html" : "KBV_PR_MIO_LAB_Condition_Diagnosis"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality",
+    "version" : "1.8.0",
+    "status" : "active",
+    "name" : "KBV_VS_Base_Practitioner_Speciality",
+    "title" : "Practitioner Speciality",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Practitioner Speciality.",
+    "systems" : ["http://ihe-d.de/CodeSystems/QualifikationenNichtAerztlicherAutoren",
+    "http://ihe-d.de/CodeSystems/QualifikatorenZahnaerztlicherAutoren",
+    "http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern",
+    "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Practitioner.html" : "KBV_PR_MIO_LAB_Practitioner"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care",
+    "version" : "1.8.0",
+    "status" : "active",
+    "name" : "KBV_VS_Base_Role_Care",
+    "title" : "Rolle in Bezug auf die Einrichtung",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Rolle in Bezug auf die Einrichtung.",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-PractitionerRole.html" : "KBV_PR_MIO_LAB_PractitionerRole"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT",
+    "title" : "Körperstelle SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Körperstelle SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-BodyStructure.html" : "KBV_PR_MIO_LAB_BodyStructure"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position",
+    "title" : "Bodystructure Clock Face Position SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Bodystructure Clock Face Position SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-BodyStructure.html" : "KBV_PR_MIO_LAB_BodyStructure"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Data_Absent_Reason",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Data_Absent_Reason",
+    "title" : "Nichtvorhandensein LOINC®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Nichtvorhandensein LOINC®.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Diagnostic_ReportStatus",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Diagnostic_ReportStatus",
+    "title" : "Status Gesamtbefund",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Status Gesamtbefund.",
+    "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" : "KBV_PR_MIO_LAB_DiagnosticReport"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo",
+    "title" : "Kollektivbezug",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Kollektivbezug.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT",
+    "title" : "Außerkörperliche Quellen SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Außerkörperliche Quellen SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Subject.html" : "KBV_PR_MIO_LAB_Device_Specimen_Subject"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Identifier_Type",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Identifier_Type",
+    "title" : "Identifier Type",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Identifier Type.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" : "KBV_PR_MIO_LAB_Specimen"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT",
+    "title" : "Laboranalysegerät SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Laboranalysegerät SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Device-Laboratory-Analyzer.html" : "KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC",
+    "title" : "Laborbereich LOINC®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Laborbereich LOINC®.",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Laboruntersuchungsgruppe",
+    "title" : "Test-Profil Laboruntersuchungsgruppe",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Test-Profil Laboruntersuchungsgruppe.",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT",
+    "title" : "Lateralität Körperstelle SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Lateralität Körperstelle SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-BodyStructure.html" : "KBV_PR_MIO_LAB_BodyStructure"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT",
+    "title" : "Lokalisation innerhalb Körperstelle SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Lokalisation innerhalb Körperstelle SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-BodyStructure.html" : "KBV_PR_MIO_LAB_BodyStructure"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_MIME_Types",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_MIME_Types",
+    "title" : "Dateiformat",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Dateiformat.",
+    "systems" : ["urn:ietf:bcp:13"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" : "KBV_PR_MIO_LAB_DiagnosticReport",
+    "StructureDefinition-KBV-PR-MIO-LAB-DocumentReference.html" : "KBV_PR_MIO_LAB_DocumentReference",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" : "KBV_PR_MIO_LAB_Observation_Image_Attachment"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT",
+    "title" : "Messergebnis Qualitativ SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Messergebnis Qualitativ SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Methods",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Observation_Methods",
+    "title" : "Untersuchungsmethode SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Untersuchungsmethode SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Status",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Observation_Status",
+    "title" : "Status Laboruntersuchung",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Status Laboruntersuchung.",
+    "systems" : ["http://hl7.org/fhir/observation-status"]
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Secondary_Status",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Secondary_Status",
+    "title" : "Sekundärstatus Gesamtbefund",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Sekundärstatus Gesamtbefund.",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Secondary_Status"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-EX-MIO-LAB-Secondary-Status.html" : "KBV_EX_MIO_LAB_Secondary_Status"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT",
+    "title" : "Probenentnahme-Methode SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Probenentnahme-Methode SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" : "KBV_PR_MIO_LAB_Specimen"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Condition",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Specimen_Condition",
+    "title" : "Zustand Probe",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Zustand Probe.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493",
+    "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" : "KBV_PR_MIO_LAB_Specimen"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT",
+    "title" : "Probenart SNOMED CT®",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Probenart SNOMED CT®.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Specimen.html" : "KBV_PR_MIO_LAB_Specimen"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Type_Diagram",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_VS_MIO_LAB_Type_Diagram",
+    "title" : "Typisierung Messdiagramm",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Typisierung Messdiagramm.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" : "KBV_PR_MIO_LAB_Observation_Image_Attachment"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+    "version" : "1.03",
+    "status" : "active",
+    "name" : "KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+    "title" : null,
+    "description" : "Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-MIO-LAB-PractitionerRole.html" : "KBV_PR_MIO_LAB_PractitionerRole"
+  }]
+}

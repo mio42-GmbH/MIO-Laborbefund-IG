@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German</b></p><a name=\"KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Klinischweiblich<a name=\"KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German-Klinischweiblich\"> </a></td><td>Klinisch weiblich</td></tr><tr><td style=\"white-space:nowrap\">Klinischmaennlich<a name=\"KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German-Klinischmaennlich\"> </a></td><td>Klinisch männlich</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-update"] ; # 
+  fhir:name [ fhir:v "KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German"] ; # 
+  fhir:title [ fhir:v "Kollektivbezug German"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-06-15T16:45:57+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "mio42 GmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://mio.kbv.de" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hello@mio42.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Kollektivbezug German."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE" ] ;
+       fhir:display [ fhir:v "Germany" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Klinischweiblich" ] ;
+     fhir:display [ fhir:v "Klinisch weiblich" ]
+  ] [
+     fhir:code [ fhir:v "Klinischmaennlich" ] ;
+     fhir:display [ fhir:v "Klinisch männlich" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

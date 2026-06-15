@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT</b></p><a name="KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT"> </a><a name="hcKBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115"> version &#x1F4CD;http://snomed.info/sct/11000274103/version/20251115</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260347006">260347006</a></td><td>+</td><td>+ aus ++++ vorhanden</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260348001">260348001</a></td><td>++</td><td>++ aus ++++ vorhanden</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260349009">260349009</a></td><td>+++</td><td>+++ aus ++++ vorhanden</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260350009">260350009</a></td><td>++++</td><td>++++ aus ++++ vorhanden</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/441614007">441614007</a></td><td>Present one plus out of three plus</td><td>+ aus +++ vorhanden</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/441517005">441517005</a></td><td>Present two plus out of three plus</td><td>++ aus +++ vorhanden</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/441521003">441521003</a></td><td>Present three plus out of three plus</td><td>+++ aus +++ vorhanden</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260373001">260373001</a></td><td>Detected</td><td>Nachgewiesen</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260385009">260385009</a></td><td>Negative</td><td>Negativ</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260392004">260392004</a></td><td>Non-patent</td><td>Nicht-durchgängig</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260415000">260415000</a></td><td>Not detected</td><td>Nicht nachgewiesen</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/52101004">52101004</a></td><td>Present</td><td>Vorhanden</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/10828004">10828004</a></td><td>Positive</td><td>Positiv</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/2667000">2667000</a></td><td>Absent</td><td>Abwesend</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/895231008">895231008</a></td><td>Not detected in pooled specimen</td><td>Nicht nachgewiesen in Poolprobe</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/720735008">720735008</a></td><td>Presumptive positive</td><td>Vermutlich positiv</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/373067005">373067005</a></td><td>No</td><td>Nein</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/373066001">373066001</a></td><td>Yes</td><td>Ja</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/264887000">264887000</a></td><td>Not isolated</td><td>Nicht isoliert</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/264868006">264868006</a></td><td>No growth</td><td>Kein Wachstum</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260413007">260413007</a></td><td>None</td><td>Kein</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260408008">260408008</a></td><td>Weakly positive</td><td>Schwach positiv</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260405006">260405006</a></td><td>Trace</td><td>Spur</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/260389003">260389003</a></td><td>No reaction</td><td>Keine Reaktion</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/46651001">46651001</a></td><td>Isolated</td><td>Isoliert</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/419984006">419984006</a></td><td>Inconclusive</td><td>Nicht auswertbar</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/42425007">42425007</a></td><td>Equivocal</td><td>Zweideutig</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/82334004">82334004</a></td><td>Indeterminate</td><td>Uneindeutig</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/62482003">62482003</a></td><td>Low</td><td>Niedrig</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/11214006">11214006</a></td><td>Reactive</td><td>Reaktiv</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/131194007">131194007</a></td><td>Non-Reactive</td><td>Nicht-reaktiv</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/280416009">280416009</a></td><td>Indeterminate result</td><td>Unbestimmtes Ergebnis</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/75540009">75540009</a></td><td>High</td><td>Hoch</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/455371000124106">455371000124106</a></td><td>Invalid result</td><td>Ungültiges Ergebnis</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/89292003">89292003</a></td><td>Rare</td><td>Selten</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/262008008">262008008</a></td><td>Not performed</td><td>Nicht durchgeführt</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/17621005">17621005</a></td><td>Normal</td><td>Normal</td></tr><tr><td><a href="http://snomed.info/sct/11000274103/id/277025001">277025001</a></td><td>Proven</td><td>Erwiesen</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"/>
+  <version value="1.0.0-update"/>
+  <name value="KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"/>
+  <title value="Messergebnis Qualitativ SNOMED CT®"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-06-15T16:45:57+02:00"/>
+  <publisher value="mio42 GmbH"/>
+  <contact>
+    <name value="mio42 GmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://mio.kbv.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hello@mio42.de"/>
+    </telecom>
+  </contact>
+  <description value="Dieses Valueset enthält die Codes zur Beschreibung von Messergebnis Qualitativ SNOMED CT®."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <concept>
+        <code value="260347006"/>
+        <display value="+"/>
+        <designation>
+          <language value="de"/>
+          <value value="+ aus ++++ vorhanden"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260348001"/>
+        <display value="++"/>
+        <designation>
+          <language value="de"/>
+          <value value="++ aus ++++ vorhanden"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260349009"/>
+        <display value="+++"/>
+        <designation>
+          <language value="de"/>
+          <value value="+++ aus ++++ vorhanden"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260350009"/>
+        <display value="++++"/>
+        <designation>
+          <language value="de"/>
+          <value value="++++ aus ++++ vorhanden"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="441614007"/>
+        <display value="Present one plus out of three plus"/>
+        <designation>
+          <language value="de"/>
+          <value value="+ aus +++ vorhanden"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="441517005"/>
+        <display value="Present two plus out of three plus"/>
+        <designation>
+          <language value="de"/>
+          <value value="++ aus +++ vorhanden"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="441521003"/>
+        <display value="Present three plus out of three plus"/>
+        <designation>
+          <language value="de"/>
+          <value value="+++ aus +++ vorhanden"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260373001"/>
+        <display value="Detected"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nachgewiesen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260385009"/>
+        <display value="Negative"/>
+        <designation>
+          <language value="de"/>
+          <value value="Negativ"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260392004"/>
+        <display value="Non-patent"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nicht-durchgängig"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260415000"/>
+        <display value="Not detected"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nicht nachgewiesen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="52101004"/>
+        <display value="Present"/>
+        <designation>
+          <language value="de"/>
+          <value value="Vorhanden"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10828004"/>
+        <display value="Positive"/>
+        <designation>
+          <language value="de"/>
+          <value value="Positiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2667000"/>
+        <display value="Absent"/>
+        <designation>
+          <language value="de"/>
+          <value value="Abwesend"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="895231008"/>
+        <display value="Not detected in pooled specimen"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nicht nachgewiesen in Poolprobe"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="720735008"/>
+        <display value="Presumptive positive"/>
+        <designation>
+          <language value="de"/>
+          <value value="Vermutlich positiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="373067005"/>
+        <display value="No"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nein"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="373066001"/>
+        <display value="Yes"/>
+        <designation>
+          <language value="de"/>
+          <value value="Ja"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="264887000"/>
+        <display value="Not isolated"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nicht isoliert"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="264868006"/>
+        <display value="No growth"/>
+        <designation>
+          <language value="de"/>
+          <value value="Kein Wachstum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260413007"/>
+        <display value="None"/>
+        <designation>
+          <language value="de"/>
+          <value value="Kein"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260408008"/>
+        <display value="Weakly positive"/>
+        <designation>
+          <language value="de"/>
+          <value value="Schwach positiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260405006"/>
+        <display value="Trace"/>
+        <designation>
+          <language value="de"/>
+          <value value="Spur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260389003"/>
+        <display value="No reaction"/>
+        <designation>
+          <language value="de"/>
+          <value value="Keine Reaktion"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46651001"/>
+        <display value="Isolated"/>
+        <designation>
+          <language value="de"/>
+          <value value="Isoliert"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419984006"/>
+        <display value="Inconclusive"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nicht auswertbar"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="42425007"/>
+        <display value="Equivocal"/>
+        <designation>
+          <language value="de"/>
+          <value value="Zweideutig"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82334004"/>
+        <display value="Indeterminate"/>
+        <designation>
+          <language value="de"/>
+          <value value="Uneindeutig"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62482003"/>
+        <display value="Low"/>
+        <designation>
+          <language value="de"/>
+          <value value="Niedrig"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11214006"/>
+        <display value="Reactive"/>
+        <designation>
+          <language value="de"/>
+          <value value="Reaktiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="131194007"/>
+        <display value="Non-Reactive"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nicht-reaktiv"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="280416009"/>
+        <display value="Indeterminate result"/>
+        <designation>
+          <language value="de"/>
+          <value value="Unbestimmtes Ergebnis"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75540009"/>
+        <display value="High"/>
+        <designation>
+          <language value="de"/>
+          <value value="Hoch"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="455371000124106"/>
+        <display value="Invalid result"/>
+        <designation>
+          <language value="de"/>
+          <value value="Ungültiges Ergebnis"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89292003"/>
+        <display value="Rare"/>
+        <designation>
+          <language value="de"/>
+          <value value="Selten"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="262008008"/>
+        <display value="Not performed"/>
+        <designation>
+          <language value="de"/>
+          <value value="Nicht durchgeführt"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17621005"/>
+        <display value="Normal"/>
+        <designation>
+          <language value="de"/>
+          <value value="Normal"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="277025001"/>
+        <display value="Proven"/>
+        <designation>
+          <language value="de"/>
+          <value value="Erwiesen"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

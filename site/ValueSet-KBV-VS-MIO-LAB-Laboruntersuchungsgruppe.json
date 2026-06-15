@@ -1,0 +1,103 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KBV-VS-MIO-LAB-Laboruntersuchungsgruppe",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Laboruntersuchungsgruppe</b></p><a name=\"KBV-VS-MIO-LAB-Laboruntersuchungsgruppe\"> </a><a name=\"hcKBV-VS-MIO-LAB-Laboruntersuchungsgruppe\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html\"><code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe</code></a><span title=\"Version is explicitly stated to be 1.0.0-update\"> version &#x1F4CD;1.0.0-update</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-haemato\">haemato</a></td><td>Hämatologie</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baselec\">baselec</a></td><td>Basisanalytik - Elektrolyte</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baskidn\">baskidn</a></td><td>Basisanalytik - Nierenfunktion</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baslivr\">baslivr</a></td><td>Basisanalytik - Leberfunktion</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-basenzy\">basenzy</a></td><td>Basisanalytik - Enzyme</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-endocr\">endocr</a></td><td>Endokrinologie</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-cardio\">cardio</a></td><td>Kardiologie</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-lipmetb\">lipmetb</a></td><td>Fettstoffwechsel</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-diabdiag\">diabdiag</a></td><td>Diabetesdiagnostik</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-vitdiag\">vitdiag</a></td><td>Vitamindiagnostik</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-inflmark\">inflmark</a></td><td>Entzündungsmarker</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-proteins\">proteins</a></td><td>Proteine</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-hemostas\">hemostas</a></td><td>Hämostaseologie</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-uridiag\">uridiag</a></td><td>Urindiagnostik</td></tr><tr><td><a href=\"CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html#KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-ironmetb\">ironmetb</a></td><td>Eisen-/Hämoglobinstoffwechsel</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Laboruntersuchungsgruppe",
+  "title" : "Test-Profil Laboruntersuchungsgruppe",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-06-15T16:45:57+02:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Test-Profil Laboruntersuchungsgruppe.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "immutable" : false,
+  "copyright" : "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe",
+      "version" : "1.0.0-update",
+      "concept" : [{
+        "code" : "haemato",
+        "display" : "Hämatologie"
+      },
+      {
+        "code" : "baselec",
+        "display" : "Basisanalytik - Elektrolyte"
+      },
+      {
+        "code" : "baskidn",
+        "display" : "Basisanalytik - Nierenfunktion"
+      },
+      {
+        "code" : "baslivr",
+        "display" : "Basisanalytik - Leberfunktion"
+      },
+      {
+        "code" : "basenzy",
+        "display" : "Basisanalytik - Enzyme"
+      },
+      {
+        "code" : "endocr",
+        "display" : "Endokrinologie"
+      },
+      {
+        "code" : "cardio",
+        "display" : "Kardiologie"
+      },
+      {
+        "code" : "lipmetb",
+        "display" : "Fettstoffwechsel"
+      },
+      {
+        "code" : "diabdiag",
+        "display" : "Diabetesdiagnostik"
+      },
+      {
+        "code" : "vitdiag",
+        "display" : "Vitamindiagnostik"
+      },
+      {
+        "code" : "inflmark",
+        "display" : "Entzündungsmarker"
+      },
+      {
+        "code" : "proteins",
+        "display" : "Proteine"
+      },
+      {
+        "code" : "hemostas",
+        "display" : "Hämostaseologie"
+      },
+      {
+        "code" : "uridiag",
+        "display" : "Urindiagnostik"
+      },
+      {
+        "code" : "ironmetb",
+        "display" : "Eisen-/Hämoglobinstoffwechsel"
+      }]
+    }]
+  }
+}

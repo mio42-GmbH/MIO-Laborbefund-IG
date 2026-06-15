@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="c46e7bfb-1ee3-4c6b-9ce2-204939133cc5"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Subject|1.0.0-update"/>
+  </meta>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="UDI"/>
+        <display value="Universal Device Identifier"/>
+      </coding>
+    </type>
+    <system value="http://goodcare.org/devices/id"/>
+    <value value="123456"/>
+  </identifier>
+  <definition>
+    <reference value="DeviceDefinition/81840764-fb77-49e6-9a7b-5cb028d29895"/>
+  </definition>
+  <udiCarrier>
+    <deviceIdentifier value="example"/>
+  </udiCarrier>
+  <distinctIdentifier value="example"/>
+  <manufactureDate value="2024-04-01T16:55:00+01:00"/>
+  <expirationDate value="2026-04-01T16:55:00+01:00"/>
+  <lotNumber value="12345"/>
+  <serialNumber value="9654537"/>
+  <modelNumber value="123456789"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="8407004"/>
+      <display value="Bile collection bag, device (physical object)"/>
+    </coding>
+    <text value="Medizinisches Laboranalysegerät"/>
+  </type>
+  <version>
+    <value value="v1"/>
+  </version>
+  <patient>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </patient>
+  <note>
+    <text value="test"/>
+  </note>
+</Device>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Vorarbeiten - MIO Laborbefund v1.0.0-update</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+<link href="assets/css/requirement-view.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/mio-labbefund-headline.png') no-repeat;
+        background-size: 98%;
+        background-position: -65px -5px;
+    }
+</style>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="70" alt="Home" src="assets/images/mio42-logo.svg"/>
+
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Grundlagen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Fachliche_Einordnung_und_Nutzen.html">Fachliche Einordnung und Nutzen</a>
+      </li>
+      <li>
+        <a href="Rechtlicher_Rahmen.html">Rechtlicher Rahmen</a>
+      </li>
+      <li>
+        <a href="Stakeholder.html">Stakeholder</a>
+      </li>
+      <li>
+        <a href="Vorarbeiten.html">Vorarbeiten</a>
+      </li>
+      <li>
+        <a href="Prozessanalyse.html">Prozessanalyse</a>
+      </li>
+      <li>
+        <a href="Bedarfsanalyse.html">Bedarfsanalyse</a>
+      </li>
+      <li>
+        <a href="Grundlagen_zur_Terminologienutzung.html">Grundlagen zur Terminologienutzung</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Anwendungsfaelle.html">Anwendungsfälle</a>
+  </li>
+  <li>
+    <a href="infomodell.html">Informationsmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+  <li>
+    <a href="requirements.html">Umsetzungsanforderungen</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">UX-Visualisierungen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="UX-_UI-Ueberblick.html">UX-/UI-Überblick</a>
+      </li>
+      <li>
+        <a href="Einzelbefunddarstellung_in_der_Primaersystemansicht.html">Einzelbefunddarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Kumulativdarstellung_in_der_Primaersystemansicht.html">Kumulativdarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Moegliche_Primaersysteminteraktionen_mit_der_ePA.html">Mögliche Primärsysteminteraktionen mit der ePA</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Feedback.html">Feedback</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Über
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="expansion_parameters.html">Expansion Parameter</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+MIO Laborbefund
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-update - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Vorarbeiten</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
+  <h2>Vorarbeiten</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+  <p>Seiteninhalt:</p>
+
+<ul id="markdown-toc">
+  <li><a href="#derzeitige-digitale-austauschformate-fr-laborbefunde" id="markdown-toc-derzeitige-digitale-austauschformate-fr-laborbefunde">Derzeitige digitale Austauschformate für Laborbefunde</a></li>
+  <li><a href="#harmonisierung-des-mio-laborbefund-mit-anderen-spezifikationen-zu-labordaten" id="markdown-toc-harmonisierung-des-mio-laborbefund-mit-anderen-spezifikationen-zu-labordaten">Harmonisierung des MIO Laborbefund mit anderen Spezifikationen zu Labordaten</a></li>
+</ul>
+
+</div>
+
+<div class="confluence-content">
+
+  <h3 id="derzeitige-digitale-austauschformate-fr-laborbefunde">Derzeitige digitale Austauschformate für Laborbefunde</h3>
+
+  <p>Bisher gibt es keinen verbindlichen Standard für digitale Laborbefunde, der sowohl im ambulanten als auch im stationären Sektor genutzt wird. Vorgaben zur Datenstruktur liefert die <a href="https://www.bundesaerztekammer.de/fileadmin/user_upload/BAEK/Themen/Qualitaetssicherung/_Bek_BAEK_RiLi_QS_laboratoriumsmedizinischer_Untersuchungen.pdf">Rili-BÄK 2019</a> (Richtlinie Bundesärztekammer), insbesondere Teil A Kap. 6 relevante Inhalte. Weiter gibt die <a href="https://www.dakks.de/de/medizinische-labore-din-en-iso-15189.html">DIN EN ISO 15189 Medizinische Laboratorien</a><sup></sup>im Kapitel „Befundberichte“ zur Rili-BÄK kompatible Vorgaben bezüglich der Anforderungen an einen Laborbefundbericht.</p>
+
+  <p>Zum digitalen Austausch von Laborbefunden werden in der medizinischen Versorgung in Deutschland seit einigen Jahren vorrangig zwei Formate genutzt: Vor allem im ambulanten Sektor kommt der Kommunikationsstandard <a href="https://update.kbv.de/ita-update/Labor/Labordatenkommunikation/EXT_ITA_VGEX_LDT%203_2_19_Gesamtdokument.pdf">“Labordatentransfer” (LDT)</a> zum Einsatz. Er existiert in mehreren Versionen. Die aktuellste Version 3 hat jedoch keine flächendeckende Verbreitung in der ambulanten Labordatenkommunikation gefunden. Entwickelt wurde der LDT vom Qualitätsring Medizinische Software e. V. (QMS) und der Kassenärztlichen Bundesvereinigung (KBV). Er liefert in seiner Datensatzbeschreibung Grundlagen für die Strukturierung von Laborbefunden und deckt alle Teilprozesse ab, wie z. B. Auftrag, Laborbefund und Abrechnungsdaten. Innerhalb von Kliniken sind <a href="https://hl7.de/themen/hl7-v2-x-nachrichten/">HL7 V2.x Nachrichten</a> für die Kommunikation von Versicherten- und Leistungsdaten sowie Leistungsanforderungen weit verbreitet. Teilweise kommt bereits eine <em>HL7 Version 3</em> zum Einsatz. Grundsätzlich handelt es sich hierbei um einen syntaktischen Standard. Eine standardisierte Beschreibung von Laborbefunden liegt in diesem Kontext nicht vor.</p>
+
+  <p>In Gremien und von zahlreichen Stakeholdern wurde wiederholt der Wunsch geäußert, das MIO Laborbefund langfristig als führenden Standard und zentrale Datenquelle zu etablieren. Ziel ist es, Laborbefunde zukünftig in allen Fachbereichen und Sektoren über ein einheitliches Format zu kommunizieren, auch außerhalb der ePA. Für die Kommunikation zwischen Leistungserbringenden bedeutet dies, vorrangig das MIO Laborbefund zu nutzen und dabei einen sicheren Übertragungsweg gemäß den Vorgaben des SGB V einzuhalten.</p>
+
+  <p>Für die Analyse und Erarbeitung des MIO Laborbefund wurden bewährte Konzepte aus aktuell genutzten Standards und Richtlinien sowie Vorarbeiten von Fachgremien berücksichtigt. Dabei wurde jedoch darauf geachtet, dass der Scope des MIO Laborbefund, also die strukturierte Abbildung aller medizinisch relevanten Informationen im Zusammenhang mit einer labormedizinischen Untersuchung, nicht verlassen wird. Im Gegensatz zum LDT enthält das MIO daher keine abrechnungsrelevanten Daten. ausschließlich den Laborbefund als fachliches Gesamtergebnis des Prozesses und basiert auf international standardisierten Terminologien, was einen wichtigen Unterschied zum LDT darstellt.</p>
+
+  <p>Im Zuge der Einführung des MIO müssen bestehende Übertragungsformate wie LDT, HL7v2 und HL7 FHIR berücksichtigt und idealerweise schrittweise durch das MIO Laborbefund ersetzt werden.</p>
+
+  <h3 id="harmonisierung-des-mio-laborbefund-mit-anderen-spezifikationen-zu-labordaten">Harmonisierung des MIO Laborbefund mit anderen Spezifikationen zu Labordaten</h3>
+
+  <p>Damit ein reibungsloser Datenaustausch und eine einheitliche Kommunikation von Labordaten gewährleistet werden kann, wird eine weitgehende Harmonisierung mit bestehenden Standardisierungsprojekten angestrebt. Dies ist sowohl im Hinblick auf den EU-grenzüberschreitenden Austausch von Gesundheitsdaten als auch im Hinblick auf die Weiterverwendung der MIO Laborbefund-Daten für Forschungszwecke notwendig. Klarstellend muss jedoch darauf hingewiesen werden, dass sich die zu harmonisierenden Spezfikationen in Teilen unterscheiden müssen, um ihren jeweiligen Anwendungszweck bestmöglich zu untersützen.</p>
+
+  <h4 id="ehds-laboratory-report">EHDS Laboratory Report</h4>
+
+  <p>Vom eHN (eHealth Network) wurden Guidelines entwickelt, die den grenzüberschreitenden Datenaustausch von Gesundheitsdaten in Europa unterstützen sollen. Ausgangspunkt der Aktivitäten des eHN ist die Cross-Border Directive EU2011/24. Die Guidelines bilden die Grundlage zur fachlichen Ausgestaltung der in der <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_de">Verordnung über den Europäischen Gesundheitsdatenraum (EHDS)</a> festgelegten priorisierten Kategorien elektronischer Gesundheitsdaten. Eine der entwickelten Guidelines ist die <a href="https://health.ec.europa.eu/publications/ehn-laboratory-result-guidelines_en">eHN Guideline Laboratory Report</a>. Auf dieser Basis entwickelte HL7® Europe einen Vorschlag für einen <a href="https://build.fhir.org/ig/hl7-eu/laboratory/">Implementation Guide zum Laboratory Report</a>, welcher nach derzeitigem Stand in dieser Form von der europäischen Koordinierungsgruppe des <a href="https://www.xt-ehr.eu/projectoverview/">Xt-EHR Projekts</a> für die einzelnen priorisierten Datenkategorien an die EU-Kommission weitergereicht wird. Diese ist verantwortlich für die späteren Implementing Acts, welche unter anderem die detaillierten technischen Vorgaben zur Implementierung des European Electronic Health Record Exchange Format (EEHRxF), basierend auf FHIR (Fast Healthcare Interoperability Resources) enthalten wird. Der innereuropäische Austausch von Labordaten entsprechend dieser Vorgaben soll ab dem 26. März 2031 erfolgen.</p>
+
+  <p>Das MIO Laborbefund wurde auf die Kompatibilität mit dem HL7 Europe Laboratory Report abgeglichen und soweit möglich und notwendig angepasst. Bestimmte nationale Besonderheiten wie beispielsweise eine Gruppierung von Laboruntersuchungen unterscheiden die beiden Spezifikationen, ohne das dies EInfluss auf die Kompatibilität hätte. An anderen Stellen gelten im MIO Laborbefund fachlich begründete abweichende Vorgaben zu Valuesets, bei denen entsprechende Vorgaben für ein Mapping am NCPeH zur EU-Kompatibilität führen sollen.</p>
+
+  <h4 id="medizininformatik-initiative-kerndatensatz-modul-laborbefund">Medizininformatik Initiative: Kerndatensatz-Modul Laborbefund</h4>
+
+  <p>Die <strong><a href="https://www.medizininformatik-initiative.de/de/start">Medizininformaik-Initiative (MII)</a></strong> legt den Fokus auf die Vereinheitlichung der Daten an universitätsmedizinischen Standorten, um diese vor allem für Forschungszwecke zu nutzen. Dazu hat sie u. a. das <a href="https://www.medizininformatik-initiative.de/Kerndatensatz/KDS_Laborbefund_2026/MIIIGModulLaborbefund.html">Kerndatensatz-Modul Laborbefund</a> entwickelt. Dieses ist in HL7<sup>®</sup> FHIR<sup>®</sup> spezifiziert und folgt sowohl nationalen als auch internationalen Standards, wie LOINC<sup>®</sup> und SNOMED CT<sup>®</sup>.</p>
+
+  <p>Die Arbeiten der MII und der mio42 GmbH wurden gegenseitig gesichtet. Die Ergebnisse dieses Abgleichs sind in die Ausgestaltung der jeweiligen Modellierungen eingeflossen.</p>
+
+  <h4 id="deutsches-elektronisches-melde--und-informationssystem-fr-den-infektionsschutz-demis">Deutsches Elek­tro­ni­sches Melde- und Infor­ma­tions­system für den Infek­tions­schutz (DEMIS)</h4>
+
+  <p>Das <a href="https://www.rki.de/DE/Themen/Infektionskrankheiten/Meldewesen/DEMIS/DEMIS_inhalt.html">Deutsche Elektro­nische Melde- und Infor­ma­tions­system für den Infektions­schutz (DEMIS)</a> ermöglicht seit Juni 2020 bundes­weit die elektro­nische Meldung gemäß Infektions­schutz­gesetz (IfSG).</p>
+
+  <p>Eine Harmonisierung wird insofern angestrebt, sodass zukünftig eine Teilmenge aus dem MIO Laborbefund in die DEMIS-Meldungautomatisiert übernommen werden kann.</p>
+
+  <h4 id="antibiotika-resistenz-surveillance-ars">Antibiotika-Resistenz-Surveillance (ARS)</h4>
+
+  <p>Die Entstehung und Ausbreitung von Resistenzen gegen Antibiotika hat sich weltweit zu einem gravierenden Problem der öffentlichen Gesundheit entwickelt, da dadurch die Behandlung von bakteriellen Infektionskrankheiten zunehmend erschwert wird. Als Reaktion darauf hat das Bundesministerium für Gesundheit die <a href="https://amr.rki.de/Content/Common/Strategies.aspx">Deutsche Antibiotika Resistenzstrategie (DART)</a> entwickelt. Eine zentrale Stellung nehmen dabei Surveillance-Systeme zur Antibiotika-Resistenz sowie zum Antibiotika-Verbrauch ein, um auf der Basis verlässlicher und repräsentativer Daten Maßnahmen zur Begrenzung des Problems ergreifen zu können.</p>
+
+  <p>Eine Harmonisierung wird insofern angestrebt, sodass zukünftig eine Teilmenge aus dem MIO Laborbefund in die <strong>ARS-Meldung</strong> automatisiert übernommen werden kann.</p>
+
+  <h4 id="informationstechnische-systeme-in-krankenhusern-isik">Informationstechnische Systeme in Krankenhäusern (ISiK)</h4>
+
+  <p>Die gematik entwickelt mit <a href="https://fachportal.gematik.de/zielgruppen/primaersystemhersteller/isik">ISiK</a> einen Standard zum Informationsaustausch zwischen Softwarekomponenten im Krankenhaus. Nach derzeitigem Stand umfasst ISiK noch keine Labordatenkommunikation, sondern lediglich ein Support-Modul für Laboruntersuchungen in AMTS-Use-Cases. Die Spezifikationen wurden gegenseitig gesichtet und der Austausch wird fortgeführt.</p>
+
+  <h4 id="terminologien-in-laborbefunden">Terminologien in Laborbefunden</h4>
+
+  <p>In Deutschland gibt es noch keine verbindlichen Vorgaben bzw. kein einheitliches Vorgehen, um eine semantische Interoperabilität von Labordaten sicherzustellen. Bisher werden Laboruntersuchungen in den Leistungskatalogen der Labore überwiegend mit systemeigenen Codes zur Identifikation versehen. Für die codierte Spezifikation von Laboruntersuchungen ist international und EU-weit <a href="https://loinc.org/">LOINC®</a> als Code-System anerkannt und etabliert (<a href="https://mio.kbv.de/spaces/MIOATT/pages/127048637/Erkl%C3%A4rung+LOINC%C2%AE">Erklärung LOINC®</a>).</p>
+
+  <p>Im MIO Laborbefund sollen deshalb die einzelnen Laboruntersuchungen über LOINC<sup>®</sup> spezifiziert werden. Für weitere semantische Codierungen, wie im u.g. Beispiel beim qualitativen Ergebnis, kommt <a href="https://www.snomed.org/">SNOMED CT®</a> (<a href="https://mio.kbv.de/pages/viewpage.action?pageId=30146912">Erklärung SNOMED CT®</a>) zum Einsatz. Das gilt auch für eine ergänzende Spezifizierung der angewandten Untersuchungsmethode sowie der dafür eingesetzten Probenmaterialien. Diese Vorgehensweise deckt sich mit den zu erwartenden Vorgaben zum Laboratory Report auf EU-Ebene (s. o.).</p>
+
+  <p>Beispiel</p>
+
+  <p>Laboruntersuchung “Fragestellung”:</p>
+
+  <ul>
+    <li>LOINC<sup>®</sup> 5196-1<br />
+Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay<br />
+Hepatitis-B-Virus-Oberflächen-Antigen [Nachweis] in Serum oder Plasma mit Immunoassay (deutsche Lingusitic Variant)</li>
+  </ul>
+
+  <p>Qualitatives Ergebnis “Antwort”:</p>
+
+  <ul>
+    <li>SNOMED CT<sup>®</sup>260385009<br />
+Negative (qualifier value)</li>
+  </ul>
+
+  <h4 id="deutschsprachige-loinc-liste">Deutschsprachige LOINC<sup>®</sup>-Liste</h4>
+
+  <p>Ein großer Teil der internationalen laborspezifischen LOINC<sup>®</sup>-Codes wurde vom <a href="https://www.bfarm.de/DE/Home/_node.html">Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)</a> ins Deutsche übersetzt und durch das <a href="https://www.regenstrief.org/">Regenstrief Institute</a> als <a href="https://loinc.org/linguistic-variants/">linguistic variants</a> veröffentlicht<em>.</em> Die Erweiterung der deutschsprachigen LOINC<sup>®</sup>-Liste erfolgt fortlaufend.</p>
+
+  <h4 id="loinc-integration-in-den-primrsystemen">LOINC<sup>®</sup>-Integration in den Primärsystemen</h4>
+
+  <p>Die Integration von LOINC<sup>®</sup>-Codes in die Primärsysteme der elektronischen Laborbefunddokumentation stellt einen wichtigen Schritt in der Standardisierung und Optimierung von Laboranalysen dar. Hier sind die Schlüsselpunkte und Herausforderungen dieser Integration zusammengefasst:</p>
+
+  <p><strong>Fachliche Administration</strong>: Innerhalb des Laborinformationssystems (LIS) einer Labororganisation ist eine Zuordnung der LOINC<sup>®</sup>-Codes zu den einzelnen Leistungen des zentralen Leistungskatalogs notwendig.</p>
+
+  <p><strong>Automatisierte Zuordnung in der Systemanwendung</strong>: Bei der elektronischen Laborbefunddokumentation werden LOINC<sup>®</sup>-Codes, die in den Katalogdaten bereits verknüpft sind, als Hintergrundverarbeitung mitgegeben. Die Befund-dokumentierende Person (z.B. Laborärzt:innen) hat diesbezüglich keinen Codier-Aufwand.</p>
+
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jun 15, 2026 16:45+0200">2026-06-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

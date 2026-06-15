@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Substance xmlns="http://hl7.org/fhir">
+  <id value="4153de68-1124-4c02-a8a3-98f4c312f075"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance|1.0.0-update"/>
+  </meta>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="69519002"/>
+      <display value="EDTA"/>
+    </coding>
+  </code>
+</Substance>

@@ -1,0 +1,180 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/ValueSet/KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT</b></p><a name=\"KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT\"> </a><a name=\"hcKBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version ?http://snomed.info/sct/11000274103/version/20251115</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/19923001\">19923001</a></td><td>Catheter</td><td>Katheter</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/706499002\">706499002</a></td><td>Wearable urine collection bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/41323003\">41323003</a></td><td>Urinary collection bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/303947005\">303947005</a></td><td>Rod fixation system</td><td>System zur Stabfixierung</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/27606000\">27606000</a></td><td>Dental prosthesis</td><td>Zahnprothese</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/63112008\">63112008</a></td><td>Bone wire</td><td>Knochendraht</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/77777004\">77777004</a></td><td>Bone staple</td><td>Knochenklammer</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/77444004\">77444004</a></td><td>Bone pin</td><td>Knochennagel</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/68183006\">68183006</a></td><td>Bone screw</td><td>Knochenschraube</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/303503009\">303503009</a></td><td>Musculoskeletal implant</td><td>Muskuloskelettales Implantat</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/257296003\">257296003</a></td><td>Fixator</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/6012004\">6012004</a></td><td>Hearing aid</td><td>Hörgerät</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/407744008\">407744008</a></td><td>Stoma appliance</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/417136005\">417136005</a></td><td>Ileostomy bag</td><td>Ileostomiebeutel</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/704902005\">704902005</a></td><td>Colostomy irrigation bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/8407004\">8407004</a></td><td>Bile collection bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/398013009\">398013009</a></td><td>Implantable venous access port</td><td>Implantierbarer Venenzugangsport</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/303515008\">303515008</a></td><td>Orbital implant</td><td>Orbitales Implantat</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/303500007\">303500007</a></td><td>Auditory implant</td><td>Hörimplantat</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/701750003\">701750003</a></td><td>Subcutaneous glucose sensor</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/464557001\">464557001</a></td><td>Parenteral/enteral solution bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/30968007\">30968007</a></td><td>Drainage bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/721001006\">721001006</a></td><td>Gastric drainage/decompression bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/408861001\">408861001</a></td><td>Wound drainage bag</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/736867000\">736867000</a></td><td>Wound drainage bag, sterile</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-update"] ; # 
+  fhir:name [ fhir:v "KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT"] ; # 
+  fhir:title [ fhir:v "Außerkörperliche Quellen SNOMED CT®"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-06-15T16:45:57+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "mio42 GmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://mio.kbv.de" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hello@mio42.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Dieses Valueset enthält die Codes zur Beschreibung von Außerkörperliche Quellen SNOMED CT®."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE" ] ;
+       fhir:display [ fhir:v "Germany" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "19923001" ] ;
+         fhir:display [ fhir:v "Catheter" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Katheter" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "706499002" ] ;
+         fhir:display [ fhir:v "Wearable urine collection bag" ]
+       ] [
+         fhir:code [ fhir:v "41323003" ] ;
+         fhir:display [ fhir:v "Urinary collection bag" ]
+       ] [
+         fhir:code [ fhir:v "303947005" ] ;
+         fhir:display [ fhir:v "Rod fixation system" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "System zur Stabfixierung" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "27606000" ] ;
+         fhir:display [ fhir:v "Dental prosthesis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Zahnprothese" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "63112008" ] ;
+         fhir:display [ fhir:v "Bone wire" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Knochendraht" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "77777004" ] ;
+         fhir:display [ fhir:v "Bone staple" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Knochenklammer" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "77444004" ] ;
+         fhir:display [ fhir:v "Bone pin" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Knochennagel" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "68183006" ] ;
+         fhir:display [ fhir:v "Bone screw" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Knochenschraube" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "303503009" ] ;
+         fhir:display [ fhir:v "Musculoskeletal implant" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Muskuloskelettales Implantat" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "257296003" ] ;
+         fhir:display [ fhir:v "Fixator" ]
+       ] [
+         fhir:code [ fhir:v "6012004" ] ;
+         fhir:display [ fhir:v "Hearing aid" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Hörgerät" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "407744008" ] ;
+         fhir:display [ fhir:v "Stoma appliance" ]
+       ] [
+         fhir:code [ fhir:v "417136005" ] ;
+         fhir:display [ fhir:v "Ileostomy bag" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Ileostomiebeutel" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "704902005" ] ;
+         fhir:display [ fhir:v "Colostomy irrigation bag" ]
+       ] [
+         fhir:code [ fhir:v "8407004" ] ;
+         fhir:display [ fhir:v "Bile collection bag" ]
+       ] [
+         fhir:code [ fhir:v "398013009" ] ;
+         fhir:display [ fhir:v "Implantable venous access port" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Implantierbarer Venenzugangsport" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "303515008" ] ;
+         fhir:display [ fhir:v "Orbital implant" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Orbitales Implantat" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "303500007" ] ;
+         fhir:display [ fhir:v "Auditory implant" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Hörimplantat" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "701750003" ] ;
+         fhir:display [ fhir:v "Subcutaneous glucose sensor" ]
+       ] [
+         fhir:code [ fhir:v "464557001" ] ;
+         fhir:display [ fhir:v "Parenteral/enteral solution bag" ]
+       ] [
+         fhir:code [ fhir:v "30968007" ] ;
+         fhir:display [ fhir:v "Drainage bag" ]
+       ] [
+         fhir:code [ fhir:v "721001006" ] ;
+         fhir:display [ fhir:v "Gastric drainage/decompression bag" ]
+       ] [
+         fhir:code [ fhir:v "408861001" ] ;
+         fhir:display [ fhir:v "Wound drainage bag" ]
+       ] [
+         fhir:code [ fhir:v "736867000" ] ;
+         fhir:display [ fhir:v "Wound drainage bag, sterile" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

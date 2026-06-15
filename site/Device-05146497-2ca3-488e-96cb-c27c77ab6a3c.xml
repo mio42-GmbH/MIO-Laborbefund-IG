@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="05146497-2ca3-488e-96cb-c27c77ab6a3c"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container|1.0.0-update"/>
+  </meta>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="UDI"/>
+        <display value="Universal Device Identifier"/>
+      </coding>
+    </type>
+    <system value="http://goodcare.org/devices/id"/>
+    <value value="345675"/>
+  </identifier>
+  <definition>
+    <reference value="DeviceDefinition/30a47ba7-8975-4383-ad43-61c032c30e53"/>
+  </definition>
+  <udiCarrier>
+    <deviceIdentifier value="example"/>
+  </udiCarrier>
+  <distinctIdentifier value="example"/>
+  <manufactureDate value="2021-11-15T16:55:00+01:00"/>
+  <expirationDate value="2021-11-15T16:55:00+01:00"/>
+  <lotNumber value="12345"/>
+  <serialNumber value="987654"/>
+  <modelNumber value="56789"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="434711009"/>
+      <display value="Specimen container (physical object)"/>
+    </coding>
+    <text value="Probenbehälter"/>
+  </type>
+  <note>
+    <text value="test"/>
+  </note>
+</Device>

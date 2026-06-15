@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="13c807c0-53e7-488e-84bb-023376563cf3"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition|1.0.0-update"/>
+  </meta>
+  <extension url="http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference">
+    <valueReference>
+      <reference value="DiagnosticReport/a6f3d3de-0857-45ed-916e-087d84391bc3"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.eu/fhir/StructureDefinition/information-recipient">
+    <valueReference>
+      <reference value="PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:123456"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="4241000179101"/>
+      <display value="Laboratory report (record artifact)"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <date value="2022-03-23"/>
+  <author>
+    <reference value="Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+  </author>
+  <title value="Laboratory Report"/>
+  <attester>
+    <mode value="legal"/>
+    <time value="2023-03-23"/>
+    <party>
+      <reference value="PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"/>
+    </party>
+  </attester>
+</Composition>

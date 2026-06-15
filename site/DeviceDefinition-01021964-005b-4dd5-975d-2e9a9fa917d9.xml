@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceDefinition xmlns="http://hl7.org/fhir">
+  <id value="01021964-005b-4dd5-975d-2e9a9fa917d9"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container|1.0.0-update"/>
+  </meta>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="434711009"/>
+      <display value="Specimen container (physical object)"/>
+    </coding>
+  </type>
+</DeviceDefinition>

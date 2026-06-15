@@ -1,0 +1,201 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-ObservationInterpretationCodes-German> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KBV-CS-MIO-LAB-ObservationInterpretationCodes-German"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-ObservationInterpretationCodes-German</b></p><a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-ObservationInterpretationCodes-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">UnterhalbderanalytischenGrenze<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-UnterhalbderanalytischenGrenze\"> </a></td><td>Unterhalb der analytischen Grenze</td></tr><tr><td style=\"white-space:nowrap\">OberhalbderanalytischenGrenze<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-OberhalbderanalytischenGrenze\"> </a></td><td>Oberhalb der analytischen Grenze</td></tr><tr><td style=\"white-space:nowrap\">Kritischabnormal<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Kritischabnormal\"> </a></td><td>Kritisch abnormal</td></tr><tr><td style=\"white-space:nowrap\">VorhandeneantikomplementaereSubstanzen<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-VorhandeneantikomplementaereSubstanzen\"> </a></td><td>Vorhandene antikomplementäre Substanzen</td></tr><tr><td style=\"white-space:nowrap\">Besser<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Besser\"> </a></td><td>Besser</td></tr><tr><td style=\"white-space:nowrap\">Anlagetraeger<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Anlagetraeger\"> </a></td><td>Anlageträger</td></tr><tr><td style=\"white-space:nowrap\">Nachgewiesen<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Nachgewiesen\"> </a></td><td>Nachgewiesen</td></tr><tr><td style=\"white-space:nowrap\">SignifikanterRueckgang<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-SignifikanterRueckgang\"> </a></td><td>Signifikanter Rückgang</td></tr><tr><td style=\"white-space:nowrap\">Erwartet<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Erwartet\"> </a></td><td>Erwartet</td></tr><tr><td style=\"white-space:nowrap\">InterpretationausserhalbdesGrenzwertes<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-InterpretationausserhalbdesGrenzwertes\"> </a></td><td>Interpretation außerhalb des Grenzwertes</td></tr><tr><td style=\"white-space:nowrap\">Uneindeutig<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Uneindeutig\"> </a></td><td>Uneindeutig</td></tr><tr><td style=\"white-space:nowrap\">Signifikanterhoeht<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Signifikanterhoeht\"> </a></td><td>Signifikant erhöht</td></tr><tr><td style=\"white-space:nowrap\">Kritischerhoeht<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Kritischerhoeht\"> </a></td><td>Kritisch erhöht</td></tr><tr><td style=\"white-space:nowrap\">ZurmedizinischenUeberpruefungzurueckhalten<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-ZurmedizinischenUeberpruefungzurueckhalten\"> </a></td><td>Zur medizinischen Überprüfung zurückhalten</td></tr><tr><td style=\"white-space:nowrap\">OberhalbdesoberenGrenzwert<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-OberhalbdesoberenGrenzwert\"> </a></td><td>Oberhalb des oberen Grenzwert</td></tr><tr><td style=\"white-space:nowrap\">Erhoeht<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Erhoeht\"> </a></td><td>Erhöht</td></tr><tr><td style=\"white-space:nowrap\">Evidenzunzureichend<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Evidenzunzureichend\"> </a></td><td>Evidenz unzureichend</td></tr><tr><td style=\"white-space:nowrap\">Unbestimmbar<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Unbestimmbar\"> </a></td><td>Unbestimmbar</td></tr><tr><td style=\"white-space:nowrap\">MittlereEmpfindlichkeit<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-MittlereEmpfindlichkeit\"> </a></td><td>Mittlere Empfindlichkeit</td></tr><tr><td style=\"white-space:nowrap\">Signifikantniedrig<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Signifikantniedrig\"> </a></td><td>Signifikant niedrig</td></tr><tr><td style=\"white-space:nowrap\">Kritischerniedrigt<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Kritischerniedrigt\"> </a></td><td>Kritisch erniedrigt</td></tr><tr><td style=\"white-space:nowrap\">UnterhalbdesunterenGrenzwert<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-UnterhalbdesunterenGrenzwert\"> </a></td><td>Unterhalb des unteren Grenzwert</td></tr><tr><td style=\"white-space:nowrap\">Erniedrigt<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Erniedrigt\"> </a></td><td>Erniedrigt</td></tr><tr><td style=\"white-space:nowrap\">KeinCLSIdefinierterSchwellenwertfuerEmpfindlichkeitverfuegbar<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-KeinCLSIdefinierterSchwellenwertfuerEmpfindlichkeitverfuegbar\"> </a></td><td>Kein CLSI definierter Schwellenwert  für Empfindlichkeit verfügbar</td></tr><tr><td style=\"white-space:nowrap\">Nichtnachgewiesen<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Nichtnachgewiesen\"> </a></td><td>Nicht nachgewiesen</td></tr><tr><td style=\"white-space:nowrap\">Negativ<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Negativ\"> </a></td><td>Negativ</td></tr><tr><td style=\"white-space:nowrap\">Nichtreaktiv<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Nichtreaktiv\"> </a></td><td>Nicht reaktiv</td></tr><tr><td style=\"white-space:nowrap\">Nichtempfindlich<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Nichtempfindlich\"> </a></td><td>Nicht empfindlich</td></tr><tr><td style=\"white-space:nowrap\">DolmetscherkennzeicheninseparatenOBXSegmenten<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-DolmetscherkennzeicheninseparatenOBXSegmenten\"> </a></td><td>Dolmetscherkennzeichen in separaten OBX-Segmenten</td></tr><tr><td style=\"white-space:nowrap\">Feststellungsinterpretation<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Feststellungsinterpretation\"> </a></td><td>Feststellungsinterpretation</td></tr><tr><td style=\"white-space:nowrap\">Erwartungsinterpretation<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Erwartungsinterpretation\"> </a></td><td>Erwartungsinterpretation</td></tr><tr><td style=\"white-space:nowrap\">Positiv<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Positiv\"> </a></td><td>Positiv</td></tr><tr><td style=\"white-space:nowrap\">VersagenderQualitaetskontrolle<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-VersagenderQualitaetskontrolle\"> </a></td><td>Versagen der Qualitätskontrolle</td></tr><tr><td style=\"white-space:nowrap\">Reaktiv<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Reaktiv\"> </a></td><td>Reaktiv</td></tr><tr><td style=\"white-space:nowrap\">Resistent<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Resistent\"> </a></td><td>Resistent</td></tr><tr><td style=\"white-space:nowrap\">Reaktivitaetsinterpretation<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Reaktivitaetsinterpretation\"> </a></td><td>Reaktivitätsinterpretation</td></tr><tr><td style=\"white-space:nowrap\">DosisKonzentrationsabhaengigeEmpfindlichkeit<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-DosisKonzentrationsabhaengigeEmpfindlichkeit\"> </a></td><td>Dosis-/Konzentrationsabhängige Empfindlichkeit</td></tr><tr><td style=\"white-space:nowrap\">ResistentgegenueberSubstanzkombination<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-ResistentgegenueberSubstanzkombination\"> </a></td><td>Resistent gegenüber Substanzkombination</td></tr><tr><td style=\"white-space:nowrap\">EmpfindlichgegenueberSubstanzkombination<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-EmpfindlichgegenueberSubstanzkombination\"> </a></td><td>Empfindlich gegenüber Substanzkombination</td></tr><tr><td style=\"white-space:nowrap\">Empfindlich<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Empfindlich\"> </a></td><td>Empfindlich</td></tr><tr><td style=\"white-space:nowrap\">ZytotoxischeSubstanzvorhanden<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-ZytotoxischeSubstanzvorhanden\"> </a></td><td>Zytotoxische Substanz vorhanden</td></tr><tr><td style=\"white-space:nowrap\">Unerwartet<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Unerwartet\"> </a></td><td>Unerwartet</td></tr><tr><td style=\"white-space:nowrap\">SignifikanterAnstieg<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-SignifikanterAnstieg\"> </a></td><td>Signifikanter Anstieg</td></tr><tr><td style=\"white-space:nowrap\">Sehrempfindlich<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Sehrempfindlich\"> </a></td><td>Sehr empfindlich</td></tr><tr><td style=\"white-space:nowrap\">Schwachreaktiv<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Schwachreaktiv\"> </a></td><td>Schwach reaktiv</td></tr><tr><td style=\"white-space:nowrap\">Schlechter<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Schlechter\"> </a></td><td>Schlechter</td></tr><tr><td style=\"white-space:nowrap\">InterpretationdergenetischenAnalyse<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-InterpretationdergenetischenAnalyse\"> </a></td><td>Interpretation der genetischen Analyse</td></tr><tr><td style=\"white-space:nowrap\">Aenderungsverlauf<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Aenderungsverlauf\"> </a></td><td>Änderungsverlauf</td></tr><tr><td style=\"white-space:nowrap\">Ausnahmewertinterpretation<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Ausnahmewertinterpretation\"> </a></td><td>Ausnahmewertinterpretation</td></tr><tr><td style=\"white-space:nowrap\">Normalitaetsinterpretation<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-Normalitaetsinterpretation\"> </a></td><td>Normalitätsinterpretation</td></tr><tr><td style=\"white-space:nowrap\">InterpretationderantimikrobiellenResistenztestung<a name=\"KBV-CS-MIO-LAB-ObservationInterpretationCodes-German-InterpretationderantimikrobiellenResistenztestung\"> </a></td><td>Interpretation der antimikrobiellen Resistenztestung</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-update"] ; # 
+  fhir:name [ fhir:v "KBV_CS_MIO_LAB_ObservationInterpretationCodes_German"] ; # 
+  fhir:title [ fhir:v "Observation Interpretation Codes German"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-06-15T16:45:57+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "mio42 GmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://mio.kbv.de" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hello@mio42.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Observation Interpretation Codes German."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE" ] ;
+       fhir:display [ fhir:v "Germany" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "UnterhalbderanalytischenGrenze" ] ;
+     fhir:display [ fhir:v "Unterhalb der analytischen Grenze" ]
+  ] [
+     fhir:code [ fhir:v "OberhalbderanalytischenGrenze" ] ;
+     fhir:display [ fhir:v "Oberhalb der analytischen Grenze" ]
+  ] [
+     fhir:code [ fhir:v "Kritischabnormal" ] ;
+     fhir:display [ fhir:v "Kritisch abnormal" ]
+  ] [
+     fhir:code [ fhir:v "VorhandeneantikomplementaereSubstanzen" ] ;
+     fhir:display [ fhir:v "Vorhandene antikomplementäre Substanzen" ]
+  ] [
+     fhir:code [ fhir:v "Besser" ] ;
+     fhir:display [ fhir:v "Besser" ]
+  ] [
+     fhir:code [ fhir:v "Anlagetraeger" ] ;
+     fhir:display [ fhir:v "Anlageträger" ]
+  ] [
+     fhir:code [ fhir:v "Nachgewiesen" ] ;
+     fhir:display [ fhir:v "Nachgewiesen" ]
+  ] [
+     fhir:code [ fhir:v "SignifikanterRueckgang" ] ;
+     fhir:display [ fhir:v "Signifikanter Rückgang" ]
+  ] [
+     fhir:code [ fhir:v "Erwartet" ] ;
+     fhir:display [ fhir:v "Erwartet" ]
+  ] [
+     fhir:code [ fhir:v "InterpretationausserhalbdesGrenzwertes" ] ;
+     fhir:display [ fhir:v "Interpretation außerhalb des Grenzwertes" ]
+  ] [
+     fhir:code [ fhir:v "Uneindeutig" ] ;
+     fhir:display [ fhir:v "Uneindeutig" ]
+  ] [
+     fhir:code [ fhir:v "Signifikanterhoeht" ] ;
+     fhir:display [ fhir:v "Signifikant erhöht" ]
+  ] [
+     fhir:code [ fhir:v "Kritischerhoeht" ] ;
+     fhir:display [ fhir:v "Kritisch erhöht" ]
+  ] [
+     fhir:code [ fhir:v "ZurmedizinischenUeberpruefungzurueckhalten" ] ;
+     fhir:display [ fhir:v "Zur medizinischen Überprüfung zurückhalten" ]
+  ] [
+     fhir:code [ fhir:v "OberhalbdesoberenGrenzwert" ] ;
+     fhir:display [ fhir:v "Oberhalb des oberen Grenzwert" ]
+  ] [
+     fhir:code [ fhir:v "Erhoeht" ] ;
+     fhir:display [ fhir:v "Erhöht" ]
+  ] [
+     fhir:code [ fhir:v "Evidenzunzureichend" ] ;
+     fhir:display [ fhir:v "Evidenz unzureichend" ]
+  ] [
+     fhir:code [ fhir:v "Unbestimmbar" ] ;
+     fhir:display [ fhir:v "Unbestimmbar" ]
+  ] [
+     fhir:code [ fhir:v "MittlereEmpfindlichkeit" ] ;
+     fhir:display [ fhir:v "Mittlere Empfindlichkeit" ]
+  ] [
+     fhir:code [ fhir:v "Signifikantniedrig" ] ;
+     fhir:display [ fhir:v "Signifikant niedrig" ]
+  ] [
+     fhir:code [ fhir:v "Kritischerniedrigt" ] ;
+     fhir:display [ fhir:v "Kritisch erniedrigt" ]
+  ] [
+     fhir:code [ fhir:v "UnterhalbdesunterenGrenzwert" ] ;
+     fhir:display [ fhir:v "Unterhalb des unteren Grenzwert" ]
+  ] [
+     fhir:code [ fhir:v "Erniedrigt" ] ;
+     fhir:display [ fhir:v "Erniedrigt" ]
+  ] [
+     fhir:code [ fhir:v "KeinCLSIdefinierterSchwellenwertfuerEmpfindlichkeitverfuegbar" ] ;
+     fhir:display [ fhir:v "Kein CLSI definierter Schwellenwert  für Empfindlichkeit verfügbar" ]
+  ] [
+     fhir:code [ fhir:v "Nichtnachgewiesen" ] ;
+     fhir:display [ fhir:v "Nicht nachgewiesen" ]
+  ] [
+     fhir:code [ fhir:v "Negativ" ] ;
+     fhir:display [ fhir:v "Negativ" ]
+  ] [
+     fhir:code [ fhir:v "Nichtreaktiv" ] ;
+     fhir:display [ fhir:v "Nicht reaktiv" ]
+  ] [
+     fhir:code [ fhir:v "Nichtempfindlich" ] ;
+     fhir:display [ fhir:v "Nicht empfindlich" ]
+  ] [
+     fhir:code [ fhir:v "DolmetscherkennzeicheninseparatenOBXSegmenten" ] ;
+     fhir:display [ fhir:v "Dolmetscherkennzeichen in separaten OBX-Segmenten" ]
+  ] [
+     fhir:code [ fhir:v "Feststellungsinterpretation" ] ;
+     fhir:display [ fhir:v "Feststellungsinterpretation" ]
+  ] [
+     fhir:code [ fhir:v "Erwartungsinterpretation" ] ;
+     fhir:display [ fhir:v "Erwartungsinterpretation" ]
+  ] [
+     fhir:code [ fhir:v "Positiv" ] ;
+     fhir:display [ fhir:v "Positiv" ]
+  ] [
+     fhir:code [ fhir:v "VersagenderQualitaetskontrolle" ] ;
+     fhir:display [ fhir:v "Versagen der Qualitätskontrolle" ]
+  ] [
+     fhir:code [ fhir:v "Reaktiv" ] ;
+     fhir:display [ fhir:v "Reaktiv" ]
+  ] [
+     fhir:code [ fhir:v "Resistent" ] ;
+     fhir:display [ fhir:v "Resistent" ]
+  ] [
+     fhir:code [ fhir:v "Reaktivitaetsinterpretation" ] ;
+     fhir:display [ fhir:v "Reaktivitätsinterpretation" ]
+  ] [
+     fhir:code [ fhir:v "DosisKonzentrationsabhaengigeEmpfindlichkeit" ] ;
+     fhir:display [ fhir:v "Dosis-/Konzentrationsabhängige Empfindlichkeit" ]
+  ] [
+     fhir:code [ fhir:v "ResistentgegenueberSubstanzkombination" ] ;
+     fhir:display [ fhir:v "Resistent gegenüber Substanzkombination" ]
+  ] [
+     fhir:code [ fhir:v "EmpfindlichgegenueberSubstanzkombination" ] ;
+     fhir:display [ fhir:v "Empfindlich gegenüber Substanzkombination" ]
+  ] [
+     fhir:code [ fhir:v "Empfindlich" ] ;
+     fhir:display [ fhir:v "Empfindlich" ]
+  ] [
+     fhir:code [ fhir:v "ZytotoxischeSubstanzvorhanden" ] ;
+     fhir:display [ fhir:v "Zytotoxische Substanz vorhanden" ]
+  ] [
+     fhir:code [ fhir:v "Unerwartet" ] ;
+     fhir:display [ fhir:v "Unerwartet" ]
+  ] [
+     fhir:code [ fhir:v "SignifikanterAnstieg" ] ;
+     fhir:display [ fhir:v "Signifikanter Anstieg" ]
+  ] [
+     fhir:code [ fhir:v "Sehrempfindlich" ] ;
+     fhir:display [ fhir:v "Sehr empfindlich" ]
+  ] [
+     fhir:code [ fhir:v "Schwachreaktiv" ] ;
+     fhir:display [ fhir:v "Schwach reaktiv" ]
+  ] [
+     fhir:code [ fhir:v "Schlechter" ] ;
+     fhir:display [ fhir:v "Schlechter" ]
+  ] [
+     fhir:code [ fhir:v "InterpretationdergenetischenAnalyse" ] ;
+     fhir:display [ fhir:v "Interpretation der genetischen Analyse" ]
+  ] [
+     fhir:code [ fhir:v "Aenderungsverlauf" ] ;
+     fhir:display [ fhir:v "Änderungsverlauf" ]
+  ] [
+     fhir:code [ fhir:v "Ausnahmewertinterpretation" ] ;
+     fhir:display [ fhir:v "Ausnahmewertinterpretation" ]
+  ] [
+     fhir:code [ fhir:v "Normalitaetsinterpretation" ] ;
+     fhir:display [ fhir:v "Normalitätsinterpretation" ]
+  ] [
+     fhir:code [ fhir:v "InterpretationderantimikrobiellenResistenztestung" ] ;
+     fhir:display [ fhir:v "Interpretation der antimikrobiellen Resistenztestung" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="24435567-fed3-43f8-8fc8-954f68df7fce"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update"/>
+  </meta>
+  <name>
+    <use value="official"/>
+    <family value="Hans">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Glücklich"/>
+      </extension>
+    </family>
+  </name>
+</Practitioner>

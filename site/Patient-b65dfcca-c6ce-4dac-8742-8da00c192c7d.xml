@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Patient|1.0.0-update"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse">
+    <extension url="value">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"/>
+          <code value="female-typical"/>
+          <display value="Apply female-typical setting or reference range"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="2023-01-30"/>
+        <end value="2023-04-01"/>
+      </valuePeriod>
+    </extension>
+    <extension url="comment">
+      <valueString value="Hormontherapie"/>
+    </extension>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="MR"/>
+        <display value="Krankenaktennummer"/>
+      </coding>
+    </type>
+    <system value="http://www.acmedasdd.com/identifiers/patient"/>
+    <value value="123456"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"/>
+        <version value="1.8.0"/>
+        <code value="pkv-nr"/>
+        <display value="Private Krankenversicherung"/>
+      </coding>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+        <code value="PKV"/>
+        <display value="Private Krankenversicherung"/>
+      </coding>
+    </type>
+    <system value="http://www.acmedasdd.com/identifiers/patient"/>
+    <value value="1234567890"/>
+    <assigner>
+      <reference value="Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7"/>
+      <display value="KK"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="PPN"/>
+        <display value="Passport number"/>
+      </coding>
+    </type>
+    <system value="http://www.acmedasdd.com/identifiers/patient"/>
+    <value value="123456"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"/>
+        <version value="1.8.0"/>
+        <code value="kvk"/>
+        <display value="Krankenversichertenkarte"/>
+      </coding>
+    </type>
+    <system value="http://fhir.de/sid/gkv/kvk-versichertennummer"/>
+    <value value="123456"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <text value="Dr. Hans Glücklich"/>
+    <family value="Hans">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Glücklich"/>
+      </extension>
+      <extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+        <valueString value="Prinz"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+        <valueString value="von"/>
+      </extension>
+    </family>
+    <given value="Hans"/>
+    <prefix value="Dr">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="AC"/>
+      </extension>
+    </prefix>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="12123455"/>
+  </telecom>
+  <gender value="other">
+    <extension url="http://fhir.de/StructureDefinition/gender-amtlich-de">
+      <valueCoding>
+        <system value="http://fhir.de/CodeSystem/gender-amtlich-de"/>
+        <code value="X"/>
+        <display value="unbestimmt"/>
+      </valueCoding>
+    </extension>
+  </gender>
+  <birthDate value="2022-03-01"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+      <valueString value="Schöneberg"/>
+    </extension>
+    <type value="both"/>
+    <line value="Schöneberg">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Mittestr"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="43"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+        <valueString value="Nebenhaus"/>
+      </extension>
+    </line>
+    <city value="Berlin"/>
+    <postalCode value="12015"/>
+    <country value="D"/>
+  </address>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+      <valueString value="Schöneberg"/>
+    </extension>
+    <type value="postal"/>
+    <line value="Schöneberg">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="Mittestr"/>
+      </extension>
+    </line>
+    <city value="Berlin"/>
+    <postalCode value="12015"/>
+    <country value="D"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <version value="4.0.0"/>
+      <code value="W"/>
+      <display value="Widowed"/>
+    </coding>
+    <text value="2021 verwitwet"/>
+  </maritalStatus>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="uk"/>
+        <display value="Ukrainian"/>
+      </coding>
+    </language>
+  </communication>
+</Patient>

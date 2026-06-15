@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/DiagnosticReport/a6f3d3de-0857-45ed-916e-087d84391bc3> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "a6f3d3de-0857-45ed-916e-087d84391bc3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport|1.0.0-update"^^xsd:anyURI ;
+       fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport|1.0.0-update>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://fhir.kbv.de/Composition/13c807c0-53e7-488e-84bb-023376563cf3> ;
+       fhir:reference [ fhir:v "Composition/13c807c0-53e7-488e-84bb-023376563cf3" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RI" ] ;
+         fhir:display [ fhir:v "Resource Identifier" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:123456" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <https://fhir.kbv.de/ServiceRequest/eb46f1a2-c4ad-4276-aaaa-aef507db618d> ;
+     fhir:reference [ fhir:v "ServiceRequest/eb46f1a2-c4ad-4276-aaaa-aef507db618d" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11502-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2.82" ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Laboratory report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.kbv.de/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff> ;
+     fhir:reference [ fhir:v "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
+     fhir:identifier [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "KVZ10" ] ;
+           fhir:display [ fhir:v "Krankenversichertennummer" ]
+         ] )
+       ] ;
+       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "K123456789" ]
+     ]
+  ] ; # 
+  fhir:issued [ fhir:v "2022-08-09T12:00:00Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://fhir.kbv.de/PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612> ;
+     fhir:reference [ fhir:v "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:link <https://fhir.kbv.de/Observation/76fdc299-7b3f-404a-b32e-31e416bb0c32> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:positiveInt ;
+         fhir:v "2154"^^xsd:positiveInteger
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "Observation/76fdc299-7b3f-404a-b32e-31e416bb0c32" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,86 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German</b></p><a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Fixateur<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-Fixateur\"> </a></td><td>Fixateur</td></tr><tr><td style=\"white-space:nowrap\">DrainageBeutel<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-DrainageBeutel\"> </a></td><td>Drainage-Beutel</td></tr><tr><td style=\"white-space:nowrap\">StomaVorrichtung<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-StomaVorrichtung\"> </a></td><td>Stoma-Vorrichtung</td></tr><tr><td style=\"white-space:nowrap\">WunddrainageBeutel<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-WunddrainageBeutel\"> </a></td><td>Wunddrainage-Beutel</td></tr><tr><td style=\"white-space:nowrap\">UrinSammelbeutel<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-UrinSammelbeutel\"> </a></td><td>Urin-Sammelbeutel</td></tr><tr><td style=\"white-space:nowrap\">BeutelzurparenteralenenteralenErnaehrung<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-BeutelzurparenteralenenteralenErnaehrung\"> </a></td><td>Beutel zur parenteralen/enteralen Ernährung</td></tr><tr><td style=\"white-space:nowrap\">SubkutanerGlukosesensor<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-SubkutanerGlukosesensor\"> </a></td><td>Subkutaner Glukosesensor</td></tr><tr><td style=\"white-space:nowrap\">KolostomieSpuelbeutel<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-KolostomieSpuelbeutel\"> </a></td><td>Kolostomie-Spülbeutel</td></tr><tr><td style=\"white-space:nowrap\">TragbarerUrinSammelbeutel<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-TragbarerUrinSammelbeutel\"> </a></td><td>Tragbarer Urin-Sammelbeutel</td></tr><tr><td style=\"white-space:nowrap\">MagendrainageBeutel<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-MagendrainageBeutel\"> </a></td><td>Magendrainage-Beutel</td></tr><tr><td style=\"white-space:nowrap\">SterilerWunddrainageBeutel<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-SterilerWunddrainageBeutel\"> </a></td><td>Steriler Wunddrainage-Beutel</td></tr><tr><td style=\"white-space:nowrap\">GallendrainageBeutel<a name=\"KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German-GallendrainageBeutel\"> </a></td><td>Gallendrainage-Beutel</td></tr></table></div>"
+  },
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German",
+  "version" : "1.0.0-update",
+  "name" : "KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German",
+  "title" : "Außerkörperliche Quellen SNOMED CT® German",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-06-15T16:45:57+02:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Außerkörperliche Quellen SNOMED CT® German.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "Fixateur",
+    "display" : "Fixateur"
+  },
+  {
+    "code" : "DrainageBeutel",
+    "display" : "Drainage-Beutel"
+  },
+  {
+    "code" : "StomaVorrichtung",
+    "display" : "Stoma-Vorrichtung"
+  },
+  {
+    "code" : "WunddrainageBeutel",
+    "display" : "Wunddrainage-Beutel"
+  },
+  {
+    "code" : "UrinSammelbeutel",
+    "display" : "Urin-Sammelbeutel"
+  },
+  {
+    "code" : "BeutelzurparenteralenenteralenErnaehrung",
+    "display" : "Beutel zur parenteralen/enteralen Ernährung"
+  },
+  {
+    "code" : "SubkutanerGlukosesensor",
+    "display" : "Subkutaner Glukosesensor"
+  },
+  {
+    "code" : "KolostomieSpuelbeutel",
+    "display" : "Kolostomie-Spülbeutel"
+  },
+  {
+    "code" : "TragbarerUrinSammelbeutel",
+    "display" : "Tragbarer Urin-Sammelbeutel"
+  },
+  {
+    "code" : "MagendrainageBeutel",
+    "display" : "Magendrainage-Beutel"
+  },
+  {
+    "code" : "SterilerWunddrainageBeutel",
+    "display" : "Steriler Wunddrainage-Beutel"
+  },
+  {
+    "code" : "GallendrainageBeutel",
+    "display" : "Gallendrainage-Beutel"
+  }]
+}

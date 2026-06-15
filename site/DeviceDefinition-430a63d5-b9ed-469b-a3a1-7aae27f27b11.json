@@ -1,0 +1,18 @@
+{
+  "resourceType" : "DeviceDefinition",
+  "id" : "430a63d5-b9ed-469b-a3a1-7aae27f27b11",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject|1.0.0-update"]
+  },
+  "manufacturerReference" : {
+    "reference" : "Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a"
+  },
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20251115",
+      "code" : "371882005",
+      "display" : "Device used (attribute)"
+    }]
+  }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="96f33ca8-872d-4c8b-972e-b681db27d9df"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study|1.0.0-update"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator">
+      <valueString value="laboratory"/>
+    </extension>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.82"/>
+      <code value="98981-4"/>
+      <display value="Urate [Mass/volume] in Blood"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2021-11-15T11:30:00+01:00"/>
+  <issued value="2021-11-15T11:30:00+01:00"/>
+  <performer>
+    <reference value="PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"/>
+  </performer>
+  <valueQuantity>
+    <value value="6.5"/>
+    <unit value="mg/dL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mg/dL"/>
+  </valueQuantity>
+</Observation>

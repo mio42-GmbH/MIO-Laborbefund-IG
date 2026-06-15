@@ -1,0 +1,231 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT</b></p><a name=\"KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT\"> </a><a name=\"hcKBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version &#x1F4CD;http://snomed.info/sct/11000274103/version/20251115</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/7771000\">7771000</a></td><td>Left</td><td>Links</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/24028007\">24028007</a></td><td>Right</td><td>Rechts</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/51440002\">51440002</a></td><td>Right and left</td><td>Rechts und links</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/40415009\">40415009</a></td><td>Proximal</td><td>Proximal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/46053002\">46053002</a></td><td>Distal</td><td>Distal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255554000\">255554000</a></td><td>Dorsal</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255549009\">255549009</a></td><td>Anterior</td><td>Anterior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/26283006\">26283006</a></td><td>Superficial</td><td>Oberflächlich</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/795002\">795002</a></td><td>Deep</td><td>Tief</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/57195005\">57195005</a></td><td>Basal</td><td>Basal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261183002\">261183002</a></td><td>Upper</td><td>Obere/r/s</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261122009\">261122009</a></td><td>Lower</td><td>Untere/r/s</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255561001\">255561001</a></td><td>Medial</td><td>Medial</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/49370004\">49370004</a></td><td>Lateral</td><td>Lateral</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/264217000\">264217000</a></td><td>Superior</td><td>Superior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261089000\">261089000</a></td><td>Inferior</td><td>Inferior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255551008\">255551008</a></td><td>Posterior</td><td>Posterior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/351726001\">351726001</a></td><td>Below</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/352730000\">352730000</a></td><td>Supra-</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/3583002\">3583002</a></td><td>Caudal</td><td>Kaudal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/66787007\">66787007</a></td><td>Cephalic</td><td>Kranial</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/26216008\">26216008</a></td><td>Central</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/43674008\">43674008</a></td><td>Apical</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/14414005\">14414005</a></td><td>Peripheral</td><td>Peripher</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255481003\">255481003</a></td><td>Left upper quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255497008\">255497008</a></td><td>Right upper quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255480002\">255480002</a></td><td>Left lower quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255495000\">255495000</a></td><td>Right lower quadrant</td><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT",
+  "version" : "1.0.0-update",
+  "name" : "KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT",
+  "title" : "Lokalisation innerhalb Körperstelle SNOMED CT®",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-06-15T16:45:57+02:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Lokalisation innerhalb Körperstelle SNOMED CT®.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "immutable" : false,
+  "copyright" : "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20251115",
+      "concept" : [{
+        "code" : "7771000",
+        "display" : "Left",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Links"
+        }]
+      },
+      {
+        "code" : "24028007",
+        "display" : "Right",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Rechts"
+        }]
+      },
+      {
+        "code" : "51440002",
+        "display" : "Right and left",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Rechts und links"
+        }]
+      },
+      {
+        "code" : "40415009",
+        "display" : "Proximal",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Proximal"
+        }]
+      },
+      {
+        "code" : "46053002",
+        "display" : "Distal",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Distal"
+        }]
+      },
+      {
+        "code" : "255554000",
+        "display" : "Dorsal"
+      },
+      {
+        "code" : "255549009",
+        "display" : "Anterior",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Anterior"
+        }]
+      },
+      {
+        "code" : "26283006",
+        "display" : "Superficial",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Oberflächlich"
+        }]
+      },
+      {
+        "code" : "795002",
+        "display" : "Deep",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Tief"
+        }]
+      },
+      {
+        "code" : "57195005",
+        "display" : "Basal",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Basal"
+        }]
+      },
+      {
+        "code" : "261183002",
+        "display" : "Upper",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Obere/r/s"
+        }]
+      },
+      {
+        "code" : "261122009",
+        "display" : "Lower",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Untere/r/s"
+        }]
+      },
+      {
+        "code" : "255561001",
+        "display" : "Medial",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Medial"
+        }]
+      },
+      {
+        "code" : "49370004",
+        "display" : "Lateral",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Lateral"
+        }]
+      },
+      {
+        "code" : "264217000",
+        "display" : "Superior",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Superior"
+        }]
+      },
+      {
+        "code" : "261089000",
+        "display" : "Inferior",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Inferior"
+        }]
+      },
+      {
+        "code" : "255551008",
+        "display" : "Posterior",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Posterior"
+        }]
+      },
+      {
+        "code" : "351726001",
+        "display" : "Below"
+      },
+      {
+        "code" : "352730000",
+        "display" : "Supra-"
+      },
+      {
+        "code" : "3583002",
+        "display" : "Caudal",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Kaudal"
+        }]
+      },
+      {
+        "code" : "66787007",
+        "display" : "Cephalic",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Kranial"
+        }]
+      },
+      {
+        "code" : "26216008",
+        "display" : "Central"
+      },
+      {
+        "code" : "43674008",
+        "display" : "Apical"
+      },
+      {
+        "code" : "14414005",
+        "display" : "Peripheral",
+        "designation" : [{
+          "language" : "de",
+          "value" : "Peripher"
+        }]
+      },
+      {
+        "code" : "255481003",
+        "display" : "Left upper quadrant"
+      },
+      {
+        "code" : "255497008",
+        "display" : "Right upper quadrant"
+      },
+      {
+        "code" : "255480002",
+        "display" : "Left lower quadrant"
+      },
+      {
+        "code" : "255495000",
+        "display" : "Right lower quadrant"
+      }]
+    }]
+  }
+}

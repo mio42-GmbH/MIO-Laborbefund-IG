@@ -1,0 +1,4317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="kbv.mio.laborbefund"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide kbv.mio.laborbefund</b></p><a name="kbv.mio.laborbefund"> </a><a name="hckbv.mio.laborbefund"> </a><h2>KBVMIOLaborbefund</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.kbv.de/ImplementationGuide/kbv.mio.laborbefund</pre></div>
+  </text>
+  <url value="https://fhir.kbv.de/ImplementationGuide/kbv.mio.laborbefund"/>
+  <version value="1.0.0-update"/>
+  <name value="KBVMIOLaborbefund"/>
+  <title value="MIO Laborbefund"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-06-15T16:45:57+02:00"/>
+  <publisher value="mio42 GmbH"/>
+  <contact>
+    <name value="mio42 GmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://mio.kbv.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hello@mio42.de"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="kbv.mio.laborbefund"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="de_basisprofil_r4">
+    <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
+    <packageId value="de.basisprofil.r4"/>
+    <version value="1.5.4"/>
+  </dependsOn>
+  <dependsOn id="kbv_basis">
+    <uri value="http://fhir.org/packages/kbv.basis/ImplementationGuide/kbv.basis"/>
+    <packageId value="kbv.basis"/>
+    <version value="1.8.0"/>
+  </dependsOn>
+  <dependsOn id="kbv_all_st">
+    <uri value="http://fhir.org/packages/kbv.all.st/ImplementationGuide/kbv.all.st"/>
+    <packageId value="kbv.all.st"/>
+    <version value="1.24.0"/>
+  </dependsOn>
+  <dependsOn id="de_ihe_d_terminology">
+    <uri value="https://fhir.org/packages/de.ihe-d.terminology/ImplementationGuide/de.ihe-d.terminology"/>
+    <packageId value="de.ihe-d.terminology"/>
+    <version value="3.0.1"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_xver_r5_r4">
+    <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
+    <packageId value="hl7.fhir.uv.xver-r5.r4"/>
+    <version value="0.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_eu_extensions_r4">
+    <uri value="http://hl7.eu/fhir/extensions/ImplementationGuide/hl7.fhir.eu.extensions"/>
+    <packageId value="hl7.fhir.eu.extensions.r4"/>
+    <version value="1.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_eu_laboratory">
+    <uri value="http://hl7.eu/fhir/laboratory/ImplementationGuide/hl7.fhir.eu.laboratory"/>
+    <packageId value="hl7.fhir.eu.laboratory"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2020+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-usage-check"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="bundle-references-resolve"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Critical_Result"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Secondary_Specimen"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Secondary_Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ImplementationGuide/kbv-mio-laborbefund"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zlog"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Patient"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Extracorporeal_Source"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_External_Service"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Order_Entry_Time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Association_Service"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_No_Linear_Reference_Range"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Subject"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Bundle"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Condition_Diagnosis"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Pseudonymized_Report"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Accredited_Service"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Alternative_Result"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Observation_Status_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Condition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Secondary_Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_DataAbsentReason_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Presence_Ordinal_SNOMED_CT_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_mio42"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_RequestPriority_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_AdministrativeGender_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_MIME_Types"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Specimen_Condition_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SpecimenStatus_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Test_Panel_LOINC"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_QuantityComparator_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Secondary_Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_LAB_Overview"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactPointSystem_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_DeviceNameType_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_MIME_Types_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Result_Interpretation_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Diagnostic_ReportStatus"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Identifier_Type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Identifier_Type_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Type_Diagram"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Type_Diagram_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport_Media_Link"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Methods"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="KBV_CS_MIO_LAB_Marital_Status_Codes_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactEntityType_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Data_Absent_Reason_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Data_Absent_Reason"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Provenance_Activity_Type_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="BodyStructure/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Bundle/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Composition/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Condition/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Device/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DeviceDefinition/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DiagnosticReport/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DocumentReference/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Observation/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Organization/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Patient/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Practitioner/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="PractitionerRole/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Provenance/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Specimen/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ServiceRequest/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Substance/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="RelatedPerson/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../input/expansion_parameters/expansion_parameter.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters">
+      <valueReference>
+        <reference value="Parameters/expansion-parameters"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2020+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-usage-check"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="bundle-references-resolve"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Critical_Result"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Secondary_Specimen"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Secondary_Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ImplementationGuide/kbv-mio-laborbefund"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zlog"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Patient"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Extracorporeal_Source"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_External_Service"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Order_Entry_Time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Association_Service"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_No_Linear_Reference_Range"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Subject"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Bundle"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Condition_Diagnosis"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Pseudonymized_Report"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Accredited_Service"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Alternative_Result"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Observation_Status_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Condition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Secondary_Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_DataAbsentReason_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Presence_Ordinal_SNOMED_CT_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_mio42"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_RequestPriority_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_AdministrativeGender_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_MIME_Types"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Specimen_Condition_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SpecimenStatus_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Test_Panel_LOINC"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_QuantityComparator_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Secondary_Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_LAB_Overview"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactPointSystem_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_DeviceNameType_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_MIME_Types_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Result_Interpretation_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Diagnostic_ReportStatus"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Status"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Identifier_Type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Identifier_Type_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Type_Diagram"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Type_Diagram_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport_Media_Link"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Methods"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="KBV_CS_MIO_LAB_Marital_Status_Codes_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactEntityType_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Data_Absent_Reason_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Data_Absent_Reason"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Provenance_Activity_Type_German"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="BodyStructure/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Bundle/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Composition/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Condition/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Device/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DeviceDefinition/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DiagnosticReport/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="DocumentReference/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Observation/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Organization/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Patient/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Practitioner/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="PractitionerRole/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Provenance/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Specimen/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ServiceRequest/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Substance/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="RelatedPerson/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../input/expansion_parameters/expansion_parameter.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/01021964-005b-4dd5-975d-2e9a9fa917d9"/>
+      </reference>
+      <name value="01021964-005b-4dd5-975d-2e9a9fa917d9"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/01a21c9c-2cd1-44e5-a999-f84d9ef70605"/>
+      </reference>
+      <name value="01a21c9c-2cd1-44e5-a999-f84d9ef70605"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_ServiceRequest"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/035761c3-8934-499f-bf34-3963979afb56"/>
+      </reference>
+      <name value="035761c3-8934-499f-bf34-3963979afb56"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/05146497-2ca3-488e-96cb-c27c77ab6a3c"/>
+      </reference>
+      <name value="05146497-2ca3-488e-96cb-c27c77ab6a3c"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Device_Specimen_Container"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/0cfe903c-5061-4441-bf5d-1f35c4283c19"/>
+      </reference>
+      <name value="0cfe903c-5061-4441-bf5d-1f35c4283c19"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Observation_Image_Attachment"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/0f9878cf-8297-43c1-bf2d-7de5da068bf6"/>
+      </reference>
+      <name value="0f9878cf-8297-43c1-bf2d-7de5da068bf6"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_RelatedPerson"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/18a30aa6-3b2d-4738-9ca9-125a452d14e0"/>
+      </reference>
+      <name value="18a30aa6-3b2d-4738-9ca9-125a452d14e0"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5"/>
+      </reference>
+      <name value="1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Device_Specimen_Container"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/1d344181-abf0-428d-9f3f-1bbd84b7684e"/>
+      </reference>
+      <name value="1d344181-abf0-428d-9f3f-1bbd84b7684e"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Condition_Diagnosis"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Condition_Diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a"/>
+      </reference>
+      <name value="2110eb93-f57f-4f17-8e80-b76bc98d2c6a"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Organization"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce"/>
+      </reference>
+      <name value="24435567-fed3-43f8-8fc8-954f68df7fce"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Practitioner"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/25068c1f-a497-4cfe-b4e7-4a7026adf1e6"/>
+      </reference>
+      <name value="25068c1f-a497-4cfe-b4e7-4a7026adf1e6"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+      </reference>
+      <name value="2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Practitioner"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/30a47ba7-8975-4383-ad43-61c032c30e53"/>
+      </reference>
+      <name value="30a47ba7-8975-4383-ad43-61c032c30e53"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/3604d5a6-798e-4615-8a22-1d280638e2c0"/>
+      </reference>
+      <name value="3604d5a6-798e-4615-8a22-1d280638e2c0"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DiagnosticReport"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Substance"/>
+      </extension>
+      <reference>
+        <reference value="Substance/4153de68-1124-4c02-a8a3-98f4c312f075"/>
+      </reference>
+      <name value="4153de68-1124-4c02-a8a3-98f4c312f075"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Substance"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/430a63d5-b9ed-469b-a3a1-7aae27f27b11"/>
+      </reference>
+      <name value="430a63d5-b9ed-469b-a3a1-7aae27f27b11"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/4f47fe9c-d92e-46f4-ad6d-85740aaa467b"/>
+      </reference>
+      <name value="4f47fe9c-d92e-46f4-ad6d-85740aaa467b"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Specimen"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/51b6129a-b68c-485d-a37b-9593fee4354f"/>
+      </reference>
+      <name value="51b6129a-b68c-485d-a37b-9593fee4354f"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/5f40f9f7-4474-4080-bb31-a314d1cda038"/>
+      </reference>
+      <name value="5f40f9f7-4474-4080-bb31-a314d1cda038"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Provenance"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BodyStructure"/>
+      </extension>
+      <reference>
+        <reference value="BodyStructure/6894b106-8a91-4cfb-9826-443aed21c98b"/>
+      </reference>
+      <name value="6894b106-8a91-4cfb-9826-443aed21c98b"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_BodyStructure"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/6a2a44c6-92f8-40cf-a0bc-673404f7ac9b"/>
+      </reference>
+      <name value="6a2a44c6-92f8-40cf-a0bc-673404f7ac9b"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BodyStructure"/>
+      </extension>
+      <reference>
+        <reference value="BodyStructure/72f65586-b2b5-465f-a792-89fb7545d7bc"/>
+      </reference>
+      <name value="72f65586-b2b5-465f-a792-89fb7545d7bc"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_BodyStructure"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/76fdc299-7b3f-404a-b32e-31e416bb0c32"/>
+      </reference>
+      <name value="76fdc299-7b3f-404a-b32e-31e416bb0c32"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/778e032a-723a-4f3e-915f-ffbc5488b369"/>
+      </reference>
+      <name value="778e032a-723a-4f3e-915f-ffbc5488b369"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_RelatedPerson"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/7813a2dc-36aa-41ce-b5f5-f338e944b5e9"/>
+      </reference>
+      <name value="7813a2dc-36aa-41ce-b5f5-f338e944b5e9"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Observation_Image_Attachment"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/8157f177-3f3e-46b4-be27-efcbf7a216be"/>
+      </reference>
+      <name value="8157f177-3f3e-46b4-be27-efcbf7a216be"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="DeviceDefinition/81840764-fb77-49e6-9a7b-5cb028d29895"/>
+      </reference>
+      <name value="81840764-fb77-49e6-9a7b-5cb028d29895"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+      </reference>
+      <name value="84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Patient"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/96f33ca8-872d-4c8b-972e-b681db27d9df"/>
+      </reference>
+      <name value="96f33ca8-872d-4c8b-972e-b681db27d9df"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/988426e1-b7df-44b2-881c-09e7cf482b72"/>
+      </reference>
+      <name value="988426e1-b7df-44b2-881c-09e7cf482b72"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Condition_Diagnosis"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Condition_Diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+      </reference>
+      <name value="a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_PractitionerRole"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Substance"/>
+      </extension>
+      <reference>
+        <reference value="Substance/a4b533d4-0a3c-4701-b411-fd9666bf3d03"/>
+      </reference>
+      <name value="a4b533d4-0a3c-4701-b411-fd9666bf3d03"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Substance"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Substance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/a6f3d3de-0857-45ed-916e-087d84391bc3"/>
+      </reference>
+      <name value="a6f3d3de-0857-45ed-916e-087d84391bc3"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DiagnosticReport"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DiagnosticReport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-AdministrativeGender-German"/>
+      </reference>
+      <name value="AdministrativeGender German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für AdministrativeGender German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT"/>
+      </reference>
+      <name value="Außerkörperliche Quellen SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Außerkörperliche Quellen SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German"/>
+      </reference>
+      <name value="Außerkörperliche Quellen SNOMED CT® German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Außerkörperliche Quellen SNOMED CT® German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7"/>
+      </reference>
+      <name value="b1135775-9c67-4d2f-8618-9ef3d1f5f3d7"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Organization"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+      </reference>
+      <name value="b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Patient"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612"/>
+      </reference>
+      <name value="bd9d76e7-9fa1-42a4-b364-f93845994612"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_PractitionerRole"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-CommonLanguages-German"/>
+      </reference>
+      <name value="Bevorzugte Sprache German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Bevorzugte Sprache German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position"/>
+      </reference>
+      <name value="Bodystructure Clock Face Position SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Bodystructure Clock Face Position SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G"/>
+      </reference>
+      <name value="Bodystructure Clock Face Position SNOMED CT® German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Bodystructure Clock Face Position SNOMED CT® German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/c1b00183-b205-48a8-9d07-31fc8b6aa74e"/>
+      </reference>
+      <name value="c1b00183-b205-48a8-9d07-31fc8b6aa74e"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/c46e7bfb-1ee3-4c6b-9ce2-204939133cc5"/>
+      </reference>
+      <name value="c46e7bfb-1ee3-4c6b-9ce2-204939133cc5"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Device_Specimen_Subject"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-CommonUCUMCodesForDuration-German"/>
+      </reference>
+      <name value="Common UCUM Codes for Duration German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Common UCUM Codes for Duration German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-ContactEntityType-German"/>
+      </reference>
+      <name value="Contact entity type German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Contact entity type German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-ContactPointSystem-German"/>
+      </reference>
+      <name value="ContactPointSystem German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für ContactPointSystem German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/d057eafe-1927-4b09-936b-5cb61b4c7dc6"/>
+      </reference>
+      <name value="d057eafe-1927-4b09-936b-5cb61b4c7dc6"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/d9e75f3f-3900-4183-a475-d4d3dc1d14cc"/>
+      </reference>
+      <name value="d9e75f3f-3900-4183-a475-d4d3dc1d14cc"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DocumentReference"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-DataAbsentReason-German"/>
+      </reference>
+      <name value="DataAbsentReason German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für DataAbsentReason German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-MIME-Types"/>
+      </reference>
+      <name value="Dateiformat"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Dateiformat."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-DeviceNameType-German"/>
+      </reference>
+      <name value="DeviceNameType German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für DeviceNameType German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/eb46f1a2-c4ad-4276-aaaa-aef507db618d"/>
+      </reference>
+      <name value="eb46f1a2-c4ad-4276-aaaa-aef507db618d"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_ServiceRequest"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/eb7fbea2-95bd-4618-b38d-ce69cde79726"/>
+      </reference>
+      <name value="eb7fbea2-95bd-4618-b38d-ce69cde79726"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Specimen"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/f3533f34-781a-4cb4-9926-19fc8479b3e3"/>
+      </reference>
+      <name value="f3533f34-781a-4cb4-9926-19fc8479b3e3"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Provenance"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/f7dab433-b4b3-4908-8495-4876f0240511"/>
+      </reference>
+      <name value="f7dab433-b4b3-4908-8495-4876f0240511"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_DocumentReference"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ff1903f6-188a-4e60-b3bc-4b48d4582db8"/>
+      </reference>
+      <name value="ff1903f6-188a-4e60-b3bc-4b48d4582db8"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Device_Specimen_Subject"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Hl7VSRelevantClincialInformation-German"/>
+      </reference>
+      <name value="hl7VS-relevantClincialInformation German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für hl7VS-relevantClincialInformation German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Identifier-Type"/>
+      </reference>
+      <name value="Identifier Type"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Identifier Type."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Identifier-Type-German"/>
+      </reference>
+      <name value="Identifier Type German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Identifier Type German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/KBV-CM-MIO-LAB-Overview"/>
+      </reference>
+      <name value="KBV_CM_MIO_LAB_Overview"/>
+      <description value="Diese Conceptmap verknüpft die Codes für KBV_CM_MIO_LAB_Overview mit deutschen Bezeichnungen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Laboratory-Identificator"/>
+      </reference>
+      <name value="KBV_CS_MIO_LAB_Laboratory_Identificator"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_Laboratory_Identificator."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-mio42"/>
+      </reference>
+      <name value="KBV_CS_MIO_LAB_mio42"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_mio42."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Secondary-Status"/>
+      </reference>
+      <name value="KBV_CS_MIO_LAB_Secondary_Status"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_Secondary_Status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe"/>
+      </reference>
+      <name value="KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Accredited-Service"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Accredited_Service"/>
+      <description value="Diese Extension bildet eine Kennzeichnung für akkreditierte Laboruntersuchungen ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Alternative-Result"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Alternative_Result"/>
+      <description value="Diese Extension bildet das Resultat einer Laboruntersuchung mit einer Alternativeinheit ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Association-Service"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Association_Service"/>
+      <description value="Diese Extension bildet eine Kennzeichnung für Verbundleistungen ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Critical-Result"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Critical_Result"/>
+      <description value="In dieser Extension kann ein, aus labormedizinischer Sicht, medizinisch kritischer Befund deklariert werden."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Diskriminator"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Diskriminator"/>
+      <description value="Diese Extension dient als Unterscheidungsmerkmal."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-External-Service"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_External_Service"/>
+      <description value="Diese Extension bildet eine Kennzeichnung für Fremdleistungen ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-No-Linear-Reference-Range"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_No_Linear_Reference_Range"/>
+      <description value="Diese Extension kennzeichnet, dass es sich um einen nicht-linearen Wertebereich handelt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Order-Entry-Time"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Order_Entry_Time"/>
+      <description value="Diese Extension bildet einen Auftrageingangszeitpunkt ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Pseudonymized-Report"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Pseudonymized_Report"/>
+      <description value="In dieser Extension kann ein Laborbefund als pseudonymisiert deklariert werden. Es kann bei der Steuerung der Übermittlungswege und für technische Validierung genutzt werden."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Reason-Type"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Reason_Type"/>
+      <description value="Diese Extension dient der Unterscheidung zwischen Anlass und Veranlassungsgrund des Laborauftrags."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Secondary-Status"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Secondary_Status"/>
+      <description value="In dieser Extension kann eine optionale sekundäre Angabe des Änderungsstatus, zusätzlich zum Hauptstatus des Gesamtbefundes angegeben werden"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Sorting-Number"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Sorting_Number"/>
+      <description value="Diese Extension bildet eine Sortiernummer ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-Source-Reference-Range"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_Source_Reference_Range"/>
+      <description value="Diese Extension bildet eine Quelle der Richtgrenze ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-MIO-LAB-zlog"/>
+      </reference>
+      <name value="KBV_EX_MIO_LAB_zlog"/>
+      <description value="Diese Extension bildet den zlog-Wert ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-BodyStructure"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_BodyStructure"/>
+      <description value="Dieses Profil bildet eine Körperstruktur ab.&#xA;&#xA;&#xA;Angaben zur Körperstruktur können enthalten:&#xA;&#xA;* Körperstelle (anatomische Benennung)&#xA;* Lateralität (für paarige Organe/Strukturen: rechts, links, beidseits)&#xA;* Lokalisierung (für räumliche Angaben, z.B. oben, unten)&#xA;* Uhrzeigerposition (z.B. 12-Uhr-Position)&#xA;* Morphologie (z.B. pathologische Strukturen)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Bundle"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Bundle"/>
+      <description value="Dieses Profil dient als bündelndes Element. Das Bundle kann als Klammer-Ressource verstanden werden, die die notwendigen Ressourcen zusammenfügt. Diese Ressource und die darin gebündelten Ressourcen können dann mit einer Signatur versehen werden. Das Bundle umfasst in dieser Anwendung einen Laborbefund."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Composition"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Composition"/>
+      <description value="Dieses Profil bündelt die Strukturen, die zum gesamten Laborbefund gehören. Das MIO Laborbefund enthält genau einen Laborgesamtbefund, inklusive aller Befundanteile und Anhänge."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Condition-Diagnosis"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Condition_Diagnosis"/>
+      <description value="Hier wird eine Diagnose im Kontext des Laborauftrages abgebildet.&#xA;&#xA;In den Angaben zum LDT-Mapping findet man Beispiele für Inhalte, die in diese Datenstruktur hineinpassen könnten bzw. auch übernommen werden könnten. Angaben zur Auftragsdiagnose können beispielsweise in Muster 10 vorkommen oder über den Labordatentransfer übermittelt werden."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-DeviceDefinition-Laboratory-Analyzer"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer"/>
+      <description value="Dieses Profil bildet das Modell eines Laboranalysegerätes ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-DeviceDefinition-Specimen-Container"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container"/>
+      <description value="Dieses Profil bildet das Modell eines Probenbehälters ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-DeviceDefinition-Specimen-Subject"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Subject"/>
+      <description value="Dieses Profil bildet das Modell einer außerkörperlichen Stelle ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Device-Laboratory-Analyzer"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Device_Laboratory_Analyzer"/>
+      <description value="In diesem Profil werden Informationen zum Analysegerät angegeben, mit dem die Messung durchgeführt wird."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Device-Specimen-Container"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Device_Specimen_Container"/>
+      <description value="In diesem Profil werden Informationen zum Probenbehälter angegeben, z. B. Blutröhrchen, steriler Urinprobenbehälter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Device-Specimen-Subject"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Device_Specimen_Subject"/>
+      <description value="Dieses Profil bildet eine außerkörperliche Quelle ab.&#xA;&#xA;Falls die Probe nicht unmittelbar aus dem menschlichen Körper direkt entnommen wird, sondern beispielsweise aus einem Sammelgefäß oder Katheter gewonnen wird, kann das einen Einfluss auf das Messergebnis haben. Für diesen Fall kann die (außerkörperliche) Quelle für die Probenentnahme benannt werden.&#xA;&#xA;Es wäre auch möglich, dass eine Probenentnahme aus mehreren außerkörperlichen Quellen gewonnen wird."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-DiagnosticReport"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_DiagnosticReport"/>
+      <description value="Profil für den Laborgesamtbefund (DiagnosticReport). Darin verschachtelt unter &quot;Ergebnisse&quot; (DiagnosticReport.result) ist die Referenz auf &quot;Untersuchungsgruppe&quot; (Observation_Laboratory_Study_Group), darin die Referenz auf &quot;Laboruntersuchung&quot; (Observation_Laboratory_Study), darin die Referenz auf &quot;Probe&quot; (Specimen)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-DocumentReference"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_DocumentReference"/>
+      <description value="Hier werden zusätzliche Resultate, die nicht Teil des strukturierten MIO Laborbefundes sind, abgebildet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Observation-Image-Attachment"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Observation_Image_Attachment"/>
+      <description value="Abbildung, die zu einer Laboruntersuchung oder einer Untersuchungsgruppe als Ergänzung mitgegeben wird. Beispielsweise kann die Ausprägung einer Elektrophorese-Kurve eine hilfreiche oder wichtige Zusatzinformation zu einer Erkrankung geben, die durch den quantitativen Ergebniswert allein nicht hinreichend erkennbar wird."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Observation-Laboratory-Study"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Observation_Laboratory_Study"/>
+      <description value="Dieses Profil bildet eine Laboruntersuchung ab.&#xA;&#xA;Laboruntersuchungen können als Messung oder als Berechnung erfolgen.&#xA;&#xA;Eine Laboruntersuchung als Messung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborparameters in einem definierten Probenmaterial; z. B. die Untersuchung des Hämoglobin-(Hb-)Werts als Konzentration im Blut. Der Bezug zur Probe, anhand derer die Messung vorgenommen wurde, muss erkennbar sein.&#xA;&#xA;Berechnete Laborergebnisse können auf Messungen basieren, z.B. kann die berechnete GFR (glomeruläre Filtrationsrate) auf einem gemessenen Kreatinin-Wert im Serum basieren."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"/>
+      <description value="Dieses Profil bildet eine Untersuchungsgruppe ab.&#xA;&#xA;Untersuchungsgruppen sind ein technisches Mittel, um fachlich zusammengehörige Laborergebnisse innerhalb des Laborgesamtbefundes gruppiert und sortiert anzuordnen. Die Struktur &quot;Laborgesamtbefund/Ergebnisse&quot; enthält mindestens eine Struktur &quot;Untersuchungsgruppe&quot; im Abschnitt Ergebnisse.&#xA;&#xA;Für die gruppierte Darstellung von Laboruntersuchungen können (optional) aus den fachlichen Gruppierungsmerkmalen fachliche Bezeichner als Gruppenüberschrift abgeleitet werden.&#xA;&#xA;Untersuchungsgruppen, deren Sortierreihenfolge und die Sortierreihenfolge der einzelnen Untersuchungen innerhalb einer Gruppe werden Labor-intern definiert. Das empfangende System muss diese Gruppierungen und Sortierungen interpretieren können. Diese Strukturierung dient dem Erhalt des fachlichen Kontextes von digital kommunizierten Laboruntersuchungen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Organization"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Organization"/>
+      <description value="Dieses Profil bildet eine Einrichtung ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Patient"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Patient"/>
+      <description value="Dieses Profil bildet eine Person ab, die eine oder mehrere medizinische Leistungen in Anspruch nimmt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Practitioner"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Practitioner"/>
+      <description value="Dieses Profil bildet eine behandelnde Person ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-PractitionerRole"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_PractitionerRole"/>
+      <description value="Dieses Profil bildet eine behandelnde Person/Einrichtung ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Provenance"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Provenance"/>
+      <description value="Hier werden Angaben zur medizinischen Freigabe der Laboruntersuchung gemacht. Das beinhaltet die Angabe der freigebenden Person, des Zeitpunktes und der Typisierung der Freigabe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-RelatedPerson"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_RelatedPerson"/>
+      <description value="Dieses Profil bildet eine Kontakt- oder Bezugsperson ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-ServiceRequest"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_ServiceRequest"/>
+      <description value="Administrative und für die Befundung klinisch relevante Teilinformationen aus dem Laborauftrag"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Specimen"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Specimen"/>
+      <description value="Dieses Profil bildet eine Probe ab.&#xA;&#xA;Identifizierung und Eigenschaften der primären oder sekundären Probe, auf deren Basis die Laboruntersuchung als Messung durchgeführt wird. Ein inhaltliches Beispiel für die Unterscheidung von Primär- und Sekundärprobe:&#xA;&#xA;* Primärprobe: Probenart = Vollblut (über LOINC® oder ergänzende Spezifizierung Probenart); Probengewinnung / Methode = Blutabnahme; Probenverarbeitung / Methode = Zentrifugieren&#xA;&#xA;* Sekundärprobe: Probenart = Serum (über LOINC® oder ergänzende Spezifizierung Probenart); Probengewinnung / Methode = Zentrifugieren zur Serumgewinnung; Probe / Ausgangsmaterial = Vollblut"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-MIO-LAB-Substance"/>
+      </reference>
+      <name value="KBV_PR_MIO_LAB_Substance"/>
+      <description value="Hier wird eine Substanz abgebildet, die bei der Probenverarbeitung als Zusatz hinzugefügt wird."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo"/>
+      </reference>
+      <name value="Kollektivbezug"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Kollektivbezug."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German"/>
+      </reference>
+      <name value="Kollektivbezug German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Kollektivbezug German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Body-Structures-SNOMED-CT"/>
+      </reference>
+      <name value="Körperstelle SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Körperstelle SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Laboratory-Analyzer-SNOMED-CT"/>
+      </reference>
+      <name value="Laboranalysegerät SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Laboranalysegerät SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/cdfb127b-df3c-493f-bc7e-e8be4a7bdc45"/>
+      </reference>
+      <name value="Laboratory Report"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Composition"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/13c807c0-53e7-488e-84bb-023376563cf3"/>
+      </reference>
+      <name value="Laboratory Report"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_MIO_LAB_Composition"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC"/>
+      </reference>
+      <name value="Laborbereich LOINC®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Laborbereich LOINC®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Laterality-Body-Structure-SNOMED-CT"/>
+      </reference>
+      <name value="Lateralität Körperstelle SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Lateralität Körperstelle SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT"/>
+      </reference>
+      <name value="Lokalisation innerhalb Körperstelle SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Lokalisation innerhalb Körperstelle SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT-German"/>
+      </reference>
+      <name value="Lokalisation innerhalb Körperstelle SNOMED CT® German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Lokalisation innerhalb Körperstelle SNOMED CT® German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Marital-Status-Codes-German"/>
+      </reference>
+      <name value="MaritalStatus German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für MaritalStatus German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT"/>
+      </reference>
+      <name value="Messergebnis Qualitativ SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Messergebnis Qualitativ SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Data-Absent-Reason"/>
+      </reference>
+      <name value="Nichtvorhandensein LOINC®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Nichtvorhandensein LOINC®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Data-Absent-Reason-German"/>
+      </reference>
+      <name value="Nichtvorhandensein LOINC® German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Nichtvorhandensein LOINC® German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-ObservationInterpretationCodes-German"/>
+      </reference>
+      <name value="Observation Interpretation Codes German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Observation Interpretation Codes German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-ObservationReferenceRangeMeaningCodes-German"/>
+      </reference>
+      <name value="Observation Reference Range Meaning Codes German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Observation Reference Range Meaning Codes German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-PatientRelationshipType-German"/>
+      </reference>
+      <name value="PatientRelationshipType German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für PatientRelationshipType German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT"/>
+      </reference>
+      <name value="Probenart SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Probenart SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT"/>
+      </reference>
+      <name value="Probenentnahme-Methode SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Probenentnahme-Methode SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-QuantityComparator-German"/>
+      </reference>
+      <name value="QuantityComparator German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für QuantityComparator German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-RequestPriority-German"/>
+      </reference>
+      <name value="Request priority German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Request priority German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Secondary-Status"/>
+      </reference>
+      <name value="Sekundärstatus Gesamtbefund"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Sekundärstatus Gesamtbefund."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-SexParameterForClinicalUse-German"/>
+      </reference>
+      <name value="Sex Parameter for Clinical Use German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Sex Parameter for Clinical Use German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German"/>
+      </reference>
+      <name value="Specimen Additive German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Specimen Additive German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-SpecimenProcessingProcedure-German"/>
+      </reference>
+      <name value="Specimen processing procedure German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Specimen processing procedure German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-SpecimenStatus-German"/>
+      </reference>
+      <name value="SpecimenStatus German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für SpecimenStatus German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Diagnostic-ReportStatus"/>
+      </reference>
+      <name value="Status Gesamtbefund"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Status Gesamtbefund."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Diagnostic-ReportStatus-German"/>
+      </reference>
+      <name value="Status Gesamtbefund German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Status Gesamtbefund German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Observation-Status"/>
+      </reference>
+      <name value="Status Laboruntersuchung"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Status Laboruntersuchung."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Observation-Status-German"/>
+      </reference>
+      <name value="Status Laboruntersuchung German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Status Laboruntersuchung German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Laboruntersuchungsgruppe"/>
+      </reference>
+      <name value="Test-Profil Laboruntersuchungsgruppe"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Test-Profil Laboruntersuchungsgruppe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Provenance-Activity-Type-German"/>
+      </reference>
+      <name value="Typisierung Freigabe German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Typisierung Freigabe German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Type-Diagram"/>
+      </reference>
+      <name value="Typisierung Messdiagramm"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Typisierung Messdiagramm."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Type-Diagram-German"/>
+      </reference>
+      <name value="Typisierung Messdiagramm German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Typisierung Messdiagramm German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Observation-Methods"/>
+      </reference>
+      <name value="Untersuchungsmethode SNOMED CT®"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Untersuchungsmethode SNOMED CT®."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-MIO-LAB-Specimen-Condition"/>
+      </reference>
+      <name value="Zustand Probe"/>
+      <description value="Dieses Valueset enthält die Codes zur Beschreibung von Zustand Probe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-MIO-LAB-Specimen-Condition-German"/>
+      </reference>
+      <name value="Zustand Probe German"/>
+      <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Zustand Probe German."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Projektübersicht"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Fachliche_Einordnung_und_Nutzen.html"/>
+        </extension>
+        <nameUrl value="Fachliche_Einordnung_und_Nutzen.html"/>
+        <title value="Fachliche Einordnung und Nutzen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Rechtlicher_Rahmen.html"/>
+        </extension>
+        <nameUrl value="Rechtlicher_Rahmen.html"/>
+        <title value="Rechtlicher Rahmen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Stakeholder.html"/>
+        </extension>
+        <nameUrl value="Stakeholder.html"/>
+        <title value="Stakeholder"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Vorarbeiten.html"/>
+        </extension>
+        <nameUrl value="Vorarbeiten.html"/>
+        <title value="Vorarbeiten"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Prozessanalyse.html"/>
+        </extension>
+        <nameUrl value="Prozessanalyse.html"/>
+        <title value="Prozessanalyse"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Bedarfsanalyse.html"/>
+        </extension>
+        <nameUrl value="Bedarfsanalyse.html"/>
+        <title value="Bedarfsanalyse"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Grundlagen_zur_Terminologienutzung.html"/>
+        </extension>
+        <nameUrl value="Grundlagen_zur_Terminologienutzung.html"/>
+        <title value="Grundlagen zur Terminologienutzung"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Anwendungsfaelle.html"/>
+        </extension>
+        <nameUrl value="Anwendungsfaelle.html"/>
+        <title value="Anwendungsfälle"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="infomodell.html"/>
+        </extension>
+        <nameUrl value="infomodell.html"/>
+        <title value="Informationsmodell"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="UX-_UI-Ueberblick.html"/>
+        </extension>
+        <nameUrl value="UX-_UI-Ueberblick.html"/>
+        <title value="UX-/UI-Überblick"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Einzelbefunddarstellung_in_der_Primaersystemansicht.html"/>
+        </extension>
+        <nameUrl value="Einzelbefunddarstellung_in_der_Primaersystemansicht.html"/>
+        <title value="Einzelbefunddarstellung in der Primärsystemansicht"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Kumulativdarstellung_in_der_Primaersystemansicht.html"/>
+        </extension>
+        <nameUrl value="Kumulativdarstellung_in_der_Primaersystemansicht.html"/>
+        <title value="Kumulativdarstellung in der Primärsystemansicht"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Moegliche_Primaersysteminteraktionen_mit_der_ePA.html"/>
+        </extension>
+        <nameUrl value="Moegliche_Primaersysteminteraktionen_mit_der_ePA.html"/>
+        <title value="Mögliche Primärsysteminteraktionen mit der ePA"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="artifacts.html"/>
+        </extension>
+        <nameUrl value="artifacts.html"/>
+        <title value="FHIR-Artefakte"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="requirements.html"/>
+        </extension>
+        <nameUrl value="requirements.html"/>
+        <title value="Umsetzungsanforderungen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="expansion_parameters.html"/>
+        </extension>
+        <nameUrl value="expansion_parameters.html"/>
+        <title value="Expansion Parameter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="copyright.html"/>
+        </extension>
+        <nameUrl value="copyright.html"/>
+        <title value="Copyright"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Feedback.html"/>
+        </extension>
+        <nameUrl value="Feedback.html"/>
+        <title value="Feedback"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

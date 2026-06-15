@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_PractitionerRole|1.0.0-update"/>
+  </meta>
+  <practitioner>
+    <reference value="Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care"/>
+      <version value="1.8.0"/>
+      <code value="API"/>
+      <display value="Ärztliche:r Praxisinhaber:in"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE"/>
+      <version value="1.03"/>
+      <code value="01"/>
+      <display value="Allgemeinmedizin"/>
+    </coding>
+  </specialty>
+</PractitionerRole>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="01a21c9c-2cd1-44e5-a999-f84d9ef70605"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_ServiceRequest|1.0.0-update"/>
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator"/>
+        <version value="1.0.0-update"/>
+        <code value="AE"/>
+        <display value="Auftragsnummer des Einsenders"/>
+      </coding>
+    </type>
+    <system value="http://testsystem.de"/>
+    <value value="20211115-127"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator"/>
+        <version value="1.0.0-update"/>
+        <code value="NI"/>
+        <display value="Nachforderungsidentifikation"/>
+      </coding>
+    </type>
+    <system value="http://testsystem.de"/>
+    <value value="20211115-127"/>
+  </identifier>
+  <status value="completed"/>
+  <intent value="order"/>
+  <priority value="routine"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="721965002"/>
+      <display value="Laboratory order (record artifact)"/>
+    </coding>
+  </code>
+  <orderDetail>
+    <text value="Beispieltext"/>
+  </orderDetail>
+  <subject>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+          <code value="KVZ10"/>
+          <display value="Krankenversichertennummer"/>
+        </coding>
+      </type>
+      <system value="http://fhir.de/sid/gkv/kvid-10"/>
+      <value value="K123456789"/>
+    </identifier>
+  </subject>
+  <authoredOn value="2023-05-03T11:08:15+01:00"/>
+  <requester>
+    <reference value="Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+  </requester>
+  <reasonCode>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type">
+      <valueString value="Anlass"/>
+    </extension>
+    <text value="Grund"/>
+  </reasonCode>
+  <reasonCode>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Reason_Type">
+      <valueString value="Veranlassungsgrund"/>
+    </extension>
+    <text value="Grund2"/>
+  </reasonCode>
+  <reasonReference>
+    <reference value="Condition/1d344181-abf0-428d-9f3f-1bbd84b7684e"/>
+  </reasonReference>
+  <supportingInfo>
+    <display value="testressource"/>
+  </supportingInfo>
+  <note>
+    <text value="test"/>
+  </note>
+</ServiceRequest>

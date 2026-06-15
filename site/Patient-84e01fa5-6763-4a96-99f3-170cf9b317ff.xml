@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="84e01fa5-6763-4a96-99f3-170cf9b317ff"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Patient|1.0.0-update"/>
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="MR"/>
+        <display value="Krankenaktennummer"/>
+      </coding>
+    </type>
+    <system value="http://www.acmedasdd.com/identifiers/patient"/>
+    <value value="123456"/>
+  </identifier>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="unknown"/>
+    </extension>
+  </name>
+  <birthDate value="2022-03-01"/>
+</Patient>

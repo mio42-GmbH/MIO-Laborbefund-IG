@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German</b></p><a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German"> </a><a name="hcKBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Natriumformiat<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumformiat"> </a></td><td>Natriumformiat</td></tr><tr><td style="white-space:nowrap">Dipotassiumedetat<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Dipotassiumedetat"> </a></td><td>Dipotassiumedetat</td></tr><tr><td style="white-space:nowrap">Kaliumtriphosphat<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Kaliumtriphosphat"> </a></td><td>Kaliumtriphosphat</td></tr><tr><td style="white-space:nowrap">Lithiumheparin<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Lithiumheparin"> </a></td><td>Lithiumheparin</td></tr><tr><td style="white-space:nowrap">HeparinAmmonium<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-HeparinAmmonium"> </a></td><td>Heparin-Ammonium</td></tr><tr><td style="white-space:nowrap">Borsaeure<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Borsaeure"> </a></td><td>Borsäure</td></tr><tr><td style="white-space:nowrap">Salzsaeure<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Salzsaeure"> </a></td><td>Salzsäure</td></tr><tr><td style="white-space:nowrap">HeparinCalcium<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-HeparinCalcium"> </a></td><td>Heparin-Calcium</td></tr><tr><td style="white-space:nowrap">Calciumoxalat<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Calciumoxalat"> </a></td><td>Calciumoxalat</td></tr><tr><td style="white-space:nowrap">Ethylendiamintetraessigsaeure<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Ethylendiamintetraessigsaeure"> </a></td><td>Ethylendiamintetraessigsäure</td></tr><tr><td style="white-space:nowrap">Dikaliumedetat<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Dikaliumedetat"> </a></td><td>Dikaliumedetat</td></tr><tr><td style="white-space:nowrap">Natriumheparin<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumheparin"> </a></td><td>Natriumheparin</td></tr><tr><td style="white-space:nowrap">Natriumtetraborat<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumtetraborat"> </a></td><td>Natriumtetraborat</td></tr><tr><td style="white-space:nowrap">Natriumfluorid<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumfluorid"> </a></td><td>Natriumfluorid</td></tr><tr><td style="white-space:nowrap">Edetinsaeure<a name="KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Edetinsaeure"> </a></td><td>Edetinsäure</td></tr></table></div>
+  </text>
+  <url value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"/>
+  <version value="1.0.0-update"/>
+  <name value="KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"/>
+  <title value="Specimen Additive German"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-06-15T16:45:57+02:00"/>
+  <publisher value="mio42 GmbH"/>
+  <contact>
+    <name value="mio42 GmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://mio.kbv.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hello@mio42.de"/>
+    </telecom>
+  </contact>
+  <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für Specimen Additive German."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="Natriumformiat"/>
+    <display value="Natriumformiat"/>
+  </concept>
+  <concept>
+    <code value="Dipotassiumedetat"/>
+    <display value="Dipotassiumedetat"/>
+  </concept>
+  <concept>
+    <code value="Kaliumtriphosphat"/>
+    <display value="Kaliumtriphosphat"/>
+  </concept>
+  <concept>
+    <code value="Lithiumheparin"/>
+    <display value="Lithiumheparin"/>
+  </concept>
+  <concept>
+    <code value="HeparinAmmonium"/>
+    <display value="Heparin-Ammonium"/>
+  </concept>
+  <concept>
+    <code value="Borsaeure"/>
+    <display value="Borsäure"/>
+  </concept>
+  <concept>
+    <code value="Salzsaeure"/>
+    <display value="Salzsäure"/>
+  </concept>
+  <concept>
+    <code value="HeparinCalcium"/>
+    <display value="Heparin-Calcium"/>
+  </concept>
+  <concept>
+    <code value="Calciumoxalat"/>
+    <display value="Calciumoxalat"/>
+  </concept>
+  <concept>
+    <code value="Ethylendiamintetraessigsaeure"/>
+    <display value="Ethylendiamintetraessigsäure"/>
+  </concept>
+  <concept>
+    <code value="Dikaliumedetat"/>
+    <display value="Dikaliumedetat"/>
+  </concept>
+  <concept>
+    <code value="Natriumheparin"/>
+    <display value="Natriumheparin"/>
+  </concept>
+  <concept>
+    <code value="Natriumtetraborat"/>
+    <display value="Natriumtetraborat"/>
+  </concept>
+  <concept>
+    <code value="Natriumfluorid"/>
+    <display value="Natriumfluorid"/>
+  </concept>
+  <concept>
+    <code value="Edetinsaeure"/>
+    <display value="Edetinsäure"/>
+  </concept>
+</CodeSystem>

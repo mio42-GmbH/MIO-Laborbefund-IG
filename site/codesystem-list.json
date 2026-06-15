@@ -1,0 +1,266 @@
+{
+  "codeSystems" : [{
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_AdministrativeGender_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_AdministrativeGender_German",
+    "title" : "AdministrativeGender German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für AdministrativeGender German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German",
+    "title" : "Bodystructure Clock Face Position SNOMED CT® German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Bodystructure Clock Face Position SNOMED CT® German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_CommonLanguages_German",
+    "title" : "Bevorzugte Sprache German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Bevorzugte Sprache German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German",
+    "title" : "Common UCUM Codes for Duration German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Common UCUM Codes for Duration German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactEntityType_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_ContactEntityType_German",
+    "title" : "Contact entity type German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Contact entity type German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactPointSystem_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_ContactPointSystem_German",
+    "title" : "ContactPointSystem German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für ContactPointSystem German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_DataAbsentReason_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_DataAbsentReason_German",
+    "title" : "DataAbsentReason German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für DataAbsentReason German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Data_Absent_Reason_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Data_Absent_Reason_German",
+    "title" : "Nichtvorhandensein LOINC® German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Nichtvorhandensein LOINC® German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_DeviceNameType_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_DeviceNameType_German",
+    "title" : "DeviceNameType German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für DeviceNameType German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German",
+    "title" : "Status Gesamtbefund German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Status Gesamtbefund German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German",
+    "title" : "Kollektivbezug German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Kollektivbezug German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German",
+    "title" : "Außerkörperliche Quellen SNOMED CT® German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Außerkörperliche Quellen SNOMED CT® German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German",
+    "title" : "hl7VS-relevantClincialInformation German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für hl7VS-relevantClincialInformation German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Identifier_Type_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Identifier_Type_German",
+    "title" : "Identifier Type German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Identifier Type German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German",
+    "title" : "Specimen Additive German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Specimen Additive German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Laboratory_Identificator",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Laboratory_Identificator",
+    "title" : "KBV_CS_MIO_LAB_Laboratory_Identificator",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_Laboratory_Identificator."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German",
+    "title" : "Lokalisation innerhalb Körperstelle SNOMED CT® German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Lokalisation innerhalb Körperstelle SNOMED CT® German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Marital_Status_Codes_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Marital_Status_Codes_German",
+    "title" : "MaritalStatus German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für MaritalStatus German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_ObservationInterpretationCodes_German",
+    "title" : "Observation Interpretation Codes German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Observation Interpretation Codes German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German",
+    "title" : "Observation Reference Range Meaning Codes German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Observation Reference Range Meaning Codes German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Observation_Status_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Observation_Status_German",
+    "title" : "Status Laboruntersuchung German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Status Laboruntersuchung German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_PatientRelationshipType_German",
+    "title" : "PatientRelationshipType German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für PatientRelationshipType German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Provenance_Activity_Type_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Provenance_Activity_Type_German",
+    "title" : "Typisierung Freigabe German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Typisierung Freigabe German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_QuantityComparator_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_QuantityComparator_German",
+    "title" : "QuantityComparator German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für QuantityComparator German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_RequestPriority_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_RequestPriority_German",
+    "title" : "Request priority German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Request priority German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Secondary_Status",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Secondary_Status",
+    "title" : "KBV_CS_MIO_LAB_Secondary_Status",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_Secondary_Status."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_SexParameterForClinicalUse_German",
+    "title" : "Sex Parameter for Clinical Use German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Sex Parameter for Clinical Use German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German",
+    "title" : "Specimen processing procedure German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Specimen processing procedure German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_SpecimenStatus_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_SpecimenStatus_German",
+    "title" : "SpecimenStatus German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für SpecimenStatus German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Specimen_Condition_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Specimen_Condition_German",
+    "title" : "Zustand Probe German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Zustand Probe German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe",
+    "title" : "KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Type_Diagram_German",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_Type_Diagram_German",
+    "title" : "Typisierung Messdiagramm German",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Typisierung Messdiagramm German."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_mio42",
+    "version" : "1.0.0-update",
+    "status" : "draft",
+    "name" : "KBV_CS_MIO_LAB_mio42",
+    "title" : "KBV_CS_MIO_LAB_mio42",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_mio42."
+  }]
+}

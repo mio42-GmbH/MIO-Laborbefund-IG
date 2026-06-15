@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="18a30aa6-3b2d-4738-9ca9-125a452d14e0"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer|1.0.0-update"/>
+  </meta>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <version value="5.0.0"/>
+        <code value="UDI"/>
+        <display value="Universal Device Identifier"/>
+      </coding>
+    </type>
+    <system value="http://goodcare.org/devices/id"/>
+    <value value="345675"/>
+  </identifier>
+  <definition>
+    <reference value="DeviceDefinition/25068c1f-a497-4cfe-b4e7-4a7026adf1e6"/>
+  </definition>
+  <udiCarrier>
+    <deviceIdentifier value="example"/>
+  </udiCarrier>
+  <distinctIdentifier value="example"/>
+  <manufactureDate value="2021-11-15T16:55:00+01:00"/>
+  <expirationDate value="2021-11-15T16:55:00+01:00"/>
+  <lotNumber value="12345"/>
+  <serialNumber value="12345"/>
+  <deviceName>
+    <name value="Test-Name"/>
+    <type value="manufacturer-name"/>
+  </deviceName>
+  <modelNumber value="123456789"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20251115"/>
+      <code value="30234008"/>
+      <display value="Medical laboratory analyzer, device (physical object)"/>
+    </coding>
+    <text value="Medizinisches Laboranalysegerät"/>
+  </type>
+  <version>
+    <value value="v1"/>
+  </version>
+  <note>
+    <text value="test"/>
+  </note>
+</Device>

@@ -1,0 +1,196 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "b1135775-9c67-4d2f-8618-9ef3d1f5f3d7"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization|1.0.0-update"^^xsd:anyURI ;
+       fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization|1.0.0-update>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "test"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "5.0.0" ] ;
+         fhir:code [ fhir:v "XX" ] ;
+         fhir:display [ fhir:v "Organisations-ID" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://fhir.de/sid/arge-ik/iknr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "5.0.0" ] ;
+         fhir:code [ fhir:v "BSNR" ] ;
+         fhir:display [ fhir:v "Primary physician office number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "5.0.0" ] ;
+         fhir:code [ fhir:v "NIIP" ] ;
+         fhir:display [ fhir:v "Vertragskassennummer (VKNR)" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://fhir.de/sid/kbv/vknr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "1.5.4" ] ;
+         fhir:code [ fhir:v "KZVA" ] ;
+         fhir:display [ fhir:v "KZVAbrechnungsnummer" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://fhir.de/sid/kzbv/kzvabrechnungsnummer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "5.0.0" ] ;
+         fhir:code [ fhir:v "PRN" ] ;
+         fhir:display [ fhir:v "Provider number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://gematik.de/fhir/sid/telematik-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2018-07-13T16:21:42" ] ;
+       fhir:code [ fhir:v "APO" ] ;
+       fhir:display [ fhir:v "Apotheke" ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1.5.4" ] ;
+       fhir:code [ fhir:v "0100" ] ;
+       fhir:display [ fhir:v "Innere Medizin" ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1.5.4" ] ;
+       fhir:code [ fhir:v "0200" ] ;
+       fhir:display [ fhir:v "Geriatrie" ]
+     ] ) ;
+     fhir:text [ fhir:v "test" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Praxis X"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0173555" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Neukölln"
+       ]
+     ] ) ;
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [
+       fhir:v "Neukölln" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Musterweg"
+         ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "42"
+         ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Hinterhaus"
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Berlin" ] ;
+     fhir:postalCode [ fhir:v "9132" ] ;
+     fhir:country [ fhir:v "D" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Neukölln"
+       ]
+     ] ) ;
+     fhir:type [ fhir:v "postal" ] ;
+     fhir:line ( [
+       fhir:v "Neukölln" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Musterweg 42"
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Berlin" ] ;
+     fhir:postalCode [ fhir:v "9132" ] ;
+     fhir:country [ fhir:v "D" ]
+  ] ) ; # 
+  fhir:partOf [
+     fhir:link <https://fhir.kbv.de/Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a> ;
+     fhir:reference [ fhir:v "Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a" ]
+  ] ; # 
+  fhir:contact ( [
+     fhir:purpose [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/contactentity-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PATINF" ] ;
+         fhir:display [ fhir:v "Patient" ]
+       ] )
+     ] ;
+     fhir:name [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:text [ fhir:v "Frau Marianne Ehrlich" ] ;
+       fhir:family [ fhir:v "Ehrlich" ] ;
+       fhir:given ( [ fhir:v "Marianne" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "0173777" ]
+     ] ) ;
+     fhir:address [
+       fhir:type [ fhir:v "both" ] ;
+       fhir:line ( [ fhir:v "Muster-Allee 42" ] [ fhir:v "Neukölln" ] ) ;
+       fhir:city [ fhir:v "Berlin" ] ;
+       fhir:postalCode [ fhir:v "9132" ] ;
+       fhir:country [ fhir:v "D" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

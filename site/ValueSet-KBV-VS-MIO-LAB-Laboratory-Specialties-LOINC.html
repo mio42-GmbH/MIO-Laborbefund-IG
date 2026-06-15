@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Laborbereich LOINC® - MIO Laborbefund v1.0.0-update</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+<link href="assets/css/requirement-view.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/mio-labbefund-headline.png') no-repeat;
+        background-size: 98%;
+        background-position: -65px -5px;
+    }
+</style>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"15.46"}
+    h3,h4,h5,h6{--heading-prefix:"15.46"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="70" alt="Home" src="assets/images/mio42-logo.svg"/>
+
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Grundlagen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Fachliche_Einordnung_und_Nutzen.html">Fachliche Einordnung und Nutzen</a>
+      </li>
+      <li>
+        <a href="Rechtlicher_Rahmen.html">Rechtlicher Rahmen</a>
+      </li>
+      <li>
+        <a href="Stakeholder.html">Stakeholder</a>
+      </li>
+      <li>
+        <a href="Vorarbeiten.html">Vorarbeiten</a>
+      </li>
+      <li>
+        <a href="Prozessanalyse.html">Prozessanalyse</a>
+      </li>
+      <li>
+        <a href="Bedarfsanalyse.html">Bedarfsanalyse</a>
+      </li>
+      <li>
+        <a href="Grundlagen_zur_Terminologienutzung.html">Grundlagen zur Terminologienutzung</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Anwendungsfaelle.html">Anwendungsfälle</a>
+  </li>
+  <li>
+    <a href="infomodell.html">Informationsmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+  <li>
+    <a href="requirements.html">Umsetzungsanforderungen</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">UX-Visualisierungen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="UX-_UI-Ueberblick.html">UX-/UI-Überblick</a>
+      </li>
+      <li>
+        <a href="Einzelbefunddarstellung_in_der_Primaersystemansicht.html">Einzelbefunddarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Kumulativdarstellung_in_der_Primaersystemansicht.html">Kumulativdarstellung in der Primärsystemansicht</a>
+      </li>
+      <li>
+        <a href="Moegliche_Primaersysteminteraktionen_mit_der_ePA.html">Mögliche Primärsysteminteraktionen mit der ePA</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Feedback.html">Feedback</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Über
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="expansion_parameters.html">Expansion Parameter</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+MIO Laborbefund
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-update - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>FHIR-Artefakte</b></a></li><li><b>Laborbereich LOINC®</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<div class="col-12">
+  
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Laborbereich LOINC®
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-update<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC|1.0.0-update"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2026-06-15
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED “AS IS.” ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Dieses Valueset enthält die Codes zur Beschreibung von Laborbereich LOINC®.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html">KBV_PR_MIO_LAB_Observation_Laboratory_Study</a></li>
+ <li><a href="StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html">KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC"> </a><a name="hcKBV-VS-MIO-LAB-Laboratory-Specialties-LOINC"> </a>
+<ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is explicitly stated to be 2.82"> version &#x1F4CD;2.82</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href="https://loinc.org/18717-9/">18717-9</a></td><td>Blood bank studies (set)</td><td>Blutbank-Untersuchungen</td></tr><tr><td><a href="https://loinc.org/18718-7/">18718-7</a></td><td>Cell marker studies (set)</td><td>Zellmarkerdiagnostik</td></tr><tr><td><a href="https://loinc.org/18719-5/">18719-5</a></td><td>Chemistry studies (set)</td><td>Klinische Chemie</td></tr><tr><td><a href="https://loinc.org/18720-3/">18720-3</a></td><td>Coagulation studies (set)</td><td>Gerinnungsdiagnostik</td></tr><tr><td><a href="https://loinc.org/18721-1/">18721-1</a></td><td>Therapeutic drug monitoring studies (set)</td><td>Therapeutische Arzneimittelüberwachung</td></tr><tr><td><a href="https://loinc.org/18722-9/">18722-9</a></td><td>Fertility studies (set)</td><td>Fertilitätsdiagnostik</td></tr><tr><td><a href="https://loinc.org/18723-7/">18723-7</a></td><td>Hematology studies (set)</td><td>Hämatologie</td></tr><tr><td><a href="https://loinc.org/18724-5/">18724-5</a></td><td>HLA studies (set)</td><td>HLA-Diagnostik</td></tr><tr><td><a href="https://loinc.org/18725-2/">18725-2</a></td><td>Microbiology studies (set)</td><td>Mikrobiologie</td></tr><tr><td><a href="https://loinc.org/18727-8/">18727-8</a></td><td>Serology studies (set)</td><td>Serologie</td></tr><tr><td><a href="https://loinc.org/18728-6/">18728-6</a></td><td>Toxicology studies (set)</td><td>Toxikologie</td></tr><tr><td><a href="https://loinc.org/18729-4/">18729-4</a></td><td>Urinalysis studies (set)</td><td>Urindiagnostik</td></tr><tr><td><a href="https://loinc.org/18767-4/">18767-4</a></td><td>Blood gas studies (set)</td><td>Blutgasanalytik</td></tr><tr><td><a href="https://loinc.org/18768-2/">18768-2</a></td><td>Cell counts+Differential studies (set)</td><td>Zellzählungen und Zelldifferenzierung</td></tr><tr><td><a href="https://loinc.org/18769-0/">18769-0</a></td><td>Microbial susceptibility tests Set</td><td>Mikrobielle Empfindlichkeitstests</td></tr><tr><td><a href="https://loinc.org/26435-8/">26435-8</a></td><td>Molecular pathology studies (set)</td><td>Molekularpathologie</td></tr><tr><td><a href="https://loinc.org/26436-6/">26436-6</a></td><td>Laboratory studies (set)</td><td>Laboruntersuchungen</td></tr><tr><td><a href="https://loinc.org/26437-4/">26437-4</a></td><td>Chemistry challenge studies (set)</td><td>Funktionstests</td></tr><tr><td><a href="https://loinc.org/26438-2/">26438-2</a></td><td>Cytology studies (set)</td><td>Zytologie</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.mio42.de based on Loinc v2.82<span class="copy-text-inline"><button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 19 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (de)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://loinc.org-18717-9"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18717-9/">18717-9</a></td><td>Blutbank-Untersuchungen</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18717-9&quot;, &quot;display&quot;: &quot;Blutbank-Untersuchungen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18717-9&quot;&gt;&lt;display value=&quot;Blutbank-Untersuchungen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18718-7"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18718-7/">18718-7</a></td><td>Zellmarkerdiagnostik</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18718-7&quot;, &quot;display&quot;: &quot;Zellmarkerdiagnostik&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18718-7&quot;&gt;&lt;display value=&quot;Zellmarkerdiagnostik&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18719-5"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18719-5/">18719-5</a></td><td>Klinische Chemie</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18719-5&quot;, &quot;display&quot;: &quot;Klinische Chemie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18719-5&quot;&gt;&lt;display value=&quot;Klinische Chemie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18720-3"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18720-3/">18720-3</a></td><td>Gerinnungsdiagnostik</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18720-3&quot;, &quot;display&quot;: &quot;Gerinnungsdiagnostik&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18720-3&quot;&gt;&lt;display value=&quot;Gerinnungsdiagnostik&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18721-1"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18721-1/">18721-1</a></td><td>Therapeutische Arzneimittelüberwachung</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18721-1&quot;, &quot;display&quot;: &quot;Therapeutische Arzneimittelüberwachung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18721-1&quot;&gt;&lt;display value=&quot;Therapeutische Arzneimittelüberwachung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18722-9"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18722-9/">18722-9</a></td><td>Fertilitätsdiagnostik</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18722-9&quot;, &quot;display&quot;: &quot;Fertilitätsdiagnostik&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18722-9&quot;&gt;&lt;display value=&quot;Fertilitätsdiagnostik&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18723-7"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18723-7/">18723-7</a></td><td>Hämatologie</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18723-7&quot;, &quot;display&quot;: &quot;Hämatologie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18723-7&quot;&gt;&lt;display value=&quot;Hämatologie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18724-5"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18724-5/">18724-5</a></td><td>HLA-Diagnostik</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18724-5&quot;, &quot;display&quot;: &quot;HLA-Diagnostik&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18724-5&quot;&gt;&lt;display value=&quot;HLA-Diagnostik&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18725-2"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18725-2/">18725-2</a></td><td>Mikrobiologie</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18725-2&quot;, &quot;display&quot;: &quot;Mikrobiologie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18725-2&quot;&gt;&lt;display value=&quot;Mikrobiologie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18727-8"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18727-8/">18727-8</a></td><td>Serologie</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18727-8&quot;, &quot;display&quot;: &quot;Serologie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18727-8&quot;&gt;&lt;display value=&quot;Serologie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18728-6"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18728-6/">18728-6</a></td><td>Toxikologie</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18728-6&quot;, &quot;display&quot;: &quot;Toxikologie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18728-6&quot;&gt;&lt;display value=&quot;Toxikologie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18729-4"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18729-4/">18729-4</a></td><td>Urindiagnostik</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18729-4&quot;, &quot;display&quot;: &quot;Urindiagnostik&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18729-4&quot;&gt;&lt;display value=&quot;Urindiagnostik&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18767-4"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18767-4/">18767-4</a></td><td>Blutgasanalytik</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18767-4&quot;, &quot;display&quot;: &quot;Blutgasanalytik&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18767-4&quot;&gt;&lt;display value=&quot;Blutgasanalytik&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18768-2"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18768-2/">18768-2</a></td><td>Zellzählungen und Zelldifferenzierung</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18768-2&quot;, &quot;display&quot;: &quot;Zellzählungen und Zelldifferenzierung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18768-2&quot;&gt;&lt;display value=&quot;Zellzählungen und Zelldifferenzierung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-18769-0"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/18769-0/">18769-0</a></td><td>Mikrobielle Empfindlichkeitstests</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18769-0&quot;, &quot;display&quot;: &quot;Mikrobielle Empfindlichkeitstests&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18769-0&quot;&gt;&lt;display value=&quot;Mikrobielle Empfindlichkeitstests&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-26435-8"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/26435-8/">26435-8</a></td><td>Molekularpathologie</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;26435-8&quot;, &quot;display&quot;: &quot;Molekularpathologie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;26435-8&quot;&gt;&lt;display value=&quot;Molekularpathologie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-26436-6"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/26436-6/">26436-6</a></td><td>Laboruntersuchungen</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;26436-6&quot;, &quot;display&quot;: &quot;Laboruntersuchungen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;26436-6&quot;&gt;&lt;display value=&quot;Laboruntersuchungen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-26437-4"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/26437-4/">26437-4</a></td><td>Funktionstests</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;26437-4&quot;, &quot;display&quot;: &quot;Funktionstests&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;26437-4&quot;&gt;&lt;display value=&quot;Funktionstests&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-26438-2"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">  <a href="https://loinc.org/26438-2/">26438-2</a></td><td>Zytologie</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;26438-2&quot;, &quot;display&quot;: &quot;Zytologie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;26438-2&quot;&gt;&lt;display value=&quot;Zytologie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table><p><b>Additional Designations and Language Displays</b></p><table class="codes" data-fhir="generated"><tr><td><b>Code</b></td><td><b>Other Display (null)</b></td><td><b>Deutsch (Österreich) (German (Austria), de)</b></td><td><b>Deutsch (Deutschland) (German (Germany), de)</b></td><td><b>en, de</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>Spanish (Argentina) (es)</b></td><td><b>French (France) (fr)</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>18717-9</td><td>Blood bank studies (set)</td><td></td><td>Blutbank-Untersuchungen</td><td>Blood bank studies (set)</td><td>Blood bank studies (set)</td><td>estudios del banco de sangre:complejo:-:^paciente:Conjunto:</td><td>Immunohématologie [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>18718-7</td><td>Cell marker studies (set)</td><td></td><td>Zellmarkerdiagnostik</td><td>Cell marker studies (set)</td><td>Cell marker studies (set)</td><td>estudios de marcadores celulares:complejo:-:^paciente:Conjunto:</td><td>Marqueurs cellulaires [Autre] - ; Patient ; Statut</td><td>Celmarkerstudies [complex]</td></tr><tr><td>18719-5</td><td>Chemistry studies (set)</td><td></td><td>Klinische Chemie</td><td>Chemistry studies (set)</td><td>Chemistry studies (set)</td><td>estudios químicos:complejo:-:^paciente:Conjunto:</td><td>Biochimie [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>18720-3</td><td>Coagulation studies (set)</td><td></td><td>Gerinnungsdiagnostik</td><td>Coagulation studies (set)</td><td>Coagulation studies (set)</td><td>estudios de coagulación:complejo:-:^paciente:Conjunto:</td><td>Hémostase, coagulation [Autre] - ; Patient ; Statut</td><td>Stolling-studies [complex]</td></tr><tr><td>18721-1</td><td>Therapeutic drug monitoring studies (set)</td><td></td><td>Therapeutische Arzneimittelüberwachung</td><td>Therapeutic drug monitoring studies (set)</td><td>Therapeutic drug monitoring studies (set)</td><td>estudios de monitoreo de fármaco terapéutico:complejo:-:^paciente:Conjunto:</td><td>Dosages de médicaments et substances [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>18722-9</td><td>Fertility studies (set)</td><td></td><td>Fertilitätsdiagnostik</td><td>Fertility studies (set)</td><td>Fertility studies (set)</td><td>estudios de fertilidad:complejo:-:^paciente:Conjunto:</td><td>Fertilité [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>18723-7</td><td>Hematology studies (set)</td><td></td><td>Hämatologie</td><td>Hematology studies (set)</td><td>Hematology studies (set)</td><td>estudios hematológicos:complejo:-:^paciente:Conjunto:</td><td>Hématologie [Autre] - ; Patient ; Statut</td><td>Hematologische studies [complex]</td></tr><tr><td>18724-5</td><td>HLA studies (set)</td><td></td><td>HLA-Diagnostik</td><td>HLA studies (set)</td><td>HLA studies (set)</td><td>estudios de HLA:complejo:-:^paciente:Conjunto:</td><td>HLA [Autre] - ; Patient ; Statut</td><td>HLA studies [complex]</td></tr><tr><td>18725-2</td><td>Microbiology studies (set)</td><td>Mikrobiologie-Befund</td><td>Mikrobiologie</td><td>Microbiology studies (set)</td><td>Microbiology studies (set)</td><td>estudios de microbiología:complejo:-:^paciente:Conjunto:</td><td>Microbiologie [Autre] - ; Patient ; Statut</td><td>Microbiologie studies [complex]</td></tr><tr><td>18727-8</td><td>Serology studies (set)</td><td></td><td>Serologie</td><td>Serology studies (set)</td><td>Serology studies (set)</td><td>estudios serológicos:complejo:-:^paciente:Conjunto:</td><td>Auto-immunité [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>18728-6</td><td>Toxicology studies (set)</td><td></td><td>Toxikologie</td><td>Toxicology studies (set)</td><td>Toxicology studies (set)</td><td>estudios toxicológicos:complejo:-:^paciente:Conjunto:</td><td>Toxicologie [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>18729-4</td><td>Urinalysis studies (set)</td><td></td><td>Urindiagnostik</td><td>Urinalysis studies (set)</td><td>Urinalysis studies (set)</td><td>estudios de laboratorio en orina:complejo:-:^paciente:Conjunto:</td><td>Examens urinaires - cristallurie [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>18767-4</td><td>Blood gas studies (set)</td><td>Blutgasanalyse</td><td>Blutgasanalytik</td><td>Blood gas studies (set)</td><td>Blood gas studies (set)</td><td>estudios de gases en sangre:complejo:-:^paciente:Conjunto:</td><td>Gaz du sang [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>18768-2</td><td>Cell counts+Differential studies (set)</td><td></td><td>Zellzählungen und Zelldifferenzierung</td><td>Cell counts+Differential studies (set)</td><td>Cell counts+Differential studies (set)</td><td>estudios de recuentos celulares+diferenciales:complejo:-:^paciente:Conjunto:</td><td>NFS - Hémogramme [Autre] - ; Patient ; Statut</td><td>Celtellingen + differentiatiestudies [complex]</td></tr><tr><td>18769-0</td><td>Microbial susceptibility tests Set</td><td></td><td>Mikrobielle Empfindlichkeitstests</td><td>Microbial susceptibility tests Set</td><td>Microbial susceptibility tests Set</td><td>antibiogramas:susceptibilidad:punto en el tiempo:^paciente:Conjunto:</td><td>Antibiogramme [Sensibilité] Patient ; Statut</td><td>Microbiële gevoeligheidstesten [gevoeligheid]</td></tr><tr><td>26435-8</td><td>Molecular pathology studies (set)</td><td></td><td>Molekularpathologie</td><td>Molecular pathology studies (set)</td><td>Molecular pathology studies (set)</td><td>estudios de patología molecular:complejo:-:^paciente:Conjunto:</td><td>Génétique humaine [Autre] - ; Patient ; Statut</td><td>Moleculaire pathologie studies [complex]</td></tr><tr><td>26436-6</td><td>Laboratory studies (set)</td><td></td><td>Laboruntersuchungen</td><td>Laboratory studies (set)</td><td>Laboratory studies (set)</td><td>estudios de laboratorio:complejo:-:^paciente:Conjunto:</td><td>Biologie polyvalente [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>26437-4</td><td>Chemistry challenge studies (set)</td><td></td><td>Funktionstests</td><td>Chemistry challenge studies (set)</td><td>Chemistry challenge studies (set)</td><td>estudios de provocación química:complejo:-:^paciente:Conjunto:</td><td>Épreuves dynamiques [Autre] - ; Patient ; Statut</td><td></td></tr><tr><td>26438-2</td><td>Cytology studies (set)</td><td></td><td>Zytologie</td><td>Cytology studies (set)</td><td>Cytology studies (set)</td><td>estudios citológicos:complejo:-:^paciente:Conjunto:</td><td>Cytologie [Autre] - ; Patient ; Statut</td><td>Cytologie studies [complex]</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jun 15, 2026 16:45+0200">2026-06-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

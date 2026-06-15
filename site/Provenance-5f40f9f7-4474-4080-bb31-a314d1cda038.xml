@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="5f40f9f7-4474-4080-bb31-a314d1cda038"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-03T11:15:00+01:00"/>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance|1.0.0-update"/>
+  </meta>
+  <target>
+    <reference value="Observation/035761c3-8934-499f-bf34-3963979afb56"/>
+  </target>
+  <occurredDateTime value="2021-11-15T16:00:00+01:00"/>
+  <recorded value="2021-11-15T16:00:00+01:00"/>
+  <activity>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+      <version value="6.0.0"/>
+      <code value="VRF"/>
+      <display value="verifier"/>
+    </coding>
+  </activity>
+  <agent>
+    <who>
+      <reference value="Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+    </who>
+  </agent>
+</Provenance>

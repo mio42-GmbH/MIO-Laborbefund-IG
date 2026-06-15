@@ -1,0 +1,320 @@
+KBVMIOLaborbefund : Validation Results
+=========================================
+
+err = 2, warn = 8, info = 17
+IG Publisher Version: 2.2.9
+Generated Mon Jun 15 16:55:06 CEST 2026. FHIR version 4.0.1 for kbv.mio.laborbefund#1.0.0-update (canonical = https://fhir.kbv.de)
+ Build Errors : 0 / 0 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/BodyStructure-6894b106-8a91-4cfb-9826-443aed21c98b : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/BodyStructure-72f65586-b2b5-465f-a792-89fb7545d7bc : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Composition-13c807c0-53e7-488e-84bb-023376563cf3 : 0 / 1 / 3
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Composition-cdfb127b-df3c-493f-bc7e-e8be4a7bdc45 : 0 / 1 / 3
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Condition-1d344181-abf0-428d-9f3f-1bbd84b7684e : 0 / 3 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Condition-988426e1-b7df-44b2-881c-09e7cf482b72 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Device-05146497-2ca3-488e-96cb-c27c77ab6a3c : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Device-18a30aa6-3b2d-4738-9ca9-125a452d14e0 : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Device-1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Device-c46e7bfb-1ee3-4c6b-9ce2-204939133cc5 : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Device-d057eafe-1927-4b09-936b-5cb61b4c7dc6 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Device-ff1903f6-188a-4e60-b3bc-4b48d4582db8 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DeviceDefinition-01021964-005b-4dd5-975d-2e9a9fa917d9 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DeviceDefinition-25068c1f-a497-4cfe-b4e7-4a7026adf1e6 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DeviceDefinition-30a47ba7-8975-4383-ad43-61c032c30e53 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DeviceDefinition-430a63d5-b9ed-469b-a3a1-7aae27f27b11 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DeviceDefinition-8157f177-3f3e-46b4-be27-efcbf7a216be : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DeviceDefinition-81840764-fb77-49e6-9a7b-5cb028d29895 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DiagnosticReport-3604d5a6-798e-4615-8a22-1d280638e2c0 : 0 / 2 / 4
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DiagnosticReport-a6f3d3de-0857-45ed-916e-087d84391bc3 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DocumentReference-d9e75f3f-3900-4183-a475-d4d3dc1d14cc : 0 / 1 / 3
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/DocumentReference-f7dab433-b4b3-4908-8495-4876f0240511 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/ImplementationGuide-kbv.mio.laborbefund : 1 / 8 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Observation-035761c3-8934-499f-bf34-3963979afb56 : 0 / 3 / 5
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Observation-0cfe903c-5061-4441-bf5d-1f35c4283c19 : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Observation-51b6129a-b68c-485d-a37b-9593fee4354f : 0 / 0 / 6
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Observation-6a2a44c6-92f8-40cf-a0bc-673404f7ac9b : 0 / 3 / 5
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Observation-76fdc299-7b3f-404a-b32e-31e416bb0c32 : 0 / 1 / 3
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Observation-7813a2dc-36aa-41ce-b5f5-f338e944b5e9 : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Observation-96f33ca8-872d-4c8b-972e-b681db27d9df : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Observation-c1b00183-b205-48a8-9d07-31fc8b6aa74e : 0 / 3 / 5
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Organization-2110eb93-f57f-4f17-8e80-b76bc98d2c6a : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Organization-b1135775-9c67-4d2f-8618-9ef3d1f5f3d7 : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Patient-84e01fa5-6763-4a96-99f3-170cf9b317ff : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Patient-b65dfcca-c6ce-4dac-8742-8da00c192c7d : 0 / 7 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Practitioner-24435567-fed3-43f8-8fc8-954f68df7fce : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Practitioner-2b946366-cf18-4d89-a29c-00bf69ac90f6 : 0 / 3 / 3
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/PractitionerRole-a424d6c6-de52-443e-a9b2-5240d3b9401a : 0 / 1 / 3
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/PractitionerRole-bd9d76e7-9fa1-42a4-b364-f93845994612 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Provenance-5f40f9f7-4474-4080-bb31-a314d1cda038 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Provenance-f3533f34-781a-4cb4-9926-19fc8479b3e3 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/RelatedPerson-0f9878cf-8297-43c1-bf2d-7de5da068bf6 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/RelatedPerson-778e032a-723a-4f3e-915f-ffbc5488b369 : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/ServiceRequest-01a21c9c-2cd1-44e5-a999-f84d9ef70605 : 0 / 3 / 4
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/ServiceRequest-eb46f1a2-c4ad-4276-aaaa-aef507db618d : 0 / 2 / 3
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Specimen-4f47fe9c-d92e-46f4-ad6d-85740aaa467b : 0 / 2 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Specimen-eb7fbea2-95bd-4618-b38d-ce69cde79726 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Accredited-Service : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Alternative-Result : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Association-Service : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Critical-Result : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Diskriminator : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-External-Service : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-No-Linear-Reference-Range : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Order-Entry-Time : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Reason-Type : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Secondary-Status : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Source-Reference-Range : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-zlog : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-BodyStructure : 1 / 0 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Bundle : 0 / 1 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Composition : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Device-Laboratory-Analyzer : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Container : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Subject : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DeviceDefinition-Laboratory-Analyzer : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DeviceDefinition-Specimen-Container : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DeviceDefinition-Specimen-Subject : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport : 0 / 1 / 5
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DocumentReference : 0 / 1 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment : 0 / 1 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study : 0 / 0 / 3
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group : 0 / 0 / 6
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Organization : 0 / 4 / 11
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Patient : 0 / 6 / 21
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Practitioner : 0 / 4 / 17
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-PractitionerRole : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Provenance : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-RelatedPerson : 0 / 4 / 14
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-ServiceRequest : 0 / 0 / 5
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Specimen : 0 / 0 / 8
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Substance : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Substance-4153de68-1124-4c02-a8a3-98f4c312f075 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Substance-a4b533d4-0a3c-4701-b411-fd9666bf3d03 : 0 / 1 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CM_MIO_LAB_Overview_German : 0 / 16 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_AdministrativeGender_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_CommonLanguages_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_ContactEntityType_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_ContactPointSystem_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_DataAbsentReason_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Data_Absent_Reason_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_DeviceNameType_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Identifier_Type_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Laboratory_Identificator : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Marital_Status_Codes_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Observation_Status_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_PatientRelationshipType_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Provenance_Activity_Type_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_QuantityComparator_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_RequestPriority_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Secondary_Status : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_SpecimenStatus_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Specimen_Condition_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_Type_Diagram_German : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_CS_MIO_LAB_mio42 : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Data_Absent_Reason : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Diagnostic_ReportStatus : 0 / 0 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Identifier_Type : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe : 0 / 0 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_MIME_Types : 0 / 0 / 10
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Observation_Methods : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Observation_Status : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Secondary_Status : 0 / 0 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Specimen_Condition : 0 / 0 / 1
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT : 0 / 0 / 2
+ /home/viayvasky/Documents/git/MIO-Laborbefund/input/vocabulary/KBV_VS_MIO_LAB_Type_Diagram : 0 / 0 / 1
+</table>
+== n/a ==
+INFORMATION: /home/viayvasky/Documents/git/MIO-Laborbefund/output/Anwendungsfaelle.html: The html source does not contain the publish box; this is recommended for publishing support
+INFORMATION: Rechtlicher_Rahmen.html: No conformance term found in the text:  347 Fünftes Buch Sozialgesetzbuch (SGB V) sind die an der vertragsärztlichen Versorgung teilnehmenden Leistungserbringer unter Berücksichtigung der Widerspruchsrechte der Versicherten verpflichtet, bei der aktuellen Behandlung selbst erhobene Daten in die ePA einzustellen, wenn diese in semantisch und syntaktisch interoperabler Form vorliegen. Durch die Bezugnahme auf die “Behandlung” wird klar, dass sich diese Pflicht auf die beauftragenden Ärzt:innen und nicht die ausführenden Labore bezieht. Diese Pflicht gilt analog für Leistungserbinger in zugelassenen Krankenhäusern (
+== fsh-generated/resources/BodyStructure-6894b106-8a91-4cfb-9826-443aed21c98b.json ==
+== fsh-generated/resources/BodyStructure-72f65586-b2b5-465f-a792-89fb7545d7bc.json ==
+== fsh-generated/resources/Composition-13c807c0-53e7-488e-84bb-023376563cf3.json ==
+== fsh-generated/resources/Composition-cdfb127b-df3c-493f-bc7e-e8be4a7bdc45.json ==
+== fsh-generated/resources/Condition-1d344181-abf0-428d-9f3f-1bbd84b7684e.json ==
+WARNING: Condition/1d344181-abf0-428d-9f3f-1bbd84b7684e: Condition.code.coding[2].system: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/alpha-id' version '2020' could not be found, so the code cannot be validated. No versions of this code system are known
+WARNING: Condition/1d344181-abf0-428d-9f3f-1bbd84b7684e: Condition.code.coding[0].extension[2].value.ofType(Coding): Constraint failed: icd-6: 'Wenn die Diagnosesicherheit "V (Verdacht auf)" verwendet wird, dann muss clinicalStatus auf "active" und verificationStatus auf "provisional" oder "differential" gesetzt werden. (code!='V' or (%resource.clinicalStatus.coding.where(code='active').exists() and (%resource.verificationStatus.coding.where(code='provisional').exists() or %resource.verificationStatus.coding.where(code='differential').exists())))' (defined in http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit)
+== fsh-generated/resources/Condition-988426e1-b7df-44b2-881c-09e7cf482b72.json ==
+== fsh-generated/resources/Device-05146497-2ca3-488e-96cb-c27c77ab6a3c.json ==
+== fsh-generated/resources/Device-18a30aa6-3b2d-4738-9ca9-125a452d14e0.json ==
+== fsh-generated/resources/Device-1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5.json ==
+== fsh-generated/resources/Device-c46e7bfb-1ee3-4c6b-9ce2-204939133cc5.json ==
+== fsh-generated/resources/Device-d057eafe-1927-4b09-936b-5cb61b4c7dc6.json ==
+== fsh-generated/resources/Device-ff1903f6-188a-4e60-b3bc-4b48d4582db8.json ==
+== fsh-generated/resources/DeviceDefinition-01021964-005b-4dd5-975d-2e9a9fa917d9.json ==
+== fsh-generated/resources/DeviceDefinition-25068c1f-a497-4cfe-b4e7-4a7026adf1e6.json ==
+== fsh-generated/resources/DeviceDefinition-30a47ba7-8975-4383-ad43-61c032c30e53.json ==
+== fsh-generated/resources/DeviceDefinition-430a63d5-b9ed-469b-a3a1-7aae27f27b11.json ==
+== fsh-generated/resources/DeviceDefinition-8157f177-3f3e-46b4-be27-efcbf7a216be.json ==
+== fsh-generated/resources/DeviceDefinition-81840764-fb77-49e6-9a7b-5cb028d29895.json ==
+== fsh-generated/resources/DiagnosticReport-3604d5a6-798e-4615-8a22-1d280638e2c0.json ==
+== fsh-generated/resources/DiagnosticReport-a6f3d3de-0857-45ed-916e-087d84391bc3.json ==
+== fsh-generated/resources/DocumentReference-d9e75f3f-3900-4183-a475-d4d3dc1d14cc.json ==
+== fsh-generated/resources/DocumentReference-f7dab433-b4b3-4908-8495-4876f0240511.json ==
+== fsh-generated/resources/ImplementationGuide-kbv.mio.laborbefund.json ==
+ERROR: ImplementationGuide/kbv.mio.laborbefund: ImplementationGuide.dependsOn[5]: The packageId de.ihe-d.terminology points to the canonical http://fhir.de/packages/de.ihe-d.terminology which is inconsistent with the stated canonical of https://fhir.org/packages/de.ihe-d.terminology/ImplementationGuide/de.ihe-d.terminology
+== fsh-generated/resources/Observation-035761c3-8934-499f-bf34-3963979afb56.json ==
+== fsh-generated/resources/Observation-0cfe903c-5061-4441-bf5d-1f35c4283c19.json ==
+WARNING: Observation/0cfe903c-5061-4441-bf5d-1f35c4283c19: Observation: Alle Observations sollten ein effectiveDateTime oder eine effectivePeriode haben
+== fsh-generated/resources/Observation-51b6129a-b68c-485d-a37b-9593fee4354f.json ==
+== fsh-generated/resources/Observation-6a2a44c6-92f8-40cf-a0bc-673404f7ac9b.json ==
+== fsh-generated/resources/Observation-76fdc299-7b3f-404a-b32e-31e416bb0c32.json ==
+WARNING: Observation/76fdc299-7b3f-404a-b32e-31e416bb0c32: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-7813a2dc-36aa-41ce-b5f5-f338e944b5e9.json ==
+WARNING: Observation/7813a2dc-36aa-41ce-b5f5-f338e944b5e9: Observation: Alle Observations sollten ein effectiveDateTime oder eine effectivePeriode haben
+== fsh-generated/resources/Observation-96f33ca8-872d-4c8b-972e-b681db27d9df.json ==
+== fsh-generated/resources/Observation-c1b00183-b205-48a8-9d07-31fc8b6aa74e.json ==
+== fsh-generated/resources/Organization-2110eb93-f57f-4f17-8e80-b76bc98d2c6a.json ==
+== fsh-generated/resources/Organization-b1135775-9c67-4d2f-8618-9ef3d1f5f3d7.json ==
+== fsh-generated/resources/Patient-84e01fa5-6763-4a96-99f3-170cf9b317ff.json ==
+== fsh-generated/resources/Patient-b65dfcca-c6ce-4dac-8742-8da00c192c7d.json ==
+WARNING: Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d: Patient.identifier[1].type.coding[1]: The concept 'PKV' has a status of inactive and its use should be reviewed
+WARNING: Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d: Patient.identifier[1].type.coding[1]: The concept 'PKV' has a status of retired and its use should be reviewed
+WARNING: Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d: Patient.identifier[1].type: The concept 'PKV' has a status of inactive and its use should be reviewed; The concept 'PKV' has a status of retired and its use should be reviewed
+== fsh-generated/resources/Practitioner-24435567-fed3-43f8-8fc8-954f68df7fce.json ==
+== fsh-generated/resources/Practitioner-2b946366-cf18-4d89-a29c-00bf69ac90f6.json ==
+INFORMATION: Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6: Practitioner.identifier[4]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update überein.
+== fsh-generated/resources/PractitionerRole-a424d6c6-de52-443e-a9b2-5240d3b9401a.json ==
+== fsh-generated/resources/PractitionerRole-bd9d76e7-9fa1-42a4-b364-f93845994612.json ==
+== fsh-generated/resources/Provenance-5f40f9f7-4474-4080-bb31-a314d1cda038.json ==
+== fsh-generated/resources/Provenance-f3533f34-781a-4cb4-9926-19fc8479b3e3.json ==
+== fsh-generated/resources/RelatedPerson-0f9878cf-8297-43c1-bf2d-7de5da068bf6.json ==
+== fsh-generated/resources/RelatedPerson-778e032a-723a-4f3e-915f-ffbc5488b369.json ==
+== fsh-generated/resources/ServiceRequest-01a21c9c-2cd1-44e5-a999-f84d9ef70605.json ==
+== fsh-generated/resources/ServiceRequest-eb46f1a2-c4ad-4276-aaaa-aef507db618d.json ==
+== fsh-generated/resources/Specimen-4f47fe9c-d92e-46f4-ad6d-85740aaa467b.json ==
+== fsh-generated/resources/Specimen-eb7fbea2-95bd-4618-b38d-ce69cde79726.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Accredited-Service.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Alternative-Result.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Association-Service.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Critical-Result.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Diskriminator.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-External-Service.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-No-Linear-Reference-Range.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Order-Entry-Time.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Pseudonymized-Report.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Reason-Type.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Secondary-Status.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Sorting-Number.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-Source-Reference-Range.json ==
+== fsh-generated/resources/StructureDefinition-KBV-EX-MIO-LAB-zlog.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-BodyStructure.json ==
+ERROR: StructureDefinition.snapshot.element[84]: The slice definition for BodyStructure.extension:includedStructure.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension has a minimum of 0 but the slices add up to a minimum of 1
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Bundle.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Composition.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Device-Laboratory-Analyzer.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Container.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Device-Specimen-Subject.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DeviceDefinition-Laboratory-Analyzer.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DeviceDefinition-Specimen-Container.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DeviceDefinition-Specimen-Subject.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-DocumentReference.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Organization.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Patient.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Practitioner.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-PractitionerRole.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Provenance.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-RelatedPerson.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-ServiceRequest.json ==
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Specimen.json ==
+INFORMATION: StructureDefinition.snapshot.element[54].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0487 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
+INFORMATION: StructureDefinition.snapshot.element[143].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0916 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
+INFORMATION: StructureDefinition.snapshot.element[144].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0916 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
+INFORMATION: StructureDefinition.snapshot.element[222].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0371 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
+INFORMATION: StructureDefinition.snapshot.element[223].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0493 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
+== fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Substance.json ==
+== fsh-generated/resources/Substance-4153de68-1124-4c02-a8a3-98f4c312f075.json ==
+== fsh-generated/resources/Substance-a4b533d4-0a3c-4701-b411-fd9666bf3d03.json ==
+== input/vocabulary/KBV_CM_MIO_LAB_Overview_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_AdministrativeGender_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_CommonLanguages_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_ContactEntityType_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_ContactPointSystem_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_DataAbsentReason_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Data_Absent_Reason_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_DeviceNameType_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Identifier_Type_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Laboratory_Identificator.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Marital_Status_Codes_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Observation_Status_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_PatientRelationshipType_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Provenance_Activity_Type_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_QuantityComparator_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_RequestPriority_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Secondary_Status.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_SpecimenStatus_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Specimen_Condition_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_Type_Diagram_German.json ==
+== input/vocabulary/KBV_CS_MIO_LAB_mio42.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Data_Absent_Reason.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Diagnostic_ReportStatus.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Identifier_Type.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_MIME_Types.json ==
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'BMP-Bild' for urn:ietf:bcp:13#image/bmp. Valid display is 'image/bmp' (en) (for the language(s) 'en, de-DE'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'GIF-Bild' for urn:ietf:bcp:13#image/gif. Valid display is 'image/gif' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'JPEG-Bild' for urn:ietf:bcp:13#image/jpeg. Valid display is 'image/jpeg' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[3]: Wrong Display Name 'PNG-Bild' for urn:ietf:bcp:13#image/png. Valid display is 'image/png' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[4]: Wrong Display Name 'SVG-Grafik' for urn:ietf:bcp:13#image/svg+xml. Valid display is 'image/svg+xml' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[5]: Wrong Display Name 'TIFF-Bild' for urn:ietf:bcp:13#image/tiff. Valid display is 'image/tiff' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[6]: Wrong Display Name 'WMF-Datei' for urn:ietf:bcp:13#image/wmf. Valid display is 'image/wmf' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[7]: Wrong Display Name 'PDF-Dokument' for urn:ietf:bcp:13#application/pdf. Valid display is 'application/pdf' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[8]: Wrong Display Name 'Textdatei' for urn:ietf:bcp:13#text/plain. Valid display is 'text/plain' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+== input/vocabulary/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Observation_Methods.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Observation_Status.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Secondary_Status.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Specimen_Condition.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT.json ==
+== input/vocabulary/KBV_VS_MIO_LAB_Type_Diagram.json ==
