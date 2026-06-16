@@ -3,7 +3,7 @@ KBVMIOLaborbefund : Validation Results
 
 err = 2, warn = 8, info = 17
 IG Publisher Version: 2.2.9
-Generated Mon Jun 15 17:17:22 CEST 2026. FHIR version 4.0.1 for kbv.mio.laborbefund#1.0.0-update (canonical = https://fhir.kbv.de)
+Generated Tue Jun 16 13:12:27 CEST 2026. FHIR version 4.0.1 for kbv.mio.laborbefund#1.0.0-update (canonical = https://fhir.kbv.de)
  Build Errors : 0 / 0 / 2
  /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/BodyStructure-6894b106-8a91-4cfb-9826-443aed21c98b : 0 / 1 / 2
  /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/BodyStructure-72f65586-b2b5-465f-a792-89fb7545d7bc : 0 / 1 / 2
