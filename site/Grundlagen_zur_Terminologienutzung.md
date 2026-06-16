@@ -59,15 +59,15 @@ Umfang und Aufbau:
 
 Limitationen:
 
-* Eine Laboruntersuchung kann auf verschiedene Weisen codiert werden (z. B. mit oder ohne Methode, je nach gewählter Einheiten-Dimension). Die Kernliste bietet nach den Regeln des BfArM-Anwendungsleitfadens die Chance für ein flächendeckend harmonisiertes Herangehen und damit eine zuverlässigere Vergleichbarkeit für diese Untersuchungsergebnisse. Gleichwohl wären auch abweichende Codierungen (z. B. mit Methode) bei diesen Untersuchungen fachlich korrekt und möglich, so dass nicht ausgeschlossen werden kann, dass an sich vergleichbare Ergebnisse nicht gemeinsam in einer kumulativen Ansicht dargestellt werden können. Diese
-* Die Kernliste enthält nur Umrechnungen für relevante Codes/Code-Paare und stellt keineswegs eine 100%-Lösung dar. Die Umrechnungsfaktoren sind als Orientierung zu verstehen. Die Verantwortung für eine individuelle Umrechnung liegt bei den untersuchenden Einrichtungen.
+* Eine Laboruntersuchung kann auf verschiedene Weisen codiert werden (z. B. mit oder ohne Methode, je nach gewählter Einheiten-Dimension). Die Kernliste bietet nach den Regeln des BfArM-Anwendungsleitfadens die Chance für ein flächendeckend harmonisiertes Herangehen und damit eine zuverlässigere Vergleichbarkeit für diese Untersuchungsergebnisse. Gleichwohl wären auch abweichende Codierungen (z. B. mit Methode) bei diesen Untersuchungen fachlich korrekt und möglich, so dass nicht ausgeschlossen werden kann, dass an sich vergleichbare Ergebnisse nicht gemeinsam in einer kumulativen Ansicht dargestellt werden können.
+* Umrechnungsfaktoren für relevante Codes/Code-Paare mit unterschiedlichen Dimensionen wurden informationshalber ermittelt, aber in dieser Version zunächst weggelassen. Die Verantwortung für eine individuelle Umrechnung liegt bei den untersuchenden Einrichtungen.
 
 Operationalisierung:
 
 * Die in der Kernliste enthaltene Sortierung der Untersuchungsgruppen und die Sortierung der ihnen zugeordneten Analyten soll in den Primärsystemen zur Default-Ansicht genutzt werden.
 * Nicht in der Kernliste aufgeführte Untersuchungsergebnisse sind unterhalb bzw. außerhalb der sortierten Liste aufzuführen.
 * Untersuchungsergebnisse zu LOINC-Paaren sollen durch das Labor immer in beiden Einheiten-Dimensionen angegeben werden.
-* Das empfangende System soll bei Untersuchungen, deren Ergebnisse in mehreren Einheiten-Dimensionen angegeben wurden, zunächst die präferierte Einheiten-Dimension (z. B. mg/dL bei Glucose) zur Anzeige bringen und den Nutzenden die Möglichkeit bieten, einen Anzeigenwechsel auf die (gewohnte) alternative Einheiten-Dimension (z.B. mmol/l vs. mg/dl bei Glucose) vorzunehmen.
+* Das empfangende System soll bei Untersuchungen, deren Ergebnisse in mehreren Einheiten-Dimensionen angegeben wurden, zunächst die präferierte Einheiten-Dimension (z. B. mmol/L bei Glucose) zur Anzeige bringen und den Nutzenden die Möglichkeit bieten, einen Anzeigenwechsel auf die (gewohnte) alternative Einheiten-Dimension (z.B. mmol/l vs. mg/dl bei Glucose) vorzunehmen.
 
 Aktueller Stand und geplantes weiteres Vorgehen:
 

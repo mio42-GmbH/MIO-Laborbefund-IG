@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "SpecimenStatus German"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-15T17:08:58+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-16T13:04:47+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;

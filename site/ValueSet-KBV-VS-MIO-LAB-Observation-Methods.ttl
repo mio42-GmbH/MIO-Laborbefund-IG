@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "KBV-VS-MIO-LAB-Observation-Methods"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Observation-Methods</b></p><a name=\"KBV-VS-MIO-LAB-Observation-Methods\"> </a><a name=\"hcKBV-VS-MIO-LAB-Observation-Methods\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version ?http://snomed.info/sct/11000274103/version/20251115</span> where concept  descends from 272394005 (Techniques values (qualifier value))</li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Observation-Methods</b></p><a name=\"KBV-VS-MIO-LAB-Observation-Methods\"> </a><a name=\"hcKBV-VS-MIO-LAB-Observation-Methods\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version ?http://snomed.info/sct/11000274103/version/20251115</span> where concept  descends from 272394005 (Technique)</li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [ fhir:v "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Methods"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0-update"] ; # 
@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "Untersuchungsmethode SNOMED CT®"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-15T17:08:58+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-16T13:04:47+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;
