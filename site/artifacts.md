@@ -87,6 +87,8 @@ Als Umsetzungshilfe stellen wir auch ein [Validierungspaket](https://github.com/
 
 ### Ressourcenprofile
 
+Als **Must-Support** deklarierte Elemente müssen durch jedes System, welches diese Spezifikation implementiert, unterstützt werden. Das bedeutet, dass das jeweilige System diese interpretieren und verarbeiten können muss.
+
 | | |
 | :--- | :--- |
 | [ KBV_PR_MIO_LAB_BodyStructure ](StructureDefinition-KBV-PR-MIO-LAB-BodyStructure.md) | Dieses Profil bildet eine Körperstruktur ab. Angaben zur Körperstruktur können enthalten: * Körperstelle (anatomische Benennung) * Lateralität (für paarige Organe/Strukturen: rechts, links, beidseits) * Lokalisierung (für räumliche Angaben, z.B. oben, unten) * Uhrzeigerposition (z.B. 12-Uhr-Position) * Morphologie (z.B. pathologische Strukturen) |

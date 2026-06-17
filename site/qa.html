@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for KBVMIOLaborbefund</h1>
- <p>Generated Tue Jun 16 13:12:27 CEST 2026, FHIR version 4.0.1 for kbv.mio.laborbefund#1.0.0-update (canonical = <a href="https://fhir.kbv.de">https://fhir.kbv.de</a> (<a href="https://fhir.kbv.de/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Wed Jun 17 15:11:37 CEST 2026, FHIR version 4.0.1 for kbv.mio.laborbefund#1.0.0-update (canonical = <a href="https://fhir.kbv.de">https://fhir.kbv.de</a> (<a href="https://fhir.kbv.de/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.2.9</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = kbv.mio.laborbefund, Canonical = https://fhir.kbv.de</td></tr>
@@ -617,6 +617,9 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
      <td><a href="#_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_copyright"><b>/home/viayvasky/Documents/git/MIO-Laborbefund/input/pagecontent/copyright</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_downloads"><b>/home/viayvasky/Documents/git/MIO-Laborbefund/input/pagecontent/downloads</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
      <td><a href="#_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_expansion_parameters"><b>/home/viayvasky/Documents/git/MIO-Laborbefund/input/pagecontent/expansion_parameters</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
@@ -884,14 +887,14 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Condition&#8203;.code&#8203;.coding[2]&#8203;.system (l15&#8203;/c4)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/alpha-id' version '2020' could not be found, so the code cannot be validated. No versions of this code system are known</b> (from <a href="qa-txservers.html#https://tx.mio42.de/r4">https://tx.mio42.de/r4</a>, see <a href="qa-tx.html#l77">log</a>, or see <a href="#vmi3" onClick="document.getElementById('vmi3').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION_NONE</span><div id="vmi3" style="display:none"><br/><pre>0ms tx-op
-1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Validate "[http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026#A00 ("Cholera"), http://www.orpha.net|2025#123 ("Björnstad-Syndrom"), http://fhir.de/CodeSystem/bfarm/alpha-id|2020#I6158 ("Ichthyosiformes Ekzem"), http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#404684003 ("Clinical finding (finding)")]"
+0ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Validate "[http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026#A00 ("Cholera"), http://www.orpha.net|2025#123 ("Björnstad-Syndrom"), http://fhir.de/CodeSystem/bfarm/alpha-id|2020#I6158 ("Ichthyosiformes Ekzem"), http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#404684003 ("Clinical finding (finding)")]"
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026#A00"
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: CodeSystem found: http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026 for http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: check code in (http://fhir.de/CodeSystem/bfarm/icd-10-gm) at CodeableConcept.coding[0]
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Code "A00" found in http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://www.orpha.net|2025#123"
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://fhir.de/CodeSystem/bfarm/alpha-id|2020#I6158"
-2ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#404684003"</pre></div></td><td><a href="StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.html">KBV_PR_MIO_LAB_Condition_Diagnosis</a></td>
+1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#404684003"</pre></div></td><td><a href="StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.html">KBV_PR_MIO_LAB_Condition_Diagnosis</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Condition&#8203;.code&#8203;.coding[0]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding) (l39&#8203;/c14)</b></td><td><b>warning</b></td><td><b>Constraint failed: icd-6: 'Wenn die Diagnosesicherheit &quot;V (Verdacht auf)&quot; verwendet wird, dann muss clinicalStatus auf &quot;active&quot; und verificationStatus auf &quot;provisional&quot; oder &quot;differential&quot; gesetzt werden. (code!='V' or (%resource.clinicalStatus.coding.where(code='active').exists() and (%resource.verificationStatus.coding.where(code='provisional').exists() or %resource.verificationStatus.coding.where(code='differential').exists())))' (defined in http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit#icd-6</span></td><td><a href="StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.html">KBV_PR_MIO_LAB_Condition_Diagnosis</a></td>
@@ -1217,13 +1220,13 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Prepare include[0]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(DL,PPN,BRN,MR,MCN,EN,TAX,NIIP,PRN,MD,DR,ACSN,UDI,SNO,SB,PLAC,FILL,JHN)"
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
 1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Validate "[https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr ("Private Krankenversicherung"), http://fhir.de/CodeSystem/identifier-type-de-basis#PKV ("Private Krankenversicherung")]"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
-1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Validate "[https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr ("Private Krankenversicherung"), http://fhir.de/CodeSystem/identifier-type-de-basis#PKV ("Private Krankenversicherung")]"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
+2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "http://fhir.de/CodeSystem/identifier-type-de-basis#PKV"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
 2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "http://fhir.de/CodeSystem/identifier-type-de-basis#PKV"
@@ -1240,13 +1243,13 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Prepare include[0]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(DL,PPN,BRN,MR,MCN,EN,TAX,NIIP,PRN,MD,DR,ACSN,UDI,SNO,SB,PLAC,FILL,JHN)"
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
 1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Validate "[https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr ("Private Krankenversicherung"), http://fhir.de/CodeSystem/identifier-type-de-basis#PKV ("Private Krankenversicherung")]"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
-1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Validate "[https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr ("Private Krankenversicherung"), http://fhir.de/CodeSystem/identifier-type-de-basis#PKV ("Private Krankenversicherung")]"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
+2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "http://fhir.de/CodeSystem/identifier-type-de-basis#PKV"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
 2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "http://fhir.de/CodeSystem/identifier-type-de-basis#PKV"
@@ -1263,13 +1266,13 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Prepare include[0]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(DL,PPN,BRN,MR,MCN,EN,TAX,NIIP,PRN,MD,DR,ACSN,UDI,SNO,SB,PLAC,FILL,JHN)"
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
 1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Validate "[https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr ("Private Krankenversicherung"), http://fhir.de/CodeSystem/identifier-type-de-basis#PKV ("Private Krankenversicherung")]"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
-1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Validate "[https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr ("Private Krankenversicherung"), http://fhir.de/CodeSystem/identifier-type-de-basis#PKV ("Private Krankenversicherung")]"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
+2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.8.0#pkv-nr"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check "http://fhir.de/CodeSystem/identifier-type-de-basis#PKV"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Check included value set http://hl7.org/fhir/ValueSet/identifier-type
 2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Check "http://fhir.de/CodeSystem/identifier-type-de-basis#PKV"
@@ -2162,8 +2165,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
 </table>
 <hr/>
-<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_expansion_parameters"> </a>
-<h2><a href="">input/pagecontent/expansion_parameters.md</a> <span id="svi128" class="toggle" onclick="toggle('vi128')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi128')">(0)</span></h2>
+<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_downloads"> </a>
+<h2><a href="">input/pagecontent/downloads.md</a> <span id="svi128" class="toggle" onclick="toggle('vi128')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi128')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi128"></div>
  <table class="grid">
    <tr>
@@ -2171,8 +2174,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
 </table>
 <hr/>
-<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_index"> </a>
-<h2><a href="">input/pagecontent/index.md</a> <span id="svi129" class="toggle" onclick="toggle('vi129')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi129')">(0)</span></h2>
+<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_expansion_parameters"> </a>
+<h2><a href="">input/pagecontent/expansion_parameters.md</a> <span id="svi129" class="toggle" onclick="toggle('vi129')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi129')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi129"></div>
  <table class="grid">
    <tr>
@@ -2180,8 +2183,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
 </table>
 <hr/>
-<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_infomodell"> </a>
-<h2><a href="">input/pagecontent/infomodell.md</a> <span id="svi130" class="toggle" onclick="toggle('vi130')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi130')">(0)</span></h2>
+<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_index"> </a>
+<h2><a href="">input/pagecontent/index.md</a> <span id="svi130" class="toggle" onclick="toggle('vi130')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi130')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi130"></div>
  <table class="grid">
    <tr>
@@ -2189,8 +2192,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
 </table>
 <hr/>
-<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_requirements"> </a>
-<h2><a href="">input/pagecontent/requirements.md</a> <span id="svi131" class="toggle" onclick="toggle('vi131')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi131')">(0)</span></h2>
+<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_infomodell"> </a>
+<h2><a href="">input/pagecontent/infomodell.md</a> <span id="svi131" class="toggle" onclick="toggle('vi131')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi131')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi131"></div>
  <table class="grid">
    <tr>
@@ -2198,9 +2201,18 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
 </table>
 <hr/>
+<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_pagecontent_requirements"> </a>
+<h2><a href="">input/pagecontent/requirements.md</a> <span id="svi132" class="toggle" onclick="toggle('vi132')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi132')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi132"></div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CM_MIO_LAB_Overview_German"> </a>
-<h2><a href="ConceptMap-KBV-CM-MIO-LAB-Overview.html">input/vocabulary/KBV_CM_MIO_LAB_Overview_German.json</a> <span id="svi132" class="toggle" onclick="toggle('vi132')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi132')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi132"><ul style="font-size: 7px"><li>ConceptMap: Validated against </li><li>ConceptMap/KBV-CM-MIO-LAB-Overview: ConceptMap: Validated against </li></ul>
+<h2><a href="ConceptMap-KBV-CM-MIO-LAB-Overview.html">input/vocabulary/KBV_CM_MIO_LAB_Overview_German.json</a> <span id="svi133" class="toggle" onclick="toggle('vi133')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi133')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi133"><ul style="font-size: 7px"><li>ConceptMap: Validated against </li><li>ConceptMap/KBV-CM-MIO-LAB-Overview: ConceptMap: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2209,8 +2221,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_AdministrativeGender_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-AdministrativeGender-German.html">input/vocabulary/KBV_CS_MIO_LAB_AdministrativeGender_German.json</a> <span id="svi133" class="toggle" onclick="toggle('vi133')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi133')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi133"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-AdministrativeGender-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-AdministrativeGender-German.html">input/vocabulary/KBV_CS_MIO_LAB_AdministrativeGender_German.json</a> <span id="svi134" class="toggle" onclick="toggle('vi134')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi134')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi134"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-AdministrativeGender-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2219,8 +2231,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G.html">input/vocabulary/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German.json</a> <span id="svi134" class="toggle" onclick="toggle('vi134')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi134')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi134"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G.html">input/vocabulary/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German.json</a> <span id="svi135" class="toggle" onclick="toggle('vi135')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi135')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi135"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2229,8 +2241,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_CommonLanguages_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-CommonLanguages-German.html">input/vocabulary/KBV_CS_MIO_LAB_CommonLanguages_German.json</a> <span id="svi135" class="toggle" onclick="toggle('vi135')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi135')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi135"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-CommonLanguages-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-CommonLanguages-German.html">input/vocabulary/KBV_CS_MIO_LAB_CommonLanguages_German.json</a> <span id="svi136" class="toggle" onclick="toggle('vi136')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi136')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi136"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-CommonLanguages-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2239,8 +2251,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-CommonUCUMCodesForDuration-German.html">input/vocabulary/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German.json</a> <span id="svi136" class="toggle" onclick="toggle('vi136')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi136')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi136"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-CommonUCUMCodesForDuration-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-CommonUCUMCodesForDuration-German.html">input/vocabulary/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German.json</a> <span id="svi137" class="toggle" onclick="toggle('vi137')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi137')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi137"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-CommonUCUMCodesForDuration-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2249,8 +2261,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_ContactEntityType_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-ContactEntityType-German.html">input/vocabulary/KBV_CS_MIO_LAB_ContactEntityType_German.json</a> <span id="svi137" class="toggle" onclick="toggle('vi137')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi137')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi137"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-ContactEntityType-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-ContactEntityType-German.html">input/vocabulary/KBV_CS_MIO_LAB_ContactEntityType_German.json</a> <span id="svi138" class="toggle" onclick="toggle('vi138')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi138')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi138"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-ContactEntityType-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2259,8 +2271,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_ContactPointSystem_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-ContactPointSystem-German.html">input/vocabulary/KBV_CS_MIO_LAB_ContactPointSystem_German.json</a> <span id="svi138" class="toggle" onclick="toggle('vi138')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi138')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi138"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-ContactPointSystem-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-ContactPointSystem-German.html">input/vocabulary/KBV_CS_MIO_LAB_ContactPointSystem_German.json</a> <span id="svi139" class="toggle" onclick="toggle('vi139')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi139')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi139"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-ContactPointSystem-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2269,8 +2281,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_DataAbsentReason_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-DataAbsentReason-German.html">input/vocabulary/KBV_CS_MIO_LAB_DataAbsentReason_German.json</a> <span id="svi139" class="toggle" onclick="toggle('vi139')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi139')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi139"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-DataAbsentReason-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-DataAbsentReason-German.html">input/vocabulary/KBV_CS_MIO_LAB_DataAbsentReason_German.json</a> <span id="svi140" class="toggle" onclick="toggle('vi140')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi140')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi140"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-DataAbsentReason-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2279,8 +2291,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Data_Absent_Reason_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Data-Absent-Reason-German.html">input/vocabulary/KBV_CS_MIO_LAB_Data_Absent_Reason_German.json</a> <span id="svi140" class="toggle" onclick="toggle('vi140')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi140')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi140"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Data-Absent-Reason-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Data-Absent-Reason-German.html">input/vocabulary/KBV_CS_MIO_LAB_Data_Absent_Reason_German.json</a> <span id="svi141" class="toggle" onclick="toggle('vi141')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi141')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi141"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Data-Absent-Reason-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2289,8 +2301,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_DeviceNameType_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-DeviceNameType-German.html">input/vocabulary/KBV_CS_MIO_LAB_DeviceNameType_German.json</a> <span id="svi141" class="toggle" onclick="toggle('vi141')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi141')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi141"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-DeviceNameType-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-DeviceNameType-German.html">input/vocabulary/KBV_CS_MIO_LAB_DeviceNameType_German.json</a> <span id="svi142" class="toggle" onclick="toggle('vi142')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi142')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi142"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-DeviceNameType-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2299,8 +2311,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Diagnostic-ReportStatus-German.html">input/vocabulary/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German.json</a> <span id="svi142" class="toggle" onclick="toggle('vi142')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi142')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi142"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Diagnostic-ReportStatus-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Diagnostic-ReportStatus-German.html">input/vocabulary/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German.json</a> <span id="svi143" class="toggle" onclick="toggle('vi143')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi143')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi143"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Diagnostic-ReportStatus-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2309,8 +2321,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German.html">input/vocabulary/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German.json</a> <span id="svi143" class="toggle" onclick="toggle('vi143')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi143')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi143"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German.html">input/vocabulary/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German.json</a> <span id="svi144" class="toggle" onclick="toggle('vi144')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi144')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi144"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2319,8 +2331,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German.html">input/vocabulary/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German.json</a> <span id="svi144" class="toggle" onclick="toggle('vi144')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi144')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi144"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German.html">input/vocabulary/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German.json</a> <span id="svi145" class="toggle" onclick="toggle('vi145')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi145')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi145"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2329,8 +2341,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Hl7VSRelevantClincialInformation-German.html">input/vocabulary/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German.json</a> <span id="svi145" class="toggle" onclick="toggle('vi145')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi145')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi145"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Hl7VSRelevantClincialInformation-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Hl7VSRelevantClincialInformation-German.html">input/vocabulary/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German.json</a> <span id="svi146" class="toggle" onclick="toggle('vi146')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi146')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi146"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Hl7VSRelevantClincialInformation-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2339,8 +2351,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Identifier_Type_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Identifier-Type-German.html">input/vocabulary/KBV_CS_MIO_LAB_Identifier_Type_German.json</a> <span id="svi146" class="toggle" onclick="toggle('vi146')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi146')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi146"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Identifier-Type-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Identifier-Type-German.html">input/vocabulary/KBV_CS_MIO_LAB_Identifier_Type_German.json</a> <span id="svi147" class="toggle" onclick="toggle('vi147')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi147')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi147"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Identifier-Type-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2349,8 +2361,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German.html">input/vocabulary/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German.json</a> <span id="svi147" class="toggle" onclick="toggle('vi147')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi147')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi147"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German.html">input/vocabulary/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German.json</a> <span id="svi148" class="toggle" onclick="toggle('vi148')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi148')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi148"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2359,8 +2371,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Laboratory_Identificator"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Laboratory-Identificator.html">input/vocabulary/KBV_CS_MIO_LAB_Laboratory_Identificator.json</a> <span id="svi148" class="toggle" onclick="toggle('vi148')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi148')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi148"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Laboratory-Identificator: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Laboratory-Identificator.html">input/vocabulary/KBV_CS_MIO_LAB_Laboratory_Identificator.json</a> <span id="svi149" class="toggle" onclick="toggle('vi149')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi149')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi149"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Laboratory-Identificator: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2369,8 +2381,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT-German.html">input/vocabulary/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German.json</a> <span id="svi149" class="toggle" onclick="toggle('vi149')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi149')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi149"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT-German.html">input/vocabulary/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German.json</a> <span id="svi150" class="toggle" onclick="toggle('vi150')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi150')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi150"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2379,8 +2391,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Marital_Status_Codes_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Marital-Status-Codes-German.html">input/vocabulary/KBV_CS_MIO_LAB_Marital_Status_Codes_German.json</a> <span id="svi150" class="toggle" onclick="toggle('vi150')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi150')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi150"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Marital-Status-Codes-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Marital-Status-Codes-German.html">input/vocabulary/KBV_CS_MIO_LAB_Marital_Status_Codes_German.json</a> <span id="svi151" class="toggle" onclick="toggle('vi151')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi151')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi151"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Marital-Status-Codes-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2389,8 +2401,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_ObservationInterpretationCodes_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-ObservationInterpretationCodes-German.html">input/vocabulary/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German.json</a> <span id="svi151" class="toggle" onclick="toggle('vi151')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi151')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi151"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-ObservationInterpretationCodes-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-ObservationInterpretationCodes-German.html">input/vocabulary/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German.json</a> <span id="svi152" class="toggle" onclick="toggle('vi152')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi152')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi152"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-ObservationInterpretationCodes-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2399,8 +2411,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-ObservationReferenceRangeMeaningCodes-German.html">input/vocabulary/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German.json</a> <span id="svi152" class="toggle" onclick="toggle('vi152')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi152')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi152"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-ObservationReferenceRangeMeaningCodes-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-ObservationReferenceRangeMeaningCodes-German.html">input/vocabulary/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German.json</a> <span id="svi153" class="toggle" onclick="toggle('vi153')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi153')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi153"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-ObservationReferenceRangeMeaningCodes-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2409,8 +2421,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Observation_Status_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Observation-Status-German.html">input/vocabulary/KBV_CS_MIO_LAB_Observation_Status_German.json</a> <span id="svi153" class="toggle" onclick="toggle('vi153')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi153')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi153"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Observation-Status-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Observation-Status-German.html">input/vocabulary/KBV_CS_MIO_LAB_Observation_Status_German.json</a> <span id="svi154" class="toggle" onclick="toggle('vi154')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi154')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi154"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Observation-Status-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2419,8 +2431,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_PatientRelationshipType_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-PatientRelationshipType-German.html">input/vocabulary/KBV_CS_MIO_LAB_PatientRelationshipType_German.json</a> <span id="svi154" class="toggle" onclick="toggle('vi154')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi154')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi154"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-PatientRelationshipType-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-PatientRelationshipType-German.html">input/vocabulary/KBV_CS_MIO_LAB_PatientRelationshipType_German.json</a> <span id="svi155" class="toggle" onclick="toggle('vi155')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi155')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi155"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-PatientRelationshipType-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2429,8 +2441,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Provenance_Activity_Type_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Provenance-Activity-Type-German.html">input/vocabulary/KBV_CS_MIO_LAB_Provenance_Activity_Type_German.json</a> <span id="svi155" class="toggle" onclick="toggle('vi155')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi155')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi155"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Provenance-Activity-Type-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Provenance-Activity-Type-German.html">input/vocabulary/KBV_CS_MIO_LAB_Provenance_Activity_Type_German.json</a> <span id="svi156" class="toggle" onclick="toggle('vi156')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi156')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi156"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Provenance-Activity-Type-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2439,8 +2451,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_QuantityComparator_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-QuantityComparator-German.html">input/vocabulary/KBV_CS_MIO_LAB_QuantityComparator_German.json</a> <span id="svi156" class="toggle" onclick="toggle('vi156')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi156')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi156"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-QuantityComparator-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-QuantityComparator-German.html">input/vocabulary/KBV_CS_MIO_LAB_QuantityComparator_German.json</a> <span id="svi157" class="toggle" onclick="toggle('vi157')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi157')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi157"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-QuantityComparator-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2449,8 +2461,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_RequestPriority_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-RequestPriority-German.html">input/vocabulary/KBV_CS_MIO_LAB_RequestPriority_German.json</a> <span id="svi157" class="toggle" onclick="toggle('vi157')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi157')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi157"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-RequestPriority-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-RequestPriority-German.html">input/vocabulary/KBV_CS_MIO_LAB_RequestPriority_German.json</a> <span id="svi158" class="toggle" onclick="toggle('vi158')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi158')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi158"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-RequestPriority-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2459,8 +2471,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Secondary_Status"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Secondary-Status.html">input/vocabulary/KBV_CS_MIO_LAB_Secondary_Status.json</a> <span id="svi158" class="toggle" onclick="toggle('vi158')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi158')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi158"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Secondary-Status: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Secondary-Status.html">input/vocabulary/KBV_CS_MIO_LAB_Secondary_Status.json</a> <span id="svi159" class="toggle" onclick="toggle('vi159')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi159')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi159"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Secondary-Status: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2469,8 +2481,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_SexParameterForClinicalUse_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-SexParameterForClinicalUse-German.html">input/vocabulary/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German.json</a> <span id="svi159" class="toggle" onclick="toggle('vi159')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi159')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi159"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-SexParameterForClinicalUse-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-SexParameterForClinicalUse-German.html">input/vocabulary/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German.json</a> <span id="svi160" class="toggle" onclick="toggle('vi160')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi160')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi160"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-SexParameterForClinicalUse-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2479,8 +2491,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-SpecimenProcessingProcedure-German.html">input/vocabulary/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German.json</a> <span id="svi160" class="toggle" onclick="toggle('vi160')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi160')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi160"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-SpecimenProcessingProcedure-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-SpecimenProcessingProcedure-German.html">input/vocabulary/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German.json</a> <span id="svi161" class="toggle" onclick="toggle('vi161')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi161')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi161"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-SpecimenProcessingProcedure-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2489,8 +2501,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_SpecimenStatus_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-SpecimenStatus-German.html">input/vocabulary/KBV_CS_MIO_LAB_SpecimenStatus_German.json</a> <span id="svi161" class="toggle" onclick="toggle('vi161')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi161')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi161"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-SpecimenStatus-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-SpecimenStatus-German.html">input/vocabulary/KBV_CS_MIO_LAB_SpecimenStatus_German.json</a> <span id="svi162" class="toggle" onclick="toggle('vi162')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi162')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi162"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-SpecimenStatus-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2499,8 +2511,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Specimen_Condition_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Specimen-Condition-German.html">input/vocabulary/KBV_CS_MIO_LAB_Specimen_Condition_German.json</a> <span id="svi162" class="toggle" onclick="toggle('vi162')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi162')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi162"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Specimen-Condition-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Specimen-Condition-German.html">input/vocabulary/KBV_CS_MIO_LAB_Specimen_Condition_German.json</a> <span id="svi163" class="toggle" onclick="toggle('vi163')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi163')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi163"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Specimen-Condition-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2509,8 +2521,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html">input/vocabulary/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe.json</a> <span id="svi163" class="toggle" onclick="toggle('vi163')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi163')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi163"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.html">input/vocabulary/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe.json</a> <span id="svi164" class="toggle" onclick="toggle('vi164')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi164')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi164"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2519,8 +2531,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_Type_Diagram_German"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Type-Diagram-German.html">input/vocabulary/KBV_CS_MIO_LAB_Type_Diagram_German.json</a> <span id="svi164" class="toggle" onclick="toggle('vi164')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi164')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi164"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Type-Diagram-German: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-Type-Diagram-German.html">input/vocabulary/KBV_CS_MIO_LAB_Type_Diagram_German.json</a> <span id="svi165" class="toggle" onclick="toggle('vi165')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi165')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi165"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-Type-Diagram-German: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2529,8 +2541,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_CS_MIO_LAB_mio42"> </a>
-<h2><a href="CodeSystem-KBV-CS-MIO-LAB-mio42.html">input/vocabulary/KBV_CS_MIO_LAB_mio42.json</a> <span id="svi165" class="toggle" onclick="toggle('vi165')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi165')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi165"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-mio42: CodeSystem: Validated against </li></ul>
+<h2><a href="CodeSystem-KBV-CS-MIO-LAB-mio42.html">input/vocabulary/KBV_CS_MIO_LAB_mio42.json</a> <span id="svi166" class="toggle" onclick="toggle('vi166')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi166')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi166"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/KBV-CS-MIO-LAB-mio42: CodeSystem: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2539,8 +2551,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Body-Structures-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT.json</a> <span id="svi166" class="toggle" onclick="toggle('vi166')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi166')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi166"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Body-Structures-SNOMED-CT: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Body-Structures-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT.json</a> <span id="svi167" class="toggle" onclick="toggle('vi167')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi167')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi167"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Body-Structures-SNOMED-CT: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2549,8 +2561,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position.html">input/vocabulary/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position.json</a> <span id="svi167" class="toggle" onclick="toggle('vi167')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi167')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi167"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position.html">input/vocabulary/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position.json</a> <span id="svi168" class="toggle" onclick="toggle('vi168')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi168')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi168"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2559,8 +2571,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Data_Absent_Reason"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Data-Absent-Reason.html">input/vocabulary/KBV_VS_MIO_LAB_Data_Absent_Reason.json</a> <span id="svi168" class="toggle" onclick="toggle('vi168')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi168')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi168"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Data-Absent-Reason: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Data-Absent-Reason.html">input/vocabulary/KBV_VS_MIO_LAB_Data_Absent_Reason.json</a> <span id="svi169" class="toggle" onclick="toggle('vi169')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi169')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi169"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Data-Absent-Reason: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2569,8 +2581,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Diagnostic_ReportStatus"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Diagnostic-ReportStatus.html">input/vocabulary/KBV_VS_MIO_LAB_Diagnostic_ReportStatus.json</a> <span id="svi169" class="toggle" onclick="toggle('vi169')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi169')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi169"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Diagnostic-ReportStatus: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Diagnostic-ReportStatus.html">input/vocabulary/KBV_VS_MIO_LAB_Diagnostic_ReportStatus.json</a> <span id="svi170" class="toggle" onclick="toggle('vi170')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi170')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi170"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Diagnostic-ReportStatus: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2579,8 +2591,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo.html">input/vocabulary/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo.json</a> <span id="svi170" class="toggle" onclick="toggle('vi170')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi170')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi170"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo.html">input/vocabulary/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo.json</a> <span id="svi171" class="toggle" onclick="toggle('vi171')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi171')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi171"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2589,8 +2601,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT.json</a> <span id="svi171" class="toggle" onclick="toggle('vi171')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi171')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi171"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT.json</a> <span id="svi172" class="toggle" onclick="toggle('vi172')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi172')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi172"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2599,8 +2611,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Identifier_Type"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Identifier-Type.html">input/vocabulary/KBV_VS_MIO_LAB_Identifier_Type.json</a> <span id="svi172" class="toggle" onclick="toggle('vi172')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi172')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi172"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Identifier-Type: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Identifier-Type.html">input/vocabulary/KBV_VS_MIO_LAB_Identifier_Type.json</a> <span id="svi173" class="toggle" onclick="toggle('vi173')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi173')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi173"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Identifier-Type: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2609,8 +2621,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Laboratory-Analyzer-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT.json</a> <span id="svi173" class="toggle" onclick="toggle('vi173')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi173')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi173"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Laboratory-Analyzer-SNOMED-CT: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Laboratory-Analyzer-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT.json</a> <span id="svi174" class="toggle" onclick="toggle('vi174')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi174')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi174"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Laboratory-Analyzer-SNOMED-CT: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2619,8 +2631,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC.html">input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC.json</a> <span id="svi174" class="toggle" onclick="toggle('vi174')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi174')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi174"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC.html">input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC.json</a> <span id="svi175" class="toggle" onclick="toggle('vi175')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi175')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi175"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2629,8 +2641,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Laboruntersuchungsgruppe"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Laboruntersuchungsgruppe.html">input/vocabulary/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe.json</a> <span id="svi175" class="toggle" onclick="toggle('vi175')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi175')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi175"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Laboruntersuchungsgruppe: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Laboruntersuchungsgruppe.html">input/vocabulary/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe.json</a> <span id="svi176" class="toggle" onclick="toggle('vi176')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi176')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi176"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Laboruntersuchungsgruppe: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2639,8 +2651,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Laterality-Body-Structure-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT.json</a> <span id="svi176" class="toggle" onclick="toggle('vi176')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi176')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi176"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Laterality-Body-Structure-SNOMED-CT: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Laterality-Body-Structure-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT.json</a> <span id="svi177" class="toggle" onclick="toggle('vi177')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi177')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi177"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Laterality-Body-Structure-SNOMED-CT: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2649,8 +2661,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT.json</a> <span id="svi177" class="toggle" onclick="toggle('vi177')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi177')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi177"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT.json</a> <span id="svi178" class="toggle" onclick="toggle('vi178')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi178')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi178"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2659,8 +2671,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_MIME_Types"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-MIME-Types.html">input/vocabulary/KBV_VS_MIO_LAB_MIME_Types.json</a> <span id="svi178" class="toggle" onclick="toggle('vi178')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi178')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi178"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-MIME-Types.html">input/vocabulary/KBV_VS_MIO_LAB_MIME_Types.json</a> <span id="svi179" class="toggle" onclick="toggle('vi179')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi179')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi179"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2696,8 +2708,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT.json</a> <span id="svi179" class="toggle" onclick="toggle('vi179')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi179')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi179"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT.json</a> <span id="svi180" class="toggle" onclick="toggle('vi180')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi180')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi180"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2706,8 +2718,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Observation_Methods"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Observation-Methods.html">input/vocabulary/KBV_VS_MIO_LAB_Observation_Methods.json</a> <span id="svi180" class="toggle" onclick="toggle('vi180')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi180')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi180"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Observation-Methods: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Observation-Methods.html">input/vocabulary/KBV_VS_MIO_LAB_Observation_Methods.json</a> <span id="svi181" class="toggle" onclick="toggle('vi181')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi181')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi181"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Observation-Methods: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2716,8 +2728,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Observation_Status"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Observation-Status.html">input/vocabulary/KBV_VS_MIO_LAB_Observation_Status.json</a> <span id="svi181" class="toggle" onclick="toggle('vi181')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi181')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi181"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Observation-Status: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Observation-Status.html">input/vocabulary/KBV_VS_MIO_LAB_Observation_Status.json</a> <span id="svi182" class="toggle" onclick="toggle('vi182')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi182')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi182"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Observation-Status: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2726,8 +2738,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Secondary_Status"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Secondary-Status.html">input/vocabulary/KBV_VS_MIO_LAB_Secondary_Status.json</a> <span id="svi182" class="toggle" onclick="toggle('vi182')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi182')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi182"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Secondary-Status: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Secondary-Status.html">input/vocabulary/KBV_VS_MIO_LAB_Secondary_Status.json</a> <span id="svi183" class="toggle" onclick="toggle('vi183')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi183')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi183"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Secondary-Status: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2736,8 +2748,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT.json</a> <span id="svi183" class="toggle" onclick="toggle('vi183')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi183')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi183"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT.json</a> <span id="svi184" class="toggle" onclick="toggle('vi184')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi184')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi184"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2746,8 +2758,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Specimen_Condition"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Specimen-Condition.html">input/vocabulary/KBV_VS_MIO_LAB_Specimen_Condition.json</a> <span id="svi184" class="toggle" onclick="toggle('vi184')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi184')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi184"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Specimen-Condition: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Specimen-Condition.html">input/vocabulary/KBV_VS_MIO_LAB_Specimen_Condition.json</a> <span id="svi185" class="toggle" onclick="toggle('vi185')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi185')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi185"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Specimen-Condition: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2756,8 +2768,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT.json</a> <span id="svi185" class="toggle" onclick="toggle('vi185')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi185')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi185"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT.html">input/vocabulary/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT.json</a> <span id="svi186" class="toggle" onclick="toggle('vi186')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi186')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi186"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2766,8 +2778,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_input_vocabulary_KBV_VS_MIO_LAB_Type_Diagram"> </a>
-<h2><a href="ValueSet-KBV-VS-MIO-LAB-Type-Diagram.html">input/vocabulary/KBV_VS_MIO_LAB_Type_Diagram.json</a> <span id="svi186" class="toggle" onclick="toggle('vi186')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi186')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi186"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Type-Diagram: ValueSet: Validated against </li></ul>
+<h2><a href="ValueSet-KBV-VS-MIO-LAB-Type-Diagram.html">input/vocabulary/KBV_VS_MIO_LAB_Type_Diagram.json</a> <span id="svi187" class="toggle" onclick="toggle('vi187')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi187')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi187"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/KBV-VS-MIO-LAB-Type-Diagram: ValueSet: Validated against </li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -2776,16 +2788,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 </table>
 <hr/>
 <a name="_home_viayvasky_Documents_git_MIO-Laborbefund_temp_pages__includes_artifacts"> </a>
-<h2><a href="">temp/pages/_includes/artifacts.xml</a> <span id="svi187" class="toggle" onclick="toggle('vi187')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi187')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi187"></div>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_template_config"> </a>
-<h2><a href="">template/config</a> <span id="svi188" class="toggle" onclick="toggle('vi188')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi188')">(0)</span></h2>
+<h2><a href="">temp/pages/_includes/artifacts.xml</a> <span id="svi188" class="toggle" onclick="toggle('vi188')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi188')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi188"></div>
  <table class="grid">
    <tr>
@@ -2793,9 +2796,18 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
 </table>
 <hr/>
-<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_template_config__config"> </a>
-<h2><a href="">template/config/_config.yml</a> <span id="svi189" class="toggle" onclick="toggle('vi189')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi189')">(0)</span></h2>
+<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_template_config"> </a>
+<h2><a href="">template/config</a> <span id="svi189" class="toggle" onclick="toggle('vi189')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi189')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi189"></div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_viayvasky_Documents_git_MIO-Laborbefund_template_config__config"> </a>
+<h2><a href="">template/config/_config.yml</a> <span id="svi190" class="toggle" onclick="toggle('vi190')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi190')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi190"></div>
  <table class="grid">
    <tr>
      <td>&check;</td>

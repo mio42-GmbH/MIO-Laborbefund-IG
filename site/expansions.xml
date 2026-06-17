@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9fa3503e-c54b-4ca4-a890-90d56e2b7a3c"/>
+  <id value="758a2fba-b313-47f5-a6e9-e588ae3168a0"/>
   <meta>
-    <lastUpdated value="2026-06-16T13:04:47.254+02:00"/>
+    <lastUpdated value="2026-06-17T15:03:17.543+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -22053,7 +22053,7 @@
         <title value="Körperstelle SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -22066,8 +22066,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:f19266e6-00a8-465c-92d8-b2bd937db594"/>
-          <timestamp value="2026-06-16T13:09:32+02:00"/>
+          <identifier value="urn:uuid:e9518d2b-fd39-4803-8110-c65d9dfc7d97"/>
+          <timestamp value="2026-06-17T15:08:43+02:00"/>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -53689,7 +53689,7 @@
         <title value="Bodystructure Clock Face Position SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -53699,8 +53699,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:540f78e3-4fec-4bb9-b338-375c0bdb44e6"/>
-          <timestamp value="2026-06-16T13:09:33+02:00"/>
+          <identifier value="urn:uuid:465258b5-094e-4aaa-a089-f82b27bb5788"/>
+          <timestamp value="2026-06-17T15:08:43+02:00"/>
           <total value="12"/>
           <parameter>
             <name value="count"/>
@@ -54101,7 +54101,7 @@
         <title value="Nichtvorhandensein LOINC®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -54111,8 +54111,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:bd616c9d-6ae6-438f-a6d0-2b496f563c37"/>
-          <timestamp value="2026-06-16T13:09:33+02:00"/>
+          <identifier value="urn:uuid:0fc08159-1440-40e1-97fa-ea1614d406f0"/>
+          <timestamp value="2026-06-17T15:08:43+02:00"/>
           <total value="2"/>
           <parameter>
             <name value="count"/>
@@ -54461,7 +54461,7 @@
         <title value="Status Gesamtbefund"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -54471,8 +54471,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:274d94c4-603b-4578-9544-c10574271875"/>
-          <timestamp value="2026-06-16T13:09:33+02:00"/>
+          <identifier value="urn:uuid:4b149b5e-ce18-49b2-83d0-5d9cb737a879"/>
+          <timestamp value="2026-06-17T15:08:44+02:00"/>
           <total value="9"/>
           <parameter>
             <name value="count"/>
@@ -54705,7 +54705,7 @@
         <title value="Kollektivbezug"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -54715,8 +54715,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:d6fb2c25-ff72-418f-a2a8-1cd25ab4a47f"/>
-          <timestamp value="2026-06-16T13:09:22+02:00"/>
+          <identifier value="urn:uuid:5272937a-4e12-423d-91ee-b6070e56df51"/>
+          <timestamp value="2026-06-17T15:08:29+02:00"/>
           <total value="2"/>
           <parameter>
             <name value="count"/>
@@ -55417,7 +55417,7 @@
         <title value="Außerkörperliche Quellen SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -55427,8 +55427,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:6c3694b4-b6b7-44d5-ac2b-c2c56cb34e4d"/>
-          <timestamp value="2026-06-16T13:09:33+02:00"/>
+          <identifier value="urn:uuid:81e2d01c-133e-432e-a108-76ebe36914f6"/>
+          <timestamp value="2026-06-17T15:08:44+02:00"/>
           <total value="25"/>
           <parameter>
             <name value="count"/>
@@ -56751,7 +56751,7 @@
         <title value="Identifier Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -56761,8 +56761,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:e1c5b8bb-651e-4420-a265-22ed00dc06b3"/>
-          <timestamp value="2026-06-16T13:09:33+02:00"/>
+          <identifier value="urn:uuid:c12178d0-2492-4b64-9d4c-d400ff1ce80d"/>
+          <timestamp value="2026-06-17T15:08:44+02:00"/>
           <total value="9"/>
           <parameter>
             <name value="count"/>
@@ -57858,7 +57858,7 @@
         <title value="Laboranalysegerät SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -57871,8 +57871,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:194896cf-c436-49f6-a6ea-6aa2141df7cc"/>
-          <timestamp value="2026-06-16T13:09:33+02:00"/>
+          <identifier value="urn:uuid:801ae994-7473-4112-8277-ad6f3fc31f18"/>
+          <timestamp value="2026-06-17T15:08:44+02:00"/>
           <total value="42"/>
           <parameter>
             <name value="count"/>
@@ -59741,7 +59741,7 @@
         <title value="Laborbereich LOINC®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -59751,8 +59751,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:91d7000b-96a4-4de2-8c66-ffe5588290b1"/>
-          <timestamp value="2026-06-16T13:09:21+02:00"/>
+          <identifier value="urn:uuid:d482afb0-85d8-4e1c-8e7a-775456de7e17"/>
+          <timestamp value="2026-06-17T15:08:27+02:00"/>
           <total value="19"/>
           <parameter>
             <name value="count"/>
@@ -61317,7 +61317,7 @@
         <title value="Test-Profil Laboruntersuchungsgruppe"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -61327,8 +61327,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:72d5da34-bc47-4d00-9c56-e6e1c8f7317e"/>
-          <timestamp value="2026-06-16T13:09:21+02:00"/>
+          <identifier value="urn:uuid:28d0768e-a62b-4f66-b836-3e834755f8a7"/>
+          <timestamp value="2026-06-17T15:08:27+02:00"/>
           <total value="15"/>
           <parameter>
             <name value="count"/>
@@ -61644,7 +61644,7 @@
         <title value="Lateralität Körperstelle SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -61654,8 +61654,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:f03096dd-6168-4e34-81ef-1ded504301e6"/>
-          <timestamp value="2026-06-16T13:09:33+02:00"/>
+          <identifier value="urn:uuid:4b1350f1-eb74-4c6a-b70e-0554a510bd60"/>
+          <timestamp value="2026-06-17T15:08:44+02:00"/>
           <total value="3"/>
           <parameter>
             <name value="count"/>
@@ -62635,7 +62635,7 @@
         <title value="Lokalisation innerhalb Körperstelle SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -62645,8 +62645,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:7146ab3b-04f8-40fa-a0e2-f9a5b1a47f68"/>
-          <timestamp value="2026-06-16T13:09:33+02:00"/>
+          <identifier value="urn:uuid:ea542f33-99bb-462f-8be4-3ea9cabb8294"/>
+          <timestamp value="2026-06-17T15:08:44+02:00"/>
           <total value="28"/>
           <parameter>
             <name value="count"/>
@@ -64169,7 +64169,7 @@
         <title value="Dateiformat"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -64179,8 +64179,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:021e1732-a7d6-47bd-9da3-5db204f0c1be"/>
-          <timestamp value="2026-06-16T13:09:34+02:00"/>
+          <identifier value="urn:uuid:79dc6d28-18cf-4dcf-86de-fe3d87c3ab94"/>
+          <timestamp value="2026-06-17T15:08:44+02:00"/>
           <total value="9"/>
           <parameter>
             <name value="count"/>
@@ -65295,7 +65295,7 @@
         <title value="Messergebnis Qualitativ SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -65305,8 +65305,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:729eede7-6e4e-4ecc-8bc4-b070f565d091"/>
-          <timestamp value="2026-06-16T13:09:22+02:00"/>
+          <identifier value="urn:uuid:08c513b0-071f-4d82-9a16-ed537e6c91d5"/>
+          <timestamp value="2026-06-17T15:08:28+02:00"/>
           <total value="38"/>
           <parameter>
             <name value="count"/>
@@ -85079,7 +85079,7 @@
         <title value="Untersuchungsmethode SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -85092,8 +85092,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:7c95a3af-2382-4090-aac7-9d9a35b85b82"/>
-          <timestamp value="2026-06-16T13:09:22+02:00"/>
+          <identifier value="urn:uuid:ce9cfa53-3fff-4174-95ca-f9c2194c176f"/>
+          <timestamp value="2026-06-17T15:08:29+02:00"/>
           <total value="780"/>
           <parameter>
             <name value="count"/>
@@ -101427,7 +101427,7 @@
         <title value="Status Laboruntersuchung"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -101437,8 +101437,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:1d30729c-1771-4e55-95ac-bcf6ecc5f3e0"/>
-          <timestamp value="2026-06-16T13:09:34+02:00"/>
+          <identifier value="urn:uuid:357811ca-e99a-409c-85ee-a784791f25fa"/>
+          <timestamp value="2026-06-17T15:08:45+02:00"/>
           <total value="7"/>
           <parameter>
             <name value="count"/>
@@ -101649,7 +101649,7 @@
         <title value="Sekundärstatus Gesamtbefund"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -101659,8 +101659,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:a2da56cd-24a6-47ee-8fc3-9c7166321210"/>
-          <timestamp value="2026-06-16T13:09:34+02:00"/>
+          <identifier value="urn:uuid:c429261f-ef61-448a-8410-25bb3539aad2"/>
+          <timestamp value="2026-06-17T15:08:45+02:00"/>
           <total value="3"/>
           <parameter>
             <name value="count"/>
@@ -109175,7 +109175,7 @@
         <title value="Probenentnahme-Methode SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -109188,8 +109188,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d2fffc42-44c6-4364-85ad-2d0998bda8ba"/>
-          <timestamp value="2026-06-16T13:09:34+02:00"/>
+          <identifier value="urn:uuid:0953bd98-0dc7-452e-9a18-53fb2d2ec3b1"/>
+          <timestamp value="2026-06-17T15:08:45+02:00"/>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -117843,7 +117843,7 @@
         <title value="Zustand Probe"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -117853,8 +117853,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:60b41ed1-69a5-48d2-905a-d3e8950b0bae"/>
-          <timestamp value="2026-06-16T13:09:34+02:00"/>
+          <identifier value="urn:uuid:e49c9221-16c1-41d2-ab92-f8c36fd8a49b"/>
+          <timestamp value="2026-06-17T15:08:45+02:00"/>
           <total value="15"/>
           <parameter>
             <name value="count"/>
@@ -141192,7 +141192,7 @@
         <title value="Probenart SNOMED CT®"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -141205,8 +141205,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:03133269-c4aa-44da-9ce8-38d6ef2fae69"/>
-          <timestamp value="2026-06-16T13:09:34+02:00"/>
+          <identifier value="urn:uuid:9b52d0de-3bbb-4236-89dd-caf876545009"/>
+          <timestamp value="2026-06-17T15:08:45+02:00"/>
           <total value="1822"/>
           <parameter>
             <name value="count"/>
@@ -168160,7 +168160,7 @@
         <title value="Typisierung Messdiagramm"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-06-16T13:04:47+02:00"/>
+        <date value="2026-06-17T15:03:17+02:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -168170,8 +168170,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:35bd2b69-0859-4e81-9719-5e9db121092f"/>
-          <timestamp value="2026-06-16T13:09:20+02:00"/>
+          <identifier value="urn:uuid:9ab9fd24-c0a8-44cf-9f2d-473410fef416"/>
+          <timestamp value="2026-06-17T15:08:26+02:00"/>
           <total value="7"/>
           <parameter>
             <name value="count"/>

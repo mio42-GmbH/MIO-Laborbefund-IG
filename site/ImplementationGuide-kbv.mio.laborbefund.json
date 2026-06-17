@@ -11,7 +11,7 @@
   "title" : "MIO Laborbefund",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-16T13:04:47+02:00",
+  "date" : "2026-06-17T15:03:17+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -5342,6 +5342,15 @@
         }],
         "nameUrl" : "Feedback.html",
         "title" : "Feedback",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
         "generation" : "markdown"
       }]
     },

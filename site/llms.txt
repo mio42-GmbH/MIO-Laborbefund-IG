@@ -4,6 +4,7 @@
 
 * [Projektübersicht](index.md)
 * [Einzelbefunddarstellung in der Primärsystemansicht](Einzelbefunddarstellung_in_der_Primaersystemansicht.md)
+* [Downloads](downloads.md)
 * [Copyright](copyright.md)
 * [Expansion Parameter](expansion_parameters.md)
 * [Fachliche Einordnung und Nutzen](Fachliche_Einordnung_und_Nutzen.md)
