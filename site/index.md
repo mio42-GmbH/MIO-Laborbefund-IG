@@ -12,7 +12,7 @@ Version 1.0.0-update - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ImplementationGuide/kbv.mio.laborbefund | *Version*:1.0.0-update |
-| Draft as of 2026-06-17 | *Computable Name*:KBVMIOLaborbefund |
+| Draft as of 2026-06-19 | *Computable Name*:KBVMIOLaborbefund |
 
 ### Laborbefunde heute
 
@@ -78,7 +78,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "title" : "MIO Laborbefund",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-17T15:03:17+02:00",
+  "date" : "2026-06-19T11:56:12+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

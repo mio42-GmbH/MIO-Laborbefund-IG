@@ -61,8 +61,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study",
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -160,8 +160,8 @@
     "systems" : ["http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-MIO-LAB-Organization.html" : "KBV_PR_MIO_LAB_Organization",
-    "StructureDefinition-KBV-PR-MIO-LAB-Patient.html" : "KBV_PR_MIO_LAB_Patient"
+    "StructureDefinition-KBV-PR-MIO-LAB-Patient.html" : "KBV_PR_MIO_LAB_Patient",
+    "StructureDefinition-KBV-PR-MIO-LAB-Organization.html" : "KBV_PR_MIO_LAB_Organization"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Diagnosis_SNOMED_CT",
@@ -308,8 +308,8 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study",
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe",
@@ -321,8 +321,8 @@
     "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study",
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT",

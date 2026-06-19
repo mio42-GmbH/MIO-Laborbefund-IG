@@ -1,3 +1,5 @@
+/*Uses all styles from ./content/assets/css/ig.gematik.css but uses mio42 coperate colours for headline instead.*/
+
 :root {
   --ig-status-text-color: #357ebd;
   --navbar-bg-color: #fff;

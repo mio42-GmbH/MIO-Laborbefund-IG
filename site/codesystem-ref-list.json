@@ -78,8 +78,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.236"],
     "uses" : {
     },
-    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview",
-    "ValueSet-KBV-VS-MIO-LAB-Diagnostic-ReportStatus.html" : "Status Gesamtbefund"
+    "ValueSet-KBV-VS-MIO-LAB-Diagnostic-ReportStatus.html" : "Status Gesamtbefund",
+    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview"
   },
   {
     "url" : "http://hl7.org/fhir/observation-status",
@@ -91,8 +91,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.401"],
     "uses" : {
     },
-    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview",
-    "ValueSet-KBV-VS-MIO-LAB-Observation-Status.html" : "Status Laboruntersuchung"
+    "ValueSet-KBV-VS-MIO-LAB-Observation-Status.html" : "Status Laboruntersuchung",
+    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview"
   },
   {
     "url" : "http://hl7.org/fhir/quantity-comparator",
@@ -162,9 +162,9 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
+    "ValueSet-KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC.html" : "Laborbereich LOINC®",
     "https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDSclassCode" : "IHE XDS classCode",
-    "https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDStypeCode" : "IHE XDS typeCode",
-    "ValueSet-KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC.html" : "Laborbereich LOINC®"
+    "https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDStypeCode" : "IHE XDS typeCode"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -177,21 +177,21 @@
     "uses" : {
     },
     "ValueSet-KBV-VS-MIO-LAB-Body-Structures-SNOMED-CT.html" : "Körperstelle SNOMED CT®",
-    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview",
     "ValueSet-KBV-VS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position.html" : "Bodystructure Clock Face Position SNOMED CT®",
-    "ValueSet-KBV-VS-MIO-LAB-Type-Diagram.html" : "Typisierung Messdiagramm",
-    "ValueSet-KBV-VS-MIO-LAB-Observation-Methods.html" : "Untersuchungsmethode SNOMED CT®",
-    "ValueSet-KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT.html" : "Außerkörperliche Quellen SNOMED CT®",
-    "ValueSet-KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT.html" : "Lokalisation innerhalb Körperstelle SNOMED CT®",
-    "ValueSet-KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT.html" : "Messergebnis Qualitativ SNOMED CT®",
-    "ValueSet-KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT.html" : "Probenart SNOMED CT®",
-    "ValueSet-KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT.html" : "Probenentnahme-Methode SNOMED CT®",
     "https://simplifier.net/resolve?scope=kbv.basis@1.8.0&canonical=https://fhir.kbv.de/ValueSet/KBV_VS_Base_Diagnosis_SNOMED_CT" : "Diagnose SNOMED CT®",
+    "ValueSet-KBV-VS-MIO-LAB-Type-Diagram.html" : "Typisierung Messdiagramm",
     "ValueSet-KBV-VS-MIO-LAB-Laboratory-Analyzer-SNOMED-CT.html" : "Laboranalysegerät SNOMED CT®",
-    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+    "ValueSet-KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT.html" : "Probenentnahme-Methode SNOMED CT®",
     "http://hl7.eu/fhir/laboratory/2.0.0/ValueSet-lab-specimenAdditive-eu-lab.html" : "Specimen Additive",
+    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+    "ValueSet-KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT.html" : "Messergebnis Qualitativ SNOMED CT®",
+    "ValueSet-KBV-VS-MIO-LAB-Specimen-Condition.html" : "Zustand Probe",
+    "ValueSet-KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT.html" : "Außerkörperliche Quellen SNOMED CT®",
+    "ValueSet-KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT.html" : "Probenart SNOMED CT®",
+    "ValueSet-KBV-VS-MIO-LAB-Observation-Methods.html" : "Untersuchungsmethode SNOMED CT®",
+    "ValueSet-KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT.html" : "Lokalisation innerhalb Körperstelle SNOMED CT®",
     "ValueSet-KBV-VS-MIO-LAB-Laterality-Body-Structure-SNOMED-CT.html" : "Lateralität Körperstelle SNOMED CT®",
-    "ValueSet-KBV-VS-MIO-LAB-Specimen-Condition.html" : "Zustand Probe"
+    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -203,8 +203,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.1048"],
     "uses" : {
     },
-    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview",
-    "ValueSet-KBV-VS-MIO-LAB-Data-Absent-Reason.html" : "Nichtvorhandensein LOINC®"
+    "ValueSet-KBV-VS-MIO-LAB-Data-Absent-Reason.html" : "Nichtvorhandensein LOINC®",
+    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use",
@@ -216,8 +216,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.2038"],
     "uses" : {
     },
-    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview",
-    "ValueSet-KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo.html" : "Kollektivbezug"
+    "ValueSet-KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo.html" : "Kollektivbezug",
+    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -241,8 +241,8 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview",
-    "ValueSet-KBV-VS-MIO-LAB-Identifier-Type.html" : "Identifier Type"
+    "ValueSet-KBV-VS-MIO-LAB-Identifier-Type.html" : "Identifier Type",
+    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
@@ -266,8 +266,8 @@
     "oids" : ["2.16.840.1.113883.18.317"],
     "uses" : {
     },
-    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview",
-    "ValueSet-KBV-VS-MIO-LAB-Specimen-Condition.html" : "Zustand Probe"
+    "ValueSet-KBV-VS-MIO-LAB-Specimen-Condition.html" : "Zustand Probe",
+    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
@@ -291,8 +291,8 @@
     "oids" : ["2.16.840.1.113883.5.83"],
     "uses" : {
     },
-    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview",
-    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes",
+    "ConceptMap-KBV-CM-MIO-LAB-Overview.html" : "KBV_CM_MIO_LAB_Overview"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",

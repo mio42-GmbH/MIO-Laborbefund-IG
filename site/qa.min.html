@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for KBVMIOLaborbefund</h1>
- <p>Generated Wed Jun 17 15:11:37 CEST 2026, FHIR version 4.0.1 for kbv.mio.laborbefund#1.0.0-update (canonical = <a href="https://fhir.kbv.de">https://fhir.kbv.de</a> (<a href="https://fhir.kbv.de/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Jun 19 12:05:50 CEST 2026, FHIR version 4.0.1 for kbv.mio.laborbefund#1.0.0-update (canonical = <a href="https://fhir.kbv.de">https://fhir.kbv.de</a> (<a href="https://fhir.kbv.de/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.2.9</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = kbv.mio.laborbefund, Canonical = https://fhir.kbv.de</td></tr>
@@ -280,14 +280,14 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Condition&#8203;.code&#8203;.coding[2]&#8203;.system (l15&#8203;/c4)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/alpha-id' version '2020' could not be found, so the code cannot be validated. No versions of this code system are known</b> (from <a href="qa-txservers.html#https://tx.mio42.de/r4">https://tx.mio42.de/r4</a>, see <a href="qa-tx.html#l77">log</a>, or see <a href="#vmi30" onClick="document.getElementById('vmi30').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION_NONE</span><div id="vmi30" style="display:none"><br/><pre>0ms tx-op
-0ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Validate "[http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026#A00 ("Cholera"), http://www.orpha.net|2025#123 ("Björnstad-Syndrom"), http://fhir.de/CodeSystem/bfarm/alpha-id|2020#I6158 ("Ichthyosiformes Ekzem"), http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#404684003 ("Clinical finding (finding)")]"
+1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Validate "[http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026#A00 ("Cholera"), http://www.orpha.net|2025#123 ("Björnstad-Syndrom"), http://fhir.de/CodeSystem/bfarm/alpha-id|2020#I6158 ("Ichthyosiformes Ekzem"), http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#404684003 ("Clinical finding (finding)")]"
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026#A00"
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: CodeSystem found: http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026 for http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: check code in (http://fhir.de/CodeSystem/bfarm/icd-10-gm) at CodeableConcept.coding[0]
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Code "A00" found in http://fhir.de/CodeSystem/bfarm/icd-10-gm|2026
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://www.orpha.net|2025#123"
 1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://fhir.de/CodeSystem/bfarm/alpha-id|2020#I6158"
-1ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#404684003"</pre></div></td><td><a href="StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.html">KBV_PR_MIO_LAB_Condition_Diagnosis</a></td>
+2ms http://fhir.de/ValueSet/bfarm/icd-10-gm|2026|2026: Check "http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#404684003"</pre></div></td><td><a href="StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.html">KBV_PR_MIO_LAB_Condition_Diagnosis</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Condition&#8203;.code&#8203;.coding[0]&#8203;.extension[2]&#8203;.value&#8203;.ofType(Coding) (l39&#8203;/c14)</b></td><td><b>warning</b></td><td><b>Constraint failed: icd-6: 'Wenn die Diagnosesicherheit &quot;V (Verdacht auf)&quot; verwendet wird, dann muss clinicalStatus auf &quot;active&quot; und verificationStatus auf &quot;provisional&quot; oder &quot;differential&quot; gesetzt werden. (code!='V' or (%resource.clinicalStatus.coding.where(code='active').exists() and (%resource.verificationStatus.coding.where(code='provisional').exists() or %resource.verificationStatus.coding.where(code='differential').exists())))' (defined in http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit#icd-6</span></td><td><a href="StructureDefinition-KBV-PR-MIO-LAB-Condition-Diagnosis.html">KBV_PR_MIO_LAB_Condition_Diagnosis</a></td>
@@ -361,8 +361,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[0]: "(^http://hl7.org/fhir/ValueSet/identifier-type)"
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Analysing http://hl7.org/fhir/ValueSet/identifier-type|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Prepare include[0]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(DL,PPN,BRN,MR,MCN,EN,TAX,NIIP,PRN,MD,DR,ACSN,UDI,SNO,SB,PLAC,FILL,JHN)"
-1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
+2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"
@@ -384,8 +384,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[0]: "(^http://hl7.org/fhir/ValueSet/identifier-type)"
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Analysing http://hl7.org/fhir/ValueSet/identifier-type|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Prepare include[0]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(DL,PPN,BRN,MR,MCN,EN,TAX,NIIP,PRN,MD,DR,ACSN,UDI,SNO,SB,PLAC,FILL,JHN)"
-1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
+2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"
@@ -407,8 +407,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[0]: "(^http://hl7.org/fhir/ValueSet/identifier-type)"
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Analysing http://hl7.org/fhir/ValueSet/identifier-type|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: Prepare include[0]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(DL,PPN,BRN,MR,MCN,EN,TAX,NIIP,PRN,MD,DR,ACSN,UDI,SNO,SB,PLAC,FILL,JHN)"
-1ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
-1ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
+2ms http://hl7.org/fhir/ValueSet/identifier-type|4.0.1: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
+2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[1]: "(http://terminology.hl7.org/CodeSystem/v2-0203)(XX,BSNR,LANR,RI,DN,AN,PRN)"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: Prepare include[2]: "(http://fhir.de/CodeSystem/identifier-type-de-basis)"
 2ms http://fhir.de/ValueSet/identifier-type-de-basis|1.5.4: CodeSystem found: "http://fhir.de/CodeSystem/identifier-type-de-basis|1.5.4"

@@ -1,7 +1,7 @@
 {
   "version" : "1.0.0-update",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260617150317",
+  "date" : "20260619115612",
   "name" : "kbv.mio.laborbefund",
   "jurisdiction" : "urn:iso:std:iso:3166#DE"
 }

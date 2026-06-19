@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $.getJSON('infomodell_js_treeview_labbefund.json', function(data) {
-    debugger;
     $('#jstree').jstree({
       'core': {
         'data': data
