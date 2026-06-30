@@ -61,8 +61,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -308,8 +308,8 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe",
@@ -321,8 +321,8 @@
     "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group",
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study"
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Laboratory-Study-Group.html" : "KBV_PR_MIO_LAB_Observation_Laboratory_Study_Group"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT",
@@ -359,8 +359,8 @@
     "uses" : {
     },
     "StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" : "KBV_PR_MIO_LAB_DiagnosticReport",
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" : "KBV_PR_MIO_LAB_Observation_Image_Attachment",
-    "StructureDefinition-KBV-PR-MIO-LAB-DocumentReference.html" : "KBV_PR_MIO_LAB_DocumentReference"
+    "StructureDefinition-KBV-PR-MIO-LAB-DocumentReference.html" : "KBV_PR_MIO_LAB_DocumentReference",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" : "KBV_PR_MIO_LAB_Observation_Image_Attachment"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT",

@@ -1,10 +1,10 @@
 KBVMIOLaborbefund : Validation Results
 =========================================
 
-err = 2, warn = 8, info = 17
+err = 2, warn = 8, info = 16
 $--
 Generated $--. FHIR version $-- for kbv.mio.laborbefund#$-- (canonical = https://fhir.kbv.de)
- Build Errors : 0 / 0 / 2
+ Build Errors : 0 / 0 / 1
  /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/BodyStructure-6894b106-8a91-4cfb-9826-443aed21c98b : 0 / 1 / 2
  /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/BodyStructure-72f65586-b2b5-465f-a792-89fb7545d7bc : 0 / 1 / 2
  /home/viayvasky/Documents/git/MIO-Laborbefund/fsh-generated/resources/Composition-13c807c0-53e7-488e-84bb-023376563cf3 : 0 / 1 / 3
@@ -150,7 +150,6 @@ Generated $--. FHIR version $-- for kbv.mio.laborbefund#$-- (canonical = https:/
 </table>
 == n/a ==
 INFORMATION: /home/viayvasky/Documents/git/MIO-Laborbefund/output/Anwendungsfaelle.html: The html source does not contain the publish box; this is recommended for publishing support
-INFORMATION: Rechtlicher_Rahmen.html: No conformance term found in the text:  347 Fünftes Buch Sozialgesetzbuch (SGB V) sind die an der vertragsärztlichen Versorgung teilnehmenden Leistungserbringer unter Berücksichtigung der Widerspruchsrechte der Versicherten verpflichtet, bei der aktuellen Behandlung selbst erhobene Daten in die ePA einzustellen, wenn diese in semantisch und syntaktisch interoperabler Form vorliegen. Durch die Bezugnahme auf die “Behandlung” wird klar, dass sich diese Pflicht auf die beauftragenden Ärzt:innen und nicht die ausführenden Labore bezieht. Diese Pflicht gilt analog für Leistungserbinger in zugelassenen Krankenhäusern (
 == fsh-generated/resources/BodyStructure-6894b106-8a91-4cfb-9826-443aed21c98b.json ==
 == fsh-generated/resources/BodyStructure-72f65586-b2b5-465f-a792-89fb7545d7bc.json ==
 == fsh-generated/resources/Composition-13c807c0-53e7-488e-84bb-023376563cf3.json ==

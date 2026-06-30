@@ -12,7 +12,11 @@ Version 1.0.0-update - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ImplementationGuide/kbv.mio.laborbefund | *Version*:1.0.0-update |
-| Draft as of 2026-06-19 | *Computable Name*:KBVMIOLaborbefund |
+| Draft as of 2026-06-30 | *Computable Name*:KBVMIOLaborbefund |
+
+🛈 Disclaimer
+
+Dieser Implementation Guide (IG) entstand teilweise parallel zum [Fachkonzept “Digital gestützter Laborprozess - Stufe 1”](https://fachportal.gematik.de/fileadmin/user_upload/gemKPT_FK_epafueralle_dgLP_V1.0.0.pdf)der gematik. Die mio42 GmbH war in den Prozess der Fachkonzepterstellung involviert. Die Ausführungen im IG zum Scope und zur Ausgestaltung des MIO Laborbefund sollten daher inhaltsgleich zum dgLP-Fachkonzept sein. Soweit dennoch Inkonsistenzen festzustellen sind, führt das Fachkonzept.
 
 ### Laborbefunde heute
 
@@ -78,7 +82,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "title" : "MIO Laborbefund",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-19T11:56:12+02:00",
+  "date" : "2026-06-30T11:44:07+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

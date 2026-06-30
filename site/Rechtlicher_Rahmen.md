@@ -45,7 +45,7 @@ Eine sektorenübergreifende Vorgabe zum Austausch von digitalen Labordaten zwisc
 
 ### Vorgaben für Behandelnde zum Einstellen von Laborbefunden in die elektronische Patientenakte
 
-Nach § 347 Fünftes Buch Sozialgesetzbuch (SGB V) sind die an der vertragsärztlichen Versorgung teilnehmenden Leistungserbringer unter Berücksichtigung der Widerspruchsrechte der Versicherten verpflichtet, bei der aktuellen Behandlung selbst erhobene Daten in die ePA einzustellen, wenn diese in semantisch und syntaktisch interoperabler Form vorliegen. Durch die Bezugnahme auf die “Behandlung” wird klar, dass sich diese Pflicht auf die beauftragenden Ärzt:innen und nicht die ausführenden Labore bezieht. Diese Pflicht gilt analog für Leistungserbinger in zugelassenen Krankenhäusern (§ 348 SGB V). Sie besteht nicht, soweit der Übermittlung und Speicherung bspw. erhebliche therapeutische Gründe entgegenstehen (§ 349 Abs. 8 SGB V).
+Nach Paragraph 347 Fünftes Buch Sozialgesetzbuch (SGB V) sind die an der vertragsärztlichen Versorgung teilnehmenden Leistungserbringer unter Berücksichtigung der Widerspruchsrechte der Versicherten verpflichtet, bei der aktuellen Behandlung selbst erhobene Daten in die ePA einzustellen, wenn diese in semantisch und syntaktisch interoperabler Form vorliegen. Durch die Bezugnahme auf die “Behandlung” wird klar, dass sich diese Pflicht auf die beauftragenden Ärzt:innen und nicht die ausführenden Labore bezieht. Diese Pflicht gilt analog für Leistungserbinger in zugelassenen Krankenhäusern (Paragraph 348 SGB V). Sie besteht nicht, soweit der Übermittlung und Speicherung bspw. erhebliche therapeutische Gründe entgegenstehen (Paragraph 349 Abs. 8 SGB V).
 
 ### Europäische Rahmenbedingungen zum Austausch von Labordaten
 
