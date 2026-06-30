@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,71 +8,81 @@
 
 <https://fhir.kbv.de/Composition/13c807c0-53e7-488e-84bb-023376563cf3> a fhir:Composition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "13c807c0-53e7-488e-84bb-023376563cf3"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "13c807c0-53e7-488e-84bb-023376563cf3"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Composition|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+     ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://fhir.kbv.de/DiagnosticReport/a6f3d3de-0857-45ed-916e-087d84391bc3> ;
-       fhir:reference [ fhir:v "DiagnosticReport/a6f3d3de-0857-45ed-916e-087d84391bc3" ]
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/a6f3d3de-0857-45ed-916e-087d84391bc3" ]
      ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.eu/fhir/StructureDefinition/information-recipient"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.eu/fhir/StructureDefinition/information-recipient" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://fhir.kbv.de/PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612> ;
-       fhir:reference [ fhir:v "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612" ]
+       fhir:Reference.reference [ fhir:value "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612" ]
      ]
-  ] ) ; # 
-  fhir:identifier [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "urn:uuid:123456" ]
-  ] ; # 
-  fhir:status [ fhir:v "final"] ; # 
-  fhir:type [
-     fhir:coding ( [
+  ] ;
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:uuid:123456" ]
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a sct:4241000179101 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "4241000179101" ] ;
-       fhir:display [ fhir:v "Laboratory report (record artifact)" ]
-     ] )
-  ] ; # 
-  fhir:subject [
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "4241000179101" ] ;
+       fhir:Coding.display [ fhir:value "Laboratory report (record artifact)" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
      fhir:link <https://fhir.kbv.de/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff> ;
-     fhir:reference [ fhir:v "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
+     fhir:Reference.reference [ fhir:value "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
        ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
      ]
-  ] ; # 
-  fhir:date [ fhir:v "2022-03-23"^^xsd:date] ; # 
-  fhir:author ( [
+  ] ;
+  fhir:Composition.date [ fhir:value "2022-03-23"^^xsd:date] ;
+  fhir:Composition.author [
+     fhir:index 0 ;
      fhir:link <https://fhir.kbv.de/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6> ;
-     fhir:reference [ fhir:v "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6" ]
-  ] ) ; # 
-  fhir:title [ fhir:v "Laboratory Report"] ; # 
-  fhir:attester ( [
-     fhir:mode [ fhir:v "legal" ] ;
-     fhir:time [ fhir:v "2023-03-23"^^xsd:date ] ;
-     fhir:party [
+     fhir:Reference.reference [ fhir:value "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Laboratory Report"] ;
+  fhir:Composition.attester [
+     fhir:index 0 ;
+     fhir:Composition.attester.mode [ fhir:value "legal" ] ;
+     fhir:Composition.attester.time [ fhir:value "2023-03-23"^^xsd:date ] ;
+     fhir:Composition.attester.party [
        fhir:link <https://fhir.kbv.de/PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612> ;
-       fhir:reference [ fhir:v "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612" ]
+       fhir:Reference.reference [ fhir:value "PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612" ]
      ]
-  ] ) . # 
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Composition/13c807c0-53e7-488e-84bb-023376563cf3.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

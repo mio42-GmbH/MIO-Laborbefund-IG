@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,29 +8,35 @@
 
 <https://fhir.kbv.de/DeviceDefinition/25068c1f-a497-4cfe-b4e7-4a7026adf1e6> a fhir:DeviceDefinition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "25068c1f-a497-4cfe-b4e7-4a7026adf1e6"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "25068c1f-a497-4cfe-b4e7-4a7026adf1e6"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Laboratory_Analyzer|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:manufacturer [
-     a fhir:Reference ;
+     ]
+  ] ;
+  fhir:DeviceDefinition.manufacturerReference [
      fhir:link <https://fhir.kbv.de/Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7> ;
-     fhir:reference [ fhir:v "Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7" ]
-  ] ; # 
-  fhir:type [
-     fhir:coding ( [
+     fhir:Reference.reference [ fhir:value "Organization/b1135775-9c67-4d2f-8618-9ef3d1f5f3d7" ]
+  ] ;
+  fhir:DeviceDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a sct:30234008 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "30234008" ] ;
-       fhir:display [ fhir:v "Medical laboratory analyzer, device (physical object)" ]
-     ] )
-  ] . # 
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "30234008" ] ;
+       fhir:Coding.display [ fhir:value "Medical laboratory analyzer, device (physical object)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/DeviceDefinition/25068c1f-a497-4cfe-b4e7-4a7026adf1e6.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

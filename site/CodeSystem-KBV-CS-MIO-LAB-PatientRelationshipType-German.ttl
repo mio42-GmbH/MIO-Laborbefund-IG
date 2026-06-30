@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,392 +7,519 @@
 
 <https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-PatientRelationshipType-German> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "KBV-CS-MIO-LAB-PatientRelationshipType-German"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-PatientRelationshipType-German</b></p><a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-PatientRelationshipType-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Adoptivvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivvater\"> </a></td><td>Adoptivvater</td></tr><tr><td style=\"white-space:nowrap\">Adoptivmutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivmutter\"> </a></td><td>Adoptivmutter</td></tr><tr><td style=\"white-space:nowrap\">Adoptivelternteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivelternteil\"> </a></td><td>Adoptivelternteil</td></tr><tr><td style=\"white-space:nowrap\">Tante<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Tante\"> </a></td><td>Tante</td></tr><tr><td style=\"white-space:nowrap\">Schwager<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwager\"> </a></td><td>Schwager</td></tr><tr><td style=\"white-space:nowrap\">Bruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Bruder\"> </a></td><td>Bruder</td></tr><tr><td style=\"white-space:nowrap\">Kind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Kind\"> </a></td><td>Kind</td></tr><tr><td style=\"white-space:nowrap\">Adoptivkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivkind\"> </a></td><td>Adoptivkind</td></tr><tr><td style=\"white-space:nowrap\">Pflegekind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegekind\"> </a></td><td>Pflegekind</td></tr><tr><td style=\"white-space:nowrap\">Schwiegerkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegerkind\"> </a></td><td>Schwiegerkind</td></tr><tr><td style=\"white-space:nowrap\">Cousine<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousine\"> </a></td><td>Cousin(e)</td></tr><tr><td style=\"white-space:nowrap\">AnsprechpartnerIninNotfaellen<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-AnsprechpartnerIninNotfaellen\"> </a></td><td>AnsprechpartnerIn in Notfällen</td></tr><tr><td style=\"white-space:nowrap\">Adoptivtochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivtochter\"> </a></td><td>Adoptivtochter</td></tr><tr><td style=\"white-space:nowrap\">Tochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Tochter\"> </a></td><td>Tochter</td></tr><tr><td style=\"white-space:nowrap\">Pflegetochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegetochter\"> </a></td><td>Pflegetochter</td></tr><tr><td style=\"white-space:nowrap\">Schwiegertochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegertochter\"> </a></td><td>Schwiegertochter</td></tr><tr><td style=\"white-space:nowrap\">LeiblicheTochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheTochter\"> </a></td><td>Leibliche Tochter</td></tr><tr><td style=\"white-space:nowrap\">Lebenspartnerin<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Lebenspartnerin\"> </a></td><td>Lebenspartner/-in</td></tr><tr><td style=\"white-space:nowrap\">ErweitertesFamilienmitglied<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-ErweitertesFamilienmitglied\"> </a></td><td>Erweitertes Familienmitglied</td></tr><tr><td style=\"white-space:nowrap\">ArbeitgeberIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-ArbeitgeberIn\"> </a></td><td>ArbeitgeberIn</td></tr><tr><td style=\"white-space:nowrap\">Familienmitglied<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Familienmitglied\"> </a></td><td>Familienmitglied</td></tr><tr><td style=\"white-space:nowrap\">EhemaligerEhepartnerIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EhemaligerEhepartnerIn\"> </a></td><td>Ehemalige(r) EhepartnerIn</td></tr><tr><td style=\"white-space:nowrap\">NichtverwandterFreundIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-NichtverwandterFreundIn\"> </a></td><td>Nicht verwandte(r) FreundIn</td></tr><tr><td style=\"white-space:nowrap\">Ziehvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Ziehvater\"> </a></td><td>Ziehvater</td></tr><tr><td style=\"white-space:nowrap\">Schwiegervater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegervater\"> </a></td><td>Schwiegervater</td></tr><tr><td style=\"white-space:nowrap\">Vater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Vater\"> </a></td><td>Vater</td></tr><tr><td style=\"white-space:nowrap\">zweieiigerZwillingsbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-zweieiigerZwillingsbruder\"> </a></td><td>zweieiiger Zwillingsbruder</td></tr><tr><td style=\"white-space:nowrap\">ZweieiigeZwillingsschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-ZweieiigeZwillingsschwester\"> </a></td><td>Zweieiige Zwillingsschwester</td></tr><tr><td style=\"white-space:nowrap\">ZweieiigerZwilling<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-ZweieiigerZwilling\"> </a></td><td>Zweieiiger Zwilling</td></tr><tr><td style=\"white-space:nowrap\">Bundesbehoerde<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Bundesbehoerde\"> </a></td><td>Bundesbehörde</td></tr><tr><td style=\"white-space:nowrap\">werdendeMutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-werdendeMutter\"> </a></td><td>werdende Mutter</td></tr><tr><td style=\"white-space:nowrap\">Urgrossvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvater\"> </a></td><td>Urgroßvater</td></tr><tr><td style=\"white-space:nowrap\">Urgrossmutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmutter\"> </a></td><td>Urgroßmutter</td></tr><tr><td style=\"white-space:nowrap\">Urgrosseltern<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosseltern\"> </a></td><td>Urgroßeltern</td></tr><tr><td style=\"white-space:nowrap\">Grossvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvater\"> </a></td><td>Großvater</td></tr><tr><td style=\"white-space:nowrap\">Grossmutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmutter\"> </a></td><td>Großmutter</td></tr><tr><td style=\"white-space:nowrap\">Enkelkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkelkind\"> </a></td><td>Enkelkind</td></tr><tr><td style=\"white-space:nowrap\">Enkeltochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkeltochter\"> </a></td><td>Enkeltochter</td></tr><tr><td style=\"white-space:nowrap\">Enkelsohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkelsohn\"> </a></td><td>Enkelsohn</td></tr><tr><td style=\"white-space:nowrap\">Grosseltern<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosseltern\"> </a></td><td>Großeltern</td></tr><tr><td style=\"white-space:nowrap\">Halbbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbbruder\"> </a></td><td>Halbbruder</td></tr><tr><td style=\"white-space:nowrap\">Halbgeschwister<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbgeschwister\"> </a></td><td>Halbgeschwister</td></tr><tr><td style=\"white-space:nowrap\">Halbschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbschwester\"> </a></td><td>Halbschwester</td></tr><tr><td style=\"white-space:nowrap\">Ehemann<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Ehemann\"> </a></td><td>Ehemann</td></tr><tr><td style=\"white-space:nowrap\">Schwiegerperson<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegerperson\"> </a></td><td>Schwiegerperson</td></tr><tr><td style=\"white-space:nowrap\">EineiigerZwillingsbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigerZwillingsbruder\"> </a></td><td>Eineiiger Zwillingsbruder</td></tr><tr><td style=\"white-space:nowrap\">EineiigeZwillingsschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigeZwillingsschwester\"> </a></td><td>Eineiige Zwillingsschwester</td></tr><tr><td style=\"white-space:nowrap\">EineiigerZwilling<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigerZwilling\"> </a></td><td>Eineiiger Zwilling</td></tr><tr><td style=\"white-space:nowrap\">Versicherung<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Versicherung\"> </a></td><td>Versicherung</td></tr><tr><td style=\"white-space:nowrap\">Tantemuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Tantemuetterlicherseits\"> </a></td><td>Tante mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Cousinmuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousinmuetterlicherseits\"> </a></td><td>Cousin mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrossvatermuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvatermuetterlicherseits\"> </a></td><td>Urgroßvater mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrossmuttermuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmuttermuetterlicherseits\"> </a></td><td>Urgroßmutter mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrosselternmuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosselternmuetterlicherseits\"> </a></td><td>Urgroßeltern mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grossvatermuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvatermuetterlicherseits\"> </a></td><td>Großvater mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grossmuttermuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmuttermuetterlicherseits\"> </a></td><td>Großmutter mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grosselternmuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosselternmuetterlicherseits\"> </a></td><td>Großeltern mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Pflegemutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegemutter\"> </a></td><td>Pflegemutter</td></tr><tr><td style=\"white-space:nowrap\">Schwiegermutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegermutter\"> </a></td><td>Schwiegermutter</td></tr><tr><td style=\"white-space:nowrap\">Mutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Mutter\"> </a></td><td>Mutter</td></tr><tr><td style=\"white-space:nowrap\">Onkelmuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkelmuetterlicherseits\"> </a></td><td>Onkel mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">NachbarIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-NachbarIn\"> </a></td><td>NachbarIn</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherBruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherBruder\"> </a></td><td>Leiblicher Bruder</td></tr><tr><td style=\"white-space:nowrap\">LeiblichesKind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblichesKind\"> </a></td><td>Leibliches Kind</td></tr><tr><td style=\"white-space:nowrap\">Neffe<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Neffe\"> </a></td><td>Neffe</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherVaterdesFoetus<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherVaterdesFoetus\"> </a></td><td>Leiblicher Vater des Fötus</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherVater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherVater\"> </a></td><td>Leiblicher Vater</td></tr><tr><td style=\"white-space:nowrap\">Nichte<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Nichte\"> </a></td><td>Nichte</td></tr><tr><td style=\"white-space:nowrap\">NichteNeffe<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-NichteNeffe\"> </a></td><td>Nichte/Neffe</td></tr><tr><td style=\"white-space:nowrap\">LeiblicheMutterdesFoetus<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheMutterdesFoetus\"> </a></td><td>Leibliche Mutter des Fötus</td></tr><tr><td style=\"white-space:nowrap\">LeiblicheMutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheMutter\"> </a></td><td>Leibliche Mutter</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherElternteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherElternteil\"> </a></td><td>Leiblicher Elternteil</td></tr><tr><td style=\"white-space:nowrap\">LeiblichesGeschwisterkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblichesGeschwisterkind\"> </a></td><td>Leibliches Geschwisterkind</td></tr><tr><td style=\"white-space:nowrap\">LeiblicheSchwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheSchwester\"> </a></td><td>Leibliche Schwester</td></tr><tr><td style=\"white-space:nowrap\">Kontaktperson<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Kontaktperson\"> </a></td><td>Kontaktperson</td></tr><tr><td style=\"white-space:nowrap\">Selbst<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Selbst\"> </a></td><td>Selbst</td></tr><tr><td style=\"white-space:nowrap\">Andere<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Andere\"> </a></td><td>Andere</td></tr><tr><td style=\"white-space:nowrap\">Tantevaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Tantevaeterlicherseits\"> </a></td><td>Tante väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Cousinvaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousinvaeterlicherseits\"> </a></td><td>Cousin väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrossvatervaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvatervaeterlicherseits\"> </a></td><td>Urgroßvater väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrossmuttervaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmuttervaeterlicherseits\"> </a></td><td>Urgroßmutter väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrosselternvaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosselternvaeterlicherseits\"> </a></td><td>Urgroßeltern väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grossvatervaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvatervaeterlicherseits\"> </a></td><td>Großvater väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grossmuttervaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmuttervaeterlicherseits\"> </a></td><td>Großmutter väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grosselternvaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosselternvaeterlicherseits\"> </a></td><td>Großeltern väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Pflegeeltern<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegeeltern\"> </a></td><td>Pflegeeltern</td></tr><tr><td style=\"white-space:nowrap\">Schwiegereltern<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegereltern\"> </a></td><td>Schwiegereltern</td></tr><tr><td style=\"white-space:nowrap\">Elternteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Elternteil\"> </a></td><td>Elternteil</td></tr><tr><td style=\"white-space:nowrap\">Onkelvaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkelvaeterlicherseits\"> </a></td><td>Onkel väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">MitbewohnerIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-MitbewohnerIn\"> </a></td><td>MitbewohnerIn</td></tr><tr><td style=\"white-space:nowrap\">Schwiegergeschwister<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegergeschwister\"> </a></td><td>Schwiegergeschwister</td></tr><tr><td style=\"white-space:nowrap\">Geschwisterteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Geschwisterteil\"> </a></td><td>Geschwisterteil</td></tr><tr><td style=\"white-space:nowrap\">Lebensgefaehrtein<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Lebensgefaehrtein\"> </a></td><td>Lebensgefährte/-in</td></tr><tr><td style=\"white-space:nowrap\">Schwaegerin<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwaegerin\"> </a></td><td>Schwägerin</td></tr><tr><td style=\"white-space:nowrap\">Schwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwester\"> </a></td><td>Schwester</td></tr><tr><td style=\"white-space:nowrap\">Adoptivsohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivsohn\"> </a></td><td>Adoptivsohn</td></tr><tr><td style=\"white-space:nowrap\">Sohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Sohn\"> </a></td><td>Sohn</td></tr><tr><td style=\"white-space:nowrap\">Pflegesohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegesohn\"> </a></td><td>Pflegesohn</td></tr><tr><td style=\"white-space:nowrap\">Schwiegersohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegersohn\"> </a></td><td>Schwiegersohn</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherSohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherSohn\"> </a></td><td>Leiblicher Sohn</td></tr><tr><td style=\"white-space:nowrap\">EhepartnerIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EhepartnerIn\"> </a></td><td>EhepartnerIn</td></tr><tr><td style=\"white-space:nowrap\">Stiefbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefbruder\"> </a></td><td>Stiefbruder</td></tr><tr><td style=\"white-space:nowrap\">Stiefkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefkind\"> </a></td><td>Stiefkind</td></tr><tr><td style=\"white-space:nowrap\">Stieftochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stieftochter\"> </a></td><td>Stieftochter</td></tr><tr><td style=\"white-space:nowrap\">Stiefvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefvater\"> </a></td><td>Stiefvater</td></tr><tr><td style=\"white-space:nowrap\">Stiefmutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefmutter\"> </a></td><td>Stiefmutter</td></tr><tr><td style=\"white-space:nowrap\">Stiefelternteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefelternteil\"> </a></td><td>Stiefelternteil</td></tr><tr><td style=\"white-space:nowrap\">Stiefgeschwister<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefgeschwister\"> </a></td><td>Stiefgeschwister</td></tr><tr><td style=\"white-space:nowrap\">Stiefschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefschwester\"> </a></td><td>Stiefschwester</td></tr><tr><td style=\"white-space:nowrap\">Stiefsohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefsohn\"> </a></td><td>Stiefsohn</td></tr><tr><td style=\"white-space:nowrap\">Landesbehoerde<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Landesbehoerde\"> </a></td><td>Landesbehörde</td></tr><tr><td style=\"white-space:nowrap\">Zwillingsbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwillingsbruder\"> </a></td><td>Zwillingsbruder</td></tr><tr><td style=\"white-space:nowrap\">Zwillingsschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwillingsschwester\"> </a></td><td>Zwillingsschwester</td></tr><tr><td style=\"white-space:nowrap\">Zwilling<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwilling\"> </a></td><td>Zwilling</td></tr><tr><td style=\"white-space:nowrap\">Onkel<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkel\"> </a></td><td>Onkel</td></tr><tr><td style=\"white-space:nowrap\">Unbekannt<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Unbekannt\"> </a></td><td>Unbekannt</td></tr><tr><td style=\"white-space:nowrap\">Ehefrau<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Ehefrau\"> </a></td><td>Ehefrau</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0-update"] ; # 
-  fhir:name [ fhir:v "KBV_CS_MIO_LAB_PatientRelationshipType_German"] ; # 
-  fhir:title [ fhir:v "PatientRelationshipType German"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-30T11:44:07+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "mio42 GmbH" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://mio.kbv.de" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hello@mio42.de" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für PatientRelationshipType German."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DE" ] ;
-       fhir:display [ fhir:v "Germany" ]
-     ] )
-  ] ) ; # 
-  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "Adoptivvater" ] ;
-     fhir:display [ fhir:v "Adoptivvater" ]
-  ] [
-     fhir:code [ fhir:v "Adoptivmutter" ] ;
-     fhir:display [ fhir:v "Adoptivmutter" ]
-  ] [
-     fhir:code [ fhir:v "Adoptivelternteil" ] ;
-     fhir:display [ fhir:v "Adoptivelternteil" ]
-  ] [
-     fhir:code [ fhir:v "Tante" ] ;
-     fhir:display [ fhir:v "Tante" ]
-  ] [
-     fhir:code [ fhir:v "Schwager" ] ;
-     fhir:display [ fhir:v "Schwager" ]
-  ] [
-     fhir:code [ fhir:v "Bruder" ] ;
-     fhir:display [ fhir:v "Bruder" ]
-  ] [
-     fhir:code [ fhir:v "Kind" ] ;
-     fhir:display [ fhir:v "Kind" ]
-  ] [
-     fhir:code [ fhir:v "Adoptivkind" ] ;
-     fhir:display [ fhir:v "Adoptivkind" ]
-  ] [
-     fhir:code [ fhir:v "Pflegekind" ] ;
-     fhir:display [ fhir:v "Pflegekind" ]
-  ] [
-     fhir:code [ fhir:v "Schwiegerkind" ] ;
-     fhir:display [ fhir:v "Schwiegerkind" ]
-  ] [
-     fhir:code [ fhir:v "Cousine" ] ;
-     fhir:display [ fhir:v "Cousin(e)" ]
-  ] [
-     fhir:code [ fhir:v "AnsprechpartnerIninNotfaellen" ] ;
-     fhir:display [ fhir:v "AnsprechpartnerIn in Notfällen" ]
-  ] [
-     fhir:code [ fhir:v "Adoptivtochter" ] ;
-     fhir:display [ fhir:v "Adoptivtochter" ]
-  ] [
-     fhir:code [ fhir:v "Tochter" ] ;
-     fhir:display [ fhir:v "Tochter" ]
-  ] [
-     fhir:code [ fhir:v "Pflegetochter" ] ;
-     fhir:display [ fhir:v "Pflegetochter" ]
-  ] [
-     fhir:code [ fhir:v "Schwiegertochter" ] ;
-     fhir:display [ fhir:v "Schwiegertochter" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicheTochter" ] ;
-     fhir:display [ fhir:v "Leibliche Tochter" ]
-  ] [
-     fhir:code [ fhir:v "Lebenspartnerin" ] ;
-     fhir:display [ fhir:v "Lebenspartner/-in" ]
-  ] [
-     fhir:code [ fhir:v "ErweitertesFamilienmitglied" ] ;
-     fhir:display [ fhir:v "Erweitertes Familienmitglied" ]
-  ] [
-     fhir:code [ fhir:v "ArbeitgeberIn" ] ;
-     fhir:display [ fhir:v "ArbeitgeberIn" ]
-  ] [
-     fhir:code [ fhir:v "Familienmitglied" ] ;
-     fhir:display [ fhir:v "Familienmitglied" ]
-  ] [
-     fhir:code [ fhir:v "EhemaligerEhepartnerIn" ] ;
-     fhir:display [ fhir:v "Ehemalige(r) EhepartnerIn" ]
-  ] [
-     fhir:code [ fhir:v "NichtverwandterFreundIn" ] ;
-     fhir:display [ fhir:v "Nicht verwandte(r) FreundIn" ]
-  ] [
-     fhir:code [ fhir:v "Ziehvater" ] ;
-     fhir:display [ fhir:v "Ziehvater" ]
-  ] [
-     fhir:code [ fhir:v "Schwiegervater" ] ;
-     fhir:display [ fhir:v "Schwiegervater" ]
-  ] [
-     fhir:code [ fhir:v "Vater" ] ;
-     fhir:display [ fhir:v "Vater" ]
-  ] [
-     fhir:code [ fhir:v "zweieiigerZwillingsbruder" ] ;
-     fhir:display [ fhir:v "zweieiiger Zwillingsbruder" ]
-  ] [
-     fhir:code [ fhir:v "ZweieiigeZwillingsschwester" ] ;
-     fhir:display [ fhir:v "Zweieiige Zwillingsschwester" ]
-  ] [
-     fhir:code [ fhir:v "ZweieiigerZwilling" ] ;
-     fhir:display [ fhir:v "Zweieiiger Zwilling" ]
-  ] [
-     fhir:code [ fhir:v "Bundesbehoerde" ] ;
-     fhir:display [ fhir:v "Bundesbehörde" ]
-  ] [
-     fhir:code [ fhir:v "werdendeMutter" ] ;
-     fhir:display [ fhir:v "werdende Mutter" ]
-  ] [
-     fhir:code [ fhir:v "Urgrossvater" ] ;
-     fhir:display [ fhir:v "Urgroßvater" ]
-  ] [
-     fhir:code [ fhir:v "Urgrossmutter" ] ;
-     fhir:display [ fhir:v "Urgroßmutter" ]
-  ] [
-     fhir:code [ fhir:v "Urgrosseltern" ] ;
-     fhir:display [ fhir:v "Urgroßeltern" ]
-  ] [
-     fhir:code [ fhir:v "Grossvater" ] ;
-     fhir:display [ fhir:v "Großvater" ]
-  ] [
-     fhir:code [ fhir:v "Grossmutter" ] ;
-     fhir:display [ fhir:v "Großmutter" ]
-  ] [
-     fhir:code [ fhir:v "Enkelkind" ] ;
-     fhir:display [ fhir:v "Enkelkind" ]
-  ] [
-     fhir:code [ fhir:v "Enkeltochter" ] ;
-     fhir:display [ fhir:v "Enkeltochter" ]
-  ] [
-     fhir:code [ fhir:v "Enkelsohn" ] ;
-     fhir:display [ fhir:v "Enkelsohn" ]
-  ] [
-     fhir:code [ fhir:v "Grosseltern" ] ;
-     fhir:display [ fhir:v "Großeltern" ]
-  ] [
-     fhir:code [ fhir:v "Halbbruder" ] ;
-     fhir:display [ fhir:v "Halbbruder" ]
-  ] [
-     fhir:code [ fhir:v "Halbgeschwister" ] ;
-     fhir:display [ fhir:v "Halbgeschwister" ]
-  ] [
-     fhir:code [ fhir:v "Halbschwester" ] ;
-     fhir:display [ fhir:v "Halbschwester" ]
-  ] [
-     fhir:code [ fhir:v "Ehemann" ] ;
-     fhir:display [ fhir:v "Ehemann" ]
-  ] [
-     fhir:code [ fhir:v "Schwiegerperson" ] ;
-     fhir:display [ fhir:v "Schwiegerperson" ]
-  ] [
-     fhir:code [ fhir:v "EineiigerZwillingsbruder" ] ;
-     fhir:display [ fhir:v "Eineiiger Zwillingsbruder" ]
-  ] [
-     fhir:code [ fhir:v "EineiigeZwillingsschwester" ] ;
-     fhir:display [ fhir:v "Eineiige Zwillingsschwester" ]
-  ] [
-     fhir:code [ fhir:v "EineiigerZwilling" ] ;
-     fhir:display [ fhir:v "Eineiiger Zwilling" ]
-  ] [
-     fhir:code [ fhir:v "Versicherung" ] ;
-     fhir:display [ fhir:v "Versicherung" ]
-  ] [
-     fhir:code [ fhir:v "Tantemuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Tante mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Cousinmuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Cousin mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Urgrossvatermuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Urgroßvater mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Urgrossmuttermuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Urgroßmutter mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Urgrosselternmuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Urgroßeltern mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Grossvatermuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Großvater mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Grossmuttermuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Großmutter mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Grosselternmuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Großeltern mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Pflegemutter" ] ;
-     fhir:display [ fhir:v "Pflegemutter" ]
-  ] [
-     fhir:code [ fhir:v "Schwiegermutter" ] ;
-     fhir:display [ fhir:v "Schwiegermutter" ]
-  ] [
-     fhir:code [ fhir:v "Mutter" ] ;
-     fhir:display [ fhir:v "Mutter" ]
-  ] [
-     fhir:code [ fhir:v "Onkelmuetterlicherseits" ] ;
-     fhir:display [ fhir:v "Onkel mütterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "NachbarIn" ] ;
-     fhir:display [ fhir:v "NachbarIn" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicherBruder" ] ;
-     fhir:display [ fhir:v "Leiblicher Bruder" ]
-  ] [
-     fhir:code [ fhir:v "LeiblichesKind" ] ;
-     fhir:display [ fhir:v "Leibliches Kind" ]
-  ] [
-     fhir:code [ fhir:v "Neffe" ] ;
-     fhir:display [ fhir:v "Neffe" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicherVaterdesFoetus" ] ;
-     fhir:display [ fhir:v "Leiblicher Vater des Fötus" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicherVater" ] ;
-     fhir:display [ fhir:v "Leiblicher Vater" ]
-  ] [
-     fhir:code [ fhir:v "Nichte" ] ;
-     fhir:display [ fhir:v "Nichte" ]
-  ] [
-     fhir:code [ fhir:v "NichteNeffe" ] ;
-     fhir:display [ fhir:v "Nichte/Neffe" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicheMutterdesFoetus" ] ;
-     fhir:display [ fhir:v "Leibliche Mutter des Fötus" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicheMutter" ] ;
-     fhir:display [ fhir:v "Leibliche Mutter" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicherElternteil" ] ;
-     fhir:display [ fhir:v "Leiblicher Elternteil" ]
-  ] [
-     fhir:code [ fhir:v "LeiblichesGeschwisterkind" ] ;
-     fhir:display [ fhir:v "Leibliches Geschwisterkind" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicheSchwester" ] ;
-     fhir:display [ fhir:v "Leibliche Schwester" ]
-  ] [
-     fhir:code [ fhir:v "Kontaktperson" ] ;
-     fhir:display [ fhir:v "Kontaktperson" ]
-  ] [
-     fhir:code [ fhir:v "Selbst" ] ;
-     fhir:display [ fhir:v "Selbst" ]
-  ] [
-     fhir:code [ fhir:v "Andere" ] ;
-     fhir:display [ fhir:v "Andere" ]
-  ] [
-     fhir:code [ fhir:v "Tantevaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Tante väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Cousinvaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Cousin väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Urgrossvatervaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Urgroßvater väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Urgrossmuttervaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Urgroßmutter väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Urgrosselternvaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Urgroßeltern väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Grossvatervaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Großvater väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Grossmuttervaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Großmutter väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Grosselternvaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Großeltern väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "Pflegeeltern" ] ;
-     fhir:display [ fhir:v "Pflegeeltern" ]
-  ] [
-     fhir:code [ fhir:v "Schwiegereltern" ] ;
-     fhir:display [ fhir:v "Schwiegereltern" ]
-  ] [
-     fhir:code [ fhir:v "Elternteil" ] ;
-     fhir:display [ fhir:v "Elternteil" ]
-  ] [
-     fhir:code [ fhir:v "Onkelvaeterlicherseits" ] ;
-     fhir:display [ fhir:v "Onkel väterlicherseits" ]
-  ] [
-     fhir:code [ fhir:v "MitbewohnerIn" ] ;
-     fhir:display [ fhir:v "MitbewohnerIn" ]
-  ] [
-     fhir:code [ fhir:v "Schwiegergeschwister" ] ;
-     fhir:display [ fhir:v "Schwiegergeschwister" ]
-  ] [
-     fhir:code [ fhir:v "Geschwisterteil" ] ;
-     fhir:display [ fhir:v "Geschwisterteil" ]
-  ] [
-     fhir:code [ fhir:v "Lebensgefaehrtein" ] ;
-     fhir:display [ fhir:v "Lebensgefährte/-in" ]
-  ] [
-     fhir:code [ fhir:v "Schwaegerin" ] ;
-     fhir:display [ fhir:v "Schwägerin" ]
-  ] [
-     fhir:code [ fhir:v "Schwester" ] ;
-     fhir:display [ fhir:v "Schwester" ]
-  ] [
-     fhir:code [ fhir:v "Adoptivsohn" ] ;
-     fhir:display [ fhir:v "Adoptivsohn" ]
-  ] [
-     fhir:code [ fhir:v "Sohn" ] ;
-     fhir:display [ fhir:v "Sohn" ]
-  ] [
-     fhir:code [ fhir:v "Pflegesohn" ] ;
-     fhir:display [ fhir:v "Pflegesohn" ]
-  ] [
-     fhir:code [ fhir:v "Schwiegersohn" ] ;
-     fhir:display [ fhir:v "Schwiegersohn" ]
-  ] [
-     fhir:code [ fhir:v "LeiblicherSohn" ] ;
-     fhir:display [ fhir:v "Leiblicher Sohn" ]
-  ] [
-     fhir:code [ fhir:v "EhepartnerIn" ] ;
-     fhir:display [ fhir:v "EhepartnerIn" ]
-  ] [
-     fhir:code [ fhir:v "Stiefbruder" ] ;
-     fhir:display [ fhir:v "Stiefbruder" ]
-  ] [
-     fhir:code [ fhir:v "Stiefkind" ] ;
-     fhir:display [ fhir:v "Stiefkind" ]
-  ] [
-     fhir:code [ fhir:v "Stieftochter" ] ;
-     fhir:display [ fhir:v "Stieftochter" ]
-  ] [
-     fhir:code [ fhir:v "Stiefvater" ] ;
-     fhir:display [ fhir:v "Stiefvater" ]
-  ] [
-     fhir:code [ fhir:v "Stiefmutter" ] ;
-     fhir:display [ fhir:v "Stiefmutter" ]
-  ] [
-     fhir:code [ fhir:v "Stiefelternteil" ] ;
-     fhir:display [ fhir:v "Stiefelternteil" ]
-  ] [
-     fhir:code [ fhir:v "Stiefgeschwister" ] ;
-     fhir:display [ fhir:v "Stiefgeschwister" ]
-  ] [
-     fhir:code [ fhir:v "Stiefschwester" ] ;
-     fhir:display [ fhir:v "Stiefschwester" ]
-  ] [
-     fhir:code [ fhir:v "Stiefsohn" ] ;
-     fhir:display [ fhir:v "Stiefsohn" ]
-  ] [
-     fhir:code [ fhir:v "Landesbehoerde" ] ;
-     fhir:display [ fhir:v "Landesbehörde" ]
-  ] [
-     fhir:code [ fhir:v "Zwillingsbruder" ] ;
-     fhir:display [ fhir:v "Zwillingsbruder" ]
-  ] [
-     fhir:code [ fhir:v "Zwillingsschwester" ] ;
-     fhir:display [ fhir:v "Zwillingsschwester" ]
-  ] [
-     fhir:code [ fhir:v "Zwilling" ] ;
-     fhir:display [ fhir:v "Zwilling" ]
-  ] [
-     fhir:code [ fhir:v "Onkel" ] ;
-     fhir:display [ fhir:v "Onkel" ]
-  ] [
-     fhir:code [ fhir:v "Unbekannt" ] ;
-     fhir:display [ fhir:v "Unbekannt" ]
-  ] [
-     fhir:code [ fhir:v "Ehefrau" ] ;
-     fhir:display [ fhir:v "Ehefrau" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "KBV-CS-MIO-LAB-PatientRelationshipType-German"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-PatientRelationshipType-German</b></p><a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-PatientRelationshipType-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Adoptivvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivvater\"> </a></td><td>Adoptivvater</td></tr><tr><td style=\"white-space:nowrap\">Adoptivmutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivmutter\"> </a></td><td>Adoptivmutter</td></tr><tr><td style=\"white-space:nowrap\">Adoptivelternteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivelternteil\"> </a></td><td>Adoptivelternteil</td></tr><tr><td style=\"white-space:nowrap\">Tante<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Tante\"> </a></td><td>Tante</td></tr><tr><td style=\"white-space:nowrap\">Schwager<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwager\"> </a></td><td>Schwager</td></tr><tr><td style=\"white-space:nowrap\">Bruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Bruder\"> </a></td><td>Bruder</td></tr><tr><td style=\"white-space:nowrap\">Kind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Kind\"> </a></td><td>Kind</td></tr><tr><td style=\"white-space:nowrap\">Adoptivkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivkind\"> </a></td><td>Adoptivkind</td></tr><tr><td style=\"white-space:nowrap\">Pflegekind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegekind\"> </a></td><td>Pflegekind</td></tr><tr><td style=\"white-space:nowrap\">Schwiegerkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegerkind\"> </a></td><td>Schwiegerkind</td></tr><tr><td style=\"white-space:nowrap\">Cousine<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousine\"> </a></td><td>Cousin(e)</td></tr><tr><td style=\"white-space:nowrap\">AnsprechpartnerIninNotfaellen<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-AnsprechpartnerIninNotfaellen\"> </a></td><td>AnsprechpartnerIn in Notfällen</td></tr><tr><td style=\"white-space:nowrap\">Adoptivtochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivtochter\"> </a></td><td>Adoptivtochter</td></tr><tr><td style=\"white-space:nowrap\">Tochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Tochter\"> </a></td><td>Tochter</td></tr><tr><td style=\"white-space:nowrap\">Pflegetochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegetochter\"> </a></td><td>Pflegetochter</td></tr><tr><td style=\"white-space:nowrap\">Schwiegertochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegertochter\"> </a></td><td>Schwiegertochter</td></tr><tr><td style=\"white-space:nowrap\">LeiblicheTochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheTochter\"> </a></td><td>Leibliche Tochter</td></tr><tr><td style=\"white-space:nowrap\">Lebenspartnerin<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Lebenspartnerin\"> </a></td><td>Lebenspartner/-in</td></tr><tr><td style=\"white-space:nowrap\">ErweitertesFamilienmitglied<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-ErweitertesFamilienmitglied\"> </a></td><td>Erweitertes Familienmitglied</td></tr><tr><td style=\"white-space:nowrap\">ArbeitgeberIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-ArbeitgeberIn\"> </a></td><td>ArbeitgeberIn</td></tr><tr><td style=\"white-space:nowrap\">Familienmitglied<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Familienmitglied\"> </a></td><td>Familienmitglied</td></tr><tr><td style=\"white-space:nowrap\">EhemaligerEhepartnerIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EhemaligerEhepartnerIn\"> </a></td><td>Ehemalige(r) EhepartnerIn</td></tr><tr><td style=\"white-space:nowrap\">NichtverwandterFreundIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-NichtverwandterFreundIn\"> </a></td><td>Nicht verwandte(r) FreundIn</td></tr><tr><td style=\"white-space:nowrap\">Ziehvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Ziehvater\"> </a></td><td>Ziehvater</td></tr><tr><td style=\"white-space:nowrap\">Schwiegervater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegervater\"> </a></td><td>Schwiegervater</td></tr><tr><td style=\"white-space:nowrap\">Vater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Vater\"> </a></td><td>Vater</td></tr><tr><td style=\"white-space:nowrap\">zweieiigerZwillingsbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-zweieiigerZwillingsbruder\"> </a></td><td>zweieiiger Zwillingsbruder</td></tr><tr><td style=\"white-space:nowrap\">ZweieiigeZwillingsschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-ZweieiigeZwillingsschwester\"> </a></td><td>Zweieiige Zwillingsschwester</td></tr><tr><td style=\"white-space:nowrap\">ZweieiigerZwilling<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-ZweieiigerZwilling\"> </a></td><td>Zweieiiger Zwilling</td></tr><tr><td style=\"white-space:nowrap\">Bundesbehoerde<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Bundesbehoerde\"> </a></td><td>Bundesbehörde</td></tr><tr><td style=\"white-space:nowrap\">werdendeMutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-werdendeMutter\"> </a></td><td>werdende Mutter</td></tr><tr><td style=\"white-space:nowrap\">Urgrossvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvater\"> </a></td><td>Urgroßvater</td></tr><tr><td style=\"white-space:nowrap\">Urgrossmutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmutter\"> </a></td><td>Urgroßmutter</td></tr><tr><td style=\"white-space:nowrap\">Urgrosseltern<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosseltern\"> </a></td><td>Urgroßeltern</td></tr><tr><td style=\"white-space:nowrap\">Grossvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvater\"> </a></td><td>Großvater</td></tr><tr><td style=\"white-space:nowrap\">Grossmutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmutter\"> </a></td><td>Großmutter</td></tr><tr><td style=\"white-space:nowrap\">Enkelkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkelkind\"> </a></td><td>Enkelkind</td></tr><tr><td style=\"white-space:nowrap\">Enkeltochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkeltochter\"> </a></td><td>Enkeltochter</td></tr><tr><td style=\"white-space:nowrap\">Enkelsohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Enkelsohn\"> </a></td><td>Enkelsohn</td></tr><tr><td style=\"white-space:nowrap\">Grosseltern<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosseltern\"> </a></td><td>Großeltern</td></tr><tr><td style=\"white-space:nowrap\">Halbbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbbruder\"> </a></td><td>Halbbruder</td></tr><tr><td style=\"white-space:nowrap\">Halbgeschwister<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbgeschwister\"> </a></td><td>Halbgeschwister</td></tr><tr><td style=\"white-space:nowrap\">Halbschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Halbschwester\"> </a></td><td>Halbschwester</td></tr><tr><td style=\"white-space:nowrap\">Ehemann<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Ehemann\"> </a></td><td>Ehemann</td></tr><tr><td style=\"white-space:nowrap\">Schwiegerperson<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegerperson\"> </a></td><td>Schwiegerperson</td></tr><tr><td style=\"white-space:nowrap\">EineiigerZwillingsbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigerZwillingsbruder\"> </a></td><td>Eineiiger Zwillingsbruder</td></tr><tr><td style=\"white-space:nowrap\">EineiigeZwillingsschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigeZwillingsschwester\"> </a></td><td>Eineiige Zwillingsschwester</td></tr><tr><td style=\"white-space:nowrap\">EineiigerZwilling<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EineiigerZwilling\"> </a></td><td>Eineiiger Zwilling</td></tr><tr><td style=\"white-space:nowrap\">Versicherung<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Versicherung\"> </a></td><td>Versicherung</td></tr><tr><td style=\"white-space:nowrap\">Tantemuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Tantemuetterlicherseits\"> </a></td><td>Tante mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Cousinmuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousinmuetterlicherseits\"> </a></td><td>Cousin mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrossvatermuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvatermuetterlicherseits\"> </a></td><td>Urgroßvater mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrossmuttermuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmuttermuetterlicherseits\"> </a></td><td>Urgroßmutter mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrosselternmuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosselternmuetterlicherseits\"> </a></td><td>Urgroßeltern mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grossvatermuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvatermuetterlicherseits\"> </a></td><td>Großvater mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grossmuttermuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmuttermuetterlicherseits\"> </a></td><td>Großmutter mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grosselternmuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosselternmuetterlicherseits\"> </a></td><td>Großeltern mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Pflegemutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegemutter\"> </a></td><td>Pflegemutter</td></tr><tr><td style=\"white-space:nowrap\">Schwiegermutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegermutter\"> </a></td><td>Schwiegermutter</td></tr><tr><td style=\"white-space:nowrap\">Mutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Mutter\"> </a></td><td>Mutter</td></tr><tr><td style=\"white-space:nowrap\">Onkelmuetterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkelmuetterlicherseits\"> </a></td><td>Onkel mütterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">NachbarIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-NachbarIn\"> </a></td><td>NachbarIn</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherBruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherBruder\"> </a></td><td>Leiblicher Bruder</td></tr><tr><td style=\"white-space:nowrap\">LeiblichesKind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblichesKind\"> </a></td><td>Leibliches Kind</td></tr><tr><td style=\"white-space:nowrap\">Neffe<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Neffe\"> </a></td><td>Neffe</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherVaterdesFoetus<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherVaterdesFoetus\"> </a></td><td>Leiblicher Vater des Fötus</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherVater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherVater\"> </a></td><td>Leiblicher Vater</td></tr><tr><td style=\"white-space:nowrap\">Nichte<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Nichte\"> </a></td><td>Nichte</td></tr><tr><td style=\"white-space:nowrap\">NichteNeffe<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-NichteNeffe\"> </a></td><td>Nichte/Neffe</td></tr><tr><td style=\"white-space:nowrap\">LeiblicheMutterdesFoetus<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheMutterdesFoetus\"> </a></td><td>Leibliche Mutter des Fötus</td></tr><tr><td style=\"white-space:nowrap\">LeiblicheMutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheMutter\"> </a></td><td>Leibliche Mutter</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherElternteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherElternteil\"> </a></td><td>Leiblicher Elternteil</td></tr><tr><td style=\"white-space:nowrap\">LeiblichesGeschwisterkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblichesGeschwisterkind\"> </a></td><td>Leibliches Geschwisterkind</td></tr><tr><td style=\"white-space:nowrap\">LeiblicheSchwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicheSchwester\"> </a></td><td>Leibliche Schwester</td></tr><tr><td style=\"white-space:nowrap\">Kontaktperson<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Kontaktperson\"> </a></td><td>Kontaktperson</td></tr><tr><td style=\"white-space:nowrap\">Selbst<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Selbst\"> </a></td><td>Selbst</td></tr><tr><td style=\"white-space:nowrap\">Andere<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Andere\"> </a></td><td>Andere</td></tr><tr><td style=\"white-space:nowrap\">Tantevaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Tantevaeterlicherseits\"> </a></td><td>Tante väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Cousinvaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Cousinvaeterlicherseits\"> </a></td><td>Cousin väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrossvatervaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossvatervaeterlicherseits\"> </a></td><td>Urgroßvater väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrossmuttervaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrossmuttervaeterlicherseits\"> </a></td><td>Urgroßmutter väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Urgrosselternvaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Urgrosselternvaeterlicherseits\"> </a></td><td>Urgroßeltern väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grossvatervaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossvatervaeterlicherseits\"> </a></td><td>Großvater väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grossmuttervaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grossmuttervaeterlicherseits\"> </a></td><td>Großmutter väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Grosselternvaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Grosselternvaeterlicherseits\"> </a></td><td>Großeltern väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">Pflegeeltern<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegeeltern\"> </a></td><td>Pflegeeltern</td></tr><tr><td style=\"white-space:nowrap\">Schwiegereltern<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegereltern\"> </a></td><td>Schwiegereltern</td></tr><tr><td style=\"white-space:nowrap\">Elternteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Elternteil\"> </a></td><td>Elternteil</td></tr><tr><td style=\"white-space:nowrap\">Onkelvaeterlicherseits<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkelvaeterlicherseits\"> </a></td><td>Onkel väterlicherseits</td></tr><tr><td style=\"white-space:nowrap\">MitbewohnerIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-MitbewohnerIn\"> </a></td><td>MitbewohnerIn</td></tr><tr><td style=\"white-space:nowrap\">Schwiegergeschwister<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegergeschwister\"> </a></td><td>Schwiegergeschwister</td></tr><tr><td style=\"white-space:nowrap\">Geschwisterteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Geschwisterteil\"> </a></td><td>Geschwisterteil</td></tr><tr><td style=\"white-space:nowrap\">Lebensgefaehrtein<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Lebensgefaehrtein\"> </a></td><td>Lebensgefährte/-in</td></tr><tr><td style=\"white-space:nowrap\">Schwaegerin<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwaegerin\"> </a></td><td>Schwägerin</td></tr><tr><td style=\"white-space:nowrap\">Schwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwester\"> </a></td><td>Schwester</td></tr><tr><td style=\"white-space:nowrap\">Adoptivsohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Adoptivsohn\"> </a></td><td>Adoptivsohn</td></tr><tr><td style=\"white-space:nowrap\">Sohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Sohn\"> </a></td><td>Sohn</td></tr><tr><td style=\"white-space:nowrap\">Pflegesohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Pflegesohn\"> </a></td><td>Pflegesohn</td></tr><tr><td style=\"white-space:nowrap\">Schwiegersohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Schwiegersohn\"> </a></td><td>Schwiegersohn</td></tr><tr><td style=\"white-space:nowrap\">LeiblicherSohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-LeiblicherSohn\"> </a></td><td>Leiblicher Sohn</td></tr><tr><td style=\"white-space:nowrap\">EhepartnerIn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-EhepartnerIn\"> </a></td><td>EhepartnerIn</td></tr><tr><td style=\"white-space:nowrap\">Stiefbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefbruder\"> </a></td><td>Stiefbruder</td></tr><tr><td style=\"white-space:nowrap\">Stiefkind<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefkind\"> </a></td><td>Stiefkind</td></tr><tr><td style=\"white-space:nowrap\">Stieftochter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stieftochter\"> </a></td><td>Stieftochter</td></tr><tr><td style=\"white-space:nowrap\">Stiefvater<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefvater\"> </a></td><td>Stiefvater</td></tr><tr><td style=\"white-space:nowrap\">Stiefmutter<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefmutter\"> </a></td><td>Stiefmutter</td></tr><tr><td style=\"white-space:nowrap\">Stiefelternteil<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefelternteil\"> </a></td><td>Stiefelternteil</td></tr><tr><td style=\"white-space:nowrap\">Stiefgeschwister<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefgeschwister\"> </a></td><td>Stiefgeschwister</td></tr><tr><td style=\"white-space:nowrap\">Stiefschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefschwester\"> </a></td><td>Stiefschwester</td></tr><tr><td style=\"white-space:nowrap\">Stiefsohn<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Stiefsohn\"> </a></td><td>Stiefsohn</td></tr><tr><td style=\"white-space:nowrap\">Landesbehoerde<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Landesbehoerde\"> </a></td><td>Landesbehörde</td></tr><tr><td style=\"white-space:nowrap\">Zwillingsbruder<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwillingsbruder\"> </a></td><td>Zwillingsbruder</td></tr><tr><td style=\"white-space:nowrap\">Zwillingsschwester<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwillingsschwester\"> </a></td><td>Zwillingsschwester</td></tr><tr><td style=\"white-space:nowrap\">Zwilling<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Zwilling\"> </a></td><td>Zwilling</td></tr><tr><td style=\"white-space:nowrap\">Onkel<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Onkel\"> </a></td><td>Onkel</td></tr><tr><td style=\"white-space:nowrap\">Unbekannt<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Unbekannt\"> </a></td><td>Unbekannt</td></tr><tr><td style=\"white-space:nowrap\">Ehefrau<a name=\"KBV-CS-MIO-LAB-PatientRelationshipType-German-Ehefrau\"> </a></td><td>Ehefrau</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_PatientRelationshipType_German"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-update"] ;
+  fhir:CodeSystem.name [ fhir:value "KBV_CS_MIO_LAB_PatientRelationshipType_German"] ;
+  fhir:CodeSystem.title [ fhir:value "PatientRelationshipType German"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-30T15:39:02+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "mio42 GmbH"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "mio42 GmbH" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://mio.kbv.de" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "hello@mio42.de" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Dieses Codesystem enthält die Codes für deutsche Bezeichner für PatientRelationshipType German."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Adoptivvater" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adoptivvater" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Adoptivmutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adoptivmutter" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Adoptivelternteil" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adoptivelternteil" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Tante" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tante" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwager" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwager" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Bruder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bruder" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Kind" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kind" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Adoptivkind" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adoptivkind" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Pflegekind" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pflegekind" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwiegerkind" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwiegerkind" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Cousine" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cousin(e)" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AnsprechpartnerIninNotfaellen" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AnsprechpartnerIn in Notfällen" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Adoptivtochter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adoptivtochter" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Tochter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tochter" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Pflegetochter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pflegetochter" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwiegertochter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwiegertochter" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicheTochter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leibliche Tochter" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Lebenspartnerin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lebenspartner/-in" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ErweitertesFamilienmitglied" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Erweitertes Familienmitglied" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ArbeitgeberIn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ArbeitgeberIn" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Familienmitglied" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Familienmitglied" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EhemaligerEhepartnerIn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ehemalige(r) EhepartnerIn" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NichtverwandterFreundIn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nicht verwandte(r) FreundIn" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ziehvater" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ziehvater" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwiegervater" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwiegervater" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Vater" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vater" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "zweieiigerZwillingsbruder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "zweieiiger Zwillingsbruder" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZweieiigeZwillingsschwester" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zweieiige Zwillingsschwester" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZweieiigerZwilling" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zweieiiger Zwilling" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Bundesbehoerde" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bundesbehörde" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "werdendeMutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "werdende Mutter" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrossvater" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßvater" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrossmutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßmutter" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrosseltern" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßeltern" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grossvater" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großvater" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grossmutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großmutter" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Enkelkind" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Enkelkind" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Enkeltochter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Enkeltochter" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Enkelsohn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Enkelsohn" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grosseltern" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großeltern" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Halbbruder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Halbbruder" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Halbgeschwister" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Halbgeschwister" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Halbschwester" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Halbschwester" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ehemann" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ehemann" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwiegerperson" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwiegerperson" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EineiigerZwillingsbruder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eineiiger Zwillingsbruder" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EineiigeZwillingsschwester" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eineiige Zwillingsschwester" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EineiigerZwilling" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eineiiger Zwilling" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Versicherung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Versicherung" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Tantemuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tante mütterlicherseits" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Cousinmuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cousin mütterlicherseits" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrossvatermuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßvater mütterlicherseits" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrossmuttermuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßmutter mütterlicherseits" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrosselternmuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßeltern mütterlicherseits" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grossvatermuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großvater mütterlicherseits" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grossmuttermuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großmutter mütterlicherseits" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grosselternmuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großeltern mütterlicherseits" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Pflegemutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pflegemutter" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwiegermutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwiegermutter" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Mutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mutter" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Onkelmuetterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Onkel mütterlicherseits" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NachbarIn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NachbarIn" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicherBruder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leiblicher Bruder" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblichesKind" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leibliches Kind" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Neffe" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neffe" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicherVaterdesFoetus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leiblicher Vater des Fötus" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicherVater" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leiblicher Vater" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Nichte" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nichte" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NichteNeffe" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nichte/Neffe" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicheMutterdesFoetus" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leibliche Mutter des Fötus" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicheMutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leibliche Mutter" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicherElternteil" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leiblicher Elternteil" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblichesGeschwisterkind" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leibliches Geschwisterkind" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicheSchwester" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leibliche Schwester" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Kontaktperson" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kontaktperson" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Selbst" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Selbst" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Andere" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Andere" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Tantevaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tante väterlicherseits" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Cousinvaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cousin väterlicherseits" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrossvatervaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßvater väterlicherseits" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrossmuttervaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßmutter väterlicherseits" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urgrosselternvaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urgroßeltern väterlicherseits" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grossvatervaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großvater väterlicherseits" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grossmuttervaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großmutter väterlicherseits" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Grosselternvaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Großeltern väterlicherseits" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Pflegeeltern" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pflegeeltern" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwiegereltern" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwiegereltern" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Elternteil" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Elternteil" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Onkelvaeterlicherseits" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Onkel väterlicherseits" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MitbewohnerIn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MitbewohnerIn" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwiegergeschwister" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwiegergeschwister" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Geschwisterteil" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Geschwisterteil" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Lebensgefaehrtein" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lebensgefährte/-in" ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwaegerin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwägerin" ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwester" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwester" ]
+  ], [
+     fhir:index 95 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Adoptivsohn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adoptivsohn" ]
+  ], [
+     fhir:index 96 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Sohn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sohn" ]
+  ], [
+     fhir:index 97 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Pflegesohn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pflegesohn" ]
+  ], [
+     fhir:index 98 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwiegersohn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwiegersohn" ]
+  ], [
+     fhir:index 99 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LeiblicherSohn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Leiblicher Sohn" ]
+  ], [
+     fhir:index 100 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EhepartnerIn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EhepartnerIn" ]
+  ], [
+     fhir:index 101 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stiefbruder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stiefbruder" ]
+  ], [
+     fhir:index 102 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stiefkind" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stiefkind" ]
+  ], [
+     fhir:index 103 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stieftochter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stieftochter" ]
+  ], [
+     fhir:index 104 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stiefvater" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stiefvater" ]
+  ], [
+     fhir:index 105 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stiefmutter" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stiefmutter" ]
+  ], [
+     fhir:index 106 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stiefelternteil" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stiefelternteil" ]
+  ], [
+     fhir:index 107 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stiefgeschwister" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stiefgeschwister" ]
+  ], [
+     fhir:index 108 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stiefschwester" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stiefschwester" ]
+  ], [
+     fhir:index 109 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Stiefsohn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stiefsohn" ]
+  ], [
+     fhir:index 110 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Landesbehoerde" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Landesbehörde" ]
+  ], [
+     fhir:index 111 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Zwillingsbruder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zwillingsbruder" ]
+  ], [
+     fhir:index 112 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Zwillingsschwester" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zwillingsschwester" ]
+  ], [
+     fhir:index 113 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Zwilling" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zwilling" ]
+  ], [
+     fhir:index 114 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Onkel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Onkel" ]
+  ], [
+     fhir:index 115 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Unbekannt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unbekannt" ]
+  ], [
+     fhir:index 116 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ehefrau" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ehefrau" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-PatientRelationshipType-German.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,60 +8,71 @@
 
 <https://fhir.kbv.de/Observation/7813a2dc-36aa-41ce-b5f5-f338e944b5e9> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "7813a2dc-36aa-41ce-b5f5-f338e944b5e9"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:20:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "7813a2dc-36aa-41ce-b5f5-f338e944b5e9"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:20:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Attachment ;
-       fhir:contentType [ fhir:v "image/jpeg" ] ;
-       fhir:data [ fhir:v "dGVzdA=="^^xsd:base64Binary ] ;
-       fhir:title [ fhir:v "Protein-Elektrophoresekurve" ]
      ]
-  ] ) ; # 
-  fhir:status [ fhir:v "final"] ; # 
-  fhir:code [
-     fhir:coding ( [
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value" ] ;
+     fhir:Extension.valueAttachment [
+       fhir:Attachment.contentType [ fhir:value "image/jpeg" ] ;
+       fhir:Attachment.data [ fhir:value "dGVzdA=="^^xsd:base64Binary ] ;
+       fhir:Attachment.title [ fhir:value "Protein-Elektrophoresekurve" ]
+     ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a sct:703450007 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "703450007" ] ;
-       fhir:display [ fhir:v "Electrophoresis technique (qualifier value)" ]
-     ] )
-  ] ; # 
-  fhir:subject [
-     fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
-       ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "703450007" ] ;
+       fhir:Coding.display [ fhir:value "Electrophoresis technique (qualifier value)" ]
      ]
-  ] ; # 
-  fhir:performer ( [
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:Reference.reference [ fhir:value "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
+       ] ;
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
+     ]
+  ] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
      fhir:link <https://fhir.kbv.de/PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a> ;
-     fhir:reference [ fhir:v "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a" ]
-  ] ) ; # 
-  fhir:note ( [
-     fhir:text [ fhir:v "Erneute Testung in 3 Monaten" ]
-  ] ) ; # 
-  fhir:derivedFrom ( [
+     fhir:Reference.reference [ fhir:value "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a" ]
+  ] ;
+  fhir:Observation.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Erneute Testung in 3 Monaten" ]
+  ] ;
+  fhir:Observation.derivedFrom [
+     fhir:index 0 ;
      fhir:link <https://fhir.kbv.de/Observation/51b6129a-b68c-485d-a37b-9593fee4354f> ;
-     fhir:reference [ fhir:v "Observation/51b6129a-b68c-485d-a37b-9593fee4354f" ]
-  ] ) . # 
+     fhir:Reference.reference [ fhir:value "Observation/51b6129a-b68c-485d-a37b-9593fee4354f" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Observation/7813a2dc-36aa-41ce-b5f5-f338e944b5e9.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

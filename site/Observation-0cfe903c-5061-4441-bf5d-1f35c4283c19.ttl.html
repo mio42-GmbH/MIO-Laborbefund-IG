@@ -286,57 +286,82 @@ MIO Laborbefund
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix sct: &lt;http://snomed.info/id/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:Observation ;
+&lt;http://hl7.org/fhir/Observation/0cfe903c-5061-4441-bf5d-1f35c4283c19&gt; a fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;0cfe903c-5061-4441-bf5d-1f35c4283c19&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:meta</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">fhir:versionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-05-03T11:20:00+01:00&quot;^^xsd:dateTime ] ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/domainresource.html#Observation.extension">fhir:extension</a> ( [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">a</a> fhir:Attachment ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">fhir:contentType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;image/jpeg&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">fhir:data</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">fhir:v</a> &quot;dGVzdA==&quot;^^xsd:base64Binary ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Protein-Elektrophoresekurve&quot; ]     ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a sct:703450007 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/11000274103/version/20251115&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;703450007&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Electrophoresis technique (qualifier value)&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff&quot; ] ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:identifier</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
-        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/CodeSystem/identifier-type-de-basis&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;KVZ10&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Krankenversichertennummer&quot; ]         ] )       ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/sid/gkv/kvid-10&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;K123456789&quot; ]     ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> ( [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.derivedFrom">fhir:derivedFrom</a> ( [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/96f33ca8-872d-4c8b-972e-b681db27d9df&quot; ]
-  ] ) . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;0cfe903c-5061-4441-bf5d-1f35c4283c19&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">fhir:Meta.versionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;1&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2023-05-03T11:20:00+01:00&quot;^^xsd:dateTime ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Image_Attachment|1.0.0-update&gt;
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#Observation.extension">fhir:DomainResource.extension</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueAttachment</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">fhir:Attachment.contentType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;image/jpeg&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">fhir:Attachment.data</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">fhir:value</a> &quot;dGVzdA==&quot;^^xsd:base64Binary ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">fhir:Attachment.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Protein-Elektrophoresekurve&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:Observation.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;final&quot;] ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:Observation.code</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       a sct:703450007 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:Coding.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://snomed.info/sct/11000274103/version/20251115&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;703450007&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Electrophoresis technique (qualifier value)&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:Observation.subject</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:Reference.identifier</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/CodeSystem/identifier-type-de-basis&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;KVZ10&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Krankenversichertennummer&quot; ]
+         ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/sid/gkv/kvid-10&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;K123456789&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:Observation.performer</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.derivedFrom">fhir:Observation.derivedFrom</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Observation/96f33ca8-872d-4c8b-972e-b681db27d9df&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Observation/96f33ca8-872d-4c8b-972e-b681db27d9df&quot; ]
+  ] .
+
+&lt;http://hl7.org/fhir/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff&gt; a fhir:Patient .
+
+&lt;http://hl7.org/fhir/PractitionerRole/bd9d76e7-9fa1-42a4-b364-f93845994612&gt; a fhir:PractitionerRole .
+
+&lt;http://hl7.org/fhir/Observation/96f33ca8-872d-4c8b-972e-b681db27d9df&gt; a fhir:Observation .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/Observation/0cfe903c-5061-4441-bf5d-1f35c4283c19.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/Observation/0cfe903c-5061-4441-bf5d-1f35c4283c19.ttl&gt; .
 
 </code></pre>
 
@@ -366,7 +391,7 @@ a sct:703450007 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Jun 30, 2026 11:44+0200">2026-06-30</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Jun 30, 2026 15:39+0200">2026-06-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

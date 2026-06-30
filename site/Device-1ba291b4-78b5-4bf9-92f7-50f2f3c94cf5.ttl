@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,17 +7,23 @@
 
 <https://fhir.kbv.de/Device/1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5> a fhir:Device ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Specimen_Container|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:definition [
+     ]
+  ] ;
+  fhir:Device.definition [
      fhir:link <https://fhir.kbv.de/DeviceDefinition/01021964-005b-4dd5-975d-2e9a9fa917d9> ;
-     fhir:reference [ fhir:v "DeviceDefinition/01021964-005b-4dd5-975d-2e9a9fa917d9" ]
-  ] . # 
+     fhir:Reference.reference [ fhir:value "DeviceDefinition/01021964-005b-4dd5-975d-2e9a9fa917d9" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Device/1ba291b4-78b5-4bf9-92f7-50f2f3c94cf5.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

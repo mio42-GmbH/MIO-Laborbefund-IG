@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,131 +7,133 @@
 
 <https://fhir.kbv.de/RelatedPerson/778e032a-723a-4f3e-915f-ffbc5488b369> a fhir:RelatedPerson ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "778e032a-723a-4f3e-915f-ffbc5488b369"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "778e032a-723a-4f3e-915f-ffbc5488b369"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [ fhir:v "http://testsystem.de"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "testValue" ]
-  ] ) ; # 
-  fhir:patient [
-     fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
-       ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
      ]
-  ] ; # 
-  fhir:relationship ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "3.0.0" ] ;
-       fhir:code [ fhir:v "C" ] ;
-       fhir:display [ fhir:v "Ansprechpartner in Notfällen" ]
-     ] ) ;
-     fhir:text [ fhir:v "Notfallkontakt" ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:text [ fhir:v "Gräfin Dr. Silvia von Glücklich" ] ;
-     fhir:family [
-       fhir:v "Hans" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Glücklich"
+  ] ;
+  fhir:RelatedPerson.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://testsystem.de" ] ;
+     fhir:Identifier.value [ fhir:value "testValue" ]
+  ] ;
+  fhir:RelatedPerson.patient [
+     fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:Reference.reference [ fhir:value "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
          ]
-       ] [
-         fhir:url [ fhir:v "http://fhir.de/StructureDefinition/humanname-namenszusatz"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Gräfin"
-         ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "von"
-         ]
-       ] )
+       ] ;
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
+     ]
+  ] ;
+  fhir:RelatedPerson.relationship [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131" ] ;
+       fhir:Coding.version [ fhir:value "3.0.0" ] ;
+       fhir:Coding.code [ fhir:value "C" ] ;
+       fhir:Coding.display [ fhir:value "Ansprechpartner in Notfällen" ]
      ] ;
-     fhir:given ( [ fhir:v "Silvia" ] ) ;
-     fhir:prefix ( [
-       fhir:v "Dr" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
-           fhir:v "AC"
-         ]
-       ] )
-     ] )
-  ] ) ; # 
-  fhir:telecom ( [
-     fhir:system [ fhir:v "phone" ] ;
-     fhir:value [ fhir:v "1474743458" ]
-  ] ) ; # 
-  fhir:gender [
-     fhir:v "other" ;
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://fhir.de/StructureDefinition/gender-amtlich-de"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "http://fhir.de/CodeSystem/gender-amtlich-de"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "X" ] ;
-         fhir:display [ fhir:v "unbestimmt" ]
+     fhir:CodeableConcept.text [ fhir:value "Notfallkontakt" ]
+  ] ;
+  fhir:RelatedPerson.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.text [ fhir:value "Gräfin Dr. Silvia von Glücklich" ] ;
+     fhir:HumanName.family [
+       fhir:value "Hans" ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-own-name" ] ;
+         fhir:Extension.valueString [ fhir:value "Glücklich" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "http://fhir.de/StructureDefinition/humanname-namenszusatz" ] ;
+         fhir:Extension.valueString [ fhir:value "Gräfin" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" ] ;
+         fhir:Extension.valueString [ fhir:value "von" ]
        ]
-     ] )
-  ] ; # 
-  fhir:address ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "Schöneberg"
+     ] ;
+     fhir:HumanName.given [
+       fhir:value "Silvia" ;
+       fhir:index 0
+     ] ;
+     fhir:HumanName.prefix [
+       fhir:value "Dr" ;
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" ] ;
+         fhir:Extension.valueCode [ fhir:value "AC" ]
        ]
-     ] ) ;
-     fhir:type [ fhir:v "both" ] ;
-     fhir:line ( [
-       fhir:v "Schöneberg" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Mittestr"
-         ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "43"
-         ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Nebenhaus"
-         ]
-       ] )
-     ] ) ;
-     fhir:city [ fhir:v "Berlin" ] ;
-     fhir:postalCode [ fhir:v "12015" ] ;
-     fhir:country [ fhir:v "D" ]
-  ] ) . # 
+     ]
+  ] ;
+  fhir:RelatedPerson.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "1474743458" ]
+  ] ;
+  fhir:RelatedPerson.gender [
+     fhir:value "other" ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://fhir.de/StructureDefinition/gender-amtlich-de" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/gender-amtlich-de" ] ;
+         fhir:Coding.code [ fhir:value "X" ] ;
+         fhir:Coding.display [ fhir:value "unbestimmt" ]
+       ]
+     ]
+  ] ;
+  fhir:RelatedPerson.address [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct" ] ;
+       fhir:Extension.valueString [ fhir:value "Schöneberg" ]
+     ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.line [
+       fhir:value "Schöneberg" ;
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ] ;
+         fhir:Extension.valueString [ fhir:value "Mittestr" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ] ;
+         fhir:Extension.valueString [ fhir:value "43" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator" ] ;
+         fhir:Extension.valueString [ fhir:value "Nebenhaus" ]
+       ]
+     ] ;
+     fhir:Address.city [ fhir:value "Berlin" ] ;
+     fhir:Address.postalCode [ fhir:value "12015" ] ;
+     fhir:Address.country [ fhir:value "D" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/RelatedPerson/778e032a-723a-4f3e-915f-ffbc5488b369.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

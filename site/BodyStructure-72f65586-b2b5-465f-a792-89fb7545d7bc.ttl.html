@@ -286,46 +286,65 @@ MIO Laborbefund
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix sct: &lt;http://snomed.info/id/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:BodyStructure ;
+&lt;http://hl7.org/fhir/BodyStructure/72f65586-b2b5-465f-a792-89fb7545d7bc&gt; a fhir:BodyStructure ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#BodyStructure.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;72f65586-b2b5-465f-a792-89fb7545d7bc&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/resource.html#BodyStructure.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/domainresource.html#BodyStructure.extension">fhir:extension</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;structure&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
-        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a sct:90432007 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/11000274103/version/20251115&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;90432007&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Structure of mucous membrane of nasopharynx (body structure)&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;test&quot; ]       ]     ] ) ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure&quot;^^xsd:anyURI ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/bodystructure.html#BodyStructure.patient">fhir:patient</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff&quot; ] ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:identifier</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
-        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/CodeSystem/identifier-type-de-basis&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;KVZ10&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Krankenversichertennummer&quot; ]         ] )       ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/sid/gkv/kvid-10&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;K123456789&quot; ]     ]
-  ] . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#BodyStructure.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;72f65586-b2b5-465f-a792-89fb7545d7bc&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#BodyStructure.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update&gt;
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#BodyStructure.extension">fhir:DomainResource.extension</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">fhir:Element.extension</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;structure&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+           a sct:90432007 ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:Coding.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://snomed.info/sct/11000274103/version/20251115&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;90432007&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Structure of mucous membrane of nasopharynx (body structure)&quot; ]
+         ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;test&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/bodystructure.html#BodyStructure.patient">fhir:BodyStructure.patient</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:Reference.identifier</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/CodeSystem/identifier-type-de-basis&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;KVZ10&quot; ] ;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Krankenversichertennummer&quot; ]
+         ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/sid/gkv/kvid-10&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;K123456789&quot; ]
+     ]
+  ] .
+
+&lt;http://hl7.org/fhir/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff&gt; a fhir:Patient .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/BodyStructure/72f65586-b2b5-465f-a792-89fb7545d7bc.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/BodyStructure/72f65586-b2b5-465f-a792-89fb7545d7bc.ttl&gt; .
 
 </code></pre>
 
@@ -355,7 +374,7 @@ a sct:90432007 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Jun 30, 2026 11:44+0200">2026-06-30</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Jun 30, 2026 15:39+0200">2026-06-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

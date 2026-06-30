@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <https://loinc.org/rdf/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -10,295 +9,304 @@
 
 <https://fhir.kbv.de/Observation/c1b00183-b205-48a8-9d07-31fc8b6aa74e> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "c1b00183-b205-48a8-9d07-31fc8b6aa74e"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "c1b00183-b205-48a8-9d07-31fc8b6aa74e"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_External_Service"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v true
      ]
-  ] [
-     fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Association_Service"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v true
-     ]
-  ] [
-     fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Accredited_Service"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v true
-     ]
-  ] [
-     fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zlog"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:decimal ;
-       fhir:v "2"^^xsd:decimal
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Ratio ;
-         fhir:numerator [
-           fhir:value [ fhir:v 6.5 ] ;
-           fhir:unit [ fhir:v "mg/dL" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "mg/dL" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_External_Service" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Association_Service" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Accredited_Service" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zlog" ] ;
+     fhir:Extension.valueDecimal [ fhir:value "2"^^xsd:decimal ]
+  ], [
+     fhir:index 4 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "value" ] ;
+       fhir:Extension.valueRatio [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "6.5"^^xsd:decimal ] ;
+           fhir:Quantity.unit [ fhir:value "mg/dL" ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "mg/dL" ]
          ] ;
-         fhir:denominator [
-           fhir:value [ fhir:v 8.5 ] ;
-           fhir:unit [ fhir:v "mg/dL" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "mg/dL" ]
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "8.5"^^xsd:decimal ] ;
+           fhir:Quantity.unit [ fhir:value "mg/dL" ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "mg/dL" ]
          ]
        ]
-     ] [
-       fhir:url [ fhir:v "referenceRange"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Range ;
-         fhir:low [
-           fhir:value [ fhir:v "3"^^xsd:decimal ] ;
-           fhir:unit [ fhir:v "mg/dL" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "mg/dL" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "referenceRange" ] ;
+       fhir:Extension.valueRange [
+         fhir:Range.low [
+           fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+           fhir:Quantity.unit [ fhir:value "mg/dL" ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "mg/dL" ]
          ] ;
-         fhir:high [
-           fhir:value [ fhir:v "10"^^xsd:decimal ] ;
-           fhir:unit [ fhir:v "mg/dL" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "mg/dL" ]
+         fhir:Range.high [
+           fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ] ;
+           fhir:Quantity.unit [ fhir:value "mg/dL" ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "mg/dL" ]
          ]
        ]
-     ] [
-       fhir:url [ fhir:v "zlog"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:decimal ;
-         fhir:v "2"^^xsd:decimal
-       ]
-     ] ) ;
-     fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Alternative_Result"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "5.0.0" ] ;
-         fhir:code [ fhir:v "OBI" ] ;
-         fhir:display [ fhir:v "Observation Instance Identifier" ]
-       ] )
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "zlog" ] ;
+       fhir:Extension.valueDecimal [ fhir:value "2"^^xsd:decimal ]
      ] ;
-     fhir:system [ fhir:v "http://www.acmedasdd.com/identifiers/patient"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "123456" ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "5.0.0" ] ;
-         fhir:code [ fhir:v "UDI" ] ;
-         fhir:display [ fhir:v "Universal Device Identifier" ]
-       ] )
+     fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Alternative_Result" ]
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.version [ fhir:value "5.0.0" ] ;
+         fhir:Coding.code [ fhir:value "OBI" ] ;
+         fhir:Coding.display [ fhir:value "Observation Instance Identifier" ]
+       ]
      ] ;
-     fhir:system [ fhir:v "http://www.acmedasdd.com/identifiers/patient"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "123456" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "final"] ; # 
-  fhir:category ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "laboratory"
+     fhir:Identifier.system [ fhir:value "http://www.acmedasdd.com/identifiers/patient" ] ;
+     fhir:Identifier.value [ fhir:value "123456" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.version [ fhir:value "5.0.0" ] ;
+         fhir:Coding.code [ fhir:value "UDI" ] ;
+         fhir:Coding.display [ fhir:value "Universal Device Identifier" ]
        ]
-     ] ) ;
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "2.0.0" ] ;
-       fhir:code [ fhir:v "laboratory" ] ;
-       fhir:display [ fhir:v "Laboratory" ]
-     ] ) ;
-     fhir:text [ fhir:v "test" ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "studyType"
-       ]
-     ] ) ;
-     fhir:coding ( [
+     ] ;
+     fhir:Identifier.system [ fhir:value "http://www.acmedasdd.com/identifiers/patient" ] ;
+     fhir:Identifier.value [ fhir:value "123456" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator" ] ;
+       fhir:Extension.valueString [ fhir:value "laboratory" ]
+     ] ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.version [ fhir:value "2.0.0" ] ;
+       fhir:Coding.code [ fhir:value "laboratory" ] ;
+       fhir:Coding.display [ fhir:value "Laboratory" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "test" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator" ] ;
+       fhir:Extension.valueString [ fhir:value "studyType" ]
+     ] ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a loinc:18717-9 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "2.82" ] ;
-       fhir:code [ fhir:v "18717-9" ] ;
-       fhir:display [ fhir:v "Blood bank studies (set)" ]
-     ] ) ;
-     fhir:text [ fhir:v "test" ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "testProfile"
-       ]
-     ] ) ;
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "1.0.0-update" ] ;
-       fhir:code [ fhir:v "haemato" ] ;
-       fhir:display [ fhir:v "Hämatologie" ]
-     ] )
-  ] ) ; # 
-  fhir:code [
-     fhir:coding ( [
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.version [ fhir:value "2.82" ] ;
+       fhir:Coding.code [ fhir:value "18717-9" ] ;
+       fhir:Coding.display [ fhir:value "Blood bank studies (set)" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "test" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Diskriminator" ] ;
+       fhir:Extension.valueString [ fhir:value "testProfile" ]
+     ] ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe" ] ;
+       fhir:Coding.version [ fhir:value "1.0.0-update" ] ;
+       fhir:Coding.code [ fhir:value "haemato" ] ;
+       fhir:Coding.display [ fhir:value "Hämatologie" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a loinc:98981-4 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "2.82" ] ;
-       fhir:code [ fhir:v "98981-4" ] ;
-       fhir:display [ fhir:v "Urate [Mass/volume] in Blood" ]
-     ] ) ;
-     fhir:text [ fhir:v "test" ]
-  ] ; # 
-  fhir:subject [
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.version [ fhir:value "2.82" ] ;
+       fhir:Coding.code [ fhir:value "98981-4" ] ;
+       fhir:Coding.display [ fhir:value "Urate [Mass/volume] in Blood" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "test" ]
+  ] ;
+  fhir:Observation.subject [
      fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
+     fhir:Reference.reference [ fhir:value "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
        ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
      ]
-  ] ; # 
-  fhir:effective [
-     a fhir:dateTime ;
-     fhir:v "2021-11-15T11:30:00+01:00"^^xsd:dateTime
-  ] ; # 
-  fhir:issued [ fhir:v "2021-11-15T11:30:00+01:00"^^xsd:dateTime] ; # 
-  fhir:performer ( [
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-11-15T11:30:00+01:00"^^xsd:dateTime] ;
+  fhir:Observation.issued [ fhir:value "2021-11-15T11:30:00+01:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
      fhir:link <https://fhir.kbv.de/PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a> ;
-     fhir:reference [ fhir:v "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a" ]
-  ] ) ; # 
-  fhir:value [
-     a fhir:Ratio ;
-     fhir:numerator [
-       fhir:value [ fhir:v 6.5 ] ;
-       fhir:unit [ fhir:v "mg/dL" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "mg/dL" ]
+     fhir:Reference.reference [ fhir:value "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a" ]
+  ] ;
+  fhir:Observation.valueRatio [
+     fhir:Ratio.numerator [
+       fhir:Quantity.value [ fhir:value "6.5"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mg/dL" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mg/dL" ]
      ] ;
-     fhir:denominator [
-       fhir:value [ fhir:v 8.5 ] ;
-       fhir:unit [ fhir:v "mg/dL" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "mg/dL" ]
+     fhir:Ratio.denominator [
+       fhir:Quantity.value [ fhir:value "8.5"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mg/dL" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mg/dL" ]
      ]
-  ] ; # 
-  fhir:interpretation ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "4.0.0" ] ;
-       fhir:code [ fhir:v "CAR" ] ;
-       fhir:display [ fhir:v "Carrier" ]
-     ] [
+  ] ;
+  fhir:Observation.interpretation [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ] ;
+       fhir:Coding.version [ fhir:value "4.0.0" ] ;
+       fhir:Coding.code [ fhir:value "CAR" ] ;
+       fhir:Coding.display [ fhir:value "Carrier" ]
+     ], [
+       fhir:index 1 ;
        a sct:371152001 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "371152001" ] ;
-       fhir:display [ fhir:v "Assisted (qualifier value)" ]
-     ] ) ;
-     fhir:text [ fhir:v "test" ]
-  ] ) ; # 
-  fhir:note ( [
-     fhir:text [ fhir:v "test" ]
-  ] ) ; # 
-  fhir:method [
-     fhir:coding ( [
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "371152001" ] ;
+       fhir:Coding.display [ fhir:value "Assisted (qualifier value)" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "test" ]
+  ] ;
+  fhir:Observation.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "test" ]
+  ] ;
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a sct:4241000179101 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "4241000179101" ] ;
-       fhir:display [ fhir:v "Laboratory report (record artifact)" ]
-     ] ) ;
-     fhir:text [ fhir:v "Blutgruppe" ]
-  ] ; # 
-  fhir:specimen [
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "4241000179101" ] ;
+       fhir:Coding.display [ fhir:value "Laboratory report (record artifact)" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Blutgruppe" ]
+  ] ;
+  fhir:Observation.specimen [
      fhir:link <https://fhir.kbv.de/Specimen/4f47fe9c-d92e-46f4-ad6d-85740aaa467b> ;
-     fhir:reference [ fhir:v "Specimen/4f47fe9c-d92e-46f4-ad6d-85740aaa467b" ]
-  ] ; # 
-  fhir:device [
+     fhir:Reference.reference [ fhir:value "Specimen/4f47fe9c-d92e-46f4-ad6d-85740aaa467b" ]
+  ] ;
+  fhir:Observation.device [
      fhir:link <https://fhir.kbv.de/Device/18a30aa6-3b2d-4738-9ca9-125a452d14e0> ;
-     fhir:reference [ fhir:v "Device/18a30aa6-3b2d-4738-9ca9-125a452d14e0" ]
-  ] ; # 
-  fhir:referenceRange ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
+     fhir:Reference.reference [ fhir:value "Device/18a30aa6-3b2d-4738-9ca9-125a452d14e0" ]
+  ] ;
+  fhir:Observation.referenceRange [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
            a sct:260394003 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-           fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-           fhir:code [ fhir:v "260394003" ] ;
-           fhir:display [ fhir:v "Normal limits (qualifier value)" ]
-         ] ) ;
-         fhir:text [ fhir:v "note" ]
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+           fhir:Coding.code [ fhir:value "260394003" ] ;
+           fhir:Coding.display [ fhir:value "Normal limits (qualifier value)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "note" ]
        ]
-     ] [
-       fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_No_Linear_Reference_Range"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] ) ;
-     fhir:low [
-       fhir:value [ fhir:v "3"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "mg/dL" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "mg/dL" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_No_Linear_Reference_Range" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
      ] ;
-     fhir:high [
-       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "mg/dL" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "mg/dL" ]
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mg/dL" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mg/dL" ]
      ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/referencerange-meaning"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "1.0.1" ] ;
-         fhir:code [ fhir:v "type" ] ;
-         fhir:display [ fhir:v "Type" ]
-       ] ) ;
-       fhir:text [ fhir:v "test" ]
+     fhir:Observation.referenceRange.high [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mg/dL" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mg/dL" ]
      ] ;
-     fhir:appliesTo ( [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "2.0.0" ] ;
-         fhir:code [ fhir:v "female-typical" ] ;
-         fhir:display [ fhir:v "Apply female-typical setting or reference range" ]
-       ] ) ;
-       fhir:text [ fhir:v "Test" ]
-     ] ) ;
-     fhir:text [ fhir:v "test" ]
-  ] ) ; # 
-  fhir:derivedFrom ( [
+     fhir:Observation.referenceRange.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/referencerange-meaning" ] ;
+         fhir:Coding.version [ fhir:value "1.0.1" ] ;
+         fhir:Coding.code [ fhir:value "type" ] ;
+         fhir:Coding.display [ fhir:value "Type" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "test" ]
+     ] ;
+     fhir:Observation.referenceRange.appliesTo [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use" ] ;
+         fhir:Coding.version [ fhir:value "2.0.0" ] ;
+         fhir:Coding.code [ fhir:value "female-typical" ] ;
+         fhir:Coding.display [ fhir:value "Apply female-typical setting or reference range" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Test" ]
+     ] ;
+     fhir:Observation.referenceRange.text [ fhir:value "test" ]
+  ] ;
+  fhir:Observation.derivedFrom [
+     fhir:index 0 ;
      fhir:link <https://fhir.kbv.de/Observation/035761c3-8934-499f-bf34-3963979afb56> ;
-     fhir:reference [ fhir:v "Observation/035761c3-8934-499f-bf34-3963979afb56" ]
-  ] ) . # 
+     fhir:Reference.reference [ fhir:value "Observation/035761c3-8934-499f-bf34-3963979afb56" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Observation/c1b00183-b205-48a8-9d07-31fc8b6aa74e.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

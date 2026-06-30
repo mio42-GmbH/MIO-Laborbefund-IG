@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,61 +8,74 @@
 
 <https://fhir.kbv.de/Device/18a30aa6-3b2d-4738-9ca9-125a452d14e0> a fhir:Device ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "18a30aa6-3b2d-4738-9ca9-125a452d14e0"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "18a30aa6-3b2d-4738-9ca9-125a452d14e0"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Device_Laboratory_Analyzer|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "5.0.0" ] ;
-         fhir:code [ fhir:v "UDI" ] ;
-         fhir:display [ fhir:v "Universal Device Identifier" ]
-       ] )
+     ]
+  ] ;
+  fhir:Device.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.version [ fhir:value "5.0.0" ] ;
+         fhir:Coding.code [ fhir:value "UDI" ] ;
+         fhir:Coding.display [ fhir:value "Universal Device Identifier" ]
+       ]
      ] ;
-     fhir:system [ fhir:v "http://goodcare.org/devices/id"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "345675" ]
-  ] ) ; # 
-  fhir:definition [
+     fhir:Identifier.system [ fhir:value "http://goodcare.org/devices/id" ] ;
+     fhir:Identifier.value [ fhir:value "345675" ]
+  ] ;
+  fhir:Device.definition [
      fhir:link <https://fhir.kbv.de/DeviceDefinition/25068c1f-a497-4cfe-b4e7-4a7026adf1e6> ;
-     fhir:reference [ fhir:v "DeviceDefinition/25068c1f-a497-4cfe-b4e7-4a7026adf1e6" ]
-  ] ; # 
-  fhir:udiCarrier ( [
-     fhir:deviceIdentifier [ fhir:v "example" ]
-  ] ) ; # 
-  fhir:distinctIdentifier [ fhir:v "example"] ; # 
-  fhir:manufactureDate [ fhir:v "2021-11-15T16:55:00+01:00"^^xsd:dateTime] ; # 
-  fhir:expirationDate [ fhir:v "2021-11-15T16:55:00+01:00"^^xsd:dateTime] ; # 
-  fhir:lotNumber [ fhir:v "12345"] ; # 
-  fhir:serialNumber [ fhir:v "12345"] ; # 
-  fhir:deviceName ( [
-     fhir:name [ fhir:v "Test-Name" ] ;
-     fhir:type [ fhir:v "manufacturer-name" ]
-  ] ) ; # 
-  fhir:modelNumber [ fhir:v "123456789"] ; # 
-  fhir:type [
-     fhir:coding ( [
+     fhir:Reference.reference [ fhir:value "DeviceDefinition/25068c1f-a497-4cfe-b4e7-4a7026adf1e6" ]
+  ] ;
+  fhir:Device.udiCarrier [
+     fhir:index 0 ;
+     fhir:Device.udiCarrier.deviceIdentifier [ fhir:value "example" ]
+  ] ;
+  fhir:Device.distinctIdentifier [ fhir:value "example"] ;
+  fhir:Device.manufactureDate [ fhir:value "2021-11-15T16:55:00+01:00"^^xsd:dateTime] ;
+  fhir:Device.expirationDate [ fhir:value "2021-11-15T16:55:00+01:00"^^xsd:dateTime] ;
+  fhir:Device.lotNumber [ fhir:value "12345"] ;
+  fhir:Device.serialNumber [ fhir:value "12345"] ;
+  fhir:Device.deviceName [
+     fhir:index 0 ;
+     fhir:Device.deviceName.name [ fhir:value "Test-Name" ] ;
+     fhir:Device.deviceName.type [ fhir:value "manufacturer-name" ]
+  ] ;
+  fhir:Device.modelNumber [ fhir:value "123456789"] ;
+  fhir:Device.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a sct:30234008 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "30234008" ] ;
-       fhir:display [ fhir:v "Medical laboratory analyzer, device (physical object)" ]
-     ] ) ;
-     fhir:text [ fhir:v "Medizinisches Laboranalysegerät" ]
-  ] ; # 
-  fhir:version ( [
-     fhir:value [ fhir:v "v1" ]
-  ] ) ; # 
-  fhir:note ( [
-     fhir:text [ fhir:v "test" ]
-  ] ) . # 
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "30234008" ] ;
+       fhir:Coding.display [ fhir:value "Medical laboratory analyzer, device (physical object)" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Medizinisches Laboranalysegerät" ]
+  ] ;
+  fhir:Device.version [
+     fhir:index 0 ;
+     fhir:Device.version.value [ fhir:value "v1" ]
+  ] ;
+  fhir:Device.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "test" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Device/18a30aa6-3b2d-4738-9ca9-125a452d14e0.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

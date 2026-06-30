@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,38 +7,44 @@
 
 <https://fhir.kbv.de/Provenance/5f40f9f7-4474-4080-bb31-a314d1cda038> a fhir:Provenance ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "5f40f9f7-4474-4080-bb31-a314d1cda038"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "5f40f9f7-4474-4080-bb31-a314d1cda038"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:target ( [
-     fhir:link <https://fhir.kbv.de/Observation/035761c3-8934-499f-bf34-3963979afb56> ;
-     fhir:reference [ fhir:v "Observation/035761c3-8934-499f-bf34-3963979afb56" ]
-  ] ) ; # 
-  fhir:occurred [
-     a fhir:dateTime ;
-     fhir:v "2021-11-15T16:00:00+01:00"^^xsd:dateTime
-  ] ; # 
-  fhir:recorded [ fhir:v "2021-11-15T16:00:00+01:00"^^xsd:dateTime] ; # 
-  fhir:activity [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "6.0.0" ] ;
-       fhir:code [ fhir:v "VRF" ] ;
-       fhir:display [ fhir:v "verifier" ]
-     ] )
-  ] ; # 
-  fhir:agent ( [
-     fhir:who [
-       fhir:link <https://fhir.kbv.de/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6> ;
-       fhir:reference [ fhir:v "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6" ]
      ]
-  ] ) . # 
+  ] ;
+  fhir:Provenance.target [
+     fhir:index 0 ;
+     fhir:link <https://fhir.kbv.de/Observation/035761c3-8934-499f-bf34-3963979afb56> ;
+     fhir:Reference.reference [ fhir:value "Observation/035761c3-8934-499f-bf34-3963979afb56" ]
+  ] ;
+  fhir:Provenance.occurredDateTime [ fhir:value "2021-11-15T16:00:00+01:00"^^xsd:dateTime] ;
+  fhir:Provenance.recorded [ fhir:value "2021-11-15T16:00:00+01:00"^^xsd:dateTime] ;
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ] ;
+       fhir:Coding.version [ fhir:value "6.0.0" ] ;
+       fhir:Coding.code [ fhir:value "VRF" ] ;
+       fhir:Coding.display [ fhir:value "verifier" ]
+     ]
+  ] ;
+  fhir:Provenance.agent [
+     fhir:index 0 ;
+     fhir:Provenance.agent.who [
+       fhir:link <https://fhir.kbv.de/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Provenance/5f40f9f7-4474-4080-bb31-a314d1cda038.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

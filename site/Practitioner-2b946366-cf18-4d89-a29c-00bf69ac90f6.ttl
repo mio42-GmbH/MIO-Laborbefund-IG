@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,190 +8,195 @@
 
 <https://fhir.kbv.de/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "2b946366-cf18-4d89-a29c-00bf69ac90f6"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "2b946366-cf18-4d89-a29c-00bf69ac90f6"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "test"
      ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "5.0.0" ] ;
-         fhir:code [ fhir:v "LANR" ] ;
-         fhir:display [ fhir:v "Lifelong physician number" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "123456789" ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "5.0.0" ] ;
-         fhir:code [ fhir:v "DN" ] ;
-         fhir:display [ fhir:v "Doctor number" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "http://fhir.de/sid/bundesaerztekammer/efn"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "123456789123456" ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "ZANR" ] ;
-         fhir:display [ fhir:v "Zahnarztnummer" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "http://fhir.de/sid/kzbv/zahnarztnummer"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "123456789" ]
-  ] [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "5.0.0" ] ;
-         fhir:code [ fhir:v "PRN" ] ;
-         fhir:display [ fhir:v "Provider number" ]
-       ] )
-     ] ;
-     fhir:system [ fhir:v "https://gematik.de/fhir/sid/telematik-id"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "123456789" ]
-  ] [
-     fhir:system [ fhir:v "http://testsystem.de"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "testValue" ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:text [ fhir:v "Dr. Hans Glücklich" ] ;
-     fhir:family [
-       fhir:v "Hans" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Glücklich"
-         ]
-       ] [
-         fhir:url [ fhir:v "http://fhir.de/StructureDefinition/humanname-namenszusatz"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Prinz"
-         ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "von"
-         ]
-       ] )
-     ] ;
-     fhir:given ( [ fhir:v "Hans" ] ) ;
-     fhir:prefix ( [
-       fhir:v "Dr" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
-           fhir:v "AC"
-         ]
-       ] )
-     ] )
-  ] ) ; # 
-  fhir:telecom ( [
-     fhir:system [ fhir:v "phone" ] ;
-     fhir:value [ fhir:v "12123455" ]
-  ] ) ; # 
-  fhir:address ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "Schöneberg"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment" ] ;
+     fhir:Extension.valueString [ fhir:value "test" ]
+  ] ;
+  fhir:Practitioner.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.version [ fhir:value "5.0.0" ] ;
+         fhir:Coding.code [ fhir:value "LANR" ] ;
+         fhir:Coding.display [ fhir:value "Lifelong physician number" ]
        ]
-     ] ) ;
-     fhir:type [ fhir:v "both" ] ;
-     fhir:line ( [
-       fhir:v "Schöneberg" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Mittestr"
-         ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "43"
-         ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Nebenhaus"
-         ]
-       ] )
-     ] ) ;
-     fhir:city [ fhir:v "Berlin" ] ;
-     fhir:postalCode [ fhir:v "12015" ] ;
-     fhir:country [ fhir:v "D" ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "Schöneberg"
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" ] ;
+     fhir:Identifier.value [ fhir:value "123456789" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.version [ fhir:value "5.0.0" ] ;
+         fhir:Coding.code [ fhir:value "DN" ] ;
+         fhir:Coding.display [ fhir:value "Doctor number" ]
        ]
-     ] ) ;
-     fhir:type [ fhir:v "postal" ] ;
-     fhir:line ( [
-       fhir:v "Schöneberg" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Mittestraße 3"
-         ]
-       ] )
-     ] ) ;
-     fhir:city [ fhir:v "Berlin" ] ;
-     fhir:postalCode [ fhir:v "12015" ] ;
-     fhir:country [ fhir:v "D" ]
-  ] ) ; # 
-  fhir:gender [
-     fhir:v "other" ;
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://fhir.de/StructureDefinition/gender-amtlich-de"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "http://fhir.de/CodeSystem/gender-amtlich-de"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "X" ] ;
-         fhir:display [ fhir:v "unbestimmt" ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "http://fhir.de/sid/bundesaerztekammer/efn" ] ;
+     fhir:Identifier.value [ fhir:value "123456789123456" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+         fhir:Coding.code [ fhir:value "ZANR" ] ;
+         fhir:Coding.display [ fhir:value "Zahnarztnummer" ]
        ]
-     ] )
-  ] ; # 
-  fhir:qualification ( [
-     fhir:code [
-       fhir:coding ( [
+     ] ;
+     fhir:Identifier.system [ fhir:value "http://fhir.de/sid/kzbv/zahnarztnummer" ] ;
+     fhir:Identifier.value [ fhir:value "123456789" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.version [ fhir:value "5.0.0" ] ;
+         fhir:Coding.code [ fhir:value "PRN" ] ;
+         fhir:Coding.display [ fhir:value "Provider number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://gematik.de/fhir/sid/telematik-id" ] ;
+     fhir:Identifier.value [ fhir:value "123456789" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Identifier.system [ fhir:value "http://testsystem.de" ] ;
+     fhir:Identifier.value [ fhir:value "testValue" ]
+  ] ;
+  fhir:Practitioner.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.text [ fhir:value "Dr. Hans Glücklich" ] ;
+     fhir:HumanName.family [
+       fhir:value "Hans" ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-own-name" ] ;
+         fhir:Extension.valueString [ fhir:value "Glücklich" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "http://fhir.de/StructureDefinition/humanname-namenszusatz" ] ;
+         fhir:Extension.valueString [ fhir:value "Prinz" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" ] ;
+         fhir:Extension.valueString [ fhir:value "von" ]
+       ]
+     ] ;
+     fhir:HumanName.given [
+       fhir:value "Hans" ;
+       fhir:index 0
+     ] ;
+     fhir:HumanName.prefix [
+       fhir:value "Dr" ;
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" ] ;
+         fhir:Extension.valueCode [ fhir:value "AC" ]
+       ]
+     ]
+  ] ;
+  fhir:Practitioner.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "12123455" ]
+  ] ;
+  fhir:Practitioner.address [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct" ] ;
+       fhir:Extension.valueString [ fhir:value "Schöneberg" ]
+     ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.line [
+       fhir:value "Schöneberg" ;
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ] ;
+         fhir:Extension.valueString [ fhir:value "Mittestr" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ] ;
+         fhir:Extension.valueString [ fhir:value "43" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator" ] ;
+         fhir:Extension.valueString [ fhir:value "Nebenhaus" ]
+       ]
+     ] ;
+     fhir:Address.city [ fhir:value "Berlin" ] ;
+     fhir:Address.postalCode [ fhir:value "12015" ] ;
+     fhir:Address.country [ fhir:value "D" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct" ] ;
+       fhir:Extension.valueString [ fhir:value "Schöneberg" ]
+     ] ;
+     fhir:Address.type [ fhir:value "postal" ] ;
+     fhir:Address.line [
+       fhir:value "Schöneberg" ;
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" ] ;
+         fhir:Extension.valueString [ fhir:value "Mittestraße 3" ]
+       ]
+     ] ;
+     fhir:Address.city [ fhir:value "Berlin" ] ;
+     fhir:Address.postalCode [ fhir:value "12015" ] ;
+     fhir:Address.country [ fhir:value "D" ]
+  ] ;
+  fhir:Practitioner.gender [
+     fhir:value "other" ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://fhir.de/StructureDefinition/gender-amtlich-de" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/gender-amtlich-de" ] ;
+         fhir:Coding.code [ fhir:value "X" ] ;
+         fhir:Coding.display [ fhir:value "unbestimmt" ]
+       ]
+     ]
+  ] ;
+  fhir:Practitioner.qualification [
+     fhir:index 0 ;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
          a sct:26369006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
-         fhir:code [ fhir:v "26369006" ] ;
-         fhir:display [ fhir:v "Public health nurse" ]
-       ] )
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20250515" ] ;
+         fhir:Coding.code [ fhir:value "26369006" ] ;
+         fhir:Coding.display [ fhir:value "Public health nurse" ]
+       ]
      ]
-  ] ) . # 
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

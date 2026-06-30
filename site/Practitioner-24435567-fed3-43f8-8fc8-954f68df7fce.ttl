@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,26 +7,31 @@
 
 <https://fhir.kbv.de/Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "24435567-fed3-43f8-8fc8-954f68df7fce"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "24435567-fed3-43f8-8fc8-954f68df7fce"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:name ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:family [
-       fhir:v "Hans" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Glücklich"
-         ]
-       ] )
      ]
-  ] ) . # 
+  ] ;
+  fhir:Practitioner.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [
+       fhir:value "Hans" ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-own-name" ] ;
+         fhir:Extension.valueString [ fhir:value "Glücklich" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

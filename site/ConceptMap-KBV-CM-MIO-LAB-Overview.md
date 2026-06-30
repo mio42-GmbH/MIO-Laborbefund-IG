@@ -33,7 +33,7 @@ Diese Conceptmap verknüpft die Codes für KBV_CM_MIO_LAB_Overview mit deutschen
   "title" : "KBV_CM_MIO_LAB_Overview",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-30T11:44:07+02:00",
+  "date" : "2026-06-30T15:39:02+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

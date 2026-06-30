@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,312 +7,399 @@
 
 <https://fhir.kbv.de/ValueSet/KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT</b></p><a name=\"KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT\"> </a><a name=\"hcKBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version ?http://snomed.info/sct/11000274103/version/20251115</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260347006\">260347006</a></td><td>+</td><td>+ aus ++++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260348001\">260348001</a></td><td>++</td><td>++ aus ++++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260349009\">260349009</a></td><td>+++</td><td>+++ aus ++++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260350009\">260350009</a></td><td>++++</td><td>++++ aus ++++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/441614007\">441614007</a></td><td>Present one plus out of three plus</td><td>+ aus +++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/441517005\">441517005</a></td><td>Present two plus out of three plus</td><td>++ aus +++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/441521003\">441521003</a></td><td>Present three plus out of three plus</td><td>+++ aus +++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260373001\">260373001</a></td><td>Detected</td><td>Nachgewiesen</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260385009\">260385009</a></td><td>Negative</td><td>Negativ</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260392004\">260392004</a></td><td>Non-patent</td><td>Nicht-durchgängig</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260415000\">260415000</a></td><td>Not detected</td><td>Nicht nachgewiesen</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/52101004\">52101004</a></td><td>Present</td><td>Vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/10828004\">10828004</a></td><td>Positive</td><td>Positiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/2667000\">2667000</a></td><td>Absent</td><td>Abwesend</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/895231008\">895231008</a></td><td>Not detected in pooled specimen</td><td>Nicht nachgewiesen in Poolprobe</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/720735008\">720735008</a></td><td>Presumptive positive</td><td>Vermutlich positiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/373067005\">373067005</a></td><td>No</td><td>Nein</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/373066001\">373066001</a></td><td>Yes</td><td>Ja</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/264887000\">264887000</a></td><td>Not isolated</td><td>Nicht isoliert</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/264868006\">264868006</a></td><td>No growth</td><td>Kein Wachstum</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260413007\">260413007</a></td><td>None</td><td>Kein</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260408008\">260408008</a></td><td>Weakly positive</td><td>Schwach positiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260405006\">260405006</a></td><td>Trace</td><td>Spur</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260389003\">260389003</a></td><td>No reaction</td><td>Keine Reaktion</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/46651001\">46651001</a></td><td>Isolated</td><td>Isoliert</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/419984006\">419984006</a></td><td>Inconclusive</td><td>Nicht auswertbar</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/42425007\">42425007</a></td><td>Equivocal</td><td>Zweideutig</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/82334004\">82334004</a></td><td>Indeterminate</td><td>Uneindeutig</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/62482003\">62482003</a></td><td>Low</td><td>Niedrig</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/11214006\">11214006</a></td><td>Reactive</td><td>Reaktiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/131194007\">131194007</a></td><td>Non-Reactive</td><td>Nicht-reaktiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/280416009\">280416009</a></td><td>Indeterminate result</td><td>Unbestimmtes Ergebnis</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/75540009\">75540009</a></td><td>High</td><td>Hoch</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/455371000124106\">455371000124106</a></td><td>Invalid result</td><td>Ungültiges Ergebnis</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/89292003\">89292003</a></td><td>Rare</td><td>Selten</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/262008008\">262008008</a></td><td>Not performed</td><td>Nicht durchgeführt</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/17621005\">17621005</a></td><td>Normal</td><td>Normal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/277025001\">277025001</a></td><td>Proven</td><td>Erwiesen</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0-update"] ; # 
-  fhir:name [ fhir:v "KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"] ; # 
-  fhir:title [ fhir:v "Messergebnis Qualitativ SNOMED CT®"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-30T11:44:07+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "mio42 GmbH" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://mio.kbv.de" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hello@mio42.de" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Dieses Valueset enthält die Codes zur Beschreibung von Messergebnis Qualitativ SNOMED CT®."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DE" ] ;
-       fhir:display [ fhir:v "Germany" ]
-     ] )
-  ] ) ; # 
-  fhir:immutable [ fhir:v false] ; # 
-  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "260347006" ] ;
-         fhir:display [ fhir:v "+" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "+ aus ++++ vorhanden" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260348001" ] ;
-         fhir:display [ fhir:v "++" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "++ aus ++++ vorhanden" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260349009" ] ;
-         fhir:display [ fhir:v "+++" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "+++ aus ++++ vorhanden" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260350009" ] ;
-         fhir:display [ fhir:v "++++" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "++++ aus ++++ vorhanden" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "441614007" ] ;
-         fhir:display [ fhir:v "Present one plus out of three plus" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "+ aus +++ vorhanden" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "441517005" ] ;
-         fhir:display [ fhir:v "Present two plus out of three plus" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "++ aus +++ vorhanden" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "441521003" ] ;
-         fhir:display [ fhir:v "Present three plus out of three plus" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "+++ aus +++ vorhanden" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260373001" ] ;
-         fhir:display [ fhir:v "Detected" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nachgewiesen" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260385009" ] ;
-         fhir:display [ fhir:v "Negative" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Negativ" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260392004" ] ;
-         fhir:display [ fhir:v "Non-patent" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nicht-durchgängig" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260415000" ] ;
-         fhir:display [ fhir:v "Not detected" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nicht nachgewiesen" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "52101004" ] ;
-         fhir:display [ fhir:v "Present" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Vorhanden" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "10828004" ] ;
-         fhir:display [ fhir:v "Positive" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Positiv" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "2667000" ] ;
-         fhir:display [ fhir:v "Absent" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Abwesend" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "895231008" ] ;
-         fhir:display [ fhir:v "Not detected in pooled specimen" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nicht nachgewiesen in Poolprobe" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "720735008" ] ;
-         fhir:display [ fhir:v "Presumptive positive" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Vermutlich positiv" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "373067005" ] ;
-         fhir:display [ fhir:v "No" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nein" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "373066001" ] ;
-         fhir:display [ fhir:v "Yes" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Ja" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "264887000" ] ;
-         fhir:display [ fhir:v "Not isolated" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nicht isoliert" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "264868006" ] ;
-         fhir:display [ fhir:v "No growth" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Kein Wachstum" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260413007" ] ;
-         fhir:display [ fhir:v "None" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Kein" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260408008" ] ;
-         fhir:display [ fhir:v "Weakly positive" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Schwach positiv" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260405006" ] ;
-         fhir:display [ fhir:v "Trace" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Spur" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "260389003" ] ;
-         fhir:display [ fhir:v "No reaction" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Keine Reaktion" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "46651001" ] ;
-         fhir:display [ fhir:v "Isolated" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Isoliert" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "419984006" ] ;
-         fhir:display [ fhir:v "Inconclusive" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nicht auswertbar" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "42425007" ] ;
-         fhir:display [ fhir:v "Equivocal" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Zweideutig" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "82334004" ] ;
-         fhir:display [ fhir:v "Indeterminate" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Uneindeutig" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "62482003" ] ;
-         fhir:display [ fhir:v "Low" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Niedrig" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "11214006" ] ;
-         fhir:display [ fhir:v "Reactive" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Reaktiv" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "131194007" ] ;
-         fhir:display [ fhir:v "Non-Reactive" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nicht-reaktiv" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "280416009" ] ;
-         fhir:display [ fhir:v "Indeterminate result" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Unbestimmtes Ergebnis" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "75540009" ] ;
-         fhir:display [ fhir:v "High" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Hoch" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "455371000124106" ] ;
-         fhir:display [ fhir:v "Invalid result" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Ungültiges Ergebnis" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "89292003" ] ;
-         fhir:display [ fhir:v "Rare" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Selten" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "262008008" ] ;
-         fhir:display [ fhir:v "Not performed" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Nicht durchgeführt" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "17621005" ] ;
-         fhir:display [ fhir:v "Normal" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Normal" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "277025001" ] ;
-         fhir:display [ fhir:v "Proven" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Erwiesen" ]
-         ] )
-       ] )
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT</b></p><a name=\"KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT\"> </a><a name=\"hcKBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version ?http://snomed.info/sct/11000274103/version/20251115</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260347006\">260347006</a></td><td>+</td><td>+ aus ++++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260348001\">260348001</a></td><td>++</td><td>++ aus ++++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260349009\">260349009</a></td><td>+++</td><td>+++ aus ++++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260350009\">260350009</a></td><td>++++</td><td>++++ aus ++++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/441614007\">441614007</a></td><td>Present one plus out of three plus</td><td>+ aus +++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/441517005\">441517005</a></td><td>Present two plus out of three plus</td><td>++ aus +++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/441521003\">441521003</a></td><td>Present three plus out of three plus</td><td>+++ aus +++ vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260373001\">260373001</a></td><td>Detected</td><td>Nachgewiesen</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260385009\">260385009</a></td><td>Negative</td><td>Negativ</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260392004\">260392004</a></td><td>Non-patent</td><td>Nicht-durchgängig</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260415000\">260415000</a></td><td>Not detected</td><td>Nicht nachgewiesen</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/52101004\">52101004</a></td><td>Present</td><td>Vorhanden</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/10828004\">10828004</a></td><td>Positive</td><td>Positiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/2667000\">2667000</a></td><td>Absent</td><td>Abwesend</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/895231008\">895231008</a></td><td>Not detected in pooled specimen</td><td>Nicht nachgewiesen in Poolprobe</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/720735008\">720735008</a></td><td>Presumptive positive</td><td>Vermutlich positiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/373067005\">373067005</a></td><td>No</td><td>Nein</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/373066001\">373066001</a></td><td>Yes</td><td>Ja</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/264887000\">264887000</a></td><td>Not isolated</td><td>Nicht isoliert</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/264868006\">264868006</a></td><td>No growth</td><td>Kein Wachstum</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260413007\">260413007</a></td><td>None</td><td>Kein</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260408008\">260408008</a></td><td>Weakly positive</td><td>Schwach positiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260405006\">260405006</a></td><td>Trace</td><td>Spur</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/260389003\">260389003</a></td><td>No reaction</td><td>Keine Reaktion</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/46651001\">46651001</a></td><td>Isolated</td><td>Isoliert</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/419984006\">419984006</a></td><td>Inconclusive</td><td>Nicht auswertbar</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/42425007\">42425007</a></td><td>Equivocal</td><td>Zweideutig</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/82334004\">82334004</a></td><td>Indeterminate</td><td>Uneindeutig</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/62482003\">62482003</a></td><td>Low</td><td>Niedrig</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/11214006\">11214006</a></td><td>Reactive</td><td>Reaktiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/131194007\">131194007</a></td><td>Non-Reactive</td><td>Nicht-reaktiv</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/280416009\">280416009</a></td><td>Indeterminate result</td><td>Unbestimmtes Ergebnis</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/75540009\">75540009</a></td><td>High</td><td>Hoch</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/455371000124106\">455371000124106</a></td><td>Invalid result</td><td>Ungültiges Ergebnis</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/89292003\">89292003</a></td><td>Rare</td><td>Selten</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/262008008\">262008008</a></td><td>Not performed</td><td>Nicht durchgeführt</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/17621005\">17621005</a></td><td>Normal</td><td>Normal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/277025001\">277025001</a></td><td>Proven</td><td>Erwiesen</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0-update"] ;
+  fhir:ValueSet.name [ fhir:value "KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT"] ;
+  fhir:ValueSet.title [ fhir:value "Messergebnis Qualitativ SNOMED CT®"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-30T15:39:02+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "mio42 GmbH"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "mio42 GmbH" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://mio.kbv.de" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "hello@mio42.de" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Dieses Valueset enthält die Codes zur Beschreibung von Messergebnis Qualitativ SNOMED CT®."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.copyright [ fhir:value "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260347006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "+" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "+ aus ++++ vorhanden" ]
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260348001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "++" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "++ aus ++++ vorhanden" ]
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260349009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "+++" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "+++ aus ++++ vorhanden" ]
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260350009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "++++" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "++++ aus ++++ vorhanden" ]
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441614007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Present one plus out of three plus" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "+ aus +++ vorhanden" ]
+         ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441517005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Present two plus out of three plus" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "++ aus +++ vorhanden" ]
+         ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "441521003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Present three plus out of three plus" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "+++ aus +++ vorhanden" ]
+         ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260373001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Detected" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nachgewiesen" ]
+         ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260385009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Negative" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Negativ" ]
+         ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260392004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-patent" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nicht-durchgängig" ]
+         ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260415000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not detected" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nicht nachgewiesen" ]
+         ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52101004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Present" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vorhanden" ]
+         ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10828004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Positive" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Positiv" ]
+         ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2667000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Absent" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Abwesend" ]
+         ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "895231008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not detected in pooled specimen" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nicht nachgewiesen in Poolprobe" ]
+         ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "720735008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Presumptive positive" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vermutlich positiv" ]
+         ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "373067005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nein" ]
+         ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "373066001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yes" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ja" ]
+         ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264887000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not isolated" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nicht isoliert" ]
+         ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264868006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No growth" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kein Wachstum" ]
+         ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260413007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "None" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kein" ]
+         ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260408008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Weakly positive" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Schwach positiv" ]
+         ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260405006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trace" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spur" ]
+         ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260389003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No reaction" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Keine Reaktion" ]
+         ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46651001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isolated" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Isoliert" ]
+         ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "419984006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inconclusive" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nicht auswertbar" ]
+         ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42425007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Equivocal" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Zweideutig" ]
+         ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82334004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indeterminate" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uneindeutig" ]
+         ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "62482003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Low" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Niedrig" ]
+         ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11214006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reactive" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Reaktiv" ]
+         ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131194007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-Reactive" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nicht-reaktiv" ]
+         ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "280416009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indeterminate result" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unbestimmtes Ergebnis" ]
+         ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "75540009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "High" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hoch" ]
+         ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "455371000124106" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Invalid result" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ungültiges Ergebnis" ]
+         ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89292003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rare" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Selten" ]
+         ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "262008008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not performed" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nicht durchgeführt" ]
+         ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17621005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normal" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Normal" ]
+         ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "277025001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Proven" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Erwiesen" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/ValueSet/KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

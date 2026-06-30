@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,209 +7,275 @@
 
 <https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-CommonLanguages-German> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "KBV-CS-MIO-LAB-CommonLanguages-German"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-CommonLanguages-German</b></p><a name=\"KBV-CS-MIO-LAB-CommonLanguages-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-CommonLanguages-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Arabisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Arabisch\"> </a></td><td>Arabisch</td></tr><tr><td style=\"white-space:nowrap\">Bengalisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Bengalisch\"> </a></td><td>Bengalisch</td></tr><tr><td style=\"white-space:nowrap\">Tschechisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Tschechisch\"> </a></td><td>Tschechisch</td></tr><tr><td style=\"white-space:nowrap\">Daenisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Daenisch\"> </a></td><td>Dänisch</td></tr><tr><td style=\"white-space:nowrap\">DeutschOesterreich<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschOesterreich\"> </a></td><td>Deutsch (Österreich)</td></tr><tr><td style=\"white-space:nowrap\">DeutschSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschSchweiz\"> </a></td><td>Deutsch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">DeutschDeutschland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschDeutschland\"> </a></td><td>Deutsch (Deutschland)</td></tr><tr><td style=\"white-space:nowrap\">Deutsch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Deutsch\"> </a></td><td>Deutsch</td></tr><tr><td style=\"white-space:nowrap\">Griechisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Griechisch\"> </a></td><td>Griechisch</td></tr><tr><td style=\"white-space:nowrap\">EnglischAustralien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischAustralien\"> </a></td><td>Englisch (Australien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischKanada<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischKanada\"> </a></td><td>Englisch (Kanada)</td></tr><tr><td style=\"white-space:nowrap\">EnglischGrossbritannien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischGrossbritannien\"> </a></td><td>Englisch (Großbritannien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischIndien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischIndien\"> </a></td><td>Englisch (Indien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischNeuseeland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischNeuseeland\"> </a></td><td>Englisch (Neuseeland)</td></tr><tr><td style=\"white-space:nowrap\">EnglischSingapur<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischSingapur\"> </a></td><td>Englisch (Singapur)</td></tr><tr><td style=\"white-space:nowrap\">EnglischUSA<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischUSA\"> </a></td><td>Englisch (USA)</td></tr><tr><td style=\"white-space:nowrap\">Englisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Englisch\"> </a></td><td>Englisch</td></tr><tr><td style=\"white-space:nowrap\">SpanischArgentinien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischArgentinien\"> </a></td><td>Spanisch (Argentinien)</td></tr><tr><td style=\"white-space:nowrap\">SpanischSpanien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischSpanien\"> </a></td><td>Spanisch (Spanien)</td></tr><tr><td style=\"white-space:nowrap\">SpanischUruguay<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischUruguay\"> </a></td><td>Spanisch (Uruguay)</td></tr><tr><td style=\"white-space:nowrap\">Spanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Spanisch\"> </a></td><td>Spanisch</td></tr><tr><td style=\"white-space:nowrap\">Finnisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Finnisch\"> </a></td><td>Finnisch</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischBelgien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischBelgien\"> </a></td><td>Französisch (Belgien)</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischSchweiz\"> </a></td><td>Französisch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischFrankreich<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischFrankreich\"> </a></td><td>Französisch (Frankreich)</td></tr><tr><td style=\"white-space:nowrap\">Franzoesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Franzoesisch\"> </a></td><td>Französisch</td></tr><tr><td style=\"white-space:nowrap\">FriesischNiederlande<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FriesischNiederlande\"> </a></td><td>Friesisch (Niederlande)</td></tr><tr><td style=\"white-space:nowrap\">Friesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Friesisch\"> </a></td><td>Friesisch</td></tr><tr><td style=\"white-space:nowrap\">Kroatisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Kroatisch\"> </a></td><td>Kroatisch</td></tr><tr><td style=\"white-space:nowrap\">ItalienischSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ItalienischSchweiz\"> </a></td><td>Italienisch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">ItalienischItalien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ItalienischItalien\"> </a></td><td>Italienisch (Italien)</td></tr><tr><td style=\"white-space:nowrap\">Italienisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Italienisch\"> </a></td><td>Italienisch</td></tr><tr><td style=\"white-space:nowrap\">Japanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Japanisch\"> </a></td><td>Japanisch</td></tr><tr><td style=\"white-space:nowrap\">Koreanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Koreanisch\"> </a></td><td>Koreanisch</td></tr><tr><td style=\"white-space:nowrap\">NiederlaendischBelgien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NiederlaendischBelgien\"> </a></td><td>Niederländisch (Belgien)</td></tr><tr><td style=\"white-space:nowrap\">NiederlaendischNiederlande<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NiederlaendischNiederlande\"> </a></td><td>Niederländisch (Niederlande)</td></tr><tr><td style=\"white-space:nowrap\">Niederlaendisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Niederlaendisch\"> </a></td><td>Niederländisch</td></tr><tr><td style=\"white-space:nowrap\">NorwegischNorwegen<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NorwegischNorwegen\"> </a></td><td>Norwegisch (Norwegen)</td></tr><tr><td style=\"white-space:nowrap\">Norwegisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Norwegisch\"> </a></td><td>Norwegisch</td></tr><tr><td style=\"white-space:nowrap\">Polnisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Polnisch\"> </a></td><td>Polnisch</td></tr><tr><td style=\"white-space:nowrap\">PortugiesischBrasilien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-PortugiesischBrasilien\"> </a></td><td>Portugiesisch (Brasilien)</td></tr><tr><td style=\"white-space:nowrap\">Portugiesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Portugiesisch\"> </a></td><td>Portugiesisch</td></tr><tr><td style=\"white-space:nowrap\">RussischRussland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-RussischRussland\"> </a></td><td>Russisch (Russland)</td></tr><tr><td style=\"white-space:nowrap\">Russisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Russisch\"> </a></td><td>Russisch</td></tr><tr><td style=\"white-space:nowrap\">SerbischSerbien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SerbischSerbien\"> </a></td><td>Serbisch (Serbien)</td></tr><tr><td style=\"white-space:nowrap\">Serbisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Serbisch\"> </a></td><td>Serbisch</td></tr><tr><td style=\"white-space:nowrap\">SchwedischSchweden<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SchwedischSchweden\"> </a></td><td>Schwedisch (Schweden)</td></tr><tr><td style=\"white-space:nowrap\">Schwedisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Schwedisch\"> </a></td><td>Schwedisch</td></tr><tr><td style=\"white-space:nowrap\">Telugu<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Telugu\"> </a></td><td>Telugu</td></tr><tr><td style=\"white-space:nowrap\">ChinesischChina<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischChina\"> </a></td><td>Chinesisch (China)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischHongKong<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischHongKong\"> </a></td><td>Chinesisch (Hong Kong)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischSingapur<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischSingapur\"> </a></td><td>Chinesisch (Singapur)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischTaiwan<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischTaiwan\"> </a></td><td>Chinesisch (Taiwan)</td></tr><tr><td style=\"white-space:nowrap\">Chinesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Chinesisch\"> </a></td><td>Chinesisch</td></tr><tr><td style=\"white-space:nowrap\">Tuerkisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Tuerkisch\"> </a></td><td>Türkisch</td></tr><tr><td style=\"white-space:nowrap\">Ukrainisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Ukrainisch\"> </a></td><td>Ukrainisch</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0-update"] ; # 
-  fhir:name [ fhir:v "KBV_CS_MIO_LAB_CommonLanguages_German"] ; # 
-  fhir:title [ fhir:v "Bevorzugte Sprache German"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-30T11:44:07+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "mio42 GmbH" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://mio.kbv.de" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hello@mio42.de" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Bevorzugte Sprache German."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DE" ] ;
-       fhir:display [ fhir:v "Germany" ]
-     ] )
-  ] ) ; # 
-  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "Arabisch" ] ;
-     fhir:display [ fhir:v "Arabisch" ]
-  ] [
-     fhir:code [ fhir:v "Bengalisch" ] ;
-     fhir:display [ fhir:v "Bengalisch" ]
-  ] [
-     fhir:code [ fhir:v "Tschechisch" ] ;
-     fhir:display [ fhir:v "Tschechisch" ]
-  ] [
-     fhir:code [ fhir:v "Daenisch" ] ;
-     fhir:display [ fhir:v "Dänisch" ]
-  ] [
-     fhir:code [ fhir:v "DeutschOesterreich" ] ;
-     fhir:display [ fhir:v "Deutsch (Österreich)" ]
-  ] [
-     fhir:code [ fhir:v "DeutschSchweiz" ] ;
-     fhir:display [ fhir:v "Deutsch (Schweiz)" ]
-  ] [
-     fhir:code [ fhir:v "DeutschDeutschland" ] ;
-     fhir:display [ fhir:v "Deutsch (Deutschland)" ]
-  ] [
-     fhir:code [ fhir:v "Deutsch" ] ;
-     fhir:display [ fhir:v "Deutsch" ]
-  ] [
-     fhir:code [ fhir:v "Griechisch" ] ;
-     fhir:display [ fhir:v "Griechisch" ]
-  ] [
-     fhir:code [ fhir:v "EnglischAustralien" ] ;
-     fhir:display [ fhir:v "Englisch (Australien)" ]
-  ] [
-     fhir:code [ fhir:v "EnglischKanada" ] ;
-     fhir:display [ fhir:v "Englisch (Kanada)" ]
-  ] [
-     fhir:code [ fhir:v "EnglischGrossbritannien" ] ;
-     fhir:display [ fhir:v "Englisch (Großbritannien)" ]
-  ] [
-     fhir:code [ fhir:v "EnglischIndien" ] ;
-     fhir:display [ fhir:v "Englisch (Indien)" ]
-  ] [
-     fhir:code [ fhir:v "EnglischNeuseeland" ] ;
-     fhir:display [ fhir:v "Englisch (Neuseeland)" ]
-  ] [
-     fhir:code [ fhir:v "EnglischSingapur" ] ;
-     fhir:display [ fhir:v "Englisch (Singapur)" ]
-  ] [
-     fhir:code [ fhir:v "EnglischUSA" ] ;
-     fhir:display [ fhir:v "Englisch (USA)" ]
-  ] [
-     fhir:code [ fhir:v "Englisch" ] ;
-     fhir:display [ fhir:v "Englisch" ]
-  ] [
-     fhir:code [ fhir:v "SpanischArgentinien" ] ;
-     fhir:display [ fhir:v "Spanisch (Argentinien)" ]
-  ] [
-     fhir:code [ fhir:v "SpanischSpanien" ] ;
-     fhir:display [ fhir:v "Spanisch (Spanien)" ]
-  ] [
-     fhir:code [ fhir:v "SpanischUruguay" ] ;
-     fhir:display [ fhir:v "Spanisch (Uruguay)" ]
-  ] [
-     fhir:code [ fhir:v "Spanisch" ] ;
-     fhir:display [ fhir:v "Spanisch" ]
-  ] [
-     fhir:code [ fhir:v "Finnisch" ] ;
-     fhir:display [ fhir:v "Finnisch" ]
-  ] [
-     fhir:code [ fhir:v "FranzoesischBelgien" ] ;
-     fhir:display [ fhir:v "Französisch (Belgien)" ]
-  ] [
-     fhir:code [ fhir:v "FranzoesischSchweiz" ] ;
-     fhir:display [ fhir:v "Französisch (Schweiz)" ]
-  ] [
-     fhir:code [ fhir:v "FranzoesischFrankreich" ] ;
-     fhir:display [ fhir:v "Französisch (Frankreich)" ]
-  ] [
-     fhir:code [ fhir:v "Franzoesisch" ] ;
-     fhir:display [ fhir:v "Französisch" ]
-  ] [
-     fhir:code [ fhir:v "FriesischNiederlande" ] ;
-     fhir:display [ fhir:v "Friesisch (Niederlande)" ]
-  ] [
-     fhir:code [ fhir:v "Friesisch" ] ;
-     fhir:display [ fhir:v "Friesisch" ]
-  ] [
-     fhir:code [ fhir:v "Kroatisch" ] ;
-     fhir:display [ fhir:v "Kroatisch" ]
-  ] [
-     fhir:code [ fhir:v "ItalienischSchweiz" ] ;
-     fhir:display [ fhir:v "Italienisch (Schweiz)" ]
-  ] [
-     fhir:code [ fhir:v "ItalienischItalien" ] ;
-     fhir:display [ fhir:v "Italienisch (Italien)" ]
-  ] [
-     fhir:code [ fhir:v "Italienisch" ] ;
-     fhir:display [ fhir:v "Italienisch" ]
-  ] [
-     fhir:code [ fhir:v "Japanisch" ] ;
-     fhir:display [ fhir:v "Japanisch" ]
-  ] [
-     fhir:code [ fhir:v "Koreanisch" ] ;
-     fhir:display [ fhir:v "Koreanisch" ]
-  ] [
-     fhir:code [ fhir:v "NiederlaendischBelgien" ] ;
-     fhir:display [ fhir:v "Niederländisch (Belgien)" ]
-  ] [
-     fhir:code [ fhir:v "NiederlaendischNiederlande" ] ;
-     fhir:display [ fhir:v "Niederländisch (Niederlande)" ]
-  ] [
-     fhir:code [ fhir:v "Niederlaendisch" ] ;
-     fhir:display [ fhir:v "Niederländisch" ]
-  ] [
-     fhir:code [ fhir:v "NorwegischNorwegen" ] ;
-     fhir:display [ fhir:v "Norwegisch (Norwegen)" ]
-  ] [
-     fhir:code [ fhir:v "Norwegisch" ] ;
-     fhir:display [ fhir:v "Norwegisch" ]
-  ] [
-     fhir:code [ fhir:v "Polnisch" ] ;
-     fhir:display [ fhir:v "Polnisch" ]
-  ] [
-     fhir:code [ fhir:v "PortugiesischBrasilien" ] ;
-     fhir:display [ fhir:v "Portugiesisch (Brasilien)" ]
-  ] [
-     fhir:code [ fhir:v "Portugiesisch" ] ;
-     fhir:display [ fhir:v "Portugiesisch" ]
-  ] [
-     fhir:code [ fhir:v "RussischRussland" ] ;
-     fhir:display [ fhir:v "Russisch (Russland)" ]
-  ] [
-     fhir:code [ fhir:v "Russisch" ] ;
-     fhir:display [ fhir:v "Russisch" ]
-  ] [
-     fhir:code [ fhir:v "SerbischSerbien" ] ;
-     fhir:display [ fhir:v "Serbisch (Serbien)" ]
-  ] [
-     fhir:code [ fhir:v "Serbisch" ] ;
-     fhir:display [ fhir:v "Serbisch" ]
-  ] [
-     fhir:code [ fhir:v "SchwedischSchweden" ] ;
-     fhir:display [ fhir:v "Schwedisch (Schweden)" ]
-  ] [
-     fhir:code [ fhir:v "Schwedisch" ] ;
-     fhir:display [ fhir:v "Schwedisch" ]
-  ] [
-     fhir:code [ fhir:v "Telugu" ] ;
-     fhir:display [ fhir:v "Telugu" ]
-  ] [
-     fhir:code [ fhir:v "ChinesischChina" ] ;
-     fhir:display [ fhir:v "Chinesisch (China)" ]
-  ] [
-     fhir:code [ fhir:v "ChinesischHongKong" ] ;
-     fhir:display [ fhir:v "Chinesisch (Hong Kong)" ]
-  ] [
-     fhir:code [ fhir:v "ChinesischSingapur" ] ;
-     fhir:display [ fhir:v "Chinesisch (Singapur)" ]
-  ] [
-     fhir:code [ fhir:v "ChinesischTaiwan" ] ;
-     fhir:display [ fhir:v "Chinesisch (Taiwan)" ]
-  ] [
-     fhir:code [ fhir:v "Chinesisch" ] ;
-     fhir:display [ fhir:v "Chinesisch" ]
-  ] [
-     fhir:code [ fhir:v "Tuerkisch" ] ;
-     fhir:display [ fhir:v "Türkisch" ]
-  ] [
-     fhir:code [ fhir:v "Ukrainisch" ] ;
-     fhir:display [ fhir:v "Ukrainisch" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "KBV-CS-MIO-LAB-CommonLanguages-German"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-CommonLanguages-German</b></p><a name=\"KBV-CS-MIO-LAB-CommonLanguages-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-CommonLanguages-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Arabisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Arabisch\"> </a></td><td>Arabisch</td></tr><tr><td style=\"white-space:nowrap\">Bengalisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Bengalisch\"> </a></td><td>Bengalisch</td></tr><tr><td style=\"white-space:nowrap\">Tschechisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Tschechisch\"> </a></td><td>Tschechisch</td></tr><tr><td style=\"white-space:nowrap\">Daenisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Daenisch\"> </a></td><td>Dänisch</td></tr><tr><td style=\"white-space:nowrap\">DeutschOesterreich<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschOesterreich\"> </a></td><td>Deutsch (Österreich)</td></tr><tr><td style=\"white-space:nowrap\">DeutschSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschSchweiz\"> </a></td><td>Deutsch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">DeutschDeutschland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-DeutschDeutschland\"> </a></td><td>Deutsch (Deutschland)</td></tr><tr><td style=\"white-space:nowrap\">Deutsch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Deutsch\"> </a></td><td>Deutsch</td></tr><tr><td style=\"white-space:nowrap\">Griechisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Griechisch\"> </a></td><td>Griechisch</td></tr><tr><td style=\"white-space:nowrap\">EnglischAustralien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischAustralien\"> </a></td><td>Englisch (Australien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischKanada<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischKanada\"> </a></td><td>Englisch (Kanada)</td></tr><tr><td style=\"white-space:nowrap\">EnglischGrossbritannien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischGrossbritannien\"> </a></td><td>Englisch (Großbritannien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischIndien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischIndien\"> </a></td><td>Englisch (Indien)</td></tr><tr><td style=\"white-space:nowrap\">EnglischNeuseeland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischNeuseeland\"> </a></td><td>Englisch (Neuseeland)</td></tr><tr><td style=\"white-space:nowrap\">EnglischSingapur<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischSingapur\"> </a></td><td>Englisch (Singapur)</td></tr><tr><td style=\"white-space:nowrap\">EnglischUSA<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-EnglischUSA\"> </a></td><td>Englisch (USA)</td></tr><tr><td style=\"white-space:nowrap\">Englisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Englisch\"> </a></td><td>Englisch</td></tr><tr><td style=\"white-space:nowrap\">SpanischArgentinien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischArgentinien\"> </a></td><td>Spanisch (Argentinien)</td></tr><tr><td style=\"white-space:nowrap\">SpanischSpanien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischSpanien\"> </a></td><td>Spanisch (Spanien)</td></tr><tr><td style=\"white-space:nowrap\">SpanischUruguay<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SpanischUruguay\"> </a></td><td>Spanisch (Uruguay)</td></tr><tr><td style=\"white-space:nowrap\">Spanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Spanisch\"> </a></td><td>Spanisch</td></tr><tr><td style=\"white-space:nowrap\">Finnisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Finnisch\"> </a></td><td>Finnisch</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischBelgien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischBelgien\"> </a></td><td>Französisch (Belgien)</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischSchweiz\"> </a></td><td>Französisch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">FranzoesischFrankreich<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FranzoesischFrankreich\"> </a></td><td>Französisch (Frankreich)</td></tr><tr><td style=\"white-space:nowrap\">Franzoesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Franzoesisch\"> </a></td><td>Französisch</td></tr><tr><td style=\"white-space:nowrap\">FriesischNiederlande<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-FriesischNiederlande\"> </a></td><td>Friesisch (Niederlande)</td></tr><tr><td style=\"white-space:nowrap\">Friesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Friesisch\"> </a></td><td>Friesisch</td></tr><tr><td style=\"white-space:nowrap\">Kroatisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Kroatisch\"> </a></td><td>Kroatisch</td></tr><tr><td style=\"white-space:nowrap\">ItalienischSchweiz<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ItalienischSchweiz\"> </a></td><td>Italienisch (Schweiz)</td></tr><tr><td style=\"white-space:nowrap\">ItalienischItalien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ItalienischItalien\"> </a></td><td>Italienisch (Italien)</td></tr><tr><td style=\"white-space:nowrap\">Italienisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Italienisch\"> </a></td><td>Italienisch</td></tr><tr><td style=\"white-space:nowrap\">Japanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Japanisch\"> </a></td><td>Japanisch</td></tr><tr><td style=\"white-space:nowrap\">Koreanisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Koreanisch\"> </a></td><td>Koreanisch</td></tr><tr><td style=\"white-space:nowrap\">NiederlaendischBelgien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NiederlaendischBelgien\"> </a></td><td>Niederländisch (Belgien)</td></tr><tr><td style=\"white-space:nowrap\">NiederlaendischNiederlande<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NiederlaendischNiederlande\"> </a></td><td>Niederländisch (Niederlande)</td></tr><tr><td style=\"white-space:nowrap\">Niederlaendisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Niederlaendisch\"> </a></td><td>Niederländisch</td></tr><tr><td style=\"white-space:nowrap\">NorwegischNorwegen<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-NorwegischNorwegen\"> </a></td><td>Norwegisch (Norwegen)</td></tr><tr><td style=\"white-space:nowrap\">Norwegisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Norwegisch\"> </a></td><td>Norwegisch</td></tr><tr><td style=\"white-space:nowrap\">Polnisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Polnisch\"> </a></td><td>Polnisch</td></tr><tr><td style=\"white-space:nowrap\">PortugiesischBrasilien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-PortugiesischBrasilien\"> </a></td><td>Portugiesisch (Brasilien)</td></tr><tr><td style=\"white-space:nowrap\">Portugiesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Portugiesisch\"> </a></td><td>Portugiesisch</td></tr><tr><td style=\"white-space:nowrap\">RussischRussland<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-RussischRussland\"> </a></td><td>Russisch (Russland)</td></tr><tr><td style=\"white-space:nowrap\">Russisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Russisch\"> </a></td><td>Russisch</td></tr><tr><td style=\"white-space:nowrap\">SerbischSerbien<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SerbischSerbien\"> </a></td><td>Serbisch (Serbien)</td></tr><tr><td style=\"white-space:nowrap\">Serbisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Serbisch\"> </a></td><td>Serbisch</td></tr><tr><td style=\"white-space:nowrap\">SchwedischSchweden<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-SchwedischSchweden\"> </a></td><td>Schwedisch (Schweden)</td></tr><tr><td style=\"white-space:nowrap\">Schwedisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Schwedisch\"> </a></td><td>Schwedisch</td></tr><tr><td style=\"white-space:nowrap\">Telugu<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Telugu\"> </a></td><td>Telugu</td></tr><tr><td style=\"white-space:nowrap\">ChinesischChina<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischChina\"> </a></td><td>Chinesisch (China)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischHongKong<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischHongKong\"> </a></td><td>Chinesisch (Hong Kong)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischSingapur<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischSingapur\"> </a></td><td>Chinesisch (Singapur)</td></tr><tr><td style=\"white-space:nowrap\">ChinesischTaiwan<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-ChinesischTaiwan\"> </a></td><td>Chinesisch (Taiwan)</td></tr><tr><td style=\"white-space:nowrap\">Chinesisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Chinesisch\"> </a></td><td>Chinesisch</td></tr><tr><td style=\"white-space:nowrap\">Tuerkisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Tuerkisch\"> </a></td><td>Türkisch</td></tr><tr><td style=\"white-space:nowrap\">Ukrainisch<a name=\"KBV-CS-MIO-LAB-CommonLanguages-German-Ukrainisch\"> </a></td><td>Ukrainisch</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_CommonLanguages_German"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-update"] ;
+  fhir:CodeSystem.name [ fhir:value "KBV_CS_MIO_LAB_CommonLanguages_German"] ;
+  fhir:CodeSystem.title [ fhir:value "Bevorzugte Sprache German"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-30T15:39:02+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "mio42 GmbH"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "mio42 GmbH" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://mio.kbv.de" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "hello@mio42.de" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Bevorzugte Sprache German."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Arabisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Arabisch" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Bengalisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bengalisch" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Tschechisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tschechisch" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Daenisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dänisch" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DeutschOesterreich" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Deutsch (Österreich)" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DeutschSchweiz" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Deutsch (Schweiz)" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DeutschDeutschland" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Deutsch (Deutschland)" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Deutsch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Deutsch" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Griechisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Griechisch" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EnglischAustralien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Englisch (Australien)" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EnglischKanada" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Englisch (Kanada)" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EnglischGrossbritannien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Englisch (Großbritannien)" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EnglischIndien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Englisch (Indien)" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EnglischNeuseeland" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Englisch (Neuseeland)" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EnglischSingapur" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Englisch (Singapur)" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EnglischUSA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Englisch (USA)" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Englisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Englisch" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SpanischArgentinien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spanisch (Argentinien)" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SpanischSpanien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spanisch (Spanien)" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SpanischUruguay" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spanisch (Uruguay)" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Spanisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spanisch" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Finnisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Finnisch" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FranzoesischBelgien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Französisch (Belgien)" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FranzoesischSchweiz" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Französisch (Schweiz)" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FranzoesischFrankreich" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Französisch (Frankreich)" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Franzoesisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Französisch" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FriesischNiederlande" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Friesisch (Niederlande)" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Friesisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Friesisch" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Kroatisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kroatisch" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ItalienischSchweiz" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Italienisch (Schweiz)" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ItalienischItalien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Italienisch (Italien)" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Italienisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Italienisch" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Japanisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Japanisch" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Koreanisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Koreanisch" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NiederlaendischBelgien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Niederländisch (Belgien)" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NiederlaendischNiederlande" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Niederländisch (Niederlande)" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Niederlaendisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Niederländisch" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NorwegischNorwegen" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Norwegisch (Norwegen)" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Norwegisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Norwegisch" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Polnisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polnisch" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PortugiesischBrasilien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Portugiesisch (Brasilien)" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Portugiesisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Portugiesisch" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "RussischRussland" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Russisch (Russland)" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Russisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Russisch" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SerbischSerbien" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Serbisch (Serbien)" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Serbisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Serbisch" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SchwedischSchweden" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwedisch (Schweden)" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Schwedisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Schwedisch" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Telugu" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Telugu" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ChinesischChina" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chinesisch (China)" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ChinesischHongKong" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chinesisch (Hong Kong)" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ChinesischSingapur" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chinesisch (Singapur)" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ChinesischTaiwan" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chinesisch (Taiwan)" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Chinesisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chinesisch" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Tuerkisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Türkisch" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ukrainisch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ukrainisch" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-CommonLanguages-German.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

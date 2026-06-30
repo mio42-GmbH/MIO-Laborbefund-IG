@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,157 +8,169 @@
 
 <https://fhir.kbv.de/Specimen/4f47fe9c-d92e-46f4-ad6d-85740aaa467b> a fhir:Specimen ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "4f47fe9c-d92e-46f4-ad6d-85740aaa467b"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "4f47fe9c-d92e-46f4-ad6d-85740aaa467b"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+     ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://fhir.kbv.de/Device/c46e7bfb-1ee3-4c6b-9ce2-204939133cc5> ;
-       fhir:reference [ fhir:v "Device/c46e7bfb-1ee3-4c6b-9ce2-204939133cc5" ]
+       fhir:Reference.reference [ fhir:value "Device/c46e7bfb-1ee3-4c6b-9ce2-204939133cc5" ]
      ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "5.0.0" ] ;
-         fhir:code [ fhir:v "SID" ] ;
-         fhir:display [ fhir:v "Specimen ID" ]
-       ] )
+  ] ;
+  fhir:Specimen.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.version [ fhir:value "5.0.0" ] ;
+         fhir:Coding.code [ fhir:value "SID" ] ;
+         fhir:Coding.display [ fhir:value "Specimen ID" ]
+       ]
      ] ;
-     fhir:system [ fhir:v "http://testsystem.de"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "Test Specimen identifier" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "available"] ; # 
-  fhir:type [
-     fhir:coding ( [
+     fhir:Identifier.system [ fhir:value "http://testsystem.de" ] ;
+     fhir:Identifier.value [ fhir:value "Test Specimen identifier" ]
+  ] ;
+  fhir:Specimen.status [ fhir:value "available"] ;
+  fhir:Specimen.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a sct:119376003 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "119376003" ] ;
-       fhir:display [ fhir:v "Tissue specimen (specimen)" ]
-     ] ) ;
-     fhir:text [ fhir:v "test" ]
-  ] ; # 
-  fhir:subject [
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "119376003" ] ;
+       fhir:Coding.display [ fhir:value "Tissue specimen (specimen)" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "test" ]
+  ] ;
+  fhir:Specimen.subject [
      fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
+     fhir:Reference.reference [ fhir:value "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
        ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
      ]
-  ] ; # 
-  fhir:receivedTime [ fhir:v "2021-11-15T16:55:00+01:00"^^xsd:dateTime] ; # 
-  fhir:parent ( [
+  ] ;
+  fhir:Specimen.receivedTime [ fhir:value "2021-11-15T16:55:00+01:00"^^xsd:dateTime] ;
+  fhir:Specimen.parent [
+     fhir:index 0 ;
      fhir:link <https://fhir.kbv.de/Specimen/eb7fbea2-95bd-4618-b38d-ce69cde79726> ;
-     fhir:reference [ fhir:v "Specimen/eb7fbea2-95bd-4618-b38d-ce69cde79726" ]
-  ] ) ; # 
-  fhir:collection [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/bodySite"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Reference ;
+     fhir:Reference.reference [ fhir:value "Specimen/eb7fbea2-95bd-4618-b38d-ce69cde79726" ]
+  ] ;
+  fhir:Specimen.collection [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/bodySite" ] ;
+       fhir:Extension.valueReference [
          fhir:link <https://fhir.kbv.de/BodyStructure/6894b106-8a91-4cfb-9826-443aed21c98b> ;
-         fhir:reference [ fhir:v "BodyStructure/6894b106-8a91-4cfb-9826-443aed21c98b" ]
+         fhir:Reference.reference [ fhir:value "BodyStructure/6894b106-8a91-4cfb-9826-443aed21c98b" ]
        ]
-     ] ) ;
-     fhir:collector [
+     ] ;
+     fhir:Specimen.collection.collector [
        fhir:link <https://fhir.kbv.de/PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a> ;
-       fhir:reference [ fhir:v "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a" ]
+       fhir:Reference.reference [ fhir:value "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a" ]
      ] ;
-     fhir:collected [
-       a fhir:dateTime ;
-       fhir:v "2023-05-03"^^xsd:date
+     fhir:Specimen.collection.collectedDateTime [ fhir:value "2023-05-03"^^xsd:date ] ;
+     fhir:Specimen.collection.duration [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ] ;
+       fhir:Quantity.comparator [ fhir:value ">" ] ;
+       fhir:Quantity.unit [ fhir:value "ms" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "ms" ]
      ] ;
-     fhir:duration [
-       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
-       fhir:comparator [ fhir:v ">" ] ;
-       fhir:unit [ fhir:v "ms" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ms" ]
-     ] ;
-     fhir:method [
-       fhir:coding ( [
+     fhir:Specimen.collection.method [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
          a sct:4241000179101 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-         fhir:code [ fhir:v "4241000179101" ] ;
-         fhir:display [ fhir:v "Laboratory report (record artifact)" ]
-       ] ) ;
-       fhir:text [ fhir:v "test" ]
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+         fhir:Coding.code [ fhir:value "4241000179101" ] ;
+         fhir:Coding.display [ fhir:value "Laboratory report (record artifact)" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "test" ]
      ] ;
-     fhir:fastingStatus [
-       a fhir:Duration ;
-       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
-       fhir:comparator [ fhir:v ">" ] ;
-       fhir:unit [ fhir:v "ms" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ms" ]
+     fhir:Specimen.collection.fastingStatusDuration [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ] ;
+       fhir:Quantity.comparator [ fhir:value ">" ] ;
+       fhir:Quantity.unit [ fhir:value "ms" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "ms" ]
      ]
-  ] ; # 
-  fhir:processing ( [
-     fhir:description [ fhir:v "test" ] ;
-     fhir:procedure [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0373"^^xsd:anyURI ] ;
-         fhir:version [ fhir:v "3.0.0" ] ;
-         fhir:code [ fhir:v "ACID" ] ;
-         fhir:display [ fhir:v "Acidification" ]
-       ] ) ;
-       fhir:text [ fhir:v "test" ]
+  ] ;
+  fhir:Specimen.processing [
+     fhir:index 0 ;
+     fhir:Specimen.processing.description [ fhir:value "test" ] ;
+     fhir:Specimen.processing.procedure [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0373" ] ;
+         fhir:Coding.version [ fhir:value "3.0.0" ] ;
+         fhir:Coding.code [ fhir:value "ACID" ] ;
+         fhir:Coding.display [ fhir:value "Acidification" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "test" ]
      ] ;
-     fhir:additive ( [
+     fhir:Specimen.processing.additive [
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/Substance/a4b533d4-0a3c-4701-b411-fd9666bf3d03> ;
-       fhir:reference [ fhir:v "Substance/a4b533d4-0a3c-4701-b411-fd9666bf3d03" ]
-     ] ) ;
-     fhir:time [
-       a fhir:dateTime ;
-       fhir:v "2023-05-03"^^xsd:date
-     ]
-  ] ) ; # 
-  fhir:container ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Reference ;
+       fhir:Reference.reference [ fhir:value "Substance/a4b533d4-0a3c-4701-b411-fd9666bf3d03" ]
+     ] ;
+     fhir:Specimen.processing.timeDateTime [ fhir:value "2023-05-03"^^xsd:date ]
+  ] ;
+  fhir:Specimen.container [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device" ] ;
+       fhir:Extension.valueReference [
          fhir:link <https://fhir.kbv.de/Device/05146497-2ca3-488e-96cb-c27c77ab6a3c> ;
-         fhir:reference [ fhir:v "Device/05146497-2ca3-488e-96cb-c27c77ab6a3c" ]
+         fhir:Reference.reference [ fhir:value "Device/05146497-2ca3-488e-96cb-c27c77ab6a3c" ]
        ]
-     ] ) ;
-     fhir:specimenQuantity [
-       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
-       fhir:unit [ fhir:v "ms" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ms" ]
+     ] ;
+     fhir:Specimen.container.specimenQuantity [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "ms" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "ms" ]
      ]
-  ] ) ; # 
-  fhir:condition ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0493"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "3.0.0" ] ;
-       fhir:code [ fhir:v "AUT" ] ;
-       fhir:display [ fhir:v "Autolyzed" ]
-     ] ) ;
-     fhir:text [ fhir:v "test" ]
-  ] ) ; # 
-  fhir:note ( [
-     fhir:text [ fhir:v "test" ]
-  ] ) . # 
+  ] ;
+  fhir:Specimen.condition [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0493" ] ;
+       fhir:Coding.version [ fhir:value "3.0.0" ] ;
+       fhir:Coding.code [ fhir:value "AUT" ] ;
+       fhir:Coding.display [ fhir:value "Autolyzed" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "test" ]
+  ] ;
+  fhir:Specimen.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "test" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Specimen/4f47fe9c-d92e-46f4-ad6d-85740aaa467b.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,206 +7,264 @@
 
 <https://fhir.kbv.de/ValueSet/KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT</b></p><a name=\"KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT\"> </a><a name=\"hcKBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version ?http://snomed.info/sct/11000274103/version/20251115</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/7771000\">7771000</a></td><td>Left</td><td>Links</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/24028007\">24028007</a></td><td>Right</td><td>Rechts</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/51440002\">51440002</a></td><td>Right and left</td><td>Rechts und links</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/40415009\">40415009</a></td><td>Proximal</td><td>Proximal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/46053002\">46053002</a></td><td>Distal</td><td>Distal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255554000\">255554000</a></td><td>Dorsal</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255549009\">255549009</a></td><td>Anterior</td><td>Anterior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/26283006\">26283006</a></td><td>Superficial</td><td>Oberflächlich</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/795002\">795002</a></td><td>Deep</td><td>Tief</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/57195005\">57195005</a></td><td>Basal</td><td>Basal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261183002\">261183002</a></td><td>Upper</td><td>Obere/r/s</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261122009\">261122009</a></td><td>Lower</td><td>Untere/r/s</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255561001\">255561001</a></td><td>Medial</td><td>Medial</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/49370004\">49370004</a></td><td>Lateral</td><td>Lateral</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/264217000\">264217000</a></td><td>Superior</td><td>Superior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261089000\">261089000</a></td><td>Inferior</td><td>Inferior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255551008\">255551008</a></td><td>Posterior</td><td>Posterior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/351726001\">351726001</a></td><td>Below</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/352730000\">352730000</a></td><td>Supra-</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/3583002\">3583002</a></td><td>Caudal</td><td>Kaudal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/66787007\">66787007</a></td><td>Cephalic</td><td>Kranial</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/26216008\">26216008</a></td><td>Central</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/43674008\">43674008</a></td><td>Apical</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/14414005\">14414005</a></td><td>Peripheral</td><td>Peripher</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255481003\">255481003</a></td><td>Left upper quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255497008\">255497008</a></td><td>Right upper quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255480002\">255480002</a></td><td>Left lower quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255495000\">255495000</a></td><td>Right lower quadrant</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0-update"] ; # 
-  fhir:name [ fhir:v "KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT"] ; # 
-  fhir:title [ fhir:v "Lokalisation innerhalb Körperstelle SNOMED CT®"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-30T11:44:07+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "mio42 GmbH" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://mio.kbv.de" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hello@mio42.de" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Dieses Valueset enthält die Codes zur Beschreibung von Lokalisation innerhalb Körperstelle SNOMED CT®."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DE" ] ;
-       fhir:display [ fhir:v "Germany" ]
-     ] )
-  ] ) ; # 
-  fhir:immutable [ fhir:v false] ; # 
-  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "7771000" ] ;
-         fhir:display [ fhir:v "Left" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Links" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "24028007" ] ;
-         fhir:display [ fhir:v "Right" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Rechts" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "51440002" ] ;
-         fhir:display [ fhir:v "Right and left" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Rechts und links" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "40415009" ] ;
-         fhir:display [ fhir:v "Proximal" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Proximal" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "46053002" ] ;
-         fhir:display [ fhir:v "Distal" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Distal" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "255554000" ] ;
-         fhir:display [ fhir:v "Dorsal" ]
-       ] [
-         fhir:code [ fhir:v "255549009" ] ;
-         fhir:display [ fhir:v "Anterior" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Anterior" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "26283006" ] ;
-         fhir:display [ fhir:v "Superficial" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Oberflächlich" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "795002" ] ;
-         fhir:display [ fhir:v "Deep" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Tief" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "57195005" ] ;
-         fhir:display [ fhir:v "Basal" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Basal" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "261183002" ] ;
-         fhir:display [ fhir:v "Upper" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Obere/r/s" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "261122009" ] ;
-         fhir:display [ fhir:v "Lower" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Untere/r/s" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "255561001" ] ;
-         fhir:display [ fhir:v "Medial" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Medial" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "49370004" ] ;
-         fhir:display [ fhir:v "Lateral" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Lateral" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "264217000" ] ;
-         fhir:display [ fhir:v "Superior" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Superior" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "261089000" ] ;
-         fhir:display [ fhir:v "Inferior" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Inferior" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "255551008" ] ;
-         fhir:display [ fhir:v "Posterior" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Posterior" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "351726001" ] ;
-         fhir:display [ fhir:v "Below" ]
-       ] [
-         fhir:code [ fhir:v "352730000" ] ;
-         fhir:display [ fhir:v "Supra-" ]
-       ] [
-         fhir:code [ fhir:v "3583002" ] ;
-         fhir:display [ fhir:v "Caudal" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Kaudal" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "66787007" ] ;
-         fhir:display [ fhir:v "Cephalic" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Kranial" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "26216008" ] ;
-         fhir:display [ fhir:v "Central" ]
-       ] [
-         fhir:code [ fhir:v "43674008" ] ;
-         fhir:display [ fhir:v "Apical" ]
-       ] [
-         fhir:code [ fhir:v "14414005" ] ;
-         fhir:display [ fhir:v "Peripheral" ] ;
-         fhir:designation ( [
-           fhir:language [ fhir:v "de" ] ;
-           fhir:value [ fhir:v "Peripher" ]
-         ] )
-       ] [
-         fhir:code [ fhir:v "255481003" ] ;
-         fhir:display [ fhir:v "Left upper quadrant" ]
-       ] [
-         fhir:code [ fhir:v "255497008" ] ;
-         fhir:display [ fhir:v "Right upper quadrant" ]
-       ] [
-         fhir:code [ fhir:v "255480002" ] ;
-         fhir:display [ fhir:v "Left lower quadrant" ]
-       ] [
-         fhir:code [ fhir:v "255495000" ] ;
-         fhir:display [ fhir:v "Right lower quadrant" ]
-       ] )
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT</b></p><a name=\"KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT\"> </a><a name=\"hcKBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is explicitly stated to be http://snomed.info/sct/11000274103/version/20251115\"> version ?http://snomed.info/sct/11000274103/version/20251115</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/7771000\">7771000</a></td><td>Left</td><td>Links</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/24028007\">24028007</a></td><td>Right</td><td>Rechts</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/51440002\">51440002</a></td><td>Right and left</td><td>Rechts und links</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/40415009\">40415009</a></td><td>Proximal</td><td>Proximal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/46053002\">46053002</a></td><td>Distal</td><td>Distal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255554000\">255554000</a></td><td>Dorsal</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255549009\">255549009</a></td><td>Anterior</td><td>Anterior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/26283006\">26283006</a></td><td>Superficial</td><td>Oberflächlich</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/795002\">795002</a></td><td>Deep</td><td>Tief</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/57195005\">57195005</a></td><td>Basal</td><td>Basal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261183002\">261183002</a></td><td>Upper</td><td>Obere/r/s</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261122009\">261122009</a></td><td>Lower</td><td>Untere/r/s</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255561001\">255561001</a></td><td>Medial</td><td>Medial</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/49370004\">49370004</a></td><td>Lateral</td><td>Lateral</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/264217000\">264217000</a></td><td>Superior</td><td>Superior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/261089000\">261089000</a></td><td>Inferior</td><td>Inferior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255551008\">255551008</a></td><td>Posterior</td><td>Posterior</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/351726001\">351726001</a></td><td>Below</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/352730000\">352730000</a></td><td>Supra-</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/3583002\">3583002</a></td><td>Caudal</td><td>Kaudal</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/66787007\">66787007</a></td><td>Cephalic</td><td>Kranial</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/26216008\">26216008</a></td><td>Central</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/43674008\">43674008</a></td><td>Apical</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/14414005\">14414005</a></td><td>Peripheral</td><td>Peripher</td></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255481003\">255481003</a></td><td>Left upper quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255497008\">255497008</a></td><td>Right upper quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255480002\">255480002</a></td><td>Left lower quadrant</td><td/></tr><tr><td><a href=\"http://snomed.info/sct/11000274103/id/255495000\">255495000</a></td><td>Right lower quadrant</td><td/></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0-update"] ;
+  fhir:ValueSet.name [ fhir:value "KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT"] ;
+  fhir:ValueSet.title [ fhir:value "Lokalisation innerhalb Körperstelle SNOMED CT®"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-30T15:39:02+02:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "mio42 GmbH"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "mio42 GmbH" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://mio.kbv.de" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "hello@mio42.de" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Dieses Valueset enthält die Codes zur Beschreibung von Lokalisation innerhalb Körperstelle SNOMED CT®."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.copyright [ fhir:value "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7771000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Links" ]
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24028007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rechts" ]
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51440002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right and left" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rechts und links" ]
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40415009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Proximal" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Proximal" ]
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46053002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Distal" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Distal" ]
+         ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255554000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dorsal" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255549009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anterior" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anterior" ]
+         ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26283006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superficial" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Oberflächlich" ]
+         ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "795002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deep" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tief" ]
+         ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57195005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basal" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Basal" ]
+         ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "261183002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Upper" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Obere/r/s" ]
+         ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "261122009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lower" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Untere/r/s" ]
+         ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255561001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medial" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Medial" ]
+         ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49370004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lateral" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lateral" ]
+         ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264217000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superior" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Superior" ]
+         ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "261089000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inferior" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inferior" ]
+         ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255551008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Posterior" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Posterior" ]
+         ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "351726001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Below" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "352730000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Supra-" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3583002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Caudal" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kaudal" ]
+         ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66787007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cephalic" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kranial" ]
+         ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26216008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Central" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43674008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Apical" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14414005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peripheral" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Peripher" ]
+         ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255481003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left upper quadrant" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255497008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right upper quadrant" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255480002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left lower quadrant" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255495000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right lower quadrant" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/ValueSet/KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

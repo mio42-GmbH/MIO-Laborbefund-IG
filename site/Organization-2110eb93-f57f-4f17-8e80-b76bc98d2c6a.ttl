@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,14 +7,20 @@
 
 <https://fhir.kbv.de/Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "2110eb93-f57f-4f17-8e80-b76bc98d2c6a"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "2110eb93-f57f-4f17-8e80-b76bc98d2c6a"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Organization|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:name [ fhir:v "Praxis"] . # 
+     ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Praxis"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Organization/2110eb93-f57f-4f17-8e80-b76bc98d2c6a.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

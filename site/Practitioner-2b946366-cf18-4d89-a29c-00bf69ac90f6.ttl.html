@@ -286,161 +286,204 @@ MIO Laborbefund
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix sct: &lt;http://snomed.info/id/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:Practitioner ;
+&lt;http://hl7.org/fhir/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6&gt; a fhir:Practitioner ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;2b946366-cf18-4d89-a29c-00bf69ac90f6&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">fhir:meta</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">fhir:versionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-05-03T11:15:00+01:00&quot;^^xsd:dateTime ] ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/domainresource.html#Practitioner.extension">fhir:extension</a> ( [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;test&quot;     ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">fhir:identifier</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;5.0.0&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;LANR&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Lifelong physician number&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;123456789&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;5.0.0&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DN&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Doctor number&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/sid/bundesaerztekammer/efn&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;123456789123456&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/CodeSystem/identifier-type-de-basis&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ZANR&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Zahnarztnummer&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/sid/kzbv/zahnarztnummer&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;123456789&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;5.0.0&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;PRN&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Provider number&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://gematik.de/fhir/sid/telematik-id&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;123456789&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://testsystem.de&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;testValue&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">fhir:name</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Dr. Hans Glücklich&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:family</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hans&quot; ;
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#string.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/humanname-own-name&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Glücklich&quot;         ]       ] [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/StructureDefinition/humanname-namenszusatz&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Prinz&quot;         ]       ] [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/humanname-own-prefix&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;von&quot;         ]       ] )     ] ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:given</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hans&quot; ] ) ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.prefix">fhir:prefix</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Dr&quot; ;
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#string.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:code ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AC&quot;         ]       ] )     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.telecom">fhir:telecom</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;phone&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;12123455&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.address">fhir:address</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#Address.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Schöneberg&quot;       ]     ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;both&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:line</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Schöneberg&quot; ;
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#string.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Mittestr&quot;         ]       ] [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;43&quot;         ]       ] [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nebenhaus&quot;         ]       ] )     ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Berlin&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">fhir:postalCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;12015&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;D&quot; ]
-  ] [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#Address.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Schöneberg&quot;       ]     ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;postal&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:line</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Schöneberg&quot; ;
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#string.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Mittestraße 3&quot;         ]       ] )     ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Berlin&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">fhir:postalCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;12015&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;D&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.gender">fhir:gender</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;other&quot; ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#code.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/StructureDefinition/gender-amtlich-de&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/CodeSystem/gender-amtlich-de&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;X&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;unbestimmt&quot; ]       ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification">fhir:qualification</a> ( [
-<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a sct:26369006 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/11000274103/version/20250515&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;26369006&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Public health nurse&quot; ]       ] )     ]
-  ] ) . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;2b946366-cf18-4d89-a29c-00bf69ac90f6&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">fhir:Meta.versionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;1&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2023-05-03T11:15:00+01:00&quot;^^xsd:dateTime ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Practitioner|1.0.0-update&gt;
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#Practitioner.extension">fhir:DomainResource.extension</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;test&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">fhir:Practitioner.identifier</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:Coding.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;5.0.0&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;LANR&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Lifelong physician number&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;123456789&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:Coding.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;5.0.0&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;DN&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Doctor number&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/sid/bundesaerztekammer/efn&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;123456789123456&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/CodeSystem/identifier-type-de-basis&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ZANR&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Zahnarztnummer&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/sid/kzbv/zahnarztnummer&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;123456789&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:Coding.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;5.0.0&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;PRN&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Provider number&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://gematik.de/fhir/sid/telematik-id&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;123456789&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://testsystem.de&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;testValue&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">fhir:Practitioner.name</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">fhir:HumanName.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;official&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">fhir:HumanName.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Dr. Hans Glücklich&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:HumanName.family</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hans&quot; ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Element#string.extension">fhir:Element.extension</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/humanname-own-name&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Glücklich&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/StructureDefinition/humanname-namenszusatz&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Prinz&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/humanname-own-prefix&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;von&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:HumanName.given</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hans&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.prefix">fhir:HumanName.prefix</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Dr&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Element#string.extension">fhir:Element.extension</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;AC&quot; ]
+       ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.telecom">fhir:Practitioner.telecom</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;phone&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;12123455&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.address">fhir:Practitioner.address</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Element#Address.extension">fhir:Element.extension</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Schöneberg&quot; ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">fhir:Address.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;both&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:Address.line</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Schöneberg&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Element#string.extension">fhir:Element.extension</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Mittestr&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;43&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Nebenhaus&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:Address.city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Berlin&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">fhir:Address.postalCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;12015&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:Address.country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;D&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Element#Address.extension">fhir:Element.extension</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Schöneberg&quot; ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">fhir:Address.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;postal&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:Address.line</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Schöneberg&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Element#string.extension">fhir:Element.extension</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Mittestraße 3&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:Address.city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Berlin&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">fhir:Address.postalCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;12015&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:Address.country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;D&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.gender">fhir:Practitioner.gender</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;other&quot; ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Element#code.extension">fhir:Element.extension</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/StructureDefinition/gender-amtlich-de&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCoding</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.de/CodeSystem/gender-amtlich-de&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;X&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;unbestimmt&quot; ]
+       ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification">fhir:Practitioner.qualification</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">fhir:Practitioner.qualification.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         a sct:26369006 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:Coding.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://snomed.info/sct/11000274103/version/20250515&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;26369006&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Public health nurse&quot; ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6.ttl&gt; .
 
 </code></pre>
 
@@ -470,7 +513,7 @@ a sct:26369006 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Jun 30, 2026 11:44+0200">2026-06-30</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Jun 30, 2026 15:39+0200">2026-06-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

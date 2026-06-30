@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,37 +7,45 @@
 
 <https://fhir.kbv.de/DocumentReference/f7dab433-b4b3-4908-8495-4876f0240511> a fhir:DocumentReference ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "f7dab433-b4b3-4908-8495-4876f0240511"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "f7dab433-b4b3-4908-8495-4876f0240511"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DocumentReference|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:status [ fhir:v "current"] ; # 
-  fhir:subject [
+     ]
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.subject [
      fhir:link <https://fhir.kbv.de/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff> ;
-     fhir:reference [ fhir:v "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
+     fhir:Reference.reference [ fhir:value "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
        ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
      ]
-  ] ; # 
-  fhir:content ( [
-     fhir:attachment [
-       fhir:contentType [ fhir:v "application/pdf" ] ;
-       fhir:data [ fhir:v "dGVzdA=="^^xsd:base64Binary ] ;
-       fhir:title [ fhir:v "Anhang" ] ;
-       fhir:creation [ fhir:v "2022-05-06"^^xsd:date ]
+  ] ;
+  fhir:DocumentReference.content [
+     fhir:index 0 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "application/pdf" ] ;
+       fhir:Attachment.data [ fhir:value "dGVzdA=="^^xsd:base64Binary ] ;
+       fhir:Attachment.title [ fhir:value "Anhang" ] ;
+       fhir:Attachment.creation [ fhir:value "2022-05-06"^^xsd:date ]
      ]
-  ] ) . # 
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/DocumentReference/f7dab433-b4b3-4908-8495-4876f0240511.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

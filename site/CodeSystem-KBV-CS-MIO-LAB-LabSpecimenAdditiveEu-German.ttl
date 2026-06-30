@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,86 +7,111 @@
 
 <https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German</b></p><a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Natriumformiat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumformiat\"> </a></td><td>Natriumformiat</td></tr><tr><td style=\"white-space:nowrap\">Dipotassiumedetat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Dipotassiumedetat\"> </a></td><td>Dipotassiumedetat</td></tr><tr><td style=\"white-space:nowrap\">Kaliumtriphosphat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Kaliumtriphosphat\"> </a></td><td>Kaliumtriphosphat</td></tr><tr><td style=\"white-space:nowrap\">Lithiumheparin<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Lithiumheparin\"> </a></td><td>Lithiumheparin</td></tr><tr><td style=\"white-space:nowrap\">HeparinAmmonium<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-HeparinAmmonium\"> </a></td><td>Heparin-Ammonium</td></tr><tr><td style=\"white-space:nowrap\">Borsaeure<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Borsaeure\"> </a></td><td>Borsäure</td></tr><tr><td style=\"white-space:nowrap\">Salzsaeure<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Salzsaeure\"> </a></td><td>Salzsäure</td></tr><tr><td style=\"white-space:nowrap\">HeparinCalcium<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-HeparinCalcium\"> </a></td><td>Heparin-Calcium</td></tr><tr><td style=\"white-space:nowrap\">Calciumoxalat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Calciumoxalat\"> </a></td><td>Calciumoxalat</td></tr><tr><td style=\"white-space:nowrap\">Ethylendiamintetraessigsaeure<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Ethylendiamintetraessigsaeure\"> </a></td><td>Ethylendiamintetraessigsäure</td></tr><tr><td style=\"white-space:nowrap\">Dikaliumedetat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Dikaliumedetat\"> </a></td><td>Dikaliumedetat</td></tr><tr><td style=\"white-space:nowrap\">Natriumheparin<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumheparin\"> </a></td><td>Natriumheparin</td></tr><tr><td style=\"white-space:nowrap\">Natriumtetraborat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumtetraborat\"> </a></td><td>Natriumtetraborat</td></tr><tr><td style=\"white-space:nowrap\">Natriumfluorid<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumfluorid\"> </a></td><td>Natriumfluorid</td></tr><tr><td style=\"white-space:nowrap\">Edetinsaeure<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Edetinsaeure\"> </a></td><td>Edetinsäure</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0-update"] ; # 
-  fhir:name [ fhir:v "KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"] ; # 
-  fhir:title [ fhir:v "Specimen Additive German"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-30T11:44:07+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "mio42 GmbH" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://mio.kbv.de" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hello@mio42.de" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Specimen Additive German."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DE" ] ;
-       fhir:display [ fhir:v "Germany" ]
-     ] )
-  ] ) ; # 
-  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "Natriumformiat" ] ;
-     fhir:display [ fhir:v "Natriumformiat" ]
-  ] [
-     fhir:code [ fhir:v "Dipotassiumedetat" ] ;
-     fhir:display [ fhir:v "Dipotassiumedetat" ]
-  ] [
-     fhir:code [ fhir:v "Kaliumtriphosphat" ] ;
-     fhir:display [ fhir:v "Kaliumtriphosphat" ]
-  ] [
-     fhir:code [ fhir:v "Lithiumheparin" ] ;
-     fhir:display [ fhir:v "Lithiumheparin" ]
-  ] [
-     fhir:code [ fhir:v "HeparinAmmonium" ] ;
-     fhir:display [ fhir:v "Heparin-Ammonium" ]
-  ] [
-     fhir:code [ fhir:v "Borsaeure" ] ;
-     fhir:display [ fhir:v "Borsäure" ]
-  ] [
-     fhir:code [ fhir:v "Salzsaeure" ] ;
-     fhir:display [ fhir:v "Salzsäure" ]
-  ] [
-     fhir:code [ fhir:v "HeparinCalcium" ] ;
-     fhir:display [ fhir:v "Heparin-Calcium" ]
-  ] [
-     fhir:code [ fhir:v "Calciumoxalat" ] ;
-     fhir:display [ fhir:v "Calciumoxalat" ]
-  ] [
-     fhir:code [ fhir:v "Ethylendiamintetraessigsaeure" ] ;
-     fhir:display [ fhir:v "Ethylendiamintetraessigsäure" ]
-  ] [
-     fhir:code [ fhir:v "Dikaliumedetat" ] ;
-     fhir:display [ fhir:v "Dikaliumedetat" ]
-  ] [
-     fhir:code [ fhir:v "Natriumheparin" ] ;
-     fhir:display [ fhir:v "Natriumheparin" ]
-  ] [
-     fhir:code [ fhir:v "Natriumtetraborat" ] ;
-     fhir:display [ fhir:v "Natriumtetraborat" ]
-  ] [
-     fhir:code [ fhir:v "Natriumfluorid" ] ;
-     fhir:display [ fhir:v "Natriumfluorid" ]
-  ] [
-     fhir:code [ fhir:v "Edetinsaeure" ] ;
-     fhir:display [ fhir:v "Edetinsäure" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German</b></p><a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Natriumformiat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumformiat\"> </a></td><td>Natriumformiat</td></tr><tr><td style=\"white-space:nowrap\">Dipotassiumedetat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Dipotassiumedetat\"> </a></td><td>Dipotassiumedetat</td></tr><tr><td style=\"white-space:nowrap\">Kaliumtriphosphat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Kaliumtriphosphat\"> </a></td><td>Kaliumtriphosphat</td></tr><tr><td style=\"white-space:nowrap\">Lithiumheparin<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Lithiumheparin\"> </a></td><td>Lithiumheparin</td></tr><tr><td style=\"white-space:nowrap\">HeparinAmmonium<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-HeparinAmmonium\"> </a></td><td>Heparin-Ammonium</td></tr><tr><td style=\"white-space:nowrap\">Borsaeure<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Borsaeure\"> </a></td><td>Borsäure</td></tr><tr><td style=\"white-space:nowrap\">Salzsaeure<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Salzsaeure\"> </a></td><td>Salzsäure</td></tr><tr><td style=\"white-space:nowrap\">HeparinCalcium<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-HeparinCalcium\"> </a></td><td>Heparin-Calcium</td></tr><tr><td style=\"white-space:nowrap\">Calciumoxalat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Calciumoxalat\"> </a></td><td>Calciumoxalat</td></tr><tr><td style=\"white-space:nowrap\">Ethylendiamintetraessigsaeure<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Ethylendiamintetraessigsaeure\"> </a></td><td>Ethylendiamintetraessigsäure</td></tr><tr><td style=\"white-space:nowrap\">Dikaliumedetat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Dikaliumedetat\"> </a></td><td>Dikaliumedetat</td></tr><tr><td style=\"white-space:nowrap\">Natriumheparin<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumheparin\"> </a></td><td>Natriumheparin</td></tr><tr><td style=\"white-space:nowrap\">Natriumtetraborat<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumtetraborat\"> </a></td><td>Natriumtetraborat</td></tr><tr><td style=\"white-space:nowrap\">Natriumfluorid<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Natriumfluorid\"> </a></td><td>Natriumfluorid</td></tr><tr><td style=\"white-space:nowrap\">Edetinsaeure<a name=\"KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German-Edetinsaeure\"> </a></td><td>Edetinsäure</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-update"] ;
+  fhir:CodeSystem.name [ fhir:value "KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German"] ;
+  fhir:CodeSystem.title [ fhir:value "Specimen Additive German"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-30T15:39:02+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "mio42 GmbH"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "mio42 GmbH" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://mio.kbv.de" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "hello@mio42.de" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Specimen Additive German."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Natriumformiat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Natriumformiat" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Dipotassiumedetat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dipotassiumedetat" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Kaliumtriphosphat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kaliumtriphosphat" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Lithiumheparin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lithiumheparin" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HeparinAmmonium" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Heparin-Ammonium" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Borsaeure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Borsäure" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Salzsaeure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Salzsäure" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HeparinCalcium" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Heparin-Calcium" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Calciumoxalat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Calciumoxalat" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ethylendiamintetraessigsaeure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ethylendiamintetraessigsäure" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Dikaliumedetat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dikaliumedetat" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Natriumheparin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Natriumheparin" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Natriumtetraborat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Natriumtetraborat" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Natriumfluorid" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Natriumfluorid" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Edetinsaeure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Edetinsäure" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

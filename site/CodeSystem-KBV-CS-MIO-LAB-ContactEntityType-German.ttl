@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,59 +7,75 @@
 
 <https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-ContactEntityType-German> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "KBV-CS-MIO-LAB-ContactEntityType-German"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-ContactEntityType-German</b></p><a name=\"KBV-CS-MIO-LAB-ContactEntityType-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-ContactEntityType-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactEntityType_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Administrativ<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Administrativ\"> </a></td><td>Administrativ</td></tr><tr><td style=\"white-space:nowrap\">Abrechnung<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Abrechnung\"> </a></td><td>Abrechnung</td></tr><tr><td style=\"white-space:nowrap\">Personalwesen<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Personalwesen\"> </a></td><td>Personalwesen</td></tr><tr><td style=\"white-space:nowrap\">Patienteninformation<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Patienteninformation\"> </a></td><td>Patienteninformation</td></tr><tr><td style=\"white-space:nowrap\">VersicherungsanspruchLeistungspruefungZahlung<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-VersicherungsanspruchLeistungspruefungZahlung\"> </a></td><td>Versicherungsanspruch/Leistungsprüfung/Zahlung</td></tr><tr><td style=\"white-space:nowrap\">Presse<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Presse\"> </a></td><td>Presse</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactEntityType_German"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0-update"] ; # 
-  fhir:name [ fhir:v "KBV_CS_MIO_LAB_ContactEntityType_German"] ; # 
-  fhir:title [ fhir:v "Contact entity type German"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-30T11:44:07+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "mio42 GmbH" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://mio.kbv.de" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hello@mio42.de" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Contact entity type German."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DE" ] ;
-       fhir:display [ fhir:v "Germany" ]
-     ] )
-  ] ) ; # 
-  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "Administrativ" ] ;
-     fhir:display [ fhir:v "Administrativ" ]
-  ] [
-     fhir:code [ fhir:v "Abrechnung" ] ;
-     fhir:display [ fhir:v "Abrechnung" ]
-  ] [
-     fhir:code [ fhir:v "Personalwesen" ] ;
-     fhir:display [ fhir:v "Personalwesen" ]
-  ] [
-     fhir:code [ fhir:v "Patienteninformation" ] ;
-     fhir:display [ fhir:v "Patienteninformation" ]
-  ] [
-     fhir:code [ fhir:v "VersicherungsanspruchLeistungspruefungZahlung" ] ;
-     fhir:display [ fhir:v "Versicherungsanspruch/Leistungsprüfung/Zahlung" ]
-  ] [
-     fhir:code [ fhir:v "Presse" ] ;
-     fhir:display [ fhir:v "Presse" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "KBV-CS-MIO-LAB-ContactEntityType-German"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-ContactEntityType-German</b></p><a name=\"KBV-CS-MIO-LAB-ContactEntityType-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-ContactEntityType-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactEntityType_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Administrativ<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Administrativ\"> </a></td><td>Administrativ</td></tr><tr><td style=\"white-space:nowrap\">Abrechnung<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Abrechnung\"> </a></td><td>Abrechnung</td></tr><tr><td style=\"white-space:nowrap\">Personalwesen<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Personalwesen\"> </a></td><td>Personalwesen</td></tr><tr><td style=\"white-space:nowrap\">Patienteninformation<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Patienteninformation\"> </a></td><td>Patienteninformation</td></tr><tr><td style=\"white-space:nowrap\">VersicherungsanspruchLeistungspruefungZahlung<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-VersicherungsanspruchLeistungspruefungZahlung\"> </a></td><td>Versicherungsanspruch/Leistungsprüfung/Zahlung</td></tr><tr><td style=\"white-space:nowrap\">Presse<a name=\"KBV-CS-MIO-LAB-ContactEntityType-German-Presse\"> </a></td><td>Presse</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_ContactEntityType_German"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-update"] ;
+  fhir:CodeSystem.name [ fhir:value "KBV_CS_MIO_LAB_ContactEntityType_German"] ;
+  fhir:CodeSystem.title [ fhir:value "Contact entity type German"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-30T15:39:02+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "mio42 GmbH"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "mio42 GmbH" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://mio.kbv.de" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "hello@mio42.de" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Contact entity type German."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Administrativ" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Administrativ" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Abrechnung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abrechnung" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Personalwesen" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Personalwesen" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Patienteninformation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patienteninformation" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VersicherungsanspruchLeistungspruefungZahlung" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Versicherungsanspruch/Leistungsprüfung/Zahlung" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Presse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Presse" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-ContactEntityType-German.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

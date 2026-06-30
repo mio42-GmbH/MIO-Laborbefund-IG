@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,39 +7,44 @@
 
 <https://fhir.kbv.de/Specimen/eb7fbea2-95bd-4618-b38d-ce69cde79726> a fhir:Specimen ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "eb7fbea2-95bd-4618-b38d-ce69cde79726"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "eb7fbea2-95bd-4618-b38d-ce69cde79726"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Specimen|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:identifier ( [
-     fhir:value [ fhir:v "Test Specimen identifier" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "available"] ; # 
-  fhir:subject [
+     ]
+  ] ;
+  fhir:Specimen.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.value [ fhir:value "Test Specimen identifier" ]
+  ] ;
+  fhir:Specimen.status [ fhir:value "available"] ;
+  fhir:Specimen.subject [
      fhir:link <https://fhir.kbv.de/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff> ;
-     fhir:reference [ fhir:v "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
+     fhir:Reference.reference [ fhir:value "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
        ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
      ]
-  ] ; # 
-  fhir:receivedTime [ fhir:v "2021-11-15T16:55:00+01:00"^^xsd:dateTime] ; # 
-  fhir:collection [
-     fhir:collected [
-       a fhir:dateTime ;
-       fhir:v "2023-05-03"^^xsd:date
-     ]
-  ] . # 
+  ] ;
+  fhir:Specimen.receivedTime [ fhir:value "2021-11-15T16:55:00+01:00"^^xsd:dateTime] ;
+  fhir:Specimen.collection [
+     fhir:Specimen.collection.collectedDateTime [ fhir:value "2023-05-03"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/Specimen/eb7fbea2-95bd-4618-b38d-ce69cde79726.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

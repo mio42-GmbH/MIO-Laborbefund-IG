@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,28 +7,35 @@
 
 <https://fhir.kbv.de/RelatedPerson/0f9878cf-8297-43c1-bf2d-7de5da068bf6> a fhir:RelatedPerson ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "0f9878cf-8297-43c1-bf2d-7de5da068bf6"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "0f9878cf-8297-43c1-bf2d-7de5da068bf6"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_RelatedPerson|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:patient [
-     fhir:link <https://fhir.kbv.de/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff> ;
-     fhir:reference [ fhir:v "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
-       ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
      ]
-  ] . # 
+  ] ;
+  fhir:RelatedPerson.patient [
+     fhir:link <https://fhir.kbv.de/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff> ;
+     fhir:Reference.reference [ fhir:value "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
+       ] ;
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/RelatedPerson/0f9878cf-8297-43c1-bf2d-7de5da068bf6.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

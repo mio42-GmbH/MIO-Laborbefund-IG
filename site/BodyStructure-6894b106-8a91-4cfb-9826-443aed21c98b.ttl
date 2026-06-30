@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,100 +8,114 @@
 
 <https://fhir.kbv.de/BodyStructure/6894b106-8a91-4cfb-9826-443aed21c98b> a fhir:BodyStructure ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "6894b106-8a91-4cfb-9826-443aed21c98b"] ; # 
-  fhir:meta [
-     fhir:versionId [ fhir:v "1" ] ;
-     fhir:lastUpdated [ fhir:v "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "6894b106-8a91-4cfb-9826-443aed21c98b"] ;
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ] ;
+     fhir:Meta.lastUpdated [ fhir:value "2023-05-03T11:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "structure"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           a sct:90432007 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-           fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-           fhir:code [ fhir:v "90432007" ] ;
-           fhir:display [ fhir:v "Structure of mucous membrane of nasopharynx (body structure)" ]
-         ] ) ;
-         fhir:text [ fhir:v "test" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "laterality"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           a sct:7771000 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-           fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-           fhir:code [ fhir:v "7771000" ] ;
-           fhir:display [ fhir:v "Left (qualifier value)" ]
-         ] ) ;
-         fhir:text [ fhir:v "test" ]
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "clockFacePosition"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:CodeableConcept ;
-           fhir:coding ( [
-             a sct:260330005 ;
-             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-             fhir:code [ fhir:v "260330005" ] ;
-             fhir:display [ fhir:v "3 o'clock position (qualifier value)" ]
-           ] ) ;
-           fhir:text [ fhir:v "test" ]
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "bodyLandmarkOrientation"^^xsd:anyURI ]
-     ] [
-       fhir:url [ fhir:v "qualifier"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           a sct:46053002 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-           fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-           fhir:code [ fhir:v "46053002" ] ;
-           fhir:display [ fhir:v "Distal (qualifier value)" ]
-         ] ) ;
-         fhir:text [ fhir:v "test" ]
-       ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:morphology [
-     fhir:coding ( [
-       a sct:75910000 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "75910000" ] ;
-       fhir:display [ fhir:v "Congenital hypersegmentation (morphologic abnormality)" ]
-     ] ) ;
-     fhir:text [ fhir:v "test" ]
-  ] ; # 
-  fhir:description [ fhir:v "test"] ; # 
-  fhir:patient [
-     fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
-       ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
      ]
-  ] . # 
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "structure" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:90432007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+           fhir:Coding.code [ fhir:value "90432007" ] ;
+           fhir:Coding.display [ fhir:value "Structure of mucous membrane of nasopharynx (body structure)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "test" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "laterality" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:7771000 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+           fhir:Coding.code [ fhir:value "7771000" ] ;
+           fhir:Coding.display [ fhir:value "Left (qualifier value)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "test" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "clockFacePosition" ] ;
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             a sct:260330005 ;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+             fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+             fhir:Coding.code [ fhir:value "260330005" ] ;
+             fhir:Coding.display [ fhir:value "3 o'clock position (qualifier value)" ]
+           ] ;
+           fhir:CodeableConcept.text [ fhir:value "test" ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "bodyLandmarkOrientation" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "qualifier" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:46053002 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+           fhir:Coding.code [ fhir:value "46053002" ] ;
+           fhir:Coding.display [ fhir:value "Distal (qualifier value)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "test" ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure" ]
+  ] ;
+  fhir:BodyStructure.morphology [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:75910000 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "75910000" ] ;
+       fhir:Coding.display [ fhir:value "Congenital hypersegmentation (morphologic abnormality)" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "test" ]
+  ] ;
+  fhir:BodyStructure.description [ fhir:value "test"] ;
+  fhir:BodyStructure.patient [
+     fhir:link <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:Reference.reference [ fhir:value "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
+       ] ;
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/BodyStructure/6894b106-8a91-4cfb-9826-443aed21c98b.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

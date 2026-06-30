@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,86 +7,111 @@
 
 <https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe</b></p><a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe\"> </a><a name=\"hcKBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">haemato<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-haemato\"> </a></td><td>Hämatologie</td></tr><tr><td style=\"white-space:nowrap\">baselec<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baselec\"> </a></td><td>Basisanalytik - Elektrolyte</td></tr><tr><td style=\"white-space:nowrap\">baskidn<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baskidn\"> </a></td><td>Basisanalytik - Nierenfunktion</td></tr><tr><td style=\"white-space:nowrap\">baslivr<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baslivr\"> </a></td><td>Basisanalytik - Leberfunktion</td></tr><tr><td style=\"white-space:nowrap\">basenzy<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-basenzy\"> </a></td><td>Basisanalytik - Enzyme</td></tr><tr><td style=\"white-space:nowrap\">endocr<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-endocr\"> </a></td><td>Endokrinologie</td></tr><tr><td style=\"white-space:nowrap\">cardio<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-cardio\"> </a></td><td>Kardiologie</td></tr><tr><td style=\"white-space:nowrap\">lipmetb<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-lipmetb\"> </a></td><td>Fettstoffwechsel</td></tr><tr><td style=\"white-space:nowrap\">diabdiag<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-diabdiag\"> </a></td><td>Diabetesdiagnostik</td></tr><tr><td style=\"white-space:nowrap\">vitdiag<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-vitdiag\"> </a></td><td>Vitamindiagnostik</td></tr><tr><td style=\"white-space:nowrap\">inflmark<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-inflmark\"> </a></td><td>Entzündungsmarker</td></tr><tr><td style=\"white-space:nowrap\">proteins<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-proteins\"> </a></td><td>Proteine</td></tr><tr><td style=\"white-space:nowrap\">hemostas<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-hemostas\"> </a></td><td>Hämostaseologie</td></tr><tr><td style=\"white-space:nowrap\">uridiag<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-uridiag\"> </a></td><td>Urindiagnostik</td></tr><tr><td style=\"white-space:nowrap\">ironmetb<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-ironmetb\"> </a></td><td>Eisen-/Hämoglobinstoffwechsel</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0-update"] ; # 
-  fhir:name [ fhir:v "KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"] ; # 
-  fhir:title [ fhir:v "KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-30T11:44:07+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "mio42 GmbH" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://mio.kbv.de" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hello@mio42.de" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DE" ] ;
-       fhir:display [ fhir:v "Germany" ]
-     ] )
-  ] ) ; # 
-  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "haemato" ] ;
-     fhir:display [ fhir:v "Hämatologie" ]
-  ] [
-     fhir:code [ fhir:v "baselec" ] ;
-     fhir:display [ fhir:v "Basisanalytik - Elektrolyte" ]
-  ] [
-     fhir:code [ fhir:v "baskidn" ] ;
-     fhir:display [ fhir:v "Basisanalytik - Nierenfunktion" ]
-  ] [
-     fhir:code [ fhir:v "baslivr" ] ;
-     fhir:display [ fhir:v "Basisanalytik - Leberfunktion" ]
-  ] [
-     fhir:code [ fhir:v "basenzy" ] ;
-     fhir:display [ fhir:v "Basisanalytik - Enzyme" ]
-  ] [
-     fhir:code [ fhir:v "endocr" ] ;
-     fhir:display [ fhir:v "Endokrinologie" ]
-  ] [
-     fhir:code [ fhir:v "cardio" ] ;
-     fhir:display [ fhir:v "Kardiologie" ]
-  ] [
-     fhir:code [ fhir:v "lipmetb" ] ;
-     fhir:display [ fhir:v "Fettstoffwechsel" ]
-  ] [
-     fhir:code [ fhir:v "diabdiag" ] ;
-     fhir:display [ fhir:v "Diabetesdiagnostik" ]
-  ] [
-     fhir:code [ fhir:v "vitdiag" ] ;
-     fhir:display [ fhir:v "Vitamindiagnostik" ]
-  ] [
-     fhir:code [ fhir:v "inflmark" ] ;
-     fhir:display [ fhir:v "Entzündungsmarker" ]
-  ] [
-     fhir:code [ fhir:v "proteins" ] ;
-     fhir:display [ fhir:v "Proteine" ]
-  ] [
-     fhir:code [ fhir:v "hemostas" ] ;
-     fhir:display [ fhir:v "Hämostaseologie" ]
-  ] [
-     fhir:code [ fhir:v "uridiag" ] ;
-     fhir:display [ fhir:v "Urindiagnostik" ]
-  ] [
-     fhir:code [ fhir:v "ironmetb" ] ;
-     fhir:display [ fhir:v "Eisen-/Hämoglobinstoffwechsel" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe</b></p><a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe\"> </a><a name=\"hcKBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">haemato<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-haemato\"> </a></td><td>Hämatologie</td></tr><tr><td style=\"white-space:nowrap\">baselec<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baselec\"> </a></td><td>Basisanalytik - Elektrolyte</td></tr><tr><td style=\"white-space:nowrap\">baskidn<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baskidn\"> </a></td><td>Basisanalytik - Nierenfunktion</td></tr><tr><td style=\"white-space:nowrap\">baslivr<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-baslivr\"> </a></td><td>Basisanalytik - Leberfunktion</td></tr><tr><td style=\"white-space:nowrap\">basenzy<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-basenzy\"> </a></td><td>Basisanalytik - Enzyme</td></tr><tr><td style=\"white-space:nowrap\">endocr<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-endocr\"> </a></td><td>Endokrinologie</td></tr><tr><td style=\"white-space:nowrap\">cardio<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-cardio\"> </a></td><td>Kardiologie</td></tr><tr><td style=\"white-space:nowrap\">lipmetb<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-lipmetb\"> </a></td><td>Fettstoffwechsel</td></tr><tr><td style=\"white-space:nowrap\">diabdiag<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-diabdiag\"> </a></td><td>Diabetesdiagnostik</td></tr><tr><td style=\"white-space:nowrap\">vitdiag<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-vitdiag\"> </a></td><td>Vitamindiagnostik</td></tr><tr><td style=\"white-space:nowrap\">inflmark<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-inflmark\"> </a></td><td>Entzündungsmarker</td></tr><tr><td style=\"white-space:nowrap\">proteins<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-proteins\"> </a></td><td>Proteine</td></tr><tr><td style=\"white-space:nowrap\">hemostas<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-hemostas\"> </a></td><td>Hämostaseologie</td></tr><tr><td style=\"white-space:nowrap\">uridiag<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-uridiag\"> </a></td><td>Urindiagnostik</td></tr><tr><td style=\"white-space:nowrap\">ironmetb<a name=\"KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe-ironmetb\"> </a></td><td>Eisen-/Hämoglobinstoffwechsel</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-update"] ;
+  fhir:CodeSystem.name [ fhir:value "KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"] ;
+  fhir:CodeSystem.title [ fhir:value "KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-30T15:39:02+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "mio42 GmbH"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "mio42 GmbH" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://mio.kbv.de" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "hello@mio42.de" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "haemato" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hämatologie" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "baselec" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Basisanalytik - Elektrolyte" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "baskidn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Basisanalytik - Nierenfunktion" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "baslivr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Basisanalytik - Leberfunktion" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "basenzy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Basisanalytik - Enzyme" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "endocr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Endokrinologie" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cardio" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kardiologie" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lipmetb" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fettstoffwechsel" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "diabdiag" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diabetesdiagnostik" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vitdiag" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vitamindiagnostik" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "inflmark" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Entzündungsmarker" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "proteins" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Proteine" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hemostas" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hämostaseologie" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "uridiag" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urindiagnostik" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ironmetb" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eisen-/Hämoglobinstoffwechsel" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

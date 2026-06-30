@@ -56,7 +56,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Status Laboruntersuchung",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-30T11:44:07+02:00",
+  "date" : "2026-06-30T15:39:02+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,45 +8,54 @@
 
 <https://fhir.kbv.de/BodyStructure/72f65586-b2b5-465f-a792-89fb7545d7bc> a fhir:BodyStructure ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "72f65586-b2b5-465f-a792-89fb7545d7bc"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "72f65586-b2b5-465f-a792-89fb7545d7bc"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_BodyStructure|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "structure"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           a sct:90432007 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-           fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-           fhir:code [ fhir:v "90432007" ] ;
-           fhir:display [ fhir:v "Structure of mucous membrane of nasopharynx (body structure)" ]
-         ] ) ;
-         fhir:text [ fhir:v "test" ]
-       ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:patient [
-     fhir:link <https://fhir.kbv.de/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff> ;
-     fhir:reference [ fhir:v "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
-     fhir:identifier [
-       fhir:type [
-         fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "KVZ10" ] ;
-           fhir:display [ fhir:v "Krankenversichertennummer" ]
-         ] )
-       ] ;
-       fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K123456789" ]
      ]
-  ] . # 
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "structure" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a sct:90432007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+           fhir:Coding.code [ fhir:value "90432007" ] ;
+           fhir:Coding.display [ fhir:value "Structure of mucous membrane of nasopharynx (body structure)" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "test" ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure" ]
+  ] ;
+  fhir:BodyStructure.patient [
+     fhir:link <https://fhir.kbv.de/Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff> ;
+     fhir:Reference.reference [ fhir:value "Patient/84e01fa5-6763-4a96-99f3-170cf9b317ff" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ] ;
+           fhir:Coding.code [ fhir:value "KVZ10" ] ;
+           fhir:Coding.display [ fhir:value "Krankenversichertennummer" ]
+         ]
+       ] ;
+       fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ] ;
+       fhir:Identifier.value [ fhir:value "K123456789" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/BodyStructure/72f65586-b2b5-465f-a792-89fb7545d7bc.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

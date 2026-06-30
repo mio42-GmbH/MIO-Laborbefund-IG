@@ -286,39 +286,54 @@ MIO Laborbefund
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:Provenance ;
+&lt;http://hl7.org/fhir/Provenance/f3533f34-781a-4cb4-9926-19fc8479b3e3&gt; a fhir:Provenance ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#Provenance.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;f3533f34-781a-4cb4-9926-19fc8479b3e3&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/resource.html#Provenance.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance|1.0.0-update&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance|1.0.0-update&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">fhir:target</a> ( [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/96f33ca8-872d-4c8b-972e-b681db27d9df&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.occurred_x_">fhir:occurred</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:dateTime ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-11-15&quot;^^xsd:date
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">fhir:recorded</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2021-11-15T16:00:00+01:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.activity">fhir:activity</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;6.0.0&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;VRF&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;verifier&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">fhir:agent</a> ( [
-<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">fhir:who</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce&quot; ]     ]
-  ] ) . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#Provenance.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;f3533f34-781a-4cb4-9926-19fc8479b3e3&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Provenance.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance|1.0.0-update&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Provenance|1.0.0-update&gt;
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">fhir:Provenance.target</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Observation/96f33ca8-872d-4c8b-972e-b681db27d9df&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Observation/96f33ca8-872d-4c8b-972e-b681db27d9df&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.occurred_x_">fhir:Provenance.occurredDateTime</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-11-15&quot;^^xsd:date] ;
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">fhir:Provenance.recorded</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2021-11-15T16:00:00+01:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.activity">fhir:Provenance.activity</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:Coding.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;6.0.0&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;VRF&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;verifier&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">fhir:Provenance.agent</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">fhir:Provenance.agent.who</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce&gt; ;
+       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce&quot; ]
+     ]
+  ] .
+
+&lt;http://hl7.org/fhir/Observation/96f33ca8-872d-4c8b-972e-b681db27d9df&gt; a fhir:Observation .
+
+&lt;http://hl7.org/fhir/Practitioner/24435567-fed3-43f8-8fc8-954f68df7fce&gt; a fhir:Practitioner .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/Provenance/f3533f34-781a-4cb4-9926-19fc8479b3e3.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/Provenance/f3533f34-781a-4cb4-9926-19fc8479b3e3.ttl&gt; .
 
 </code></pre>
 
@@ -348,7 +363,7 @@ MIO Laborbefund
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Jun 30, 2026 11:44+0200">2026-06-30</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.laborbefund#1.0.0-update basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Jun 30, 2026 15:39+0200">2026-06-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

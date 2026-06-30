@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,22 +8,29 @@
 
 <https://fhir.kbv.de/DeviceDefinition/01021964-005b-4dd5-975d-2e9a9fa917d9> a fhir:DeviceDefinition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "01021964-005b-4dd5-975d-2e9a9fa917d9"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container|1.0.0-update"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "01021964-005b-4dd5-975d-2e9a9fa917d9"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container|1.0.0-update" ;
+       fhir:index 0 ;
        fhir:link <https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_DeviceDefinition_Specimen_Container|1.0.0-update>
-     ] )
-  ] ; # 
-  fhir:type [
-     fhir:coding ( [
+     ]
+  ] ;
+  fhir:DeviceDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a sct:434711009 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20251115" ] ;
-       fhir:code [ fhir:v "434711009" ] ;
-       fhir:display [ fhir:v "Specimen container (physical object)" ]
-     ] )
-  ] . # 
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/11000274103/version/20251115" ] ;
+       fhir:Coding.code [ fhir:value "434711009" ] ;
+       fhir:Coding.display [ fhir:value "Specimen container (physical object)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/DeviceDefinition/01021964-005b-4dd5-975d-2e9a9fa917d9.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

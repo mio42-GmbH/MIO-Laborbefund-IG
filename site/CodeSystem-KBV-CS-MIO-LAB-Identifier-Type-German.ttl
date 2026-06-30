@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,68 +7,87 @@
 
 <https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-Identifier-Type-German> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "KBV-CS-MIO-LAB-Identifier-Type-German"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-Identifier-Type-German</b></p><a name=\"KBV-CS-MIO-LAB-Identifier-Type-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-Identifier-Type-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Identifier_Type_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">EingangsID<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-EingangsID\"> </a></td><td>Eingangs-ID</td></tr><tr><td style=\"white-space:nowrap\">Betriebsstaettennummer<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-Betriebsstaettennummer\"> </a></td><td>Betriebsstättennummer</td></tr><tr><td style=\"white-space:nowrap\">IdentifikatordesAuftragnehmers<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-IdentifikatordesAuftragnehmers\"> </a></td><td>Identifikator des Auftragnehmers</td></tr><tr><td style=\"white-space:nowrap\">LaborzugangsID<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-LaborzugangsID\"> </a></td><td>Laborzugangs-ID</td></tr><tr><td style=\"white-space:nowrap\">MikrochipNummer<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-MikrochipNummer\"> </a></td><td>Mikrochip-Nummer</td></tr><tr><td style=\"white-space:nowrap\">IdentifikatordesAuftraggebers<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-IdentifikatordesAuftraggebers\"> </a></td><td>Identifikator des Auftraggebers</td></tr><tr><td style=\"white-space:nowrap\">ProbenID<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-ProbenID\"> </a></td><td>Proben-ID</td></tr><tr><td style=\"white-space:nowrap\">Seriennummer<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-Seriennummer\"> </a></td><td>Seriennummer</td></tr><tr><td style=\"white-space:nowrap\">EindeutigeProbenID<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-EindeutigeProbenID\"> </a></td><td>Eindeutige Proben-ID</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Identifier_Type_German"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0-update"] ; # 
-  fhir:name [ fhir:v "KBV_CS_MIO_LAB_Identifier_Type_German"] ; # 
-  fhir:title [ fhir:v "Identifier Type German"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-30T11:44:07+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "mio42 GmbH" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://mio.kbv.de" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hello@mio42.de" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Identifier Type German."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DE" ] ;
-       fhir:display [ fhir:v "Germany" ]
-     ] )
-  ] ) ; # 
-  fhir:copyright [ fhir:v "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "EingangsID" ] ;
-     fhir:display [ fhir:v "Eingangs-ID" ]
-  ] [
-     fhir:code [ fhir:v "Betriebsstaettennummer" ] ;
-     fhir:display [ fhir:v "Betriebsstättennummer" ]
-  ] [
-     fhir:code [ fhir:v "IdentifikatordesAuftragnehmers" ] ;
-     fhir:display [ fhir:v "Identifikator des Auftragnehmers" ]
-  ] [
-     fhir:code [ fhir:v "LaborzugangsID" ] ;
-     fhir:display [ fhir:v "Laborzugangs-ID" ]
-  ] [
-     fhir:code [ fhir:v "MikrochipNummer" ] ;
-     fhir:display [ fhir:v "Mikrochip-Nummer" ]
-  ] [
-     fhir:code [ fhir:v "IdentifikatordesAuftraggebers" ] ;
-     fhir:display [ fhir:v "Identifikator des Auftraggebers" ]
-  ] [
-     fhir:code [ fhir:v "ProbenID" ] ;
-     fhir:display [ fhir:v "Proben-ID" ]
-  ] [
-     fhir:code [ fhir:v "Seriennummer" ] ;
-     fhir:display [ fhir:v "Seriennummer" ]
-  ] [
-     fhir:code [ fhir:v "EindeutigeProbenID" ] ;
-     fhir:display [ fhir:v "Eindeutige Proben-ID" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "KBV-CS-MIO-LAB-Identifier-Type-German"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-MIO-LAB-Identifier-Type-German</b></p><a name=\"KBV-CS-MIO-LAB-Identifier-Type-German\"> </a><a name=\"hcKBV-CS-MIO-LAB-Identifier-Type-German\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Identifier_Type_German</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">EingangsID<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-EingangsID\"> </a></td><td>Eingangs-ID</td></tr><tr><td style=\"white-space:nowrap\">Betriebsstaettennummer<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-Betriebsstaettennummer\"> </a></td><td>Betriebsstättennummer</td></tr><tr><td style=\"white-space:nowrap\">IdentifikatordesAuftragnehmers<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-IdentifikatordesAuftragnehmers\"> </a></td><td>Identifikator des Auftragnehmers</td></tr><tr><td style=\"white-space:nowrap\">LaborzugangsID<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-LaborzugangsID\"> </a></td><td>Laborzugangs-ID</td></tr><tr><td style=\"white-space:nowrap\">MikrochipNummer<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-MikrochipNummer\"> </a></td><td>Mikrochip-Nummer</td></tr><tr><td style=\"white-space:nowrap\">IdentifikatordesAuftraggebers<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-IdentifikatordesAuftraggebers\"> </a></td><td>Identifikator des Auftraggebers</td></tr><tr><td style=\"white-space:nowrap\">ProbenID<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-ProbenID\"> </a></td><td>Proben-ID</td></tr><tr><td style=\"white-space:nowrap\">Seriennummer<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-Seriennummer\"> </a></td><td>Seriennummer</td></tr><tr><td style=\"white-space:nowrap\">EindeutigeProbenID<a name=\"KBV-CS-MIO-LAB-Identifier-Type-German-EindeutigeProbenID\"> </a></td><td>Eindeutige Proben-ID</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_LAB_Identifier_Type_German"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-update"] ;
+  fhir:CodeSystem.name [ fhir:value "KBV_CS_MIO_LAB_Identifier_Type_German"] ;
+  fhir:CodeSystem.title [ fhir:value "Identifier Type German"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-30T15:39:02+02:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "mio42 GmbH"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "mio42 GmbH" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://mio.kbv.de" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "hello@mio42.de" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Dieses Codesystem enthält die Codes für deutsche Bezeichner für Identifier Type German."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ] ;
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EingangsID" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eingangs-ID" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Betriebsstaettennummer" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Betriebsstättennummer" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IdentifikatordesAuftragnehmers" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identifikator des Auftragnehmers" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LaborzugangsID" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laborzugangs-ID" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MikrochipNummer" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mikrochip-Nummer" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IdentifikatordesAuftraggebers" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identifikator des Auftraggebers" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ProbenID" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Proben-ID" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Seriennummer" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Seriennummer" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EindeutigeProbenID" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eindeutige Proben-ID" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.kbv.de/CodeSystem/KBV-CS-MIO-LAB-Identifier-Type-German.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
