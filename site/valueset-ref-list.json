@@ -358,8 +358,8 @@
     "systems" : ["urn:ietf:bcp:13"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" : "KBV_PR_MIO_LAB_Observation_Image_Attachment",
     "StructureDefinition-KBV-PR-MIO-LAB-DocumentReference.html" : "KBV_PR_MIO_LAB_DocumentReference",
+    "StructureDefinition-KBV-PR-MIO-LAB-Observation-Image-Attachment.html" : "KBV_PR_MIO_LAB_Observation_Image_Attachment",
     "StructureDefinition-KBV-PR-MIO-LAB-DiagnosticReport.html" : "KBV_PR_MIO_LAB_DiagnosticReport"
   },
   {

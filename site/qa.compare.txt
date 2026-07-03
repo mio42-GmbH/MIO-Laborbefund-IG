@@ -1,7 +1,7 @@
 KBVMIOLaborbefund : Validation Results
 =========================================
 
-err = 2, warn = 62, info = 56
+err = 2, warn = 8, info = 51
 $--
 Generated $--. FHIR version $-- for kbv.mio.laborbefund#$-- (canonical = https://fhir.kbv.de)
  Build Errors : 0 / 0 / 1
@@ -282,11 +282,6 @@ INFORMATION: Resource: The resource StructureDefinition/KBV-PR-MIO-LAB-RelatedPe
 == fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-ServiceRequest.json ==
 INFORMATION: Resource: The resource StructureDefinition/KBV-PR-MIO-LAB-ServiceRequest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Specimen.json ==
-INFORMATION: StructureDefinition.snapshot.element[54].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0487 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
-INFORMATION: StructureDefinition.snapshot.element[143].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0916 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
-INFORMATION: StructureDefinition.snapshot.element[144].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0916 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
-INFORMATION: StructureDefinition.snapshot.element[222].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0371 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
-INFORMATION: StructureDefinition.snapshot.element[223].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0493 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.3.0), 3.0.0 (hl7.terminology.r4#7.1.0)
 INFORMATION: Resource: The resource StructureDefinition/KBV-PR-MIO-LAB-Specimen could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-KBV-PR-MIO-LAB-Substance.json ==
 INFORMATION: Resource: The resource StructureDefinition/KBV-PR-MIO-LAB-Substance could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -295,95 +290,50 @@ INFORMATION: Resource: The resource StructureDefinition/KBV-PR-MIO-LAB-Substance
 == input/vocabulary/KBV_CM_MIO_LAB_Overview_German.json ==
 INFORMATION: Resource: The resource ConceptMap/KBV-CM-MIO-LAB-Overview could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_AdministrativeGender_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-AdministrativeGender-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position-G should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_CommonLanguages_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-CommonLanguages-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_CommonUCUMCodesForDuration_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-CommonUCUMCodesForDuration-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_ContactEntityType_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-ContactEntityType-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_ContactPointSystem_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-ContactPointSystem-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_DataAbsentReason_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-DataAbsentReason-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Data_Absent_Reason_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Data-Absent-Reason-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_DeviceNameType_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-DeviceNameType-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Diagnostic_ReportStatus_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Diagnostic-ReportStatus-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_EHDSIReferenceRangeAppliesTo_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-EHDSIReferenceRangeAppliesTo-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Extracorporal_Device_SNOMED_CT_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Extracorporal-Device-SNOMED-CT-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Hl7VSRelevantClincialInformation_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Hl7VSRelevantClincialInformation-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Identifier_Type_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Identifier-Type-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_LabSpecimenAdditiveEu_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-LabSpecimenAdditiveEu-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Laboratory_Identificator.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Laboratory-Identificator should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Marital_Status_Codes_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Marital-Status-Codes-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_ObservationInterpretationCodes_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-ObservationInterpretationCodes-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_ObservationReferenceRangeMeaningCodes_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-ObservationReferenceRangeMeaningCodes-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Observation_Status_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Observation-Status-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_PatientRelationshipType_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-PatientRelationshipType-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Provenance_Activity_Type_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Provenance-Activity-Type-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_QuantityComparator_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-QuantityComparator-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_RequestPriority_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-RequestPriority-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Secondary_Status.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Secondary-Status should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_SexParameterForClinicalUse_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-SexParameterForClinicalUse-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_SpecimenProcessingProcedure_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-SpecimenProcessingProcedure-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_SpecimenStatus_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-SpecimenStatus-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Specimen_Condition_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Specimen-Condition-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Test_Profil_Laboruntersuchungsgruppe.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Test-Profil-Laboruntersuchungsgruppe should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_Type_Diagram_German.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-Type-Diagram-German should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_CS_MIO_LAB_mio42.json ==
-WARNING: Resource: The resource CodeSystem/KBV-CS-MIO-LAB-mio42 should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Body_Structures_SNOMED_CT.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Body-Structures-SNOMED-CT should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Bodystructure_Body_Landmark_Clock_Face_Position.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Bodystructure-Body-Landmark-Clock-Face-Position should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Data_Absent_Reason.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Data-Absent-Reason should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Diagnostic_ReportStatus.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Diagnostic-ReportStatus should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_EHDSIReferenceRangeAppliesTo.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-EHDSIReferenceRangeAppliesTo should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Extracorporal_Device_SNOMED_CT.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Extracorporal-Device-SNOMED-CT should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Identifier_Type.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Identifier-Type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Analyzer_SNOMED_CT.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Laboratory-Analyzer-SNOMED-CT should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Laboratory_Specialties_LOINC.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Laboratory-Specialties-LOINC should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Laboruntersuchungsgruppe.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Laboruntersuchungsgruppe should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Laterality_Body_Structure_SNOMED_CT.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Laterality-Body-Structure-SNOMED-CT should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Localisation_Body_Structure_SNOMED_CT.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Localisation-Body-Structure-SNOMED-CT should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_MIME_Types.json ==
 INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'BMP-Bild' for urn:ietf:bcp:13#image/bmp. Valid display is 'image/bmp' (en) (for the language(s) 'en, de-DE'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'GIF-Bild' for urn:ietf:bcp:13#image/gif. Valid display is 'image/gif' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
@@ -394,20 +344,11 @@ INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].con
 INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[6]: Wrong Display Name 'WMF-Datei' for urn:ietf:bcp:13#image/wmf. Valid display is 'image/wmf' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[7]: Wrong Display Name 'PDF-Dokument' for urn:ietf:bcp:13#application/pdf. Valid display is 'application/pdf' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 INFORMATION: ValueSet/KBV-VS-MIO-LAB-MIME-Types: ValueSet.compose.include[0].concept[8]: Wrong Display Name 'Textdatei' for urn:ietf:bcp:13#text/plain. Valid display is 'text/plain' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-MIME-Types should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Observation_Laboratory_Study_Value_SNOMED_CT.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Observation-Laboratory-Study-Value-SNOMED-CT should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Observation_Methods.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Observation-Methods should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Observation_Status.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Observation-Status should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Secondary_Status.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Secondary-Status should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Specimen_Collection_Method_SNOMED_CT.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Specimen-Collection-Method-SNOMED-CT should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Specimen_Condition.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Specimen-Condition should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Specimen_Type_SNOMED_CT.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Specimen-Type-SNOMED-CT should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/vocabulary/KBV_VS_MIO_LAB_Type_Diagram.json ==
-WARNING: Resource: The resource ValueSet/KBV-VS-MIO-LAB-Type-Diagram should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
